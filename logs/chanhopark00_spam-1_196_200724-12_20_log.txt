@@ -1,0 +1,2664 @@
+Downloading: "https://download.pytorch.org/models/vgg16-397923af.pth" to /home/nsml/.cache/torch/checkpoints/vgg16-397923af.pth
+
+  0%|          | 0.00/528M [00:00<?, ?B/s]
+  1%|▏         | 6.94M/528M [00:00<00:07, 72.5MB/s]
+  2%|▏         | 12.5M/528M [00:00<00:08, 67.4MB/s]
+  4%|▍         | 20.9M/528M [00:00<00:07, 67.1MB/s]
+  6%|▌         | 29.9M/528M [00:00<00:07, 73.5MB/s]
+  8%|▊         | 40.0M/528M [00:00<00:06, 80.7MB/s]
+  9%|▉         | 46.9M/528M [00:00<00:09, 54.4MB/s]
+ 11%|█         | 56.6M/528M [00:00<00:07, 63.3MB/s]
+ 12%|█▏        | 65.4M/528M [00:00<00:06, 69.8MB/s]
+ 14%|█▍        | 75.5M/528M [00:01<00:06, 77.8MB/s]
+ 16%|█▌        | 84.3M/528M [00:01<00:05, 81.6MB/s]
+ 18%|█▊        | 94.4M/528M [00:01<00:05, 87.6MB/s]
+ 20%|█▉        | 103M/528M [00:01<00:05, 83.6MB/s] 
+ 22%|██▏       | 114M/528M [00:01<00:04, 89.7MB/s]
+ 23%|██▎       | 123M/528M [00:01<00:04, 92.5MB/s]
+ 25%|██▌       | 132M/528M [00:01<00:05, 80.4MB/s]
+ 27%|██▋       | 140M/528M [00:01<00:05, 80.6MB/s]
+ 28%|██▊       | 149M/528M [00:01<00:04, 84.1MB/s]
+ 30%|██▉       | 158M/528M [00:02<00:04, 84.1MB/s]
+ 32%|███▏      | 168M/528M [00:02<00:04, 90.0MB/s]
+ 34%|███▎      | 177M/528M [00:02<00:03, 92.5MB/s]
+ 35%|███▌      | 186M/528M [00:02<00:03, 93.1MB/s]
+ 37%|███▋      | 197M/528M [00:02<00:03, 97.2MB/s]
+ 39%|███▉      | 206M/528M [00:02<00:03, 96.1MB/s]
+ 41%|████      | 216M/528M [00:02<00:03, 98.6MB/s]
+ 43%|████▎     | 226M/528M [00:02<00:03, 100MB/s] 
+ 45%|████▍     | 236M/528M [00:02<00:02, 102MB/s]
+ 47%|████▋     | 247M/528M [00:02<00:02, 104MB/s]
+ 49%|████▊     | 257M/528M [00:03<00:02, 98.4MB/s]
+ 51%|█████     | 267M/528M [00:03<00:02, 99.9MB/s]
+ 52%|█████▏    | 276M/528M [00:03<00:02, 96.9MB/s]
+ 54%|█████▍    | 286M/528M [00:03<00:02, 90.8MB/s]
+ 56%|█████▌    | 295M/528M [00:03<00:02, 94.2MB/s]
+ 58%|█████▊    | 305M/528M [00:03<00:02, 97.3MB/s]
+ 60%|█████▉    | 316M/528M [00:03<00:02, 99.9MB/s]
+ 62%|██████▏   | 326M/528M [00:03<00:02, 101MB/s] 
+ 64%|██████▎   | 336M/528M [00:03<00:01, 103MB/s]
+ 65%|██████▌   | 346M/528M [00:04<00:01, 102MB/s]
+ 67%|██████▋   | 355M/528M [00:04<00:02, 82.1MB/s]
+ 69%|██████▉   | 365M/528M [00:04<00:01, 86.6MB/s]
+ 71%|███████   | 375M/528M [00:04<00:01, 91.6MB/s]
+ 73%|███████▎  | 385M/528M [00:04<00:01, 95.7MB/s]
+ 75%|███████▍  | 395M/528M [00:04<00:01, 98.7MB/s]
+ 77%|███████▋  | 405M/528M [00:04<00:01, 96.5MB/s]
+ 79%|███████▊  | 416M/528M [00:04<00:01, 100MB/s] 
+ 81%|████████  | 425M/528M [00:05<00:01, 80.1MB/s]
+ 82%|████████▏ | 434M/528M [00:05<00:01, 66.1MB/s]
+ 84%|████████▍ | 444M/528M [00:05<00:01, 74.5MB/s]
+ 86%|████████▌ | 452M/528M [00:05<00:01, 68.4MB/s]
+ 87%|████████▋ | 461M/528M [00:05<00:00, 75.7MB/s]
+ 89%|████████▉ | 472M/528M [00:05<00:00, 83.1MB/s]
+ 91%|█████████ | 482M/528M [00:05<00:00, 88.3MB/s]
+ 93%|█████████▎| 492M/528M [00:05<00:00, 93.0MB/s]
+ 95%|█████████▌| 502M/528M [00:05<00:00, 96.4MB/s]
+ 97%|█████████▋| 511M/528M [00:06<00:00, 82.7MB/s]
+ 99%|█████████▊| 520M/528M [00:06<00:00, 85.8MB/s]
+100%|██████████| 528M/528M [00:06<00:00, 88.2MB/s]
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.17476 Loss Sum: 35.34235, accuracy : 0.89861, val loss: 5.49809, val accuracy: 0.80536
+Final : 0.8986045131515779 [('val/VGG16/monotone/f1-score', 0.9377289377289376), ('val/VGG16/screenshot/f1-score', 0.9176029962546817), ('val/VGG16/unknown/f1-score', 0.8432835820895521)]
+Epoch: 1, batch loss: 0.06419 Loss Sum: 18.00577, accuracy : 0.95046, val loss: 4.21187, val accuracy: 0.88123
+Final : 0.9195708009985503 [('val/VGG16/monotone/f1-score', 0.9446494464944649), ('val/VGG16/screenshot/f1-score', 0.9057971014492753), ('val/VGG16/unknown/f1-score', 0.9087698646262508)]
+Epoch: 2, batch loss: 0.08245 Loss Sum: 12.26251, accuracy : 0.96860, val loss: 4.55781, val accuracy: 0.87050
+Final : 0.9252619589464333 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.9208103130755064), ('val/VGG16/unknown/f1-score', 0.9008902077151335)]
+Epoch: 3, batch loss: 0.04854 Loss Sum: 9.38798, accuracy : 0.97395, val loss: 3.72031, val accuracy: 0.89808
+Final : 0.9455625445799495 [('val/VGG16/monotone/f1-score', 0.9624060150375939), ('val/VGG16/screenshot/f1-score', 0.9516441005802708), ('val/VGG16/unknown/f1-score', 0.923076923076923)]
+---train finished---
+Trying to save to /tmp/tmp92s0c7nx/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.11476 Loss Sum: 36.00856, accuracy : 0.89623, val loss: 3.87858, val accuracy: 0.86284
+Final : 0.9192882740826287 [('val/VGG16/monotone/f1-score', 0.9516728624535317), ('val/VGG16/screenshot/f1-score', 0.9121495327102804), ('val/VGG16/unknown/f1-score', 0.8949554896142434)]
+Epoch: 1, batch loss: 0.10065 Loss Sum: 18.04764, accuracy : 0.95076, val loss: 4.83246, val accuracy: 0.86207
+Final : 0.9140800834347403 [('val/VGG16/monotone/f1-score', 0.937269372693727), ('val/VGG16/screenshot/f1-score', 0.9114391143911438), ('val/VGG16/unknown/f1-score', 0.8940476190476191)]
+Epoch: 2, batch loss: 0.03958 Loss Sum: 13.07235, accuracy : 0.96482, val loss: 3.81162, val accuracy: 0.89349
+Final : 0.9363668939749511 [('val/VGG16/monotone/f1-score', 0.9696969696969696), ('val/VGG16/screenshot/f1-score', 0.9207547169811321), ('val/VGG16/unknown/f1-score', 0.9195136074116967)]
+Epoch: 3, batch loss: 0.05017 Loss Sum: 8.87164, accuracy : 0.97687, val loss: 6.52676, val accuracy: 0.84751
+Final : 0.9180487687840265 [('val/VGG16/monotone/f1-score', 0.9481481481481482), ('val/VGG16/screenshot/f1-score', 0.9262759924385634), ('val/VGG16/unknown/f1-score', 0.8810096153846153)]
+---train finished---
+Trying to save to /tmp/tmp_6grg42_/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.15483 Loss Sum: 40.09517, accuracy : 0.88613, val loss: 4.21945, val accuracy: 0.84828
+Final : 0.9036003212555391 [('val/VGG16/monotone/f1-score', 0.9208633093525179), ('val/VGG16/screenshot/f1-score', 0.908411214953271), ('val/VGG16/unknown/f1-score', 0.8819652486518874)]
+Epoch: 1, batch loss: 0.10491 Loss Sum: 21.35553, accuracy : 0.94060, val loss: 5.68945, val accuracy: 0.82529
+Final : 0.9018360111024697 [('val/VGG16/monotone/f1-score', 0.9516728624535317), ('val/VGG16/screenshot/f1-score', 0.8956834532374099), ('val/VGG16/unknown/f1-score', 0.860479409956976)]
+Epoch: 2, batch loss: 0.19557 Loss Sum: 17.13317, accuracy : 0.95375, val loss: 4.83329, val accuracy: 0.84215
+Final : 0.9159933439793088 [('val/VGG16/monotone/f1-score', 0.9584905660377359), ('val/VGG16/screenshot/f1-score', 0.9144981412639406), ('val/VGG16/unknown/f1-score', 0.8768115942028987)]
+Epoch: 3, batch loss: 0.05847 Loss Sum: 12.36508, accuracy : 0.96628, val loss: 6.11720, val accuracy: 0.82835
+Final : 0.9141520518139755 [('val/VGG16/monotone/f1-score', 0.9545454545454545), ('val/VGG16/screenshot/f1-score', 0.9239543726235743), ('val/VGG16/unknown/f1-score', 0.8661800486618005)]
+---train finished---
+Trying to save to /tmp/tmprt457809/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.23091 Loss Sum: 38.45407, accuracy : 0.88966, val loss: 4.22202, val accuracy: 0.84291
+Final : 0.9149029523858035 [('val/VGG16/monotone/f1-score', 0.9481481481481482), ('val/VGG16/screenshot/f1-score', 0.9198473282442747), ('val/VGG16/unknown/f1-score', 0.8780780780780781)]
+Epoch: 1, batch loss: 0.15059 Loss Sum: 20.44279, accuracy : 0.94310, val loss: 4.79252, val accuracy: 0.85287
+Final : 0.9125919154382947 [('val/VGG16/monotone/f1-score', 0.9411764705882353), ('val/VGG16/screenshot/f1-score', 0.9121495327102804), ('val/VGG16/unknown/f1-score', 0.8853046594982077)]
+Epoch: 2, batch loss: 0.12562 Loss Sum: 15.72696, accuracy : 0.95801, val loss: 3.36530, val accuracy: 0.87969
+Final : 0.9207460944967408 [('val/VGG16/monotone/f1-score', 0.937269372693727), ('val/VGG16/screenshot/f1-score', 0.9152542372881355), ('val/VGG16/unknown/f1-score', 0.9099415204678363)]
+Epoch: 3, batch loss: 0.02470 Loss Sum: 11.85480, accuracy : 0.96750, val loss: 5.46283, val accuracy: 0.84904
+Final : 0.9190301192260633 [('val/VGG16/monotone/f1-score', 0.9513108614232209), ('val/VGG16/screenshot/f1-score', 0.9224806201550388), ('val/VGG16/unknown/f1-score', 0.8845238095238095)]
+---train finished---
+Trying to save to /tmp/tmpx0oo7x1h/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.21757 Loss Sum: 35.98015, accuracy : 0.89684, val loss: 4.83055, val accuracy: 0.84368
+Final : 0.9080122724751556 [('val/VGG16/monotone/f1-score', 0.9446494464944649), ('val/VGG16/screenshot/f1-score', 0.9034608378870673), ('val/VGG16/unknown/f1-score', 0.8771929824561403)]
+Epoch: 1, batch loss: 0.07758 Loss Sum: 18.40041, accuracy : 0.94985, val loss: 5.46410, val accuracy: 0.81533
+Final : 0.9062895663411046 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.914179104477612), ('val/VGG16/unknown/f1-score', 0.8527418361059766)]
+Epoch: 2, batch loss: 0.07030 Loss Sum: 12.10849, accuracy : 0.96677, val loss: 3.97782, val accuracy: 0.88123
+Final : 0.9267727054213001 [('val/VGG16/monotone/f1-score', 0.9516728624535317), ('val/VGG16/screenshot/f1-score', 0.9193245778611632), ('val/VGG16/unknown/f1-score', 0.9098360655737704)]
+Epoch: 3, batch loss: 0.01669 Loss Sum: 9.78998, accuracy : 0.97596, val loss: 3.69121, val accuracy: 0.89732
+Final : 0.9387739211029434 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9346153846153846), ('val/VGG16/unknown/f1-score', 0.9232544720138488)]
+---train finished---
+Trying to save to /tmp/tmpzauf1dqn/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.12487 Loss Sum: 35.21932, accuracy : 0.89903, val loss: 4.74364, val accuracy: 0.84751
+Final : 0.9117313638394005 [('val/VGG16/monotone/f1-score', 0.9411764705882353), ('val/VGG16/screenshot/f1-score', 0.9138576779026217), ('val/VGG16/unknown/f1-score', 0.8811524609843937)]
+Epoch: 1, batch loss: 0.14256 Loss Sum: 17.80681, accuracy : 0.95009, val loss: 3.53967, val accuracy: 0.87663
+Final : 0.9204138467681202 [('val/VGG16/monotone/f1-score', 0.9377289377289376), ('val/VGG16/screenshot/f1-score', 0.917910447761194), ('val/VGG16/unknown/f1-score', 0.9058823529411766)]
+Epoch: 2, batch loss: 0.14387 Loss Sum: 11.56882, accuracy : 0.96933, val loss: 5.00040, val accuracy: 0.85977
+Final : 0.9205714515279918 [('val/VGG16/monotone/f1-score', 0.9477611940298507), ('val/VGG16/screenshot/f1-score', 0.922201138519924), ('val/VGG16/unknown/f1-score', 0.8925816023738873)]
+Epoch: 3, batch loss: 0.10315 Loss Sum: 9.43868, accuracy : 0.97438, val loss: 4.47415, val accuracy: 0.86820
+Final : 0.9220644601227826 [('val/VGG16/monotone/f1-score', 0.9552238805970149), ('val/VGG16/screenshot/f1-score', 0.9124767225325885), ('val/VGG16/unknown/f1-score', 0.8994082840236687)]
+---train finished---
+Trying to save to /tmp/tmpjt82twar/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.15608 Loss Sum: 40.27234, accuracy : 0.88144, val loss: 3.22607, val accuracy: 0.88352
+Final : 0.9206538301052211 [('val/VGG16/monotone/f1-score', 0.9513108614232209), ('val/VGG16/screenshot/f1-score', 0.8983364140480592), ('val/VGG16/unknown/f1-score', 0.9131195335276968)]
+Epoch: 1, batch loss: 0.14475 Loss Sum: 20.44098, accuracy : 0.94291, val loss: 4.08608, val accuracy: 0.85670
+Final : 0.9155105150475247 [('val/VGG16/monotone/f1-score', 0.937269372693727), ('val/VGG16/screenshot/f1-score', 0.9195402298850575), ('val/VGG16/unknown/f1-score', 0.8903378778897452)]
+Epoch: 2, batch loss: 0.08416 Loss Sum: 14.70471, accuracy : 0.95977, val loss: 5.07543, val accuracy: 0.85287
+Final : 0.911161404492389 [('val/VGG16/monotone/f1-score', 0.9442379182156134), ('val/VGG16/screenshot/f1-score', 0.9037037037037037), ('val/VGG16/unknown/f1-score', 0.8864994026284349)]
+Epoch: 3, batch loss: 0.12444 Loss Sum: 12.49034, accuracy : 0.96665, val loss: 4.10835, val accuracy: 0.87816
+Final : 0.9220920748283452 [('val/VGG16/monotone/f1-score', 0.9473684210526316), ('val/VGG16/screenshot/f1-score', 0.9101123595505619), ('val/VGG16/unknown/f1-score', 0.9093036863662961)]
+---train finished---
+Trying to save to /tmp/tmp2ixglhv5/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.15168 Loss Sum: 39.46717, accuracy : 0.88643, val loss: 5.92151, val accuracy: 0.79464
+Final : 0.8944531682633688 [('val/VGG16/monotone/f1-score', 0.9347826086956522), ('val/VGG16/screenshot/f1-score', 0.9184060721062619), ('val/VGG16/unknown/f1-score', 0.8335419274092615)]
+Epoch: 1, batch loss: 0.11002 Loss Sum: 21.72658, accuracy : 0.93950, val loss: 4.42044, val accuracy: 0.86130
+Final : 0.9310234664904524 [('val/VGG16/monotone/f1-score', 0.9591078066914498), ('val/VGG16/screenshot/f1-score', 0.942528735632184), ('val/VGG16/unknown/f1-score', 0.8927294398092968)]
+Epoch: 2, batch loss: 0.13872 Loss Sum: 15.48276, accuracy : 0.95709, val loss: 4.64073, val accuracy: 0.87203
+Final : 0.9302285508317762 [('val/VGG16/monotone/f1-score', 0.9624060150375939), ('val/VGG16/screenshot/f1-score', 0.926829268292683), ('val/VGG16/unknown/f1-score', 0.9024246008279126)]
+Epoch: 3, batch loss: 0.03551 Loss Sum: 12.99314, accuracy : 0.96543, val loss: 4.22598, val accuracy: 0.87663
+Final : 0.9277710091775665 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9193245778611632), ('val/VGG16/unknown/f1-score', 0.9059929494712105)]
+---train finished---
+Trying to save to /tmp/tmpx7eb48ge/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.08051 Loss Sum: 35.79782, accuracy : 0.89830, val loss: 6.74315, val accuracy: 0.77241
+Final : 0.8768482513235605 [('val/VGG16/monotone/f1-score', 0.9309090909090909), ('val/VGG16/screenshot/f1-score', 0.8940754039497307), ('val/VGG16/unknown/f1-score', 0.810012836970475)]
+Epoch: 1, batch loss: 0.24367 Loss Sum: 17.59080, accuracy : 0.95350, val loss: 4.84298, val accuracy: 0.85900
+Final : 0.9078035264560097 [('val/VGG16/monotone/f1-score', 0.9377289377289376), ('val/VGG16/screenshot/f1-score', 0.8960573476702509), ('val/VGG16/unknown/f1-score', 0.8903535050928699)]
+Epoch: 2, batch loss: 0.00690 Loss Sum: 12.14937, accuracy : 0.96847, val loss: 5.79277, val accuracy: 0.85517
+Final : 0.9188460185367356 [('val/VGG16/monotone/f1-score', 0.9438202247191011), ('val/VGG16/screenshot/f1-score', 0.9256505576208179), ('val/VGG16/unknown/f1-score', 0.8879568603954464)]
+Epoch: 3, batch loss: 0.06017 Loss Sum: 9.69022, accuracy : 0.97322, val loss: 5.31672, val accuracy: 0.87356
+Final : 0.9306144201244639 [('val/VGG16/monotone/f1-score', 0.9584905660377359), ('val/VGG16/screenshot/f1-score', 0.9303201506591336), ('val/VGG16/unknown/f1-score', 0.903834808259587)]
+---train finished---
+Trying to save to /tmp/tmpu0_askrt/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.10406 Loss Sum: 35.33348, accuracy : 0.89964, val loss: 4.48871, val accuracy: 0.83218
+Final : 0.913563262295558 [('val/VGG16/monotone/f1-score', 0.9473684210526316), ('val/VGG16/screenshot/f1-score', 0.9265536723163842), ('val/VGG16/unknown/f1-score', 0.8686131386861313)]
+Epoch: 1, batch loss: 0.07168 Loss Sum: 18.65190, accuracy : 0.95022, val loss: 3.62945, val accuracy: 0.89885
+Final : 0.9392777012544653 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9358490566037736), ('val/VGG16/unknown/f1-score', 0.9235225955967555)]
+Epoch: 2, batch loss: 0.05631 Loss Sum: 13.69688, accuracy : 0.96482, val loss: 6.24240, val accuracy: 0.82452
+Final : 0.9036608932485533 [('val/VGG16/monotone/f1-score', 0.9264705882352942), ('val/VGG16/screenshot/f1-score', 0.9250936329588015), ('val/VGG16/unknown/f1-score', 0.8609920391916718)]
+Epoch: 3, batch loss: 0.23296 Loss Sum: 11.70433, accuracy : 0.97073, val loss: 3.73801, val accuracy: 0.89119
+Final : 0.9320335872772383 [('val/VGG16/monotone/f1-score', 0.9647058823529412), ('val/VGG16/screenshot/f1-score', 0.9134438305709023), ('val/VGG16/unknown/f1-score', 0.9187935034802784)]
+---train finished---
+Trying to save to /tmp/tmpbwswcr_u/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22002 Loss Sum: 37.69529, accuracy : 0.89502, val loss: 5.80709, val accuracy: 0.81456
+Final : 0.9011668799676447 [('val/VGG16/monotone/f1-score', 0.9624060150375939), ('val/VGG16/screenshot/f1-score', 0.8917431192660551), ('val/VGG16/unknown/f1-score', 0.8527418361059766)]
+Epoch: 1, batch loss: 0.12448 Loss Sum: 21.22941, accuracy : 0.94042, val loss: 4.93861, val accuracy: 0.84444
+Final : 0.9188134978339602 [('val/VGG16/monotone/f1-score', 0.9402985074626865), ('val/VGG16/screenshot/f1-score', 0.9362549800796813), ('val/VGG16/unknown/f1-score', 0.8810939357907254)]
+Epoch: 2, batch loss: 0.05151 Loss Sum: 17.15020, accuracy : 0.95216, val loss: 3.67618, val accuracy: 0.89962
+Final : 0.9165355748883453 [('val/VGG16/monotone/f1-score', 0.889655172413793), ('val/VGG16/screenshot/f1-score', 0.9359223300970874), ('val/VGG16/unknown/f1-score', 0.9246693502012651)]
+Epoch: 3, batch loss: 0.34436 Loss Sum: 14.02108, accuracy : 0.96300, val loss: 3.45130, val accuracy: 0.88199
+Final : 0.9271331689464842 [('val/VGG16/monotone/f1-score', 0.9652509652509652), ('val/VGG16/screenshot/f1-score', 0.9060773480662982), ('val/VGG16/unknown/f1-score', 0.911214953271028)]
+---train finished---
+Trying to save to /tmp/tmp02st90dc/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.16390 Loss Sum: 39.05068, accuracy : 0.88686, val loss: 4.20399, val accuracy: 0.85211
+Final : 0.9214907331428529 [('val/VGG16/monotone/f1-score', 0.9624060150375939), ('val/VGG16/screenshot/f1-score', 0.9180952380952381), ('val/VGG16/unknown/f1-score', 0.8855780691299165)]
+Epoch: 1, batch loss: 0.08618 Loss Sum: 22.29268, accuracy : 0.93792, val loss: 4.31924, val accuracy: 0.85287
+Final : 0.9105515688857733 [('val/VGG16/monotone/f1-score', 0.9477611940298507), ('val/VGG16/screenshot/f1-score', 0.8985507246376812), ('val/VGG16/unknown/f1-score', 0.8864864864864864)]
+Epoch: 2, batch loss: 0.20112 Loss Sum: 18.70405, accuracy : 0.94839, val loss: 4.46548, val accuracy: 0.84598
+Final : 0.9199180996320572 [('val/VGG16/monotone/f1-score', 0.9513108614232209), ('val/VGG16/screenshot/f1-score', 0.9292543021032504), ('val/VGG16/unknown/f1-score', 0.880623875224955)]
+Epoch: 3, batch loss: 0.11993 Loss Sum: 15.75457, accuracy : 0.95685, val loss: 3.13318, val accuracy: 0.88429
+Final : 0.932861112328196 [('val/VGG16/monotone/f1-score', 0.9485294117647058), ('val/VGG16/screenshot/f1-score', 0.9386973180076629), ('val/VGG16/unknown/f1-score', 0.9117475160724723)]
+---train finished---
+Trying to save to /tmp/tmpg7mxg4zr/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.20212 Loss Sum: 32.46045, accuracy : 0.91029, val loss: 4.21788, val accuracy: 0.85670
+Final : 0.911592881334211 [('val/VGG16/monotone/f1-score', 0.9309090909090909), ('val/VGG16/screenshot/f1-score', 0.9158878504672897), ('val/VGG16/unknown/f1-score', 0.8884913536076328)]
+Epoch: 1, batch loss: 0.23514 Loss Sum: 17.06110, accuracy : 0.95332, val loss: 5.04789, val accuracy: 0.83525
+Final : 0.9198084162524722 [('val/VGG16/monotone/f1-score', 0.9621212121212122), ('val/VGG16/screenshot/f1-score', 0.928709055876686), ('val/VGG16/unknown/f1-score', 0.8709288299155609)]
+Epoch: 2, batch loss: 0.06695 Loss Sum: 8.84766, accuracy : 0.97803, val loss: 5.46033, val accuracy: 0.86667
+Final : 0.9294213148497924 [('val/VGG16/monotone/f1-score', 0.9621212121212122), ('val/VGG16/screenshot/f1-score', 0.9288389513108614), ('val/VGG16/unknown/f1-score', 0.8983957219251336)]
+Epoch: 3, batch loss: 0.01489 Loss Sum: 6.24087, accuracy : 0.98412, val loss: 4.14755, val accuracy: 0.89579
+Final : 0.9441644329856361 [('val/VGG16/monotone/f1-score', 0.9733840304182508), ('val/VGG16/screenshot/f1-score', 0.9384615384615383), ('val/VGG16/unknown/f1-score', 0.9213872832369941)]
+---train finished---
+Trying to save to /tmp/tmpuiw99g41/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.08227 Loss Sum: 35.74597, accuracy : 0.89489, val loss: 4.99652, val accuracy: 0.82989
+Final : 0.9075890704820826 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.9051094890510949), ('val/VGG16/unknown/f1-score', 0.8649969456322543)]
+Epoch: 1, batch loss: 0.07867 Loss Sum: 18.15913, accuracy : 0.95168, val loss: 3.94297, val accuracy: 0.87739
+Final : 0.9236639909603073 [('val/VGG16/monotone/f1-score', 0.9516728624535317), ('val/VGG16/screenshot/f1-score', 0.9137614678899082), ('val/VGG16/unknown/f1-score', 0.9061946902654867)]
+Epoch: 2, batch loss: 0.02203 Loss Sum: 9.95827, accuracy : 0.97334, val loss: 4.02370, val accuracy: 0.88123
+Final : 0.9304640838702549 [('val/VGG16/monotone/f1-score', 0.9584905660377359), ('val/VGG16/screenshot/f1-score', 0.9239543726235743), ('val/VGG16/unknown/f1-score', 0.9096209912536443)]
+Epoch: 3, batch loss: 0.02456 Loss Sum: 5.95888, accuracy : 0.98460, val loss: 3.38834, val accuracy: 0.90805
+Final : 0.9424401127705705 [('val/VGG16/monotone/f1-score', 0.9660377358490566), ('val/VGG16/screenshot/f1-score', 0.930841121495327), ('val/VGG16/unknown/f1-score', 0.9308755760368664)]
+---train finished---
+Trying to save to /tmp/tmpe4xfznzd/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.28562 Loss Sum: 40.56700, accuracy : 0.88363, val loss: 7.25096, val accuracy: 0.76398
+Final : 0.8515120485070609 [('val/VGG16/monotone/f1-score', 0.9175627240143369), ('val/VGG16/screenshot/f1-score', 0.8394648829431438), ('val/VGG16/unknown/f1-score', 0.801556420233463)]
+Epoch: 1, batch loss: 0.13131 Loss Sum: 21.93964, accuracy : 0.93987, val loss: 3.09433, val accuracy: 0.89272
+Final : 0.9381779579611844 [('val/VGG16/monotone/f1-score', 0.9733840304182508), ('val/VGG16/screenshot/f1-score', 0.9227871939736346), ('val/VGG16/unknown/f1-score', 0.9193267556587349)]
+Epoch: 2, batch loss: 0.11022 Loss Sum: 12.09335, accuracy : 0.96793, val loss: 4.31499, val accuracy: 0.86973
+Final : 0.9255841158090607 [('val/VGG16/monotone/f1-score', 0.9505703422053232), ('val/VGG16/screenshot/f1-score', 0.924812030075188), ('val/VGG16/unknown/f1-score', 0.9020070838252656)]
+Epoch: 3, batch loss: 0.00672 Loss Sum: 9.35695, accuracy : 0.97511, val loss: 5.67890, val accuracy: 0.85517
+Final : 0.9247051956397555 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.9315589353612167), ('val/VGG16/unknown/f1-score', 0.8888888888888888)]
+---train finished---
+Trying to save to /tmp/tmpxgfwfgh0/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.07608 Loss Sum: 36.60360, accuracy : 0.89447, val loss: 3.02824, val accuracy: 0.89579
+Final : 0.9327711934093742 [('val/VGG16/monotone/f1-score', 0.9696969696969696), ('val/VGG16/screenshot/f1-score', 0.9065040650406505), ('val/VGG16/unknown/f1-score', 0.9232505643340857)]
+Epoch: 1, batch loss: 0.17915 Loss Sum: 21.01288, accuracy : 0.94237, val loss: 4.41763, val accuracy: 0.86054
+Final : 0.9266080530209181 [('val/VGG16/monotone/f1-score', 0.952755905511811), ('val/VGG16/screenshot/f1-score', 0.9315589353612167), ('val/VGG16/unknown/f1-score', 0.896388395500296)]
+Epoch: 2, batch loss: 0.02498 Loss Sum: 12.69250, accuracy : 0.96391, val loss: 4.56918, val accuracy: 0.84981
+Final : 0.9204431655997538 [('val/VGG16/monotone/f1-score', 0.9473684210526316), ('val/VGG16/screenshot/f1-score', 0.9310344827586207), ('val/VGG16/unknown/f1-score', 0.8841099163679809)]
+Epoch: 3, batch loss: 0.11430 Loss Sum: 9.62546, accuracy : 0.97486, val loss: 5.78506, val accuracy: 0.84444
+Final : 0.9133422560830723 [('val/VGG16/monotone/f1-score', 0.9328358208955223), ('val/VGG16/screenshot/f1-score', 0.9274809160305343), ('val/VGG16/unknown/f1-score', 0.880623875224955)]
+---train finished---
+Trying to save to /tmp/tmprsjzjl3y/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.76890 Loss Sum: 143.92273, accuracy : 0.47958, val loss: 13.00642, val accuracy: 0.23295
+Final : 0.28480766995798584 [('val/VGG16/monotone/f1-score', 0.27631578947368424), ('val/VGG16/screenshot/f1-score', 0.8218694885361552), ('val/VGG16/unknown/f1-score', 0.10172939979654119)]
+Epoch: 1, batch loss: 0.68158 Loss Sum: 85.33245, accuracy : 0.75948, val loss: 9.47060, val accuracy: 0.59617
+Final : 0.7474783724538413 [('val/VGG16/monotone/f1-score', 0.805111821086262), ('val/VGG16/screenshot/f1-score', 0.8432432432432434), ('val/VGG16/unknown/f1-score', 0.6151582045621781)]
+Epoch: 2, batch loss: 0.33960 Loss Sum: 54.37043, accuracy : 0.85558, val loss: 7.20889, val accuracy: 0.73257
+Final : 0.8319699780427271 [('val/VGG16/monotone/f1-score', 0.8533333333333334), ('val/VGG16/screenshot/f1-score', 0.8752260397830016), ('val/VGG16/unknown/f1-score', 0.7710526315789473)]
+Epoch: 3, batch loss: 0.21608 Loss Sum: 41.55286, accuracy : 0.88625, val loss: 6.22234, val accuracy: 0.76705
+Final : 0.8557407388963075 [('val/VGG16/monotone/f1-score', 0.8904593639575972), ('val/VGG16/screenshot/f1-score', 0.8705035971223022), ('val/VGG16/unknown/f1-score', 0.8084291187739464)]
+---train finished---
+Trying to save to /tmp/tmpuj0f7g7u/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.22812 Loss Sum: 172.34668, accuracy : 0.35902, val loss: 16.13492, val accuracy: 0.04061
+Final : 0.04664179654684777 [('val/VGG16/monotone/f1-score', 0.014705882352941175), ('val/VGG16/screenshot/f1-score', 0.08860759493670886), ('val/VGG16/unknown/f1-score', 0.07786885245901638)]
+Epoch: 1, batch loss: 1.26837 Loss Sum: 163.93188, accuracy : 0.40704, val loss: 16.30340, val accuracy: 0.02759
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.16722408026755853), ('val/VGG16/unknown/f1-score', 0.023605150214592276)]
+Epoch: 2, batch loss: 1.12294 Loss Sum: 156.77056, accuracy : 0.43114, val loss: 16.37010, val accuracy: 0.04751
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.35649546827794565), ('val/VGG16/unknown/f1-score', 0.006472491909385114)]
+Epoch: 3, batch loss: 1.00322 Loss Sum: 150.46456, accuracy : 0.46333, val loss: 16.07908, val accuracy: 0.08812
+Final : 0.033632338121193574 [('val/VGG16/monotone/f1-score', 0.015267175572519083), ('val/VGG16/screenshot/f1-score', 0.5743589743589744), ('val/VGG16/unknown/f1-score', 0.0043383947939262466)]
+---train finished---
+Trying to save to /tmp/tmpqx1u09sm/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.56265 Loss Sum: 121.22226, accuracy : 0.56491, val loss: 9.49757, val accuracy: 0.63908
+Final : 0.7845154656530924 [('val/VGG16/monotone/f1-score', 0.8823529411764707), ('val/VGG16/screenshot/f1-score', 0.8184818481848184), ('val/VGG16/unknown/f1-score', 0.6685796269727403)]
+Epoch: 1, batch loss: 0.28624 Loss Sum: 52.16687, accuracy : 0.86142, val loss: 6.70511, val accuracy: 0.74406
+Final : 0.8204644448503736 [('val/VGG16/monotone/f1-score', 0.8311688311688311), ('val/VGG16/screenshot/f1-score', 0.8460176991150442), ('val/VGG16/unknown/f1-score', 0.7854356306892067)]
+Epoch: 2, batch loss: 0.12544 Loss Sum: 33.73662, accuracy : 0.90755, val loss: 4.62975, val accuracy: 0.84521
+Final : 0.9038660187085353 [('val/VGG16/monotone/f1-score', 0.9621212121212122), ('val/VGG16/screenshot/f1-score', 0.8720720720720722), ('val/VGG16/unknown/f1-score', 0.8800959232613907)]
+Epoch: 3, batch loss: 0.23948 Loss Sum: 26.97319, accuracy : 0.92319, val loss: 5.22557, val accuracy: 0.82146
+Final : 0.8995524164354081 [('val/VGG16/monotone/f1-score', 0.9442379182156134), ('val/VGG16/screenshot/f1-score', 0.897196261682243), ('val/VGG16/unknown/f1-score', 0.8592321755027421)]
+---train finished---
+Trying to save to /tmp/tmpi25jx1mc/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.50893 Loss Sum: 122.47013, accuracy : 0.55955, val loss: 9.96410, val accuracy: 0.60307
+Final : 0.760752843132008 [('val/VGG16/monotone/f1-score', 0.8705035971223022), ('val/VGG16/screenshot/f1-score', 0.8093645484949833), ('val/VGG16/unknown/f1-score', 0.6249078850405306)]
+Epoch: 1, batch loss: 0.51555 Loss Sum: 49.99882, accuracy : 0.87061, val loss: 5.79800, val accuracy: 0.80996
+Final : 0.8657193599318846 [('val/VGG16/monotone/f1-score', 0.9110320284697508), ('val/VGG16/screenshot/f1-score', 0.8408710217755444), ('val/VGG16/unknown/f1-score', 0.8469706433479075)]
+Epoch: 2, batch loss: 0.21947 Loss Sum: 32.75477, accuracy : 0.91017, val loss: 5.28911, val accuracy: 0.81839
+Final : 0.8940607515547101 [('val/VGG16/monotone/f1-score', 0.9343065693430657), ('val/VGG16/screenshot/f1-score', 0.893854748603352), ('val/VGG16/unknown/f1-score', 0.8557457212713937)]
+Epoch: 3, batch loss: 0.26207 Loss Sum: 27.09109, accuracy : 0.92557, val loss: 5.08257, val accuracy: 0.82759
+Final : 0.891983821160879 [('val/VGG16/monotone/f1-score', 0.9304029304029303), ('val/VGG16/screenshot/f1-score', 0.882032667876588), ('val/VGG16/unknown/f1-score', 0.8647990255785628)]
+---train finished---
+Trying to save to /tmp/tmp_gav6mps/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.49975 Loss Sum: 116.58500, accuracy : 0.58712, val loss: 6.64650, val accuracy: 0.77318
+Final : 0.8312494673477016 [('val/VGG16/monotone/f1-score', 0.8037974683544304), ('val/VGG16/screenshot/f1-score', 0.8795620437956203), ('val/VGG16/unknown/f1-score', 0.8124207858048161)]
+Epoch: 1, batch loss: 0.20884 Loss Sum: 41.98200, accuracy : 0.88570, val loss: 6.35055, val accuracy: 0.78008
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Final : 0.8283235193440625 [('val/VGG16/monotone/f1-score', 0.7889908256880734), ('val/VGG16/screenshot/f1-score', 0.8797127468581687), ('val/VGG16/unknown/f1-score', 0.8188175460902734)]
+Epoch: 2, batch loss: 0.09897 Loss Sum: 29.20961, accuracy : 0.91784, val loss: 5.95718, val accuracy: 0.80307
+Final : 0.8795816031324706 [('val/VGG16/monotone/f1-score', 0.9175627240143369), ('val/VGG16/screenshot/f1-score', 0.8821428571428571), ('val/VGG16/unknown/f1-score', 0.8407245471580264)]
+Epoch: 3, batch loss: 0.29449 Loss Sum: 25.93516, accuracy : 0.92958, val loss: 4.74004, val accuracy: 0.84215
+Final : 0.9008410414027337 [('val/VGG16/monotone/f1-score', 0.9280575539568345), ('val/VGG16/screenshot/f1-score', 0.8990825688073395), ('val/VGG16/unknown/f1-score', 0.8761329305135951)]
+---train finished---
+Trying to save to /tmp/tmp8qpuu4s9/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.28414 Loss Sum: 116.75206, accuracy : 0.58718, val loss: 8.72888, val accuracy: 0.68276
+Final : 0.7693188221849961 [('val/VGG16/monotone/f1-score', 0.7456647398843931), ('val/VGG16/screenshot/f1-score', 0.8546409807355517), ('val/VGG16/unknown/f1-score', 0.7144827586206897)]
+Epoch: 1, batch loss: 0.34072 Loss Sum: 43.67406, accuracy : 0.88071, val loss: 5.28203, val accuracy: 0.81609
+Final : 0.8517043002732426 [('val/VGG16/monotone/f1-score', 0.8311688311688311), ('val/VGG16/screenshot/f1-score', 0.8717047451669595), ('val/VGG16/unknown/f1-score', 0.8527227722772277)]
+Epoch: 2, batch loss: 0.11312 Loss Sum: 29.63884, accuracy : 0.91796, val loss: 6.40438, val accuracy: 0.78084
+Final : 0.87259096751216 [('val/VGG16/monotone/f1-score', 0.9084507042253521), ('val/VGG16/screenshot/f1-score', 0.8936936936936937), ('val/VGG16/unknown/f1-score', 0.8183556405353727)]
+Epoch: 3, batch loss: 0.29077 Loss Sum: 26.86737, accuracy : 0.92587, val loss: 4.24718, val accuracy: 0.85134
+Final : 0.9037091554723342 [('val/VGG16/monotone/f1-score', 0.9275362318840579), ('val/VGG16/screenshot/f1-score', 0.9001814882032667), ('val/VGG16/unknown/f1-score', 0.8839446782922429)]
+---train finished---
+Trying to save to /tmp/tmpiwbt9s4l/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.30796 Loss Sum: 172.18013, accuracy : 0.34368, val loss: 15.48747, val accuracy: 0.13180
+Final : 0.09392511895971974 [('val/VGG16/monotone/f1-score', 0.014492753623188404), ('val/VGG16/screenshot/f1-score', 0.3680981595092024), ('val/VGG16/unknown/f1-score', 0.15532118887823587)]
+Epoch: 1, batch loss: 1.21849 Loss Sum: 161.97549, accuracy : 0.44897, val loss: 15.74749, val accuracy: 0.09195
+Final : 0.05536158067189579 [('val/VGG16/monotone/f1-score', 0.015384615384615384), ('val/VGG16/screenshot/f1-score', 0.5178147268408552), ('val/VGG16/unknown/f1-score', 0.021299254526091584)]
+Epoch: 2, batch loss: 1.21105 Loss Sum: 156.80535, accuracy : 0.47003, val loss: 15.80368, val accuracy: 0.08046
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.4729064039408866), ('val/VGG16/unknown/f1-score', 0.019271948608137048)]
+Epoch: 3, batch loss: 1.13410 Loss Sum: 154.26424, accuracy : 0.48317, val loss: 15.76392, val accuracy: 0.10115
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.5879518072289156), ('val/VGG16/unknown/f1-score', 0.02143622722400857)]
+---train finished---
+Trying to save to /tmp/tmpze49sjb3/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.93820 Loss Sum: 140.65231, accuracy : 0.50429, val loss: 13.00901, val accuracy: 0.23218
+Final : 0.2627570315486428 [('val/VGG16/monotone/f1-score', 0.20833333333333334), ('val/VGG16/screenshot/f1-score', 0.7759197324414715), ('val/VGG16/unknown/f1-score', 0.1122244488977956)]
+Epoch: 1, batch loss: 0.50594 Loss Sum: 91.03642, accuracy : 0.73471, val loss: 9.93927, val accuracy: 0.57931
+Final : 0.7440271189931998 [('val/VGG16/monotone/f1-score', 0.8356164383561644), ('val/VGG16/screenshot/f1-score', 0.8247787610619469), ('val/VGG16/unknown/f1-score', 0.5976154992548435)]
+Epoch: 2, batch loss: 0.55485 Loss Sum: 68.28483, accuracy : 0.82363, val loss: 9.68832, val accuracy: 0.61073
+Final : 0.7647108910917577 [('val/VGG16/monotone/f1-score', 0.8299319727891156), ('val/VGG16/screenshot/f1-score', 0.8442028985507245), ('val/VGG16/unknown/f1-score', 0.6382671480144405)]
+Epoch: 3, batch loss: 0.46821 Loss Sum: 61.37029, accuracy : 0.83981, val loss: 9.05794, val accuracy: 0.64981
+Final : 0.7874427999701926 [('val/VGG16/monotone/f1-score', 0.8299319727891156), ('val/VGG16/screenshot/f1-score', 0.8612099644128114), ('val/VGG16/unknown/f1-score', 0.6831333803810868)]
+---train finished---
+Trying to save to /tmp/tmp2qd14ub3/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.29098 Loss Sum: 38.37549, accuracy : 0.89794, val loss: 5.02019, val accuracy: 0.82452
+Final : 0.9008198587714196 [('val/VGG16/monotone/f1-score', 0.9309090909090909), ('val/VGG16/screenshot/f1-score', 0.9114877589453861), ('val/VGG16/unknown/f1-score', 0.8615009151921903)]
+Epoch: 1, batch loss: 0.19009 Loss Sum: 18.45732, accuracy : 0.95198, val loss: 4.95245, val accuracy: 0.84981
+Final : 0.9163196343743177 [('val/VGG16/monotone/f1-score', 0.9584905660377359), ('val/VGG16/screenshot/f1-score', 0.9080882352941176), ('val/VGG16/unknown/f1-score', 0.8839446782922429)]
+Epoch: 2, batch loss: 0.10099 Loss Sum: 13.36775, accuracy : 0.96373, val loss: 5.27103, val accuracy: 0.85670
+Final : 0.9244792461490646 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.9303201506591336), ('val/VGG16/unknown/f1-score', 0.8894202032277346)]
+Epoch: 3, batch loss: 0.08183 Loss Sum: 9.45991, accuracy : 0.97541, val loss: 5.08910, val accuracy: 0.87280
+Final : 0.9309920440664451 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9318181818181819), ('val/VGG16/unknown/f1-score', 0.9031877213695395)]
+---train finished---
+Trying to save to /tmp/tmp97oz_sa2/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.13939 Loss Sum: 36.38045, accuracy : 0.90171, val loss: 3.99615, val accuracy: 0.86207
+Final : 0.9064206352663298 [('val/VGG16/monotone/f1-score', 0.9110320284697508), ('val/VGG16/screenshot/f1-score', 0.9139579349904398), ('val/VGG16/unknown/f1-score', 0.8943952802359881)]
+Epoch: 1, batch loss: 0.09523 Loss Sum: 18.58426, accuracy : 0.95180, val loss: 3.47279, val accuracy: 0.89195
+Final : 0.9302419401893858 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9144981412639406), ('val/VGG16/unknown/f1-score', 0.9180708890180127)]
+Epoch: 2, batch loss: 0.10482 Loss Sum: 12.93966, accuracy : 0.96659, val loss: 4.28783, val accuracy: 0.88123
+Final : 0.9255116841817661 [('val/VGG16/monotone/f1-score', 0.9481481481481482), ('val/VGG16/screenshot/f1-score', 0.919626168224299), ('val/VGG16/unknown/f1-score', 0.9091974223784417)]
+Epoch: 3, batch loss: 0.11085 Loss Sum: 9.78490, accuracy : 0.97511, val loss: 4.12721, val accuracy: 0.87969
+Final : 0.9193179992570975 [('val/VGG16/monotone/f1-score', 0.9377289377289376), ('val/VGG16/screenshot/f1-score', 0.9124767225325885), ('val/VGG16/unknown/f1-score', 0.9080257762155828)]
+---train finished---
+Trying to save to /tmp/tmprayie_4w/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.11416 Loss Sum: 41.64125, accuracy : 0.88333, val loss: 4.24843, val accuracy: 0.84828
+Final : 0.9094311786329393 [('val/VGG16/monotone/f1-score', 0.9411764705882353), ('val/VGG16/screenshot/f1-score', 0.9037328094302554), ('val/VGG16/unknown/f1-score', 0.884297520661157)]
+Epoch: 1, batch loss: 0.13947 Loss Sum: 22.36245, accuracy : 0.93963, val loss: 5.02754, val accuracy: 0.83755
+Final : 0.9065990142077086 [('val/VGG16/monotone/f1-score', 0.9343065693430657), ('val/VGG16/screenshot/f1-score', 0.9135338345864662), ('val/VGG16/unknown/f1-score', 0.8730350665054414)]
+Epoch: 2, batch loss: 0.07427 Loss Sum: 17.01914, accuracy : 0.95612, val loss: 3.13101, val accuracy: 0.90192
+Final : 0.935734380475635 [('val/VGG16/monotone/f1-score', 0.9618320610687022), ('val/VGG16/screenshot/f1-score', 0.9180952380952381), ('val/VGG16/unknown/f1-score', 0.9278350515463918)]
+Epoch: 3, batch loss: 0.07371 Loss Sum: 13.25875, accuracy : 0.96415, val loss: 4.67032, val accuracy: 0.85211
+Final : 0.9106683405101387 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.8940754039497307), ('val/VGG16/unknown/f1-score', 0.8846153846153847)]
+---train finished---
+Trying to save to /tmp/tmpb8nwoh_v/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.16813 Loss Sum: 40.05642, accuracy : 0.88911, val loss: 4.74404, val accuracy: 0.82375
+Final : 0.8913649338598595 [('val/VGG16/monotone/f1-score', 0.9208633093525179), ('val/VGG16/screenshot/f1-score', 0.8934579439252337), ('val/VGG16/unknown/f1-score', 0.8607902735562311)]
+Epoch: 1, batch loss: 0.26825 Loss Sum: 22.64711, accuracy : 0.94097, val loss: 3.70375, val accuracy: 0.86973
+Final : 0.9167938398037538 [('val/VGG16/monotone/f1-score', 0.9446494464944649), ('val/VGG16/screenshot/f1-score', 0.9064220183486239), ('val/VGG16/unknown/f1-score', 0.8999407933688574)]
+Epoch: 2, batch loss: 0.08938 Loss Sum: 17.49673, accuracy : 0.95387, val loss: 4.07726, val accuracy: 0.87433
+Final : 0.9280821190548404 [('val/VGG16/monotone/f1-score', 0.9516728624535317), ('val/VGG16/screenshot/f1-score', 0.928030303030303), ('val/VGG16/unknown/f1-score', 0.9051266941661756)]
+Epoch: 3, batch loss: 0.18401 Loss Sum: 13.11489, accuracy : 0.96561, val loss: 6.84625, val accuracy: 0.83448
+Final : 0.9174185935100819 [('val/VGG16/monotone/f1-score', 0.9618320610687022), ('val/VGG16/screenshot/f1-score', 0.9216417910447761), ('val/VGG16/unknown/f1-score', 0.8710462287104623)]
+---train finished---
+Trying to save to /tmp/tmpcb9kvcq0/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.08221 Loss Sum: 36.35760, accuracy : 0.90055, val loss: 4.13200, val accuracy: 0.86820
+Final : 0.9181066654844332 [('val/VGG16/monotone/f1-score', 0.9446494464944649), ('val/VGG16/screenshot/f1-score', 0.911764705882353), ('val/VGG16/unknown/f1-score', 0.8985163204747775)]
+Epoch: 1, batch loss: 0.07481 Loss Sum: 18.42042, accuracy : 0.95155, val loss: 5.28831, val accuracy: 0.85134
+Final : 0.9182019753343706 [('val/VGG16/monotone/f1-score', 0.9552238805970149), ('val/VGG16/screenshot/f1-score', 0.9168207024029575), ('val/VGG16/unknown/f1-score', 0.8839446782922429)]
+Epoch: 2, batch loss: 0.07309 Loss Sum: 11.52713, accuracy : 0.97170, val loss: 4.36802, val accuracy: 0.87433
+Final : 0.9242480196192427 [('val/VGG16/monotone/f1-score', 0.9552238805970149), ('val/VGG16/screenshot/f1-score', 0.915129151291513), ('val/VGG16/unknown/f1-score', 0.9031877213695395)]
+Epoch: 3, batch loss: 0.06330 Loss Sum: 10.22380, accuracy : 0.97486, val loss: 3.93365, val accuracy: 0.89272
+Final : 0.9349322670585789 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9274809160305343), ('val/VGG16/unknown/f1-score', 0.9189814814814815)]
+---train finished---
+Trying to save to /tmp/tmpvk8o8in5/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.33639 Loss Sum: 36.34366, accuracy : 0.90201, val loss: 4.40497, val accuracy: 0.84981
+Final : 0.912630959682897 [('val/VGG16/monotone/f1-score', 0.9442379182156134), ('val/VGG16/screenshot/f1-score', 0.9111111111111111), ('val/VGG16/unknown/f1-score', 0.8835534213685474)]
+Epoch: 1, batch loss: 0.08776 Loss Sum: 18.56637, accuracy : 0.95168, val loss: 4.73203, val accuracy: 0.85517
+Final : 0.9226587054281552 [('val/VGG16/monotone/f1-score', 0.9481481481481482), ('val/VGG16/screenshot/f1-score', 0.9330783938814532), ('val/VGG16/unknown/f1-score', 0.8878281622911695)]
+Epoch: 2, batch loss: 0.25881 Loss Sum: 12.08487, accuracy : 0.97006, val loss: 5.05152, val accuracy: 0.86284
+Final : 0.9250597511861767 [('val/VGG16/monotone/f1-score', 0.9513108614232209), ('val/VGG16/screenshot/f1-score', 0.9297912713472486), ('val/VGG16/unknown/f1-score', 0.8949554896142434)]
+Epoch: 3, batch loss: 0.21841 Loss Sum: 10.31549, accuracy : 0.97413, val loss: 4.47783, val accuracy: 0.87739
+Final : 0.9332853504003187 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.937984496124031), ('val/VGG16/unknown/f1-score', 0.9076023391812866)]
+---train finished---
+Trying to save to /tmp/tmp0s1c383l/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.32022 Loss Sum: 42.19081, accuracy : 0.88217, val loss: 5.64530, val accuracy: 0.81839
+Final : 0.9038354043254859 [('val/VGG16/monotone/f1-score', 0.9485294117647058), ('val/VGG16/screenshot/f1-score', 0.9107806691449813), ('val/VGG16/unknown/f1-score', 0.854679802955665)]
+Epoch: 1, batch loss: 0.21102 Loss Sum: 22.14125, accuracy : 0.94206, val loss: 4.78985, val accuracy: 0.84291
+Final : 0.9171840629095152 [('val/VGG16/monotone/f1-score', 0.9552238805970149), ('val/VGG16/screenshot/f1-score', 0.9210526315789473), ('val/VGG16/unknown/f1-score', 0.8769601930036188)]
+Epoch: 2, batch loss: 0.10816 Loss Sum: 15.89543, accuracy : 0.95855, val loss: 4.02960, val accuracy: 0.87663
+Final : 0.9294012036765144 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9239543726235743), ('val/VGG16/unknown/f1-score', 0.906213364595545)]
+Epoch: 3, batch loss: 0.05601 Loss Sum: 14.38272, accuracy : 0.96202, val loss: 4.15212, val accuracy: 0.86590
+Final : 0.9254020096364164 [('val/VGG16/monotone/f1-score', 0.9733840304182508), ('val/VGG16/screenshot/f1-score', 0.9070631970260223), ('val/VGG16/unknown/f1-score', 0.8975725281231497)]
+---train finished---
+Trying to save to /tmp/tmpqwxx3471/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.23706 Loss Sum: 39.61491, accuracy : 0.89435, val loss: 4.04143, val accuracy: 0.86360
+Final : 0.9086248408651296 [('val/VGG16/monotone/f1-score', 0.924187725631769), ('val/VGG16/screenshot/f1-score', 0.9067164179104479), ('val/VGG16/unknown/f1-score', 0.8952042628774423)]
+Epoch: 1, batch loss: 0.20085 Loss Sum: 21.99486, accuracy : 0.94376, val loss: 5.30448, val accuracy: 0.83525
+Final : 0.914356504156725 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.9180952380952381), ('val/VGG16/unknown/f1-score', 0.8719806763285024)]
+Epoch: 2, batch loss: 0.06794 Loss Sum: 15.05497, accuracy : 0.96178, val loss: 3.94288, val accuracy: 0.86590
+Final : 0.9194221035602466 [('val/VGG16/monotone/f1-score', 0.9411764705882353), ('val/VGG16/screenshot/f1-score', 0.9204545454545454), ('val/VGG16/unknown/f1-score', 0.8971631205673759)]
+Epoch: 3, batch loss: 0.01166 Loss Sum: 13.16194, accuracy : 0.96653, val loss: 5.41697, val accuracy: 0.83908
+Final : 0.9062537981288818 [('val/VGG16/monotone/f1-score', 0.9368029739776953), ('val/VGG16/screenshot/f1-score', 0.9063097514340344), ('val/VGG16/unknown/f1-score', 0.8766467065868262)]
+---train finished---
+Trying to save to /tmp/tmpfkhupi0y/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.15983 Loss Sum: 37.25665, accuracy : 0.89946, val loss: 5.57001, val accuracy: 0.80536
+Final : 0.9038202276514007 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9128787878787878), ('val/VGG16/unknown/f1-score', 0.8435374149659864)]
+Epoch: 1, batch loss: 0.11375 Loss Sum: 19.87279, accuracy : 0.94949, val loss: 2.89908, val accuracy: 0.91648
+Final : 0.9349203843629131 [('val/VGG16/monotone/f1-score', 0.9588014981273408), ('val/VGG16/screenshot/f1-score', 0.9090909090909091), ('val/VGG16/unknown/f1-score', 0.9375358166189112)]
+Epoch: 2, batch loss: 0.06359 Loss Sum: 14.28176, accuracy : 0.96348, val loss: 6.08143, val accuracy: 0.84521
+Final : 0.9309310298566412 [('val/VGG16/monotone/f1-score', 0.9687500000000001), ('val/VGG16/screenshot/f1-score', 0.9436893203883494), ('val/VGG16/unknown/f1-score', 0.882494004796163)]
+Epoch: 3, batch loss: 0.01450 Loss Sum: 11.25150, accuracy : 0.97255, val loss: 5.82387, val accuracy: 0.86590
+Final : 0.9311853472070053 [('val/VGG16/monotone/f1-score', 0.9647058823529412), ('val/VGG16/screenshot/f1-score', 0.9297912713472486), ('val/VGG16/unknown/f1-score', 0.900177200236267)]
+---train finished---
+Trying to save to /tmp/tmpl53s8691/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.09561 Loss Sum: 35.81241, accuracy : 0.90141, val loss: 4.09148, val accuracy: 0.87969
+Final : 0.9219912582514057 [('val/VGG16/monotone/f1-score', 0.9516728624535317), ('val/VGG16/screenshot/f1-score', 0.9067641681901278), ('val/VGG16/unknown/f1-score', 0.9082352941176471)]
+Epoch: 1, batch loss: 0.03959 Loss Sum: 19.38187, accuracy : 0.94863, val loss: 6.15401, val accuracy: 0.85364
+Final : 0.9225803210669106 [('val/VGG16/monotone/f1-score', 0.9328358208955223), ('val/VGG16/screenshot/f1-score', 0.9471624266144814), ('val/VGG16/unknown/f1-score', 0.8887566924449732)]
+Epoch: 2, batch loss: 0.24242 Loss Sum: 13.61968, accuracy : 0.96549, val loss: 5.64968, val accuracy: 0.84751
+Final : 0.9185400125170834 [('val/VGG16/monotone/f1-score', 0.9571984435797667), ('val/VGG16/screenshot/f1-score', 0.9162011173184357), ('val/VGG16/unknown/f1-score', 0.8836930455635492)]
+Epoch: 3, batch loss: 0.15413 Loss Sum: 12.79065, accuracy : 0.96866, val loss: 5.46358, val accuracy: 0.85211
+Final : 0.9226387875221053 [('val/VGG16/monotone/f1-score', 0.9446494464944649), ('val/VGG16/screenshot/f1-score', 0.9391634980988594), ('val/VGG16/unknown/f1-score', 0.8852852852852852)]
+---train finished---
+Trying to save to /tmp/tmp_7yjcey8/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.23172 Loss Sum: 39.44065, accuracy : 0.89069, val loss: 5.92488, val accuracy: 0.81992
+Final : 0.9100512276606029 [('val/VGG16/monotone/f1-score', 0.9486166007905139), ('val/VGG16/screenshot/f1-score', 0.9221556886227544), ('val/VGG16/unknown/f1-score', 0.8615937687237867)]
+Epoch: 1, batch loss: 0.09670 Loss Sum: 22.11742, accuracy : 0.94109, val loss: 3.60536, val accuracy: 0.88352
+Final : 0.935588155448952 [('val/VGG16/monotone/f1-score', 0.9660377358490566), ('val/VGG16/screenshot/f1-score', 0.9297912713472486), ('val/VGG16/unknown/f1-score', 0.9117475160724723)]
+Epoch: 2, batch loss: 0.14298 Loss Sum: 17.47459, accuracy : 0.95515, val loss: 4.20334, val accuracy: 0.87126
+Final : 0.9213455414496711 [('val/VGG16/monotone/f1-score', 0.9407407407407407), ('val/VGG16/screenshot/f1-score', 0.9219330855018587), ('val/VGG16/unknown/f1-score', 0.901775147928994)]
+Epoch: 3, batch loss: 0.27025 Loss Sum: 13.51126, accuracy : 0.96379, val loss: 4.68247, val accuracy: 0.87433
+Final : 0.9259713299203056 [('val/VGG16/monotone/f1-score', 0.9626865671641791), ('val/VGG16/screenshot/f1-score', 0.9131238447319778), ('val/VGG16/unknown/f1-score', 0.9031877213695395)]
+---train finished---
+Trying to save to /tmp/tmp3ey83b3a/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.09859 Loss Sum: 40.59337, accuracy : 0.88814, val loss: 5.88883, val accuracy: 0.82912
+Final : 0.8913371627351819 [('val/VGG16/monotone/f1-score', 0.8927335640138409), ('val/VGG16/screenshot/f1-score', 0.9176029962546817), ('val/VGG16/unknown/f1-score', 0.8644688644688645)]
+Epoch: 1, batch loss: 0.18317 Loss Sum: 23.21888, accuracy : 0.93908, val loss: 4.59730, val accuracy: 0.85747
+Final : 0.9165314136060438 [('val/VGG16/monotone/f1-score', 0.9473684210526316), ('val/VGG16/screenshot/f1-score', 0.9120879120879121), ('val/VGG16/unknown/f1-score', 0.8910179640718563)]
+Epoch: 2, batch loss: 0.09716 Loss Sum: 20.22012, accuracy : 0.94492, val loss: 3.74062, val accuracy: 0.89042
+Final : 0.9232525554466694 [('val/VGG16/monotone/f1-score', 0.9552238805970149), ('val/VGG16/screenshot/f1-score', 0.8983364140480592), ('val/VGG16/unknown/f1-score', 0.9171014492753623)]
+Epoch: 3, batch loss: 0.12378 Loss Sum: 17.57622, accuracy : 0.95563, val loss: 3.28577, val accuracy: 0.90958
+Final : 0.9493658804323242 [('val/VGG16/monotone/f1-score', 0.9696969696969696), ('val/VGG16/screenshot/f1-score', 0.9457364341085271), ('val/VGG16/unknown/f1-score', 0.933028048082427)]
+---train finished---
+Trying to save to /tmp/tmpbnwmdau1/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.15922 Loss Sum: 34.99021, accuracy : 0.90268, val loss: 4.30404, val accuracy: 0.85211
+Final : 0.923237060353018 [('val/VGG16/monotone/f1-score', 0.9660377358490566), ('val/VGG16/screenshot/f1-score', 0.9175050301810865), ('val/VGG16/unknown/f1-score', 0.887844979448033)]
+Epoch: 1, batch loss: 0.20117 Loss Sum: 18.87595, accuracy : 0.94961, val loss: 6.06619, val accuracy: 0.80536
+Final : 0.9032867658151624 [('val/VGG16/monotone/f1-score', 0.9477611940298507), ('val/VGG16/screenshot/f1-score', 0.9222222222222222), ('val/VGG16/unknown/f1-score', 0.8432229856339788)]
+Epoch: 2, batch loss: 0.03332 Loss Sum: 10.21352, accuracy : 0.97438, val loss: 4.20319, val accuracy: 0.88736
+Final : 0.9389156764097932 [('val/VGG16/monotone/f1-score', 0.9618320610687022), ('val/VGG16/screenshot/f1-score', 0.9393346379647749), ('val/VGG16/unknown/f1-score', 0.9161364950838635)]
+Epoch: 3, batch loss: 0.05730 Loss Sum: 6.39816, accuracy : 0.98381, val loss: 4.91118, val accuracy: 0.89119
+Final : 0.9426176276506878 [('val/VGG16/monotone/f1-score', 0.9655172413793104), ('val/VGG16/screenshot/f1-score', 0.9441233140655105), ('val/VGG16/unknown/f1-score', 0.9187935034802784)]
+---train finished---
+Trying to save to /tmp/tmpdif7bjdf/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.19888 Loss Sum: 34.77245, accuracy : 0.90615, val loss: 4.75847, val accuracy: 0.85594
+Final : 0.9282143476341319 [('val/VGG16/monotone/f1-score', 0.9615384615384615), ('val/VGG16/screenshot/f1-score', 0.9330708661417323), ('val/VGG16/unknown/f1-score', 0.8913813459268004)]
+Epoch: 1, batch loss: 0.16194 Loss Sum: 20.01326, accuracy : 0.94784, val loss: 2.33553, val accuracy: 0.91877
+Final : 0.9441921483259595 [('val/VGG16/monotone/f1-score', 0.9657794676806083), ('val/VGG16/screenshot/f1-score', 0.9271028037383177), ('val/VGG16/unknown/f1-score', 0.9401026811180833)]
+Epoch: 2, batch loss: 0.01116 Loss Sum: 10.69268, accuracy : 0.97334, val loss: 5.11514, val accuracy: 0.86973
+Final : 0.9370169175341544 [('val/VGG16/monotone/f1-score', 0.9657794676806083), ('val/VGG16/screenshot/f1-score', 0.9465648854961832), ('val/VGG16/unknown/f1-score', 0.8999407933688574)]
+Epoch: 3, batch loss: 0.07548 Loss Sum: 6.48816, accuracy : 0.98497, val loss: 4.10277, val accuracy: 0.89349
+Final : 0.935031995505056 [('val/VGG16/monotone/f1-score', 0.9548872180451128), ('val/VGG16/screenshot/f1-score', 0.9300567107750473), ('val/VGG16/unknown/f1-score', 0.9204875217643644)]
+---train finished---
+Trying to save to /tmp/tmpiy3yxzfp/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.13555 Loss Sum: 40.69995, accuracy : 0.88832, val loss: 4.74639, val accuracy: 0.82529
+Final : 0.8906674776462502 [('val/VGG16/monotone/f1-score', 0.9084507042253521), ('val/VGG16/screenshot/f1-score', 0.9037037037037037), ('val/VGG16/unknown/f1-score', 0.860635696821516)]
+Epoch: 1, batch loss: 0.12395 Loss Sum: 23.84590, accuracy : 0.93756, val loss: 4.96373, val accuracy: 0.83142
+Final : 0.8952703319578654 [('val/VGG16/monotone/f1-score', 0.9314079422382672), ('val/VGG16/screenshot/f1-score', 0.8900709219858156), ('val/VGG16/unknown/f1-score', 0.8655616942909761)]
+Epoch: 2, batch loss: 0.02449 Loss Sum: 13.62278, accuracy : 0.96494, val loss: 4.50277, val accuracy: 0.85747
+Final : 0.9110472837206279 [('val/VGG16/monotone/f1-score', 0.9411764705882353), ('val/VGG16/screenshot/f1-score', 0.9034608378870673), ('val/VGG16/unknown/f1-score', 0.8892878515858768)]
+Epoch: 3, batch loss: 0.05013 Loss Sum: 10.23647, accuracy : 0.97389, val loss: 5.13018, val accuracy: 0.85900
+Final : 0.9213596727586514 [('val/VGG16/monotone/f1-score', 0.9584905660377359), ('val/VGG16/screenshot/f1-score', 0.9155722326454032), ('val/VGG16/unknown/f1-score', 0.8912655971479501)]
+---train finished---
+Trying to save to /tmp/tmplfeu4kal/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.12048 Loss Sum: 42.48921, accuracy : 0.88230, val loss: 5.06747, val accuracy: 0.82452
+Final : 0.904904628495407 [('val/VGG16/monotone/f1-score', 0.937269372693727), ('val/VGG16/screenshot/f1-score', 0.9172932330827068), ('val/VGG16/unknown/f1-score', 0.8618581907090465)]
+Epoch: 1, batch loss: 0.06806 Loss Sum: 24.36246, accuracy : 0.93847, val loss: 5.08901, val accuracy: 0.84138
+Final : 0.9153700110536831 [('val/VGG16/monotone/f1-score', 0.9624060150375939), ('val/VGG16/screenshot/f1-score', 0.9100917431192661), ('val/VGG16/unknown/f1-score', 0.8756822316555487)]
+Epoch: 2, batch loss: 0.02513 Loss Sum: 14.27594, accuracy : 0.96184, val loss: 3.66456, val accuracy: 0.87433
+Final : 0.9293750315966941 [('val/VGG16/monotone/f1-score', 0.9534883720930233), ('val/VGG16/screenshot/f1-score', 0.9275929549902153), ('val/VGG16/unknown/f1-score', 0.9076118535735038)]
+Epoch: 3, batch loss: 0.09818 Loss Sum: 11.20065, accuracy : 0.97097, val loss: 5.85898, val accuracy: 0.83755
+Final : 0.9151507242182779 [('val/VGG16/monotone/f1-score', 0.9541984732824427), ('val/VGG16/screenshot/f1-score', 0.9193245778611632), ('val/VGG16/unknown/f1-score', 0.873716012084592)]
+---train finished---
+Trying to save to /tmp/tmp23e1imkd/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.27811 Loss Sum: 173.65672, accuracy : 0.36455, val loss: 16.30024, val accuracy: 0.08276
+Final : 0.09114252398891144 [('val/VGG16/monotone/f1-score', 0.02531645569620253), ('val/VGG16/screenshot/f1-score', 0.33066666666666666), ('val/VGG16/unknown/f1-score', 0.09044193216855087)]
+Epoch: 1, batch loss: 1.31239 Loss Sum: 165.32986, accuracy : 0.43473, val loss: 15.84714, val accuracy: 0.07356
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.39999999999999997), ('val/VGG16/unknown/f1-score', 0.05450733752620545)]
+Epoch: 2, batch loss: 1.19005 Loss Sum: 158.84034, accuracy : 0.45785, val loss: 15.66542, val accuracy: 0.08429
+Final : 0.06618003131286722 [('val/VGG16/monotone/f1-score', 0.015384615384615384), ('val/VGG16/screenshot/f1-score', 0.4945652173913043), ('val/VGG16/unknown/f1-score', 0.0380952380952381)]
+Epoch: 3, batch loss: 1.17646 Loss Sum: 152.95725, accuracy : 0.48908, val loss: 15.07920, val accuracy: 0.14023
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.6836027713625866), ('val/VGG16/unknown/f1-score', 0.07246376811594203)]
+---train finished---
+Trying to save to /tmp/tmpak9op8o6/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.60151 Loss Sum: 118.19025, accuracy : 0.59935, val loss: 7.82819, val accuracy: 0.71188
+Final : 0.7678718240548512 [('val/VGG16/monotone/f1-score', 0.6916890080428953), ('val/VGG16/screenshot/f1-score', 0.8743169398907104), ('val/VGG16/unknown/f1-score', 0.7486631016042781)]
+Epoch: 1, batch loss: 0.21099 Loss Sum: 43.21579, accuracy : 0.88996, val loss: 5.24678, val accuracy: 0.81992
+Final : 0.8819760622776629 [('val/VGG16/monotone/f1-score', 0.896797153024911), ('val/VGG16/screenshot/f1-score', 0.8905380333951762), ('val/VGG16/unknown/f1-score', 0.8590604026845639)]
+Epoch: 2, batch loss: 0.29385 Loss Sum: 28.05564, accuracy : 0.92636, val loss: 5.26728, val accuracy: 0.82375
+Final : 0.889266023871843 [('val/VGG16/monotone/f1-score', 0.9304029304029303), ('val/VGG16/screenshot/f1-score', 0.8785714285714287), ('val/VGG16/unknown/f1-score', 0.8602941176470589)]
+Epoch: 3, batch loss: 0.04751 Loss Sum: 23.20370, accuracy : 0.93671, val loss: 5.28540, val accuracy: 0.83372
+Final : 0.9112185785984932 [('val/VGG16/monotone/f1-score', 0.9411764705882353), ('val/VGG16/screenshot/f1-score', 0.9250936329588015), ('val/VGG16/unknown/f1-score', 0.8689823278488726)]
+---train finished---
+Trying to save to /tmp/tmpiwshku6a/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.52676 Loss Sum: 124.76554, accuracy : 0.55992, val loss: 6.94062, val accuracy: 0.78238
+Final : 0.8514109685202056 [('val/VGG16/monotone/f1-score', 0.9022556390977443), ('val/VGG16/screenshot/f1-score', 0.8264758497316638), ('val/VGG16/unknown/f1-score', 0.8276714021000618)]
+Epoch: 1, batch loss: 0.22432 Loss Sum: 52.01755, accuracy : 0.86982, val loss: 6.04682, val accuracy: 0.79310
+Final : 0.8608018659915823 [('val/VGG16/monotone/f1-score', 0.89198606271777), ('val/VGG16/screenshot/f1-score', 0.8576642335766423), ('val/VGG16/unknown/f1-score', 0.8337468982630273)]
+Epoch: 2, batch loss: 0.13923 Loss Sum: 33.19024, accuracy : 0.91053, val loss: 4.97647, val accuracy: 0.82529
+Final : 0.8976197408135619 [('val/VGG16/monotone/f1-score', 0.9513108614232209), ('val/VGG16/screenshot/f1-score', 0.8796992481203008), ('val/VGG16/unknown/f1-score', 0.864212432106216)]
+Epoch: 3, batch loss: 0.11381 Loss Sum: 27.30638, accuracy : 0.92745, val loss: 5.23216, val accuracy: 0.82989
+Final : 0.9008459368595492 [('val/VGG16/monotone/f1-score', 0.9343065693430657), ('val/VGG16/screenshot/f1-score', 0.9033457249070631), ('val/VGG16/unknown/f1-score', 0.8661800486618005)]
+---train finished---
+Trying to save to /tmp/tmprk1s7nrz/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.37899 Loss Sum: 176.40529, accuracy : 0.31581, val loss: 15.67999, val accuracy: 0.09808
+Final : 0.07812387775068148 [('val/VGG16/monotone/f1-score', 0.012738853503184714), ('val/VGG16/screenshot/f1-score', 0.23622047244094488), ('val/VGG16/unknown/f1-score', 0.15845410628019324)]
+Epoch: 1, batch loss: 1.26364 Loss Sum: 166.90297, accuracy : 0.41805, val loss: 15.45578, val accuracy: 0.08582
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.39452054794520547), ('val/VGG16/unknown/f1-score', 0.081799591002045)]
+Epoch: 2, batch loss: 1.19797 Loss Sum: 159.57988, accuracy : 0.46522, val loss: 15.17732, val accuracy: 0.11877
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.5700483091787439), ('val/VGG16/unknown/f1-score', 0.0763673890608875)]
+Epoch: 3, batch loss: 1.26686 Loss Sum: 152.79131, accuracy : 0.50320, val loss: 14.85397, val accuracy: 0.14406
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.7071583514099784), ('val/VGG16/unknown/f1-score', 0.05219206680584551)]
+---train finished---
+Trying to save to /tmp/tmp68fark9v/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.31379 Loss Sum: 176.89040, accuracy : 0.29164, val loss: 14.93721, val accuracy: 0.28046
+Final : 0.2468745643527933 [('val/VGG16/monotone/f1-score', 0.0963855421686747), ('val/VGG16/screenshot/f1-score', 0.4112769485903814), ('val/VGG16/unknown/f1-score', 0.3795620437956205)]
+Epoch: 1, batch loss: 1.27312 Loss Sum: 166.12917, accuracy : 0.42249, val loss: 15.00575, val accuracy: 0.16475
+Final : 0.14368145242133112 [('val/VGG16/monotone/f1-score', 0.029850746268656712), ('val/VGG16/screenshot/f1-score', 0.5138888888888888), ('val/VGG16/unknown/f1-score', 0.1933649289099526)]
+Epoch: 2, batch loss: 1.21440 Loss Sum: 161.13643, accuracy : 0.45372, val loss: 15.10635, val accuracy: 0.15249
+Final : 0.17109987539191435 [('val/VGG16/monotone/f1-score', 0.06015037593984962), ('val/VGG16/screenshot/f1-score', 0.5560747663551402), ('val/VGG16/unknown/f1-score', 0.14975369458128077)]
+Epoch: 3, batch loss: 1.18467 Loss Sum: 158.97537, accuracy : 0.46637, val loss: 14.94756, val accuracy: 0.13870
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.5607940446650125), ('val/VGG16/unknown/f1-score', 0.13465346534653466)]
+---train finished---
+Trying to save to /tmp/tmpjphpq_ei/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.46410 Loss Sum: 117.98036, accuracy : 0.59205, val loss: 7.63880, val accuracy: 0.75939
+Final : 0.7908508459111109 [('val/VGG16/monotone/f1-score', 0.7308781869688384), ('val/VGG16/screenshot/f1-score', 0.848695652173913), ('val/VGG16/unknown/f1-score', 0.7974193548387096)]
+Epoch: 1, batch loss: 0.30177 Loss Sum: 44.64368, accuracy : 0.88315, val loss: 5.91391, val accuracy: 0.79004
+Final : 0.8497437058118055 [('val/VGG16/monotone/f1-score', 0.8376623376623377), ('val/VGG16/screenshot/f1-score', 0.8848920863309353), ('val/VGG16/unknown/f1-score', 0.8277602523659305)]
+Epoch: 2, batch loss: 0.27530 Loss Sum: 30.90905, accuracy : 0.91936, val loss: 5.63754, val accuracy: 0.81686
+Final : 0.8830998826675018 [('val/VGG16/monotone/f1-score', 0.9208633093525179), ('val/VGG16/screenshot/f1-score', 0.8763250883392226), ('val/VGG16/unknown/f1-score', 0.8534322820037106)]
+Epoch: 3, batch loss: 0.15133 Loss Sum: 27.49712, accuracy : 0.92837, val loss: 3.96000, val accuracy: 0.86284
+Final : 0.912555018062544 [('val/VGG16/monotone/f1-score', 0.9343065693430657), ('val/VGG16/screenshot/f1-score', 0.9097605893186004), ('val/VGG16/unknown/f1-score', 0.8940476190476191)]
+---train finished---
+Trying to save to /tmp/tmpuz36yuiw/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.31858 Loss Sum: 171.83163, accuracy : 0.36827, val loss: 15.27349, val accuracy: 0.12414
+Final : 0.13579353501520533 [('val/VGG16/monotone/f1-score', 0.04444444444444444), ('val/VGG16/screenshot/f1-score', 0.2768361581920904), ('val/VGG16/unknown/f1-score', 0.20351526364477338)]
+Epoch: 1, batch loss: 1.22686 Loss Sum: 163.98470, accuracy : 0.42925, val loss: 15.27256, val accuracy: 0.10192
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.4011142061281337), ('val/VGG16/unknown/f1-score', 0.12200000000000001)]
+Epoch: 2, batch loss: 1.22123 Loss Sum: 159.58177, accuracy : 0.45737, val loss: 15.18427, val accuracy: 0.11341
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.5298701298701298), ('val/VGG16/unknown/f1-score', 0.09292929292929292)]
+Epoch: 3, batch loss: 1.25182 Loss Sum: 157.67591, accuracy : 0.46771, val loss: 15.14548, val accuracy: 0.10575
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.531017369727047), ('val/VGG16/unknown/f1-score', 0.06398348813209495)]
+---train finished---
+Trying to save to /tmp/tmpvd1rltuz/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.29925 Loss Sum: 174.65953, accuracy : 0.34544, val loss: 15.73387, val accuracy: 0.11724
+Final : 0.1681463724107407 [('val/VGG16/monotone/f1-score', 0.10112359550561799), ('val/VGG16/screenshot/f1-score', 0.2375), ('val/VGG16/unknown/f1-score', 0.19794584500466852)]
+Epoch: 1, batch loss: 1.24438 Loss Sum: 165.26638, accuracy : 0.43296, val loss: 15.55115, val accuracy: 0.08812
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.38857142857142857), ('val/VGG16/unknown/f1-score', 0.09523809523809525)]
+Epoch: 2, batch loss: 1.17710 Loss Sum: 160.31522, accuracy : 0.45980, val loss: 15.31437, val accuracy: 0.10728
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.4960422163588391), ('val/VGG16/unknown/f1-score', 0.09368635437881874)]
+Epoch: 3, batch loss: 1.24452 Loss Sum: 158.37188, accuracy : 0.47435, val loss: 15.34926, val accuracy: 0.10728
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.5454545454545454), ('val/VGG16/unknown/f1-score', 0.07246376811594203)]
+---train finished---
+Trying to save to /tmp/tmp_wc4lap6/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.10316 Loss Sum: 157.37536, accuracy : 0.45201, val loss: 15.98409, val accuracy: 0.12337
+Final : 0.05759638246286428 [('val/VGG16/monotone/f1-score', 0.030534351145038167), ('val/VGG16/screenshot/f1-score', 0.7242990654205608), ('val/VGG16/unknown/f1-score', 0.008639308855291577)]
+Epoch: 1, batch loss: 0.81144 Loss Sum: 125.61752, accuracy : 0.59296, val loss: 14.31349, val accuracy: 0.25134
+Final : 0.34453295741331286 [('val/VGG16/monotone/f1-score', 0.6862745098039216), ('val/VGG16/screenshot/f1-score', 0.8138686131386861), ('val/VGG16/unknown/f1-score', 0.07322175732217574)]
+Epoch: 2, batch loss: 0.72078 Loss Sum: 98.14217, accuracy : 0.74165, val loss: 12.05772, val accuracy: 0.39004
+Final : 0.5938733562283504 [('val/VGG16/monotone/f1-score', 0.8475836431226765), ('val/VGG16/screenshot/f1-score', 0.8336314847942754), ('val/VGG16/unknown/f1-score', 0.29643183897529735)]
+Epoch: 3, batch loss: 0.48853 Loss Sum: 78.17799, accuracy : 0.80214, val loss: 10.71349, val accuracy: 0.52184
+Final : 0.7072907836649507 [('val/VGG16/monotone/f1-score', 0.8289473684210527), ('val/VGG16/screenshot/f1-score', 0.835125448028674), ('val/VGG16/unknown/f1-score', 0.5111111111111111)]
+---train finished---
+Trying to save to /tmp/tmp5co4zwq1/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.16611 Loss Sum: 159.61994, accuracy : 0.44739, val loss: 15.65328, val accuracy: 0.10421
+Final : 0.1334213468395585 [('val/VGG16/monotone/f1-score', 0.15714285714285714), ('val/VGG16/screenshot/f1-score', 0.5900783289817232), ('val/VGG16/unknown/f1-score', 0.025613660618996798)]
+Epoch: 1, batch loss: 0.90009 Loss Sum: 126.80504, accuracy : 0.59266, val loss: 14.24956, val accuracy: 0.24751
+Final : 0.30416935997145483 [('val/VGG16/monotone/f1-score', 0.7777777777777779), ('val/VGG16/screenshot/f1-score', 0.8149532710280374), ('val/VGG16/unknown/f1-score', 0.04439746300211416)]
+Epoch: 2, batch loss: 0.73702 Loss Sum: 97.46777, accuracy : 0.74998, val loss: 12.07230, val accuracy: 0.39004
+Final : 0.5891089489261316 [('val/VGG16/monotone/f1-score', 0.8621908127208481), ('val/VGG16/screenshot/f1-score', 0.81216457960644), ('val/VGG16/unknown/f1-score', 0.29197080291970806)]
+Epoch: 3, batch loss: 0.63049 Loss Sum: 76.65054, accuracy : 0.80640, val loss: 10.13341, val accuracy: 0.54330
+Final : 0.7172395247090647 [('val/VGG16/monotone/f1-score', 0.8262295081967214), ('val/VGG16/screenshot/f1-score', 0.8185053380782917), ('val/VGG16/unknown/f1-score', 0.5455950540958269)]
+---train finished---
+Trying to save to /tmp/tmpohnvq6mp/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.13755 Loss Sum: 159.48681, accuracy : 0.44160, val loss: 15.38160, val accuracy: 0.13410
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.6872246696035242), ('val/VGG16/unknown/f1-score', 0.039957939011566766)]
+Epoch: 1, batch loss: 1.00726 Loss Sum: 129.20609, accuracy : 0.55760, val loss: 14.61245, val accuracy: 0.19234
+Final : 0.19577805246315125 [('val/VGG16/monotone/f1-score', 0.2206896551724138), ('val/VGG16/screenshot/f1-score', 0.7739602169981917), ('val/VGG16/unknown/f1-score', 0.043933054393305436)]
+Epoch: 2, batch loss: 0.67824 Loss Sum: 108.13317, accuracy : 0.64622, val loss: 13.29364, val accuracy: 0.34406
+Final : 0.5327206488196691 [('val/VGG16/monotone/f1-score', 0.686868686868687), ('val/VGG16/screenshot/f1-score', 0.7689655172413793), ('val/VGG16/unknown/f1-score', 0.286231884057971)]
+Epoch: 3, batch loss: 0.57317 Loss Sum: 94.74963, accuracy : 0.73757, val loss: 11.53611, val accuracy: 0.46513
+Final : 0.6795351826292816 [('val/VGG16/monotone/f1-score', 0.8739495798319327), ('val/VGG16/screenshot/f1-score', 0.7909407665505227), ('val/VGG16/unknown/f1-score', 0.45394736842105254)]
+---train finished---
+Trying to save to /tmp/tmp_82zzmsf/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.09980 Loss Sum: 157.97297, accuracy : 0.46644, val loss: 16.26517, val accuracy: 0.13487
+Final : 0.04142909875274917 [('val/VGG16/monotone/f1-score', 0.04545454545454545), ('val/VGG16/screenshot/f1-score', 0.7211740041928723), ('val/VGG16/unknown/f1-score', 0.0021691973969631233)]
+Epoch: 1, batch loss: 0.90955 Loss Sum: 130.28863, accuracy : 0.55103, val loss: 14.89291, val accuracy: 0.19157
+Final : 0.16379051787563043 [('val/VGG16/monotone/f1-score', 0.14388489208633096), ('val/VGG16/screenshot/f1-score', 0.7594501718213059), ('val/VGG16/unknown/f1-score', 0.040211640211640205)]
+Epoch: 2, batch loss: 0.74986 Loss Sum: 109.73806, accuracy : 0.63155, val loss: 13.30159, val accuracy: 0.31034
+Final : 0.47418832918606685 [('val/VGG16/monotone/f1-score', 0.6243386243386243), ('val/VGG16/screenshot/f1-score', 0.7911714770797962), ('val/VGG16/unknown/f1-score', 0.21585482330468006)]
+Epoch: 3, batch loss: 0.76492 Loss Sum: 96.17229, accuracy : 0.71870, val loss: 11.61639, val accuracy: 0.45364
+Final : 0.6714982411903394 [('val/VGG16/monotone/f1-score', 0.8870292887029289), ('val/VGG16/screenshot/f1-score', 0.803448275862069), ('val/VGG16/unknown/f1-score', 0.4248530646515534)]
+---train finished---
+Trying to save to /tmp/tmp4pmmyp6r/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.10414 Loss Sum: 157.50048, accuracy : 0.45578, val loss: 15.90014, val accuracy: 0.13563
+Final : 0.11223402812101911 [('val/VGG16/monotone/f1-score', 0.10218978102189781), ('val/VGG16/screenshot/f1-score', 0.7155555555555555), ('val/VGG16/unknown/f1-score', 0.01933404940923738)]
+Epoch: 1, batch loss: 0.77548 Loss Sum: 125.33261, accuracy : 0.59619, val loss: 14.44468, val accuracy: 0.23142
+Final : 0.29785376851069084 [('val/VGG16/monotone/f1-score', 0.6137566137566137), ('val/VGG16/screenshot/f1-score', 0.8171641791044777), ('val/VGG16/unknown/f1-score', 0.05268703898840885)]
+Epoch: 2, batch loss: 0.74820 Loss Sum: 105.92226, accuracy : 0.70379, val loss: 13.51872, val accuracy: 0.28659
+Final : 0.43063186647901075 [('val/VGG16/monotone/f1-score', 0.730593607305936), ('val/VGG16/screenshot/f1-score', 0.8231046931407943), ('val/VGG16/unknown/f1-score', 0.1327967806841046)]
+Epoch: 3, batch loss: 0.74998 Loss Sum: 98.95830, accuracy : 0.74274, val loss: 13.03043, val accuracy: 0.33946
+Final : 0.5245210867939029 [('val/VGG16/monotone/f1-score', 0.8640000000000001), ('val/VGG16/screenshot/f1-score', 0.8375451263537906), ('val/VGG16/unknown/f1-score', 0.1994191674733785)]
+---train finished---
+Trying to save to /tmp/tmp0xta8863/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.21885 Loss Sum: 159.16937, accuracy : 0.43272, val loss: 15.34236, val accuracy: 0.12644
+Final : 0.12676000370304333 [('val/VGG16/monotone/f1-score', 0.08888888888888888), ('val/VGG16/screenshot/f1-score', 0.6745283018867924), ('val/VGG16/unknown/f1-score', 0.03397027600849257)]
+Epoch: 1, batch loss: 0.72319 Loss Sum: 125.49611, accuracy : 0.58974, val loss: 14.18003, val accuracy: 0.24521
+Final : 0.3285598703296958 [('val/VGG16/monotone/f1-score', 0.6700507614213197), ('val/VGG16/screenshot/f1-score', 0.8153564899451554), ('val/VGG16/unknown/f1-score', 0.06492146596858639)]
+Epoch: 2, batch loss: 0.78828 Loss Sum: 105.31064, accuracy : 0.70756, val loss: 13.59775, val accuracy: 0.28046
+Final : 0.41273374633521026 [('val/VGG16/monotone/f1-score', 0.7767857142857143), ('val/VGG16/screenshot/f1-score', 0.8072072072072073), ('val/VGG16/unknown/f1-score', 0.11213047910295616)]
+Epoch: 3, batch loss: 0.72735 Loss Sum: 97.78182, accuracy : 0.74658, val loss: 12.84200, val accuracy: 0.32567
+Final : 0.48758308277883106 [('val/VGG16/monotone/f1-score', 0.8571428571428571), ('val/VGG16/screenshot/f1-score', 0.8170515097690941), ('val/VGG16/unknown/f1-score', 0.16551724137931034)]
+---train finished---
+Trying to save to /tmp/tmp3rklss97/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.12679 Loss Sum: 158.97541, accuracy : 0.46345, val loss: 15.72865, val accuracy: 0.12644
+Final : 0.051622107031899976 [('val/VGG16/monotone/f1-score', 0.015384615384615384), ('val/VGG16/screenshot/f1-score', 0.6929824561403509), ('val/VGG16/unknown/f1-score', 0.012903225806451613)]
+Epoch: 1, batch loss: 0.89403 Loss Sum: 129.60669, accuracy : 0.55913, val loss: 14.91912, val accuracy: 0.19617
+Final : 0.20104958187309657 [('val/VGG16/monotone/f1-score', 0.3461538461538462), ('val/VGG16/screenshot/f1-score', 0.7889908256880732), ('val/VGG16/unknown/f1-score', 0.02975557917109458)]
+Epoch: 2, batch loss: 0.85487 Loss Sum: 114.23733, accuracy : 0.61743, val loss: 14.24181, val accuracy: 0.21916
+Final : 0.27516683118322927 [('val/VGG16/monotone/f1-score', 0.39506172839506176), ('val/VGG16/screenshot/f1-score', 0.768695652173913), ('val/VGG16/unknown/f1-score', 0.06860706860706861)]
+Epoch: 3, batch loss: 0.91559 Loss Sum: 108.57224, accuracy : 0.65316, val loss: 13.79427, val accuracy: 0.24981
+Final : 0.3649244798278632 [('val/VGG16/monotone/f1-score', 0.5172413793103449), ('val/VGG16/screenshot/f1-score', 0.7914438502673796), ('val/VGG16/unknown/f1-score', 0.11871227364185112)]
+---train finished---
+Trying to save to /tmp/tmpeihe2tqu/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.02351 Loss Sum: 163.01709, accuracy : 0.42615, val loss: 15.42402, val accuracy: 0.12261
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.6294642857142857), ('val/VGG16/unknown/f1-score', 0.04012671594508976)]
+Epoch: 1, batch loss: 0.94116 Loss Sum: 132.51906, accuracy : 0.55377, val loss: 14.44404, val accuracy: 0.19387
+Final : 0.2310758585609238 [('val/VGG16/monotone/f1-score', 0.3137254901960785), ('val/VGG16/screenshot/f1-score', 0.7472527472527473), ('val/VGG16/unknown/f1-score', 0.05263157894736842)]
+Epoch: 2, batch loss: 0.98355 Loss Sum: 116.12133, accuracy : 0.60934, val loss: 14.09121, val accuracy: 0.22375
+Final : 0.28953194964093315 [('val/VGG16/monotone/f1-score', 0.39751552795031053), ('val/VGG16/screenshot/f1-score', 0.7816901408450705), ('val/VGG16/unknown/f1-score', 0.07810894141829393)]
+Epoch: 3, batch loss: 0.96322 Loss Sum: 110.55235, accuracy : 0.64123, val loss: 13.72726, val accuracy: 0.25057
+Final : 0.35494407635972247 [('val/VGG16/monotone/f1-score', 0.5257142857142858), ('val/VGG16/screenshot/f1-score', 0.7734241908006814), ('val/VGG16/unknown/f1-score', 0.10997963340122201)]
+---train finished---
+Trying to save to /tmp/tmpsjrhf2wj/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.56341 Loss Sum: 139.74509, accuracy : 0.55255, val loss: 12.84694, val accuracy: 0.33257
+Final : 0.515172379365411 [('val/VGG16/monotone/f1-score', 0.8924302788844621), ('val/VGG16/screenshot/f1-score', 0.8078994614003591), ('val/VGG16/unknown/f1-score', 0.18963831867057673)]
+Epoch: 1, batch loss: 0.23717 Loss Sum: 69.72794, accuracy : 0.82095, val loss: 7.95718, val accuracy: 0.70345
+Final : 0.8257507925765788 [('val/VGG16/monotone/f1-score', 0.872852233676976), ('val/VGG16/screenshot/f1-score', 0.8676470588235294), ('val/VGG16/unknown/f1-score', 0.7434695244474212)]
+Epoch: 2, batch loss: 0.51137 Loss Sum: 46.99198, accuracy : 0.87353, val loss: 6.65391, val accuracy: 0.74713
+Final : 0.8413712044408143 [('val/VGG16/monotone/f1-score', 0.8707482993197279), ('val/VGG16/screenshot/f1-score', 0.8690909090909091), ('val/VGG16/unknown/f1-score', 0.7870550161812296)]
+Epoch: 3, batch loss: 0.30255 Loss Sum: 37.79150, accuracy : 0.89514, val loss: 6.23154, val accuracy: 0.78314
+Final : 0.8660497703507752 [('val/VGG16/monotone/f1-score', 0.8982456140350877), ('val/VGG16/screenshot/f1-score', 0.8797127468581687), ('val/VGG16/unknown/f1-score', 0.8220392653578215)]
+---train finished---
+Trying to save to /tmp/tmps3jci2q1/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.86535 Loss Sum: 139.03377, accuracy : 0.53776, val loss: 12.91936, val accuracy: 0.33257
+Final : 0.5127559986683718 [('val/VGG16/monotone/f1-score', 0.8536585365853658), ('val/VGG16/screenshot/f1-score', 0.8099467140319716), ('val/VGG16/unknown/f1-score', 0.19498069498069498)]
+Epoch: 1, batch loss: 0.53032 Loss Sum: 70.82714, accuracy : 0.81711, val loss: 8.17451, val accuracy: 0.67433
+Final : 0.8020417608371868 [('val/VGG16/monotone/f1-score', 0.839344262295082), ('val/VGG16/screenshot/f1-score', 0.8650646950092422), ('val/VGG16/unknown/f1-score', 0.7105624142661179)]
+Epoch: 2, batch loss: 0.60318 Loss Sum: 47.51580, accuracy : 0.87146, val loss: 6.79322, val accuracy: 0.75249
+Final : 0.8471920974052788 [('val/VGG16/monotone/f1-score', 0.8819444444444444), ('val/VGG16/screenshot/f1-score', 0.8690909090909091), ('val/VGG16/unknown/f1-score', 0.7933032839665164)]
+Epoch: 3, batch loss: 0.35537 Loss Sum: 38.61998, accuracy : 0.89355, val loss: 6.10808, val accuracy: 0.77625
+Final : 0.8655908972472033 [('val/VGG16/monotone/f1-score', 0.8904593639575972), ('val/VGG16/screenshot/f1-score', 0.8917431192660551), ('val/VGG16/unknown/f1-score', 0.8167406467977171)]
+---train finished---
+Trying to save to /tmp/tmpcba6snfz/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.81879 Loss Sum: 138.43628, accuracy : 0.51518, val loss: 13.67891, val accuracy: 0.25900
+Final : 0.3730373945318608 [('val/VGG16/monotone/f1-score', 0.4457831325301205), ('val/VGG16/screenshot/f1-score', 0.7923211169284468), ('val/VGG16/unknown/f1-score', 0.14697120158887786)]
+Epoch: 1, batch loss: 0.32904 Loss Sum: 84.80822, accuracy : 0.78029, val loss: 10.02442, val accuracy: 0.59923
+Final : 0.7752282649165572 [('val/VGG16/monotone/f1-score', 0.8960573476702509), ('val/VGG16/screenshot/f1-score', 0.8354430379746836), ('val/VGG16/unknown/f1-score', 0.6223520818115413)]
+Epoch: 2, batch loss: 0.41674 Loss Sum: 56.24299, accuracy : 0.85588, val loss: 7.76066, val accuracy: 0.70728
+Final : 0.821553555386123 [('val/VGG16/monotone/f1-score', 0.8737201365187713), ('val/VGG16/screenshot/f1-score', 0.8500000000000001), ('val/VGG16/unknown/f1-score', 0.7466487935656836)]
+Epoch: 3, batch loss: 0.19076 Loss Sum: 42.41744, accuracy : 0.88619, val loss: 6.69869, val accuracy: 0.76015
+Final : 0.8585048935212876 [('val/VGG16/monotone/f1-score', 0.910394265232975), ('val/VGG16/screenshot/f1-score', 0.867383512544803), ('val/VGG16/unknown/f1-score', 0.8012861736334403)]
+---train finished---
+Trying to save to /tmp/tmpsrw6n1tw/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.84359 Loss Sum: 141.31064, accuracy : 0.51756, val loss: 13.19927, val accuracy: 0.27816
+Final : 0.4250781586950226 [('val/VGG16/monotone/f1-score', 0.6243386243386243), ('val/VGG16/screenshot/f1-score', 0.758147512864494), ('val/VGG16/unknown/f1-score', 0.16226783968719455)]
+Epoch: 1, batch loss: 0.48986 Loss Sum: 84.18324, accuracy : 0.78632, val loss: 9.95106, val accuracy: 0.62452
+Final : 0.7885655186463092 [('val/VGG16/monotone/f1-score', 0.8936170212765957), ('val/VGG16/screenshot/f1-score', 0.8419182948490231), ('val/VGG16/unknown/f1-score', 0.6517664023071377)]
+Epoch: 2, batch loss: 0.40142 Loss Sum: 55.80442, accuracy : 0.85880, val loss: 7.99927, val accuracy: 0.72031
+Final : 0.8253917757950315 [('val/VGG16/monotone/f1-score', 0.8677966101694916), ('val/VGG16/screenshot/f1-score', 0.8525179856115108), ('val/VGG16/unknown/f1-score', 0.7600793126239259)]
+Epoch: 3, batch loss: 0.36008 Loss Sum: 43.42804, accuracy : 0.88534, val loss: 7.12280, val accuracy: 0.76475
+Final : 0.8636206171898231 [('val/VGG16/monotone/f1-score', 0.9175627240143369), ('val/VGG16/screenshot/f1-score', 0.8708487084870848), ('val/VGG16/unknown/f1-score', 0.8061029879211696)]
+---train finished---
+Trying to save to /tmp/tmpnvbfrjz_/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.67847 Loss Sum: 135.73645, accuracy : 0.53387, val loss: 12.97138, val accuracy: 0.32261
+Final : 0.49393022233371897 [('val/VGG16/monotone/f1-score', 0.8230452674897119), ('val/VGG16/screenshot/f1-score', 0.8163992869875223), ('val/VGG16/unknown/f1-score', 0.17933723196881093)]
+Epoch: 1, batch loss: 0.38038 Loss Sum: 68.94310, accuracy : 0.82618, val loss: 8.43501, val accuracy: 0.66667
+Final : 0.7971370936544213 [('val/VGG16/monotone/f1-score', 0.8474576271186441), ('val/VGG16/screenshot/f1-score', 0.8477064220183486), ('val/VGG16/unknown/f1-score', 0.7050754458161864)]
+Epoch: 2, batch loss: 0.45409 Loss Sum: 49.84292, accuracy : 0.86812, val loss: 8.16113, val accuracy: 0.72031
+Final : 0.8212520594977906 [('val/VGG16/monotone/f1-score', 0.8523489932885905), ('val/VGG16/screenshot/f1-score', 0.854054054054054), ('val/VGG16/unknown/f1-score', 0.7608982826948482)]
+Epoch: 3, batch loss: 0.27600 Loss Sum: 45.84325, accuracy : 0.87877, val loss: 7.44780, val accuracy: 0.73793
+Final : 0.8388742378264427 [('val/VGG16/monotone/f1-score', 0.8677966101694916), ('val/VGG16/screenshot/f1-score', 0.8733944954128441), ('val/VGG16/unknown/f1-score', 0.7788649706457925)]
+---train finished---
+Trying to save to /tmp/tmpabnrnhe3/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.54719 Loss Sum: 137.82950, accuracy : 0.53235, val loss: 12.80609, val accuracy: 0.33103
+Final : 0.5074760656202084 [('val/VGG16/monotone/f1-score', 0.8368200836820083), ('val/VGG16/screenshot/f1-score', 0.8097731239092496), ('val/VGG16/unknown/f1-score', 0.19286403085824494)]
+Epoch: 1, batch loss: 0.41288 Loss Sum: 70.44610, accuracy : 0.81705, val loss: 7.75019, val accuracy: 0.69272
+Final : 0.8002801809660185 [('val/VGG16/monotone/f1-score', 0.8382838283828383), ('val/VGG16/screenshot/f1-score', 0.8368794326241135), ('val/VGG16/unknown/f1-score', 0.7305874409182985)]
+Epoch: 2, batch loss: 0.20076 Loss Sum: 50.85068, accuracy : 0.86039, val loss: 7.51645, val accuracy: 0.70268
+Final : 0.806991293626487 [('val/VGG16/monotone/f1-score', 0.8344370860927153), ('val/VGG16/screenshot/f1-score', 0.8484848484848484), ('val/VGG16/unknown/f1-score', 0.7422818791946308)]
+Epoch: 3, batch loss: 0.36609 Loss Sum: 46.40227, accuracy : 0.87250, val loss: 7.65877, val accuracy: 0.70651
+Final : 0.8214485380874315 [('val/VGG16/monotone/f1-score', 0.8657718120805369), ('val/VGG16/screenshot/f1-score', 0.8627450980392157), ('val/VGG16/unknown/f1-score', 0.7420875420875421)]
+---train finished---
+Trying to save to /tmp/tmpflfbyy4w/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.73562 Loss Sum: 140.61553, accuracy : 0.51366, val loss: 13.27556, val accuracy: 0.27433
+Final : 0.4036352551093784 [('val/VGG16/monotone/f1-score', 0.49122807017543857), ('val/VGG16/screenshot/f1-score', 0.7931034482758621), ('val/VGG16/unknown/f1-score', 0.16879293424926398)]
+Epoch: 1, batch loss: 0.57902 Loss Sum: 85.30911, accuracy : 0.77902, val loss: 10.00553, val accuracy: 0.58927
+Final : 0.7706668682591853 [('val/VGG16/monotone/f1-score', 0.896797153024911), ('val/VGG16/screenshot/f1-score', 0.8378870673952641), ('val/VGG16/unknown/f1-score', 0.6091445427728613)]
+Epoch: 2, batch loss: 0.35135 Loss Sum: 64.12349, accuracy : 0.84310, val loss: 9.20584, val accuracy: 0.63065
+Final : 0.7860366766694824 [('val/VGG16/monotone/f1-score', 0.8912280701754385), ('val/VGG16/screenshot/f1-score', 0.8286713286713286), ('val/VGG16/unknown/f1-score', 0.6575931232091691)]
+Epoch: 3, batch loss: 0.32721 Loss Sum: 56.57208, accuracy : 0.85606, val loss: 8.93399, val accuracy: 0.66667
+Final : 0.801582363100047 [('val/VGG16/monotone/f1-score', 0.8619528619528619), ('val/VGG16/screenshot/f1-score', 0.8525179856115108), ('val/VGG16/unknown/f1-score', 0.7009021512838307)]
+---train finished---
+Trying to save to /tmp/tmpm8_oztlc/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.73840 Loss Sum: 142.05877, accuracy : 0.51226, val loss: 13.36413, val accuracy: 0.26897
+Final : 0.3899591208629274 [('val/VGG16/monotone/f1-score', 0.5172413793103449), ('val/VGG16/screenshot/f1-score', 0.8041237113402062), ('val/VGG16/unknown/f1-score', 0.1425742574257426)]
+Epoch: 1, batch loss: 0.44249 Loss Sum: 85.75403, accuracy : 0.77323, val loss: 9.88031, val accuracy: 0.59923
+Final : 0.7690411770892683 [('val/VGG16/monotone/f1-score', 0.8842105263157894), ('val/VGG16/screenshot/f1-score', 0.8309859154929576), ('val/VGG16/unknown/f1-score', 0.6190125276344878)]
+Epoch: 2, batch loss: 0.40320 Loss Sum: 64.32430, accuracy : 0.84237, val loss: 9.04476, val accuracy: 0.64215
+Final : 0.7901089905309484 [('val/VGG16/monotone/f1-score', 0.8707482993197279), ('val/VGG16/screenshot/f1-score', 0.8378870673952641), ('val/VGG16/unknown/f1-score', 0.6760563380281689)]
+Epoch: 3, batch loss: 0.49528 Loss Sum: 58.40390, accuracy : 0.85083, val loss: 8.29359, val accuracy: 0.70192
+Final : 0.8192042782479523 [('val/VGG16/monotone/f1-score', 0.8716216216216216), ('val/VGG16/screenshot/f1-score', 0.8530465949820789), ('val/VGG16/unknown/f1-score', 0.7393939393939394)]
+---train finished---
+Trying to save to /tmp/tmpj8xfp6_h/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.38692 Loss Sum: 181.27404, accuracy : 0.23821, val loss: 15.35194, val accuracy: 0.24598
+Final : 0.19775715684637518 [('val/VGG16/monotone/f1-score', 0.13263525305410123), ('val/VGG16/screenshot/f1-score', 0.14797136038186157), ('val/VGG16/unknown/f1-score', 0.3940578577013291)]
+Epoch: 1, batch loss: 1.34574 Loss Sum: 179.69102, accuracy : 0.25994, val loss: 15.33564, val accuracy: 0.24291
+Final : 0.21117485795010058 [('val/VGG16/monotone/f1-score', 0.1550695825049702), ('val/VGG16/screenshot/f1-score', 0.15529411764705883), ('val/VGG16/unknown/f1-score', 0.3910614525139665)]
+Epoch: 2, batch loss: 1.36313 Loss Sum: 177.73974, accuracy : 0.29085, val loss: 15.40239, val accuracy: 0.22835
+Final : 0.21437347378038984 [('val/VGG16/monotone/f1-score', 0.14691943127962087), ('val/VGG16/screenshot/f1-score', 0.18052256532066507), ('val/VGG16/unknown/f1-score', 0.37145174371451745)]
+Epoch: 3, batch loss: 1.35913 Loss Sum: 176.29848, accuracy : 0.30802, val loss: 15.45531, val accuracy: 0.19847
+Final : 0.20656975604389202 [('val/VGG16/monotone/f1-score', 0.15760869565217392), ('val/VGG16/screenshot/f1-score', 0.1722488038277512), ('val/VGG16/unknown/f1-score', 0.32468619246861924)]
+---train finished---
+Trying to save to /tmp/tmpo2wmnsd_/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.29048 Loss Sum: 179.68506, accuracy : 0.25385, val loss: 15.30788, val accuracy: 0.21379
+Final : 0.11326025617279904 [('val/VGG16/monotone/f1-score', 0.06405693950177936), ('val/VGG16/screenshot/f1-score', 0.056140350877192984), ('val/VGG16/unknown/f1-score', 0.4040092521202776)]
+Epoch: 1, batch loss: 1.29004 Loss Sum: 170.13323, accuracy : 0.37052, val loss: 15.74471, val accuracy: 0.05211
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.13058419243986255), ('val/VGG16/unknown/f1-score', 0.09898989898989899)]
+Epoch: 2, batch loss: 1.16605 Loss Sum: 161.72506, accuracy : 0.41069, val loss: 16.29501, val accuracy: 0.02452
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.16370106761565836), ('val/VGG16/unknown/f1-score', 0.01929260450160772)]
+Epoch: 3, batch loss: 1.22927 Loss Sum: 155.44816, accuracy : 0.42724, val loss: 16.48200, val accuracy: 0.04521
+Final : 0.022831649773145318 [('val/VGG16/monotone/f1-score', 0.015384615384615384), ('val/VGG16/screenshot/f1-score', 0.35625), ('val/VGG16/unknown/f1-score', 0.002171552660152009)]
+---train finished---
+Trying to save to /tmp/tmprzpj9891/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.39700 Loss Sum: 180.26450, accuracy : 0.24965, val loss: 15.78987, val accuracy: 0.15479
+Final : 0.15469435057176933 [('val/VGG16/monotone/f1-score', 0.1008130081300813), ('val/VGG16/screenshot/f1-score', 0.14780600461893764), ('val/VGG16/unknown/f1-score', 0.2484361036639857)]
+Epoch: 1, batch loss: 1.38274 Loss Sum: 179.92813, accuracy : 0.25561, val loss: 15.82525, val accuracy: 0.15172
+Final : 0.15379133846047774 [('val/VGG16/monotone/f1-score', 0.11666666666666665), ('val/VGG16/screenshot/f1-score', 0.12831858407079644), ('val/VGG16/unknown/f1-score', 0.24297370806890295)]
+Epoch: 2, batch loss: 1.39925 Loss Sum: 179.63560, accuracy : 0.26097, val loss: 15.76724, val accuracy: 0.17088
+Final : 0.1704339558085803 [('val/VGG16/monotone/f1-score', 0.1317157712305026), ('val/VGG16/screenshot/f1-score', 0.13761467889908258), ('val/VGG16/unknown/f1-score', 0.27312775330396477)]
+Epoch: 3, batch loss: 1.39588 Loss Sum: 178.87631, accuracy : 0.27156, val loss: 15.80463, val accuracy: 0.15172
+Final : 0.16588295420467347 [('val/VGG16/monotone/f1-score', 0.10657193605683839), ('val/VGG16/screenshot/f1-score', 0.18777292576419216), ('val/VGG16/unknown/f1-score', 0.22810218978102187)]
+---train finished---
+Trying to save to /tmp/tmpjlxiprfq/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.40016 Loss Sum: 177.62700, accuracy : 0.27978, val loss: 14.93329, val accuracy: 0.34176
+Final : 0.20659941257576322 [('val/VGG16/monotone/f1-score', 0.132890365448505), ('val/VGG16/screenshot/f1-score', 0.12154696132596686), ('val/VGG16/unknown/f1-score', 0.5459459459459459)]
+Epoch: 1, batch loss: 1.42873 Loss Sum: 177.06321, accuracy : 0.28471, val loss: 14.88281, val accuracy: 0.35019
+Final : 0.23146056585682714 [('val/VGG16/monotone/f1-score', 0.16271186440677965), ('val/VGG16/screenshot/f1-score', 0.13850415512465372), ('val/VGG16/unknown/f1-score', 0.550236008091706)]
+Epoch: 2, batch loss: 1.33939 Loss Sum: 176.66757, accuracy : 0.29183, val loss: 14.95967, val accuracy: 0.32797
+Final : 0.19139034685050196 [('val/VGG16/monotone/f1-score', 0.12751677852348994), ('val/VGG16/screenshot/f1-score', 0.10326086956521739), ('val/VGG16/unknown/f1-score', 0.5324232081911263)]
+Epoch: 3, batch loss: 1.35123 Loss Sum: 176.78381, accuracy : 0.29438, val loss: 14.94018, val accuracy: 0.33946
+Final : 0.21278242471779032 [('val/VGG16/monotone/f1-score', 0.127208480565371), ('val/VGG16/screenshot/f1-score', 0.13736263736263735), ('val/VGG16/unknown/f1-score', 0.5513439007580978)]
+---train finished---
+Trying to save to /tmp/tmpi0i0asti/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.40629 Loss Sum: 179.38373, accuracy : 0.25318, val loss: 16.51563, val accuracy: 0.15172
+Final : 0.10241535056218674 [('val/VGG16/monotone/f1-score', 0.09463722397476342), ('val/VGG16/screenshot/f1-score', 0.31649189704480457), ('val/VGG16/unknown/f1-score', 0.03586497890295359)]
+Epoch: 1, batch loss: 1.36448 Loss Sum: 177.96557, accuracy : 0.27320, val loss: 16.35341, val accuracy: 0.15326
+Final : 0.10756737382562359 [('val/VGG16/monotone/f1-score', 0.08429118773946359), ('val/VGG16/screenshot/f1-score', 0.34773662551440326), ('val/VGG16/unknown/f1-score', 0.042462845010615716)]
+Epoch: 2, batch loss: 1.38623 Loss Sum: 176.84792, accuracy : 0.29177, val loss: 16.39490, val accuracy: 0.16398
+Final : 0.12485401281719079 [('val/VGG16/monotone/f1-score', 0.0959409594095941), ('val/VGG16/screenshot/f1-score', 0.34704112337011034), ('val/VGG16/unknown/f1-score', 0.05845511482254697)]
+Epoch: 3, batch loss: 1.40072 Loss Sum: 176.62705, accuracy : 0.29292, val loss: 16.46006, val accuracy: 0.14636
+Final : 0.1174703880966561 [('val/VGG16/monotone/f1-score', 0.09999999999999999), ('val/VGG16/screenshot/f1-score', 0.3225130890052356), ('val/VGG16/unknown/f1-score', 0.050261780104712044)]
+---train finished---
+Trying to save to /tmp/tmp173h8vmc/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.44210 Loss Sum: 181.36758, accuracy : 0.22141, val loss: 14.54729, val accuracy: 0.41762
+Final : 0.20931290385535595 [('val/VGG16/monotone/f1-score', 0.05785123966942149), ('val/VGG16/screenshot/f1-score', 0.2716417910447761), ('val/VGG16/unknown/f1-score', 0.5835509138381201)]
+Epoch: 1, batch loss: 1.43846 Loss Sum: 181.11680, accuracy : 0.22238, val loss: 14.44558, val accuracy: 0.40843
+Final : 0.24037188192846318 [('val/VGG16/monotone/f1-score', 0.09865470852017938), ('val/VGG16/screenshot/f1-score', 0.24924012158054712), ('val/VGG16/unknown/f1-score', 0.564826700898588)]
+Epoch: 2, batch loss: 1.38654 Loss Sum: 180.69614, accuracy : 0.22786, val loss: 14.44740, val accuracy: 0.40307
+Final : 0.188639979492159 [('val/VGG16/monotone/f1-score', 0.04587155963302752), ('val/VGG16/screenshot/f1-score', 0.2577777777777778), ('val/VGG16/unknown/f1-score', 0.5676913015042512)]
+Epoch: 3, batch loss: 1.39832 Loss Sum: 180.89423, accuracy : 0.22366, val loss: 14.53453, val accuracy: 0.40996
+Final : 0.2006577542631492 [('val/VGG16/monotone/f1-score', 0.05309734513274336), ('val/VGG16/screenshot/f1-score', 0.26524390243902435), ('val/VGG16/unknown/f1-score', 0.5736534717715769)]
+---train finished---
+Trying to save to /tmp/tmpvbdvrnn7/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.38152 Loss Sum: 179.79321, accuracy : 0.22512, val loss: 14.40554, val accuracy: 0.39387
+Final : 0.2031475799718662 [('val/VGG16/monotone/f1-score', 0.05333333333333334), ('val/VGG16/screenshot/f1-score', 0.284375), ('val/VGG16/unknown/f1-score', 0.5527704485488126)]
+Epoch: 1, batch loss: 1.26801 Loss Sum: 170.18490, accuracy : 0.34015, val loss: 15.10504, val accuracy: 0.15096
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.36065573770491804), ('val/VGG16/unknown/f1-score', 0.22408963585434172)]
+Epoch: 2, batch loss: 1.27002 Loss Sum: 163.55202, accuracy : 0.42481, val loss: 15.26704, val accuracy: 0.10575
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.3951219512195122), ('val/VGG16/unknown/f1-score', 0.11468812877263582)]
+Epoch: 3, batch loss: 1.19279 Loss Sum: 161.11227, accuracy : 0.44203, val loss: 15.35616, val accuracy: 0.08506
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.43410852713178294), ('val/VGG16/unknown/f1-score', 0.056663168940188885)]
+---train finished---
+Trying to save to /tmp/tmpq6rw1qh5/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41350 Loss Sum: 182.41763, accuracy : 0.25580, val loss: 15.37068, val accuracy: 0.26743
+Final : 0.2672289349491577 [('val/VGG16/monotone/f1-score', 0.24441132637853952), ('val/VGG16/screenshot/f1-score', 0.23423423423423426), ('val/VGG16/unknown/f1-score', 0.3333333333333333)]
+Epoch: 1, batch loss: 1.36737 Loss Sum: 180.58879, accuracy : 0.27825, val loss: 15.38156, val accuracy: 0.27586
+Final : 0.27189855236664473 [('val/VGG16/monotone/f1-score', 0.18120805369127516), ('val/VGG16/screenshot/f1-score', 0.3125), ('val/VGG16/unknown/f1-score', 0.3549712407559573)]
+Epoch: 2, batch loss: 1.36907 Loss Sum: 179.24779, accuracy : 0.29572, val loss: 15.45527, val accuracy: 0.23065
+Final : 0.25167050624008874 [('val/VGG16/monotone/f1-score', 0.22984562607204118), ('val/VGG16/screenshot/f1-score', 0.25546218487394956), ('val/VGG16/unknown/f1-score', 0.2714776632302406)]
+Epoch: 3, batch loss: 1.39143 Loss Sum: 178.83800, accuracy : 0.29603, val loss: 15.29582, val accuracy: 0.26054
+Final : 0.2721325001511571 [('val/VGG16/monotone/f1-score', 0.22385321100917435), ('val/VGG16/screenshot/f1-score', 0.27257240204429306), ('val/VGG16/unknown/f1-score', 0.33029045643153526)]
+---train finished---
+Trying to save to /tmp/tmph3lhf0qq/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.09944 Loss Sum: 162.94737, accuracy : 0.46029, val loss: 14.28160, val accuracy: 0.21839
+Final : 0.3316118204897277 [('val/VGG16/monotone/f1-score', 0.3439490445859873), ('val/VGG16/screenshot/f1-score', 0.7385229540918163), ('val/VGG16/unknown/f1-score', 0.14355948869223203)]
+Epoch: 1, batch loss: 0.81365 Loss Sum: 129.62836, accuracy : 0.61609, val loss: 13.18892, val accuracy: 0.30268
+Final : 0.4847652416618272 [('val/VGG16/monotone/f1-score', 0.7024390243902439), ('val/VGG16/screenshot/f1-score', 0.8148148148148148), ('val/VGG16/unknown/f1-score', 0.19903381642512077)]
+Epoch: 2, batch loss: 0.86134 Loss Sum: 101.46828, accuracy : 0.75345, val loss: 11.08441, val accuracy: 0.46973
+Final : 0.6782746242048717 [('val/VGG16/monotone/f1-score', 0.8582089552238806), ('val/VGG16/screenshot/f1-score', 0.8150807899461401), ('val/VGG16/unknown/f1-score', 0.44609053497942386)]
+Epoch: 3, batch loss: 0.52247 Loss Sum: 81.49685, accuracy : 0.80780, val loss: 9.43902, val accuracy: 0.61456
+Final : 0.7780294275842394 [('val/VGG16/monotone/f1-score', 0.8650519031141868), ('val/VGG16/screenshot/f1-score', 0.8499095840867994), ('val/VGG16/unknown/f1-score', 0.6405797101449275)]
+---train finished---
+Trying to save to /tmp/tmp_ickrhh2/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.22201 Loss Sum: 162.35938, accuracy : 0.45487, val loss: 15.25038, val accuracy: 0.12567
+Final : 0.18224690760768303 [('val/VGG16/monotone/f1-score', 0.15492957746478872), ('val/VGG16/screenshot/f1-score', 0.61), ('val/VGG16/unknown/f1-score', 0.06404958677685951)]
+Epoch: 1, batch loss: 0.92804 Loss Sum: 132.22252, accuracy : 0.59741, val loss: 13.31341, val accuracy: 0.28966
+Final : 0.466588351670303 [('val/VGG16/monotone/f1-score', 0.6965174129353233), ('val/VGG16/screenshot/f1-score', 0.8052434456928839), ('val/VGG16/unknown/f1-score', 0.18111002921129504)]
+Epoch: 2, batch loss: 0.63370 Loss Sum: 103.74370, accuracy : 0.74536, val loss: 11.35671, val accuracy: 0.48046
+Final : 0.6938050157805632 [('val/VGG16/monotone/f1-score', 0.8796992481203006), ('val/VGG16/screenshot/f1-score', 0.8243727598566307), ('val/VGG16/unknown/f1-score', 0.4605263157894736)]
+Epoch: 3, batch loss: 0.53422 Loss Sum: 83.29853, accuracy : 0.80537, val loss: 9.94423, val accuracy: 0.56322
+Final : 0.7301780987111384 [('val/VGG16/monotone/f1-score', 0.832214765100671), ('val/VGG16/screenshot/f1-score', 0.8107142857142858), ('val/VGG16/unknown/f1-score', 0.5770097670924117)]
+---train finished---
+Trying to save to /tmp/tmpmqfh1e5y/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.19916 Loss Sum: 163.49255, accuracy : 0.41829, val loss: 14.50043, val accuracy: 0.18008
+Final : 0.20193545714491004 [('val/VGG16/monotone/f1-score', 0.07462686567164178), ('val/VGG16/screenshot/f1-score', 0.6272727272727273), ('val/VGG16/unknown/f1-score', 0.17590822179732316)]
+Epoch: 1, batch loss: 1.02621 Loss Sum: 137.37080, accuracy : 0.55505, val loss: 13.67424, val accuracy: 0.23602
+Final : 0.3156788047808645 [('val/VGG16/monotone/f1-score', 0.2684563758389262), ('val/VGG16/screenshot/f1-score', 0.7925233644859813), ('val/VGG16/unknown/f1-score', 0.14785992217898833)]
+Epoch: 2, batch loss: 0.94629 Loss Sum: 115.47393, accuracy : 0.64561, val loss: 12.24319, val accuracy: 0.37931
+Final : 0.5546650593796261 [('val/VGG16/monotone/f1-score', 0.5978260869565217), ('val/VGG16/screenshot/f1-score', 0.7930434782608695), ('val/VGG16/unknown/f1-score', 0.3599320882852292)]
+Epoch: 3, batch loss: 0.64029 Loss Sum: 100.11096, accuracy : 0.72412, val loss: 11.23650, val accuracy: 0.51341
+Final : 0.7266464095996159 [('val/VGG16/monotone/f1-score', 0.8860759493670887), ('val/VGG16/screenshot/f1-score', 0.822463768115942), ('val/VGG16/unknown/f1-score', 0.5264797507788161)]
+---train finished---
+Trying to save to /tmp/tmp4sodh53p/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.17453 Loss Sum: 164.03375, accuracy : 0.45773, val loss: 15.36636, val accuracy: 0.14866
+Final : 0.16835381254892656 [('val/VGG16/monotone/f1-score', 0.1167883211678832), ('val/VGG16/screenshot/f1-score', 0.6339468302658487), ('val/VGG16/unknown/f1-score', 0.06444906444906445)]
+Epoch: 1, batch loss: 1.13661 Loss Sum: 135.84580, accuracy : 0.56704, val loss: 14.07737, val accuracy: 0.22529
+Final : 0.29577583440229543 [('val/VGG16/monotone/f1-score', 0.28), ('val/VGG16/screenshot/f1-score', 0.7544483985765124), ('val/VGG16/unknown/f1-score', 0.12248995983935744)]
+Epoch: 2, batch loss: 0.91766 Loss Sum: 114.23977, accuracy : 0.64470, val loss: 12.45094, val accuracy: 0.37241
+Final : 0.5504062551765904 [('val/VGG16/monotone/f1-score', 0.6021505376344086), ('val/VGG16/screenshot/f1-score', 0.7930434782608695), ('val/VGG16/unknown/f1-score', 0.3491789109766638)]
+Epoch: 3, batch loss: 0.72787 Loss Sum: 99.69956, accuracy : 0.73081, val loss: 11.19994, val accuracy: 0.51111
+Final : 0.7193277086394686 [('val/VGG16/monotone/f1-score', 0.8962655601659751), ('val/VGG16/screenshot/f1-score', 0.8035087719298245), ('val/VGG16/unknown/f1-score', 0.5168363351605325)]
+---train finished---
+Trying to save to /tmp/tmpufbc8s5r/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.11199 Loss Sum: 162.87730, accuracy : 0.43479, val loss: 14.78196, val accuracy: 0.15479
+Final : 0.26648091061217744 [('val/VGG16/monotone/f1-score', 0.23287671232876714), ('val/VGG16/screenshot/f1-score', 0.5831202046035805), ('val/VGG16/unknown/f1-score', 0.1393523061825319)]
+Epoch: 1, batch loss: 0.89761 Loss Sum: 133.06951, accuracy : 0.59808, val loss: 13.30932, val accuracy: 0.29042
+Final : 0.4662482289517744 [('val/VGG16/monotone/f1-score', 0.6981132075471698), ('val/VGG16/screenshot/f1-score', 0.777570093457944), ('val/VGG16/unknown/f1-score', 0.1867179980750722)]
+Epoch: 2, batch loss: 0.77179 Loss Sum: 112.50624, accuracy : 0.70957, val loss: 12.64750, val accuracy: 0.33103
+Final : 0.5264669684284142 [('val/VGG16/monotone/f1-score', 0.8205128205128205), ('val/VGG16/screenshot/f1-score', 0.8133086876155268), ('val/VGG16/unknown/f1-score', 0.2186616399622997)]
+Epoch: 3, batch loss: 0.86703 Loss Sum: 104.26351, accuracy : 0.75175, val loss: 12.30819, val accuracy: 0.39157
+Final : 0.6135043536860234 [('val/VGG16/monotone/f1-score', 0.8719999999999999), ('val/VGG16/screenshot/f1-score', 0.8200371057513915), ('val/VGG16/unknown/f1-score', 0.32292595896520965)]
+---train finished---
+Trying to save to /tmp/tmpcrf8cwey/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.11849 Loss Sum: 160.48294, accuracy : 0.45852, val loss: 14.45818, val accuracy: 0.19004
+Final : 0.24484256051368683 [('val/VGG16/monotone/f1-score', 0.14285714285714285), ('val/VGG16/screenshot/f1-score', 0.7142857142857143), ('val/VGG16/unknown/f1-score', 0.14384236453201968)]
+Epoch: 1, batch loss: 0.94891 Loss Sum: 128.93454, accuracy : 0.60800, val loss: 13.22900, val accuracy: 0.30038
+Final : 0.47415189831407895 [('val/VGG16/monotone/f1-score', 0.6862745098039216), ('val/VGG16/screenshot/f1-score', 0.8051001821493625), ('val/VGG16/unknown/f1-score', 0.1929321872015282)]
+Epoch: 2, batch loss: 0.90021 Loss Sum: 108.89618, accuracy : 0.71651, val loss: 12.48339, val accuracy: 0.36552
+Final : 0.5726196644600122 [('val/VGG16/monotone/f1-score', 0.7739130434782608), ('val/VGG16/screenshot/f1-score', 0.8029197080291972), ('val/VGG16/unknown/f1-score', 0.3021582733812949)]
+Epoch: 3, batch loss: 0.76382 Loss Sum: 102.38050, accuracy : 0.74481, val loss: 11.90876, val accuracy: 0.41762
+Final : 0.6356902721772903 [('val/VGG16/monotone/f1-score', 0.8619246861924686), ('val/VGG16/screenshot/f1-score', 0.8007117437722421), ('val/VGG16/unknown/f1-score', 0.37221269296741)]
+---train finished---
+Trying to save to /tmp/tmp6deak22v/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.19347 Loss Sum: 161.78307, accuracy : 0.44288, val loss: 14.36327, val accuracy: 0.19004
+Final : 0.0 [('val/VGG16/monotone/f1-score', 0.0), ('val/VGG16/screenshot/f1-score', 0.7122153209109731), ('val/VGG16/unknown/f1-score', 0.14728682170542634)]
+Epoch: 1, batch loss: 0.93449 Loss Sum: 134.27714, accuracy : 0.55913, val loss: 13.46220, val accuracy: 0.23985
+Final : 0.23842133719924924 [('val/VGG16/monotone/f1-score', 0.10294117647058823), ('val/VGG16/screenshot/f1-score', 0.7899461400359067), ('val/VGG16/unknown/f1-score', 0.16666666666666669)]
+Epoch: 2, batch loss: 1.04546 Loss Sum: 119.00765, accuracy : 0.59759, val loss: 13.14354, val accuracy: 0.27050
+Final : 0.33559975603880415 [('val/VGG16/monotone/f1-score', 0.2206896551724138), ('val/VGG16/screenshot/f1-score', 0.7779751332149201), ('val/VGG16/unknown/f1-score', 0.22014925373134328)]
+Epoch: 3, batch loss: 0.85014 Loss Sum: 113.92331, accuracy : 0.61993, val loss: 12.81219, val accuracy: 0.32261
+Final : 0.43844545917936456 [('val/VGG16/monotone/f1-score', 0.356687898089172), ('val/VGG16/screenshot/f1-score', 0.8007054673721341), ('val/VGG16/unknown/f1-score', 0.29511111111111116)]
+---train finished---
+Trying to save to /tmp/tmp1_l3vsr6/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.16501 Loss Sum: 163.48324, accuracy : 0.43850, val loss: 14.94014, val accuracy: 0.15096
+Final : 0.12758939031875657 [('val/VGG16/monotone/f1-score', 0.030534351145038167), ('val/VGG16/screenshot/f1-score', 0.6410835214446953), ('val/VGG16/unknown/f1-score', 0.1061061061061061)]
+Epoch: 1, batch loss: 1.00875 Loss Sum: 135.36688, accuracy : 0.55669, val loss: 13.99687, val accuracy: 0.22529
+Final : 0.26789453445985195 [('val/VGG16/monotone/f1-score', 0.18309859154929578), ('val/VGG16/screenshot/f1-score', 0.7723132969034608), ('val/VGG16/unknown/f1-score', 0.13596059113300493)]
+Epoch: 2, batch loss: 0.89989 Loss Sum: 119.51669, accuracy : 0.60715, val loss: 13.23846, val accuracy: 0.26667
+Final : 0.36871415234322336 [('val/VGG16/monotone/f1-score', 0.32467532467532473), ('val/VGG16/screenshot/f1-score', 0.7777777777777777), ('val/VGG16/unknown/f1-score', 0.19850187265917604)]
+Epoch: 3, batch loss: 0.87259 Loss Sum: 114.63561, accuracy : 0.62650, val loss: 12.82065, val accuracy: 0.30038
+Final : 0.4290826725491312 [('val/VGG16/monotone/f1-score', 0.40740740740740744), ('val/VGG16/screenshot/f1-score', 0.8035398230088495), ('val/VGG16/unknown/f1-score', 0.2413162705667276)]
+---train finished---
+Trying to save to /tmp/tmprphclkqb/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.77954 Loss Sum: 137.64762, accuracy : 0.55243, val loss: 11.61133, val accuracy: 0.43448
+Final : 0.6584234474065656 [('val/VGG16/monotone/f1-score', 0.8976377952755905), ('val/VGG16/screenshot/f1-score', 0.8087431693989071), ('val/VGG16/unknown/f1-score', 0.39319148936170206)]
+Epoch: 1, batch loss: 0.44591 Loss Sum: 71.42835, accuracy : 0.83178, val loss: 7.83079, val accuracy: 0.71188
+Final : 0.8153277577930274 [('val/VGG16/monotone/f1-score', 0.8344370860927153), ('val/VGG16/screenshot/f1-score', 0.8598130841121495), ('val/VGG16/unknown/f1-score', 0.7554383651944628)]
+Epoch: 2, batch loss: 0.35600 Loss Sum: 47.08826, accuracy : 0.88138, val loss: 5.63467, val accuracy: 0.81456
+Final : 0.8826208651131118 [('val/VGG16/monotone/f1-score', 0.9097472924187726), ('val/VGG16/screenshot/f1-score', 0.8851851851851851), ('val/VGG16/unknown/f1-score', 0.8538226299694189)]
+Epoch: 3, batch loss: 0.15782 Loss Sum: 39.05571, accuracy : 0.89976, val loss: 6.15866, val accuracy: 0.80766
+Final : 0.8801321801952677 [('val/VGG16/monotone/f1-score', 0.9064748201438849), ('val/VGG16/screenshot/f1-score', 0.8880733944954128), ('val/VGG16/unknown/f1-score', 0.8469135802469137)]
+---train finished---
+Trying to save to /tmp/tmpu1zhx28p/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.73707 Loss Sum: 138.09483, accuracy : 0.56150, val loss: 11.86434, val accuracy: 0.42222
+Final : 0.640927921484073 [('val/VGG16/monotone/f1-score', 0.8605577689243028), ('val/VGG16/screenshot/f1-score', 0.8130671506352086), ('val/VGG16/unknown/f1-score', 0.37628865979381443)]
+Epoch: 1, batch loss: 0.48141 Loss Sum: 71.40628, accuracy : 0.83221, val loss: 7.56990, val accuracy: 0.73027
+Final : 0.8216366374932268 [('val/VGG16/monotone/f1-score', 0.8504983388704319), ('val/VGG16/screenshot/f1-score', 0.8444444444444446), ('val/VGG16/unknown/f1-score', 0.7723156532988357)]
+Epoch: 2, batch loss: 0.39630 Loss Sum: 47.92058, accuracy : 0.88071, val loss: 5.94352, val accuracy: 0.80690
+Final : 0.8700358788335026 [('val/VGG16/monotone/f1-score', 0.8873239436619718), ('val/VGG16/screenshot/f1-score', 0.8770642201834863), ('val/VGG16/unknown/f1-score', 0.8462484624846248)]
+Epoch: 3, batch loss: 0.43032 Loss Sum: 39.84124, accuracy : 0.89532, val loss: 5.29158, val accuracy: 0.82299
+Final : 0.8888059441420016 [('val/VGG16/monotone/f1-score', 0.9181494661921707), ('val/VGG16/screenshot/f1-score', 0.8909090909090909), ('val/VGG16/unknown/f1-score', 0.8583690987124464)]
+---train finished---
+Trying to save to /tmp/tmphwtttb08/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_100.0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.82332 Loss Sum: 143.00218, accuracy : 0.49480, val loss: 11.93731, val accuracy: 0.37395
+Final : 0.4894132790828367 [('val/VGG16/monotone/f1-score', 0.3875), ('val/VGG16/screenshot/f1-score', 0.7999999999999999), ('val/VGG16/unknown/f1-score', 0.3781512605042017)]
+Epoch: 1, batch loss: 0.51154 Loss Sum: 90.86007, accuracy : 0.77323, val loss: 9.15846, val accuracy: 0.66207
+Final : 0.8119935990804 [('val/VGG16/monotone/f1-score', 0.9032258064516129), ('val/VGG16/screenshot/f1-score', 0.8438661710037174), ('val/VGG16/unknown/f1-score', 0.7024054982817869)]
+Epoch: 2, batch loss: 0.46492 Loss Sum: 61.93029, accuracy : 0.85114, val loss: 7.88326, val accuracy: 0.72644
+Final : 0.8295548191868994 [('val/VGG16/monotone/f1-score', 0.8648648648648649), ('val/VGG16/screenshot/f1-score', 0.8560747663551402), ('val/VGG16/unknown/f1-score', 0.7710371819960861)]
+Epoch: 3, batch loss: 0.33610 Loss Sum: 46.90730, accuracy : 0.87816, val loss: 6.27820, val accuracy: 0.79387
+Final : 0.8705248676077999 [('val/VGG16/monotone/f1-score', 0.9020979020979021), ('val/VGG16/screenshot/f1-score', 0.8756957328385899), ('val/VGG16/unknown/f1-score', 0.8350964530180459)]
+---train finished---
+Trying to save to /tmp/tmpwbib0qh1/model
+Too long checkpoint name: VGG16_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_0 not saved
+Done
+VGG16 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.74646 Loss Sum: 143.75153, accuracy : 0.50806, val loss: 12.15831, val accuracy: 0.35709
+Final : 0.5021592077621284 [('val/VGG16/monotone/f1-score', 0.46428571428571425), ('val/VGG16/screenshot/f1-score', 0.7821428571428573), ('val/VGG16/unknown/f1-score', 0.34870075440067055)]
+Epoch: 1, batch loss: 0.80044 Loss Sum: 89.71383, accuracy : 0.77634, val loss: 8.99154, val accuracy: 0.67510
+Final : 0.8183589498958425 [('val/VGG16/monotone/f1-score', 0.9202898550724637), ('val/VGG16/screenshot/f1-score', 0.8302583025830258), ('val/VGG16/unknown/f1-score', 0.7172881355932204)]
+Epoch: 2, batch loss: 0.31141 Loss Sum: 59.07455, accuracy : 0.85734, val loss: 7.61943, val accuracy: 0.73946
+Final : 0.8413775731605448 [('val/VGG16/monotone/f1-score', 0.8881118881118881), ('val/VGG16/screenshot/f1-score', 0.8586956521739131), ('val/VGG16/unknown/f1-score', 0.7810266406757634)]
+Epoch: 3, batch loss: 0.40496 Loss Sum: 46.19519, accuracy : 0.87931, val loss: 6.64974, val accuracy: 0.76782
+Final : 0.8572795840105581 [('val/VGG16/monotone/f1-score', 0.8982456140350877), ('val/VGG16/screenshot/f1-score', 0.8671586715867159), ('val/VGG16/unknown/f1-score', 0.8088607594936709)]
+---train finished---

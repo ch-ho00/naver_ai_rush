@@ -1,0 +1,2792 @@
+Downloading: "https://download.pytorch.org/models/resnet50-19c8e357.pth" to /home/nsml/.cache/torch/checkpoints/resnet50-19c8e357.pth
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.86567 Loss Sum: 141.91472, accuracy : 0.55633, val loss: 15.30229, val accuracy: 0.20766
+Final : 0.24426811892549832 [('val/ResNet50/monotone/f1-score', 0.8), ('val/ResNet50/screenshot/f1-score', 0.7082405345211581), ('val/ResNet50/unknown/f1-score', 0.025723472668810286)]
+Epoch: 1, batch loss: 0.73983 Loss Sum: 101.81080, accuracy : 0.76404, val loss: 13.09852, val accuracy: 0.30805
+Final : 0.45020062220824547 [('val/ResNet50/monotone/f1-score', 0.782051282051282), ('val/ResNet50/screenshot/f1-score', 0.8062015503875969), ('val/ResNet50/unknown/f1-score', 0.14472361809045226)]
+Epoch: 2, batch loss: 0.09200 Loss Sum: 24.15639, accuracy : 0.93543, val loss: 13.92473, val accuracy: 0.59770
+Final : 0.7918751852188544 [('val/ResNet50/monotone/f1-score', 0.8827586206896552), ('val/ResNet50/screenshot/f1-score', 0.9213483146067416), ('val/ResNet50/unknown/f1-score', 0.6105263157894737)]
+Epoch: 3, batch loss: 0.08406 Loss Sum: 11.39439, accuracy : 0.96847, val loss: 16.40265, val accuracy: 0.61379
+Final : 0.8087299898429299 [('val/ResNet50/monotone/f1-score', 0.9045936395759718), ('val/ResNet50/screenshot/f1-score', 0.9285714285714285), ('val/ResNet50/unknown/f1-score', 0.6297117516629711)]
+---train finished---
+Trying to save to /tmp/tmpkw05ob0p/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.85789 Loss Sum: 140.99646, accuracy : 0.54458, val loss: 14.03967, val accuracy: 0.27510
+Final : 0.44083682575179656 [('val/ResNet50/monotone/f1-score', 0.7970479704797049), ('val/ResNet50/screenshot/f1-score', 0.7412008281573498), ('val/ResNet50/unknown/f1-score', 0.14501510574018128)]
+Epoch: 1, batch loss: 0.68961 Loss Sum: 98.90544, accuracy : 0.78711, val loss: 13.44449, val accuracy: 0.31877
+Final : 0.4807839333362248 [('val/ResNet50/monotone/f1-score', 0.7922077922077921), ('val/ResNet50/screenshot/f1-score', 0.8253968253968254), ('val/ResNet50/unknown/f1-score', 0.1699604743083004)]
+Epoch: 2, batch loss: 0.21591 Loss Sum: 24.03519, accuracy : 0.93445, val loss: 13.31261, val accuracy: 0.61456
+Final : 0.8101624751654619 [('val/ResNet50/monotone/f1-score', 0.9052631578947368), ('val/ResNet50/screenshot/f1-score', 0.9345794392523364), ('val/ResNet50/unknown/f1-score', 0.6285289747399703)]
+Epoch: 3, batch loss: 0.05189 Loss Sum: 11.63860, accuracy : 0.96872, val loss: 15.07913, val accuracy: 0.61226
+Final : 0.7966155279201362 [('val/ResNet50/monotone/f1-score', 0.8835616438356165), ('val/ResNet50/screenshot/f1-score', 0.9140767824497257), ('val/ResNet50/unknown/f1-score', 0.6259314456035767)]
+---train finished---
+Trying to save to /tmp/tmp78isglbr/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.05069 Loss Sum: 144.99598, accuracy : 0.52444, val loss: 14.66103, val accuracy: 0.22529
+Final : 0.37281140226493203 [('val/ResNet50/monotone/f1-score', 0.7931034482758621), ('val/ResNet50/screenshot/f1-score', 0.6902654867256638), ('val/ResNet50/unknown/f1-score', 0.09465020576131687)]
+Epoch: 1, batch loss: 0.75745 Loss Sum: 106.36941, accuracy : 0.75571, val loss: 13.89831, val accuracy: 0.28582
+Final : 0.4267258940007513 [('val/ResNet50/monotone/f1-score', 0.8424908424908425), ('val/ResNet50/screenshot/f1-score', 0.7683397683397684), ('val/ResNet50/unknown/f1-score', 0.12004069175991863)]
+Epoch: 2, batch loss: 0.18631 Loss Sum: 26.77843, accuracy : 0.92831, val loss: 14.37856, val accuracy: 0.59310
+Final : 0.7855256469213759 [('val/ResNet50/monotone/f1-score', 0.9020979020979021), ('val/ResNet50/screenshot/f1-score', 0.891696750902527), ('val/ResNet50/unknown/f1-score', 0.6025738077214232)]
+Epoch: 3, batch loss: 0.09452 Loss Sum: 14.67609, accuracy : 0.96014, val loss: 14.78629, val accuracy: 0.60920
+Final : 0.7983355352169886 [('val/ResNet50/monotone/f1-score', 0.8865979381443299), ('val/ResNet50/screenshot/f1-score', 0.9219330855018587), ('val/ResNet50/unknown/f1-score', 0.6224869694713329)]
+---train finished---
+Trying to save to /tmp/tmpn5a9dk04/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.87712 Loss Sum: 140.89592, accuracy : 0.55669, val loss: 15.04330, val accuracy: 0.19693
+Final : 0.23400082529433178 [('val/ResNet50/monotone/f1-score', 0.7489361702127659), ('val/ResNet50/screenshot/f1-score', 0.724770642201835), ('val/ResNet50/unknown/f1-score', 0.023605150214592276)]
+Epoch: 1, batch loss: 0.59620 Loss Sum: 103.46506, accuracy : 0.75808, val loss: 13.31645, val accuracy: 0.29885
+Final : 0.4397293324570174 [('val/ResNet50/monotone/f1-score', 0.8131147540983608), ('val/ResNet50/screenshot/f1-score', 0.7858546168958743), ('val/ResNet50/unknown/f1-score', 0.13306451612903225)]
+Epoch: 2, batch loss: 0.34157 Loss Sum: 27.31455, accuracy : 0.92575, val loss: 15.03153, val accuracy: 0.58008
+Final : 0.7821074484569873 [('val/ResNet50/monotone/f1-score', 0.889655172413793), ('val/ResNet50/screenshot/f1-score', 0.9213483146067416), ('val/ResNet50/unknown/f1-score', 0.5836516424751719)]
+Epoch: 3, batch loss: 0.10897 Loss Sum: 15.27563, accuracy : 0.95855, val loss: 16.38661, val accuracy: 0.60613
+Final : 0.8012602618978125 [('val/ResNet50/monotone/f1-score', 0.9084507042253521), ('val/ResNet50/screenshot/f1-score', 0.9174311926605505), ('val/ResNet50/unknown/f1-score', 0.6172284644194757)]
+---train finished---
+Trying to save to /tmp/tmpktgtqj6v/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.84200 Loss Sum: 133.90896, accuracy : 0.59802, val loss: 14.35988, val accuracy: 0.23525
+Final : 0.3350138048646366 [('val/ResNet50/monotone/f1-score', 0.7781569965870307), ('val/ResNet50/screenshot/f1-score', 0.71875), ('val/ResNet50/unknown/f1-score', 0.06722689075630252)]
+Epoch: 1, batch loss: 0.60727 Loss Sum: 94.37896, accuracy : 0.78747, val loss: 12.61925, val accuracy: 0.33793
+Final : 0.4962056473426508 [('val/ResNet50/monotone/f1-score', 0.7546012269938651), ('val/ResNet50/screenshot/f1-score', 0.8150943396226416), ('val/ResNet50/unknown/f1-score', 0.19863680623174293)]
+Epoch: 2, batch loss: 0.16147 Loss Sum: 33.78037, accuracy : 0.91267, val loss: 13.08602, val accuracy: 0.57088
+Final : 0.7676844435503709 [('val/ResNet50/monotone/f1-score', 0.8657718120805369), ('val/ResNet50/screenshot/f1-score', 0.9144981412639406), ('val/ResNet50/unknown/f1-score', 0.5714285714285715)]
+Epoch: 3, batch loss: 0.13992 Loss Sum: 18.40973, accuracy : 0.95046, val loss: 13.31351, val accuracy: 0.59617
+Final : 0.7888075131475247 [('val/ResNet50/monotone/f1-score', 0.8865979381443299), ('val/ResNet50/screenshot/f1-score', 0.9128014842300556), ('val/ResNet50/unknown/f1-score', 0.6064710308502634)]
+---train finished---
+Trying to save to /tmp/tmpbyjx2a9y/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.80310 Loss Sum: 134.86975, accuracy : 0.59771, val loss: 14.66758, val accuracy: 0.22146
+Final : 0.27095663852351404 [('val/ResNet50/monotone/f1-score', 0.8447653429602887), ('val/ResNet50/screenshot/f1-score', 0.6902654867256638), ('val/ResNet50/unknown/f1-score', 0.03411513859275053)]
+Epoch: 1, batch loss: 0.48632 Loss Sum: 95.21031, accuracy : 0.78559, val loss: 12.64035, val accuracy: 0.33333
+Final : 0.5100191711274452 [('val/ResNet50/monotone/f1-score', 0.8012820512820512), ('val/ResNet50/screenshot/f1-score', 0.7928994082840237), ('val/ResNet50/unknown/f1-score', 0.20881226053639845)]
+Epoch: 2, batch loss: 0.22803 Loss Sum: 32.94060, accuracy : 0.91668, val loss: 12.65552, val accuracy: 0.58851
+Final : 0.7749407214869203 [('val/ResNet50/monotone/f1-score', 0.8571428571428571), ('val/ResNet50/screenshot/f1-score', 0.9046728971962616), ('val/ResNet50/unknown/f1-score', 0.6001511715797431)]
+Epoch: 3, batch loss: 0.24797 Loss Sum: 18.97123, accuracy : 0.94845, val loss: 12.60857, val accuracy: 0.60920
+Final : 0.7964912602624533 [('val/ResNet50/monotone/f1-score', 0.8835616438356165), ('val/ResNet50/screenshot/f1-score', 0.9165120593692022), ('val/ResNet50/unknown/f1-score', 0.6239761727475801)]
+---train finished---
+Trying to save to /tmp/tmp10kyut5i/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.93182 Loss Sum: 135.68510, accuracy : 0.57769, val loss: 14.16001, val accuracy: 0.24521
+Final : 0.3822575442744913 [('val/ResNet50/monotone/f1-score', 0.773109243697479), ('val/ResNet50/screenshot/f1-score', 0.7770700636942676), ('val/ResNet50/unknown/f1-score', 0.09297520661157026)]
+Epoch: 1, batch loss: 0.86958 Loss Sum: 100.68476, accuracy : 0.76916, val loss: 13.50999, val accuracy: 0.30575
+Final : 0.4594609369812909 [('val/ResNet50/monotone/f1-score', 0.822742474916388), ('val/ResNet50/screenshot/f1-score', 0.78515625), ('val/ResNet50/unknown/f1-score', 0.15015015015015015)]
+Epoch: 2, batch loss: 0.09754 Loss Sum: 36.06606, accuracy : 0.90865, val loss: 13.46559, val accuracy: 0.56552
+Final : 0.7578294066510546 [('val/ResNet50/monotone/f1-score', 0.8590604026845637), ('val/ResNet50/screenshot/f1-score', 0.8921389396709324), ('val/ResNet50/unknown/f1-score', 0.5678820791311094)]
+Epoch: 3, batch loss: 0.10805 Loss Sum: 21.72394, accuracy : 0.94407, val loss: 14.10538, val accuracy: 0.57854
+Final : 0.7741081797146745 [('val/ResNet50/monotone/f1-score', 0.8775510204081634), ('val/ResNet50/screenshot/f1-score', 0.9124087591240876), ('val/ResNet50/unknown/f1-score', 0.5793528505392912)]
+---train finished---
+Trying to save to /tmp/tmpzrpnv7vz/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.87356 Loss Sum: 139.55981, accuracy : 0.55572, val loss: 14.99891, val accuracy: 0.22452
+Final : 0.29119367739958923 [('val/ResNet50/monotone/f1-score', 0.8189655172413793), ('val/ResNet50/screenshot/f1-score', 0.7473903966597077), ('val/ResNet50/unknown/f1-score', 0.04033970276008492)]
+Epoch: 1, batch loss: 0.78481 Loss Sum: 103.27435, accuracy : 0.75534, val loss: 12.86930, val accuracy: 0.33946
+Final : 0.5357209675865559 [('val/ResNet50/monotone/f1-score', 0.8480565371024734), ('val/ResNet50/screenshot/f1-score', 0.8181818181818182), ('val/ResNet50/unknown/f1-score', 0.221585482330468)]
+Epoch: 2, batch loss: 0.19201 Loss Sum: 36.89923, accuracy : 0.90707, val loss: 13.35790, val accuracy: 0.58544
+Final : 0.7812163724850195 [('val/ResNet50/monotone/f1-score', 0.8775510204081634), ('val/ResNet50/screenshot/f1-score', 0.9205175600739373), ('val/ResNet50/unknown/f1-score', 0.5902140672782875)]
+Epoch: 3, batch loss: 0.25790 Loss Sum: 22.49694, accuracy : 0.93920, val loss: 14.29122, val accuracy: 0.57778
+Final : 0.7736229776998707 [('val/ResNet50/monotone/f1-score', 0.862876254180602), ('val/ResNet50/screenshot/f1-score', 0.9227871939736346), ('val/ResNet50/unknown/f1-score', 0.5814843152257078)]
+---train finished---
+Trying to save to /tmp/tmp6k_k6ojf/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.66893 Loss Sum: 118.02562, accuracy : 0.66521, val loss: 12.53640, val accuracy: 0.33487
+Final : 0.5004227755314807 [('val/ResNet50/monotone/f1-score', 0.7507507507507508), ('val/ResNet50/screenshot/f1-score', 0.7906066536203522), ('val/ResNet50/unknown/f1-score', 0.21113243761996162)]
+Epoch: 1, batch loss: 0.44409 Loss Sum: 73.51229, accuracy : 0.82405, val loss: 13.77772, val accuracy: 0.30575
+Final : 0.43203517196225283 [('val/ResNet50/monotone/f1-score', 0.7725856697819315), ('val/ResNet50/screenshot/f1-score', 0.8201160541586073), ('val/ResNet50/unknown/f1-score', 0.12727272727272726)]
+Epoch: 2, batch loss: 0.16739 Loss Sum: 22.93965, accuracy : 0.93750, val loss: 14.98590, val accuracy: 0.61686
+Final : 0.8058134471819975 [('val/ResNet50/monotone/f1-score', 0.9142857142857144), ('val/ResNet50/screenshot/f1-score', 0.9061371841155235), ('val/ResNet50/unknown/f1-score', 0.631578947368421)]
+Epoch: 3, batch loss: 0.08834 Loss Sum: 11.63991, accuracy : 0.96908, val loss: 18.25336, val accuracy: 0.60843
+Final : 0.8066326785021752 [('val/ResNet50/monotone/f1-score', 0.9280575539568345), ('val/ResNet50/screenshot/f1-score', 0.9147005444646098), ('val/ResNet50/unknown/f1-score', 0.6182634730538923)]
+---train finished---
+Trying to save to /tmp/tmp1vq9fnzb/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.72797 Loss Sum: 121.42814, accuracy : 0.65790, val loss: 14.05705, val accuracy: 0.26820
+Final : 0.348228791140366 [('val/ResNet50/monotone/f1-score', 0.782051282051282), ('val/ResNet50/screenshot/f1-score', 0.8082474226804124), ('val/ResNet50/unknown/f1-score', 0.06680584551148225)]
+Epoch: 1, batch loss: 0.48365 Loss Sum: 74.16293, accuracy : 0.82582, val loss: 11.33317, val accuracy: 0.45670
+Final : 0.6448562259496325 [('val/ResNet50/monotone/f1-score', 0.764525993883792), ('val/ResNet50/screenshot/f1-score', 0.8571428571428572), ('val/ResNet50/unknown/f1-score', 0.4092071611253197)]
+Epoch: 2, batch loss: 0.06428 Loss Sum: 22.64637, accuracy : 0.93969, val loss: 14.87582, val accuracy: 0.57701
+Final : 0.777524163891476 [('val/ResNet50/monotone/f1-score', 0.8543046357615894), ('val/ResNet50/screenshot/f1-score', 0.9404761904761906), ('val/ResNet50/unknown/f1-score', 0.5850340136054422)]
+Epoch: 3, batch loss: 0.04577 Loss Sum: 11.31167, accuracy : 0.96817, val loss: 18.41160, val accuracy: 0.60766
+Final : 0.7916437470705872 [('val/ResNet50/monotone/f1-score', 0.8590604026845637), ('val/ResNet50/screenshot/f1-score', 0.9283018867924528), ('val/ResNet50/unknown/f1-score', 0.6221232368225688)]
+---train finished---
+Trying to save to /tmp/tmpz5z3s95f/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.65937 Loss Sum: 125.78565, accuracy : 0.62242, val loss: 12.86574, val accuracy: 0.34636
+Final : 0.5433846831930761 [('val/ResNet50/monotone/f1-score', 0.8456375838926175), ('val/ResNet50/screenshot/f1-score', 0.7865612648221344), ('val/ResNet50/unknown/f1-score', 0.2412155745489079)]
+Epoch: 1, batch loss: 0.55759 Loss Sum: 78.18151, accuracy : 0.82484, val loss: 11.77633, val accuracy: 0.42759
+Final : 0.6323993250878113 [('val/ResNet50/monotone/f1-score', 0.8193548387096774), ('val/ResNet50/screenshot/f1-score', 0.8484848484848485), ('val/ResNet50/unknown/f1-score', 0.36379613356766255)]
+Epoch: 2, batch loss: 0.03062 Loss Sum: 24.17711, accuracy : 0.93372, val loss: 13.54610, val accuracy: 0.62835
+Final : 0.8178448318692072 [('val/ResNet50/monotone/f1-score', 0.9148936170212766), ('val/ResNet50/screenshot/f1-score', 0.9239332096474954), ('val/ResNet50/unknown/f1-score', 0.6471449487554906)]
+Epoch: 3, batch loss: 0.14753 Loss Sum: 14.46370, accuracy : 0.95935, val loss: 16.06108, val accuracy: 0.61992
+Final : 0.8045104932184601 [('val/ResNet50/monotone/f1-score', 0.8904593639575972), ('val/ResNet50/screenshot/f1-score', 0.9104477611940298), ('val/ResNet50/unknown/f1-score', 0.6422823701536211)]
+---train finished---
+Trying to save to /tmp/tmpjx3nvamq/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.76037 Loss Sum: 121.21048, accuracy : 0.65875, val loss: 13.73935, val accuracy: 0.29579
+Final : 0.4156153987697027 [('val/ResNet50/monotone/f1-score', 0.8220064724919094), ('val/ResNet50/screenshot/f1-score', 0.7884615384615385), ('val/ResNet50/unknown/f1-score', 0.11076923076923076)]
+Epoch: 1, batch loss: 0.66746 Loss Sum: 75.19607, accuracy : 0.83586, val loss: 11.57950, val accuracy: 0.44674
+Final : 0.6567935304101866 [('val/ResNet50/monotone/f1-score', 0.832258064516129), ('val/ResNet50/screenshot/f1-score', 0.8445297504798466), ('val/ResNet50/unknown/f1-score', 0.40310077519379844)]
+Epoch: 2, batch loss: 0.17260 Loss Sum: 25.15732, accuracy : 0.93117, val loss: 14.02284, val accuracy: 0.60230
+Final : 0.7886360273108749 [('val/ResNet50/monotone/f1-score', 0.8835616438356165), ('val/ResNet50/screenshot/f1-score', 0.9007352941176471), ('val/ResNet50/unknown/f1-score', 0.6163051608077786)]
+Epoch: 3, batch loss: 0.09657 Loss Sum: 16.03669, accuracy : 0.95661, val loss: 16.83561, val accuracy: 0.63525
+Final : 0.8132692878586758 [('val/ResNet50/monotone/f1-score', 0.9045936395759718), ('val/ResNet50/screenshot/f1-score', 0.9010989010989011), ('val/ResNet50/unknown/f1-score', 0.6598984771573604)]
+---train finished---
+Trying to save to /tmp/tmpb9c7g24l/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.74082 Loss Sum: 119.60943, accuracy : 0.66466, val loss: 12.63809, val accuracy: 0.31418
+Final : 0.5001435768084952 [('val/ResNet50/monotone/f1-score', 0.8157894736842105), ('val/ResNet50/screenshot/f1-score', 0.7631027253668763), ('val/ResNet50/unknown/f1-score', 0.20096618357487925)]
+Epoch: 1, batch loss: 0.48786 Loss Sum: 71.90626, accuracy : 0.83507, val loss: 12.99034, val accuracy: 0.35326
+Final : 0.541358011883249 [('val/ResNet50/monotone/f1-score', 0.7823343848580442), ('val/ResNet50/screenshot/f1-score', 0.8134920634920635), ('val/ResNet50/unknown/f1-score', 0.2492917847025496)]
+Epoch: 2, batch loss: 0.11851 Loss Sum: 25.36244, accuracy : 0.93415, val loss: 11.62349, val accuracy: 0.63755
+Final : 0.8235205017267233 [('val/ResNet50/monotone/f1-score', 0.911660777385159), ('val/ResNet50/screenshot/f1-score', 0.931098696461825), ('val/ResNet50/unknown/f1-score', 0.6579520697167756)]
+Epoch: 3, batch loss: 0.06324 Loss Sum: 12.27142, accuracy : 0.96732, val loss: 15.33386, val accuracy: 0.58621
+Final : 0.791387025450222 [('val/ResNet50/monotone/f1-score', 0.9181494661921707), ('val/ResNet50/screenshot/f1-score', 0.9131238447319778), ('val/ResNet50/unknown/f1-score', 0.5911854103343465)]
+---train finished---
+Trying to save to /tmp/tmpxay9c116/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.51941 Loss Sum: 121.20485, accuracy : 0.64707, val loss: 14.20196, val accuracy: 0.26973
+Final : 0.3872743855408861 [('val/ResNet50/monotone/f1-score', 0.7544910179640718), ('val/ResNet50/screenshot/f1-score', 0.7521367521367521), ('val/ResNet50/unknown/f1-score', 0.1023541453428864)]
+Epoch: 1, batch loss: 0.58696 Loss Sum: 73.14654, accuracy : 0.83269, val loss: 12.39113, val accuracy: 0.39923
+Final : 0.5806091717170083 [('val/ResNet50/monotone/f1-score', 0.7529411764705883), ('val/ResNet50/screenshot/f1-score', 0.8301886792452831), ('val/ResNet50/unknown/f1-score', 0.3131221719457014)]
+Epoch: 2, batch loss: 0.06642 Loss Sum: 24.13458, accuracy : 0.93640, val loss: 13.39914, val accuracy: 0.60766
+Final : 0.794915058336712 [('val/ResNet50/monotone/f1-score', 0.8858131487889274), ('val/ResNet50/screenshot/f1-score', 0.911764705882353), ('val/ResNet50/unknown/f1-score', 0.6219239373601789)]
+Epoch: 3, batch loss: 0.05103 Loss Sum: 11.20418, accuracy : 0.96993, val loss: 15.19597, val accuracy: 0.60307
+Final : 0.8024429141640452 [('val/ResNet50/monotone/f1-score', 0.9110320284697508), ('val/ResNet50/screenshot/f1-score', 0.9216417910447761), ('val/ResNet50/unknown/f1-score', 0.6153846153846154)]
+---train finished---
+Trying to save to /tmp/tmpj7z8066o/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.79303 Loss Sum: 126.04607, accuracy : 0.63222, val loss: 13.53864, val accuracy: 0.31418
+Final : 0.47374114174509774 [('val/ResNet50/monotone/f1-score', 0.8736462093862817), ('val/ResNet50/screenshot/f1-score', 0.7910447761194029), ('val/ResNet50/unknown/f1-score', 0.15384615384615385)]
+Epoch: 1, batch loss: 0.61260 Loss Sum: 79.38501, accuracy : 0.82856, val loss: 12.86379, val accuracy: 0.38621
+Final : 0.5831282751119828 [('val/ResNet50/monotone/f1-score', 0.8208469055374592), ('val/ResNet50/screenshot/f1-score', 0.8323917137476459), ('val/ResNet50/unknown/f1-score', 0.2902033271719039)]
+Epoch: 2, batch loss: 0.09527 Loss Sum: 27.74099, accuracy : 0.92861, val loss: 13.05775, val accuracy: 0.61149
+Final : 0.7927466950191262 [('val/ResNet50/monotone/f1-score', 0.8677966101694916), ('val/ResNet50/screenshot/f1-score', 0.9124767225325885), ('val/ResNet50/unknown/f1-score', 0.6291635825314582)]
+Epoch: 3, batch loss: 0.13637 Loss Sum: 14.83887, accuracy : 0.95922, val loss: 15.71172, val accuracy: 0.61839
+Final : 0.808028766391305 [('val/ResNet50/monotone/f1-score', 0.9110320284697508), ('val/ResNet50/screenshot/f1-score', 0.9094269870609982), ('val/ResNet50/unknown/f1-score', 0.6367647058823529)]
+---train finished---
+Trying to save to /tmp/tmpg3lqyuz0/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.67114 Loss Sum: 122.48453, accuracy : 0.64883, val loss: 12.59603, val accuracy: 0.36935
+Final : 0.5834204267459127 [('val/ResNet50/monotone/f1-score', 0.8263888888888888), ('val/ResNet50/screenshot/f1-score', 0.7831325301204819), ('val/ResNet50/unknown/f1-score', 0.3068493150684931)]
+Epoch: 1, batch loss: 0.52544 Loss Sum: 75.25699, accuracy : 0.83951, val loss: 13.21072, val accuracy: 0.37011
+Final : 0.5570935997986322 [('val/ResNet50/monotone/f1-score', 0.8101265822784809), ('val/ResNet50/screenshot/f1-score', 0.8219696969696969), ('val/ResNet50/unknown/f1-score', 0.2596425211665099)]
+Epoch: 2, batch loss: 0.10174 Loss Sum: 28.28163, accuracy : 0.92472, val loss: 13.08237, val accuracy: 0.59004
+Final : 0.7876794596031964 [('val/ResNet50/monotone/f1-score', 0.8927335640138409), ('val/ResNet50/screenshot/f1-score', 0.9121495327102804), ('val/ResNet50/unknown/f1-score', 0.6001511715797431)]
+Epoch: 3, batch loss: 0.17709 Loss Sum: 15.73922, accuracy : 0.95618, val loss: 15.43717, val accuracy: 0.58927
+Final : 0.7866236160874285 [('val/ResNet50/monotone/f1-score', 0.8951048951048951), ('val/ResNet50/screenshot/f1-score', 0.9120879120879121), ('val/ResNet50/unknown/f1-score', 0.5961977186311787)]
+---train finished---
+Trying to save to /tmp/tmp28ms1ezf/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.91392 Loss Sum: 139.92396, accuracy : 0.56710, val loss: 14.74044, val accuracy: 0.21839
+Final : 0.23591124942944955 [('val/ResNet50/monotone/f1-score', 0.8308823529411764), ('val/ResNet50/screenshot/f1-score', 0.7363636363636362), ('val/ResNet50/unknown/f1-score', 0.02145922746781116)]
+Epoch: 1, batch loss: 0.71892 Loss Sum: 99.23360, accuracy : 0.76800, val loss: 13.95987, val accuracy: 0.25287
+Final : 0.2764760324105851 [('val/ResNet50/monotone/f1-score', 0.7920792079207921), ('val/ResNet50/screenshot/f1-score', 0.7854251012145749), ('val/ResNet50/unknown/f1-score', 0.03397027600849257)]
+Epoch: 2, batch loss: 0.48618 Loss Sum: 72.67520, accuracy : 0.83507, val loss: 11.45745, val accuracy: 0.40690
+Final : 0.6075792312539047 [('val/ResNet50/monotone/f1-score', 0.7936507936507937), ('val/ResNet50/screenshot/f1-score', 0.8410852713178294), ('val/ResNet50/unknown/f1-score', 0.336)]
+Epoch: 3, batch loss: 0.40699 Loss Sum: 54.07037, accuracy : 0.87870, val loss: 11.35064, val accuracy: 0.45287
+Final : 0.657420374582834 [('val/ResNet50/monotone/f1-score', 0.8178913738019169), ('val/ResNet50/screenshot/f1-score', 0.860377358490566), ('val/ResNet50/unknown/f1-score', 0.40378006872852235)]
+---train finished---
+Trying to save to /tmp/tmp4hpkj7a5/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.56614 Loss Sum: 113.49236, accuracy : 0.64415, val loss: 12.32007, val accuracy: 0.40153
+Final : 0.5842953981862165 [('val/ResNet50/monotone/f1-score', 0.8262295081967214), ('val/ResNet50/screenshot/f1-score', 0.7800687285223367), ('val/ResNet50/unknown/f1-score', 0.3095022624434389)]
+Epoch: 1, batch loss: 0.33266 Loss Sum: 48.97428, accuracy : 0.86130, val loss: 11.25075, val accuracy: 0.55556
+Final : 0.7084099158904487 [('val/ResNet50/monotone/f1-score', 0.7456647398843931), ('val/ResNet50/screenshot/f1-score', 0.8401486988847583), ('val/ResNet50/unknown/f1-score', 0.5674846625766871)]
+Epoch: 2, batch loss: 0.18043 Loss Sum: 34.73876, accuracy : 0.90597, val loss: 11.28907, val accuracy: 0.61303
+Final : 0.7785631039767057 [('val/ResNet50/monotone/f1-score', 0.832258064516129), ('val/ResNet50/screenshot/f1-score', 0.8970588235294118), ('val/ResNet50/unknown/f1-score', 0.6321243523316061)]
+Epoch: 3, batch loss: 0.15709 Loss Sum: 22.89859, accuracy : 0.93938, val loss: 10.13871, val accuracy: 0.69119
+Final : 0.8408460535802226 [('val/ResNet50/monotone/f1-score', 0.8865979381443299), ('val/ResNet50/screenshot/f1-score', 0.9245283018867925), ('val/ResNet50/unknown/f1-score', 0.7252747252747253)]
+---train finished---
+Trying to save to /tmp/tmpin8fv4u_/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.22415 Loss Sum: 163.42769, accuracy : 0.42523, val loss: 16.82057, val accuracy: 0.03908
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.0), ('val/ResNet50/screenshot/f1-score', 0.2962962962962963), ('val/ResNet50/unknown/f1-score', 0.00644468313641246)]
+Epoch: 1, batch loss: 1.21567 Loss Sum: 148.59800, accuracy : 0.48275, val loss: 16.25812, val accuracy: 0.08812
+Final : 0.08682013326380407 [('val/ResNet50/monotone/f1-score', 0.14388489208633096), ('val/ResNet50/screenshot/f1-score', 0.531578947368421), ('val/ResNet50/unknown/f1-score', 0.008556149732620321)]
+Epoch: 2, batch loss: 1.02645 Loss Sum: 134.25009, accuracy : 0.60130, val loss: 15.55834, val accuracy: 0.17701
+Final : 0.2096324422756444 [('val/ResNet50/monotone/f1-score', 0.7058823529411763), ('val/ResNet50/screenshot/f1-score', 0.6772009029345372), ('val/ResNet50/unknown/f1-score', 0.019271948608137048)]
+Epoch: 3, batch loss: 0.82442 Loss Sum: 118.68930, accuracy : 0.70257, val loss: 14.95684, val accuracy: 0.23142
+Final : 0.23468547968927872 [('val/ResNet50/monotone/f1-score', 0.8705882352941177), ('val/ResNet50/screenshot/f1-score', 0.7679324894514767), ('val/ResNet50/unknown/f1-score', 0.01933404940923738)]
+---train finished---
+Trying to save to /tmp/tmp7i2dpubn/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_0 not saved
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.42237 Loss Sum: 114.96114, accuracy : 0.65346, val loss: 13.15374, val accuracy: 0.36552
+Final : 0.5477842558227106 [('val/ResNet50/monotone/f1-score', 0.8145695364238411), ('val/ResNet50/screenshot/f1-score', 0.8102189781021897), ('val/ResNet50/unknown/f1-score', 0.2490566037735849)]
+Epoch: 1, batch loss: 0.28406 Loss Sum: 52.25082, accuracy : 0.85491, val loss: 11.57163, val accuracy: 0.54559
+Final : 0.7422626386488429 [('val/ResNet50/monotone/f1-score', 0.872852233676976), ('val/ResNet50/screenshot/f1-score', 0.8454376163873369), ('val/ResNet50/unknown/f1-score', 0.5541795665634675)]
+Epoch: 2, batch loss: 0.12935 Loss Sum: 37.24415, accuracy : 0.89928, val loss: 10.42535, val accuracy: 0.65211
+Final : 0.8139300869289015 [('val/ResNet50/monotone/f1-score', 0.8716216216216216), ('val/ResNet50/screenshot/f1-score', 0.9049429657794676), ('val/ResNet50/unknown/f1-score', 0.6836158192090396)]
+Epoch: 3, batch loss: 0.10746 Loss Sum: 25.72919, accuracy : 0.92825, val loss: 12.75310, val accuracy: 0.61226
+Final : 0.7911875776109623 [('val/ResNet50/monotone/f1-score', 0.8657718120805369), ('val/ResNet50/screenshot/f1-score', 0.9104477611940298), ('val/ResNet50/unknown/f1-score', 0.6283185840707964)]
+---train finished---
+Trying to save to /tmp/tmpwkbhxcwc/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.58044 Loss Sum: 108.07440, accuracy : 0.67640, val loss: 11.41860, val accuracy: 0.46743
+Final : 0.633042406398136 [('val/ResNet50/monotone/f1-score', 0.735632183908046), ('val/ResNet50/screenshot/f1-score', 0.8085106382978724), ('val/ResNet50/unknown/f1-score', 0.4265323257766582)]
+Epoch: 1, batch loss: 0.18068 Loss Sum: 48.55425, accuracy : 0.86203, val loss: 10.71759, val accuracy: 0.56935
+Final : 0.7314500453240398 [('val/ResNet50/monotone/f1-score', 0.7876923076923078), ('val/ResNet50/screenshot/f1-score', 0.8458646616541353), ('val/ResNet50/unknown/f1-score', 0.5873493975903614)]
+Epoch: 2, batch loss: 0.17663 Loss Sum: 38.80315, accuracy : 0.89118, val loss: 10.20241, val accuracy: 0.60766
+Final : 0.7730945449806313 [('val/ResNet50/monotone/f1-score', 0.821656050955414), ('val/ResNet50/screenshot/f1-score', 0.8951310861423221), ('val/ResNet50/unknown/f1-score', 0.6282335550628234)]
+Epoch: 3, batch loss: 0.13268 Loss Sum: 29.68016, accuracy : 0.91942, val loss: 11.19149, val accuracy: 0.59234
+Final : 0.7714164502229961 [('val/ResNet50/monotone/f1-score', 0.839344262295082), ('val/ResNet50/screenshot/f1-score', 0.9009345794392524), ('val/ResNet50/unknown/f1-score', 0.6070623591284748)]
+---train finished---
+Trying to save to /tmp/tmpqpkys5g8/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.15552 Loss Sum: 164.30007, accuracy : 0.41543, val loss: 17.08913, val accuracy: 0.03295
+Final : 0.025956434946227232 [('val/ResNet50/monotone/f1-score', 0.015267175572519083), ('val/ResNet50/screenshot/f1-score', 0.26402640264026406), ('val/ResNet50/unknown/f1-score', 0.0043383947939262466)]
+Epoch: 1, batch loss: 1.12381 Loss Sum: 147.40919, accuracy : 0.49973, val loss: 16.19338, val accuracy: 0.12107
+Final : 0.15071096659303793 [('val/ResNet50/monotone/f1-score', 0.3703703703703703), ('val/ResNet50/screenshot/f1-score', 0.6126582278481013), ('val/ResNet50/unknown/f1-score', 0.015086206896551725)]
+Epoch: 2, batch loss: 1.06307 Loss Sum: 137.43397, accuracy : 0.59096, val loss: 15.81962, val accuracy: 0.16245
+Final : 0.17904184032629303 [('val/ResNet50/monotone/f1-score', 0.6699029126213591), ('val/ResNet50/screenshot/f1-score', 0.6618357487922706), ('val/ResNet50/unknown/f1-score', 0.012944983818770227)]
+Epoch: 3, batch loss: 0.90394 Loss Sum: 131.08892, accuracy : 0.65443, val loss: 15.60215, val accuracy: 0.18927
+Final : 0.16667816500381977 [('val/ResNet50/monotone/f1-score', 0.748898678414097), ('val/ResNet50/screenshot/f1-score', 0.7149321266968325), ('val/ResNet50/unknown/f1-score', 0.008648648648648649)]
+---train finished---
+Trying to save to /tmp/tmplw4mj6h1/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.95301 Loss Sum: 145.18776, accuracy : 0.53484, val loss: 15.18159, val accuracy: 0.18774
+Final : 0.19010251892574345 [('val/ResNet50/monotone/f1-score', 0.8278688524590164), ('val/ResNet50/screenshot/f1-score', 0.6403712296983758), ('val/ResNet50/unknown/f1-score', 0.012958963282937363)]
+Epoch: 1, batch loss: 0.62716 Loss Sum: 106.91358, accuracy : 0.75382, val loss: 13.70041, val accuracy: 0.29655
+Final : 0.4227315913832296 [('val/ResNet50/monotone/f1-score', 0.8435374149659864), ('val/ResNet50/screenshot/f1-score', 0.7954110898661567), ('val/ResNet50/unknown/f1-score', 0.11258955987717502)]
+Epoch: 2, batch loss: 0.56397 Loss Sum: 89.49993, accuracy : 0.80001, val loss: 13.29219, val accuracy: 0.30728
+Final : 0.44793223983081826 [('val/ResNet50/monotone/f1-score', 0.8327868852459016), ('val/ResNet50/screenshot/f1-score', 0.8077669902912621), ('val/ResNet50/unknown/f1-score', 0.13360323886639675)]
+Epoch: 3, batch loss: 0.55719 Loss Sum: 79.00647, accuracy : 0.81717, val loss: 12.68654, val accuracy: 0.33946
+Final : 0.5195245340120945 [('val/ResNet50/monotone/f1-score', 0.8466666666666667), ('val/ResNet50/screenshot/f1-score', 0.8131021194605009), ('val/ResNet50/unknown/f1-score', 0.2036857419980601)]
+---train finished---
+Trying to save to /tmp/tmp21stac9c/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.96012 Loss Sum: 142.32707, accuracy : 0.55773, val loss: 15.22676, val accuracy: 0.21456
+Final : 0.19843804186739805 [('val/ResNet50/monotone/f1-score', 0.8278688524590164), ('val/ResNet50/screenshot/f1-score', 0.7315010570824525), ('val/ResNet50/unknown/f1-score', 0.012903225806451613)]
+Epoch: 1, batch loss: 0.78815 Loss Sum: 106.21462, accuracy : 0.74658, val loss: 13.69007, val accuracy: 0.29425
+Final : 0.39451617775636794 [('val/ResNet50/monotone/f1-score', 0.8541666666666667), ('val/ResNet50/screenshot/f1-score', 0.7755834829443446), ('val/ResNet50/unknown/f1-score', 0.09268795056642637)]
+Epoch: 2, batch loss: 0.68757 Loss Sum: 89.83220, accuracy : 0.79405, val loss: 12.98802, val accuracy: 0.31801
+Final : 0.45934069929016724 [('val/ResNet50/monotone/f1-score', 0.8327868852459016), ('val/ResNet50/screenshot/f1-score', 0.8089887640449438), ('val/ResNet50/unknown/f1-score', 0.14385614385614387)]
+Epoch: 3, batch loss: 0.67230 Loss Sum: 79.41566, accuracy : 0.81602, val loss: 12.80899, val accuracy: 0.33027
+Final : 0.4873102438387374 [('val/ResNet50/monotone/f1-score', 0.8523489932885905), ('val/ResNet50/screenshot/f1-score', 0.8178438661710037), ('val/ResNet50/unknown/f1-score', 0.1660079051383399)]
+---train finished---
+Trying to save to /tmp/tmp8nhyn625/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.87952 Loss Sum: 142.06249, accuracy : 0.58858, val loss: 13.82726, val accuracy: 0.25594
+Final : 0.36483048842836147 [('val/ResNet50/monotone/f1-score', 0.8303249097472923), ('val/ResNet50/screenshot/f1-score', 0.7418032786885246), ('val/ResNet50/unknown/f1-score', 0.0788381742738589)]
+Epoch: 1, batch loss: 0.72249 Loss Sum: 102.54712, accuracy : 0.79192, val loss: 12.04571, val accuracy: 0.36858
+Final : 0.5729650506239549 [('val/ResNet50/monotone/f1-score', 0.8143322475570033), ('val/ResNet50/screenshot/f1-score', 0.7748478701825557), ('val/ResNet50/unknown/f1-score', 0.29810298102981025)]
+Epoch: 2, batch loss: 0.08621 Loss Sum: 25.51957, accuracy : 0.93762, val loss: 13.70924, val accuracy: 0.61916
+Final : 0.8133173219352917 [('val/ResNet50/monotone/f1-score', 0.9020979020979021), ('val/ResNet50/screenshot/f1-score', 0.9351145038167938), ('val/ResNet50/unknown/f1-score', 0.6377663482733285)]
+Epoch: 3, batch loss: 0.16713 Loss Sum: 12.07835, accuracy : 0.97121, val loss: 17.25359, val accuracy: 0.60613
+Final : 0.7998584494885982 [('val/ResNet50/monotone/f1-score', 0.8865979381443299), ('val/ResNet50/screenshot/f1-score', 0.9340866290018832), ('val/ResNet50/unknown/f1-score', 0.6179104477611941)]
+---train finished---
+Trying to save to /tmp/tmptygkq6bd/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.91472 Loss Sum: 144.29037, accuracy : 0.55438, val loss: 13.50629, val accuracy: 0.26360
+Final : 0.42041446189110565 [('val/ResNet50/monotone/f1-score', 0.7686832740213524), ('val/ResNet50/screenshot/f1-score', 0.7587719298245614), ('val/ResNet50/unknown/f1-score', 0.1274014155712841)]
+Epoch: 1, batch loss: 0.72250 Loss Sum: 104.37570, accuracy : 0.78206, val loss: 12.80945, val accuracy: 0.31724
+Final : 0.48225481777674534 [('val/ResNet50/monotone/f1-score', 0.7873015873015873), ('val/ResNet50/screenshot/f1-score', 0.7935871743486973), ('val/ResNet50/unknown/f1-score', 0.17951219512195124)]
+Epoch: 2, batch loss: 0.19361 Loss Sum: 26.63054, accuracy : 0.93445, val loss: 13.68539, val accuracy: 0.61916
+Final : 0.8089302221612665 [('val/ResNet50/monotone/f1-score', 0.9045936395759718), ('val/ResNet50/screenshot/f1-score', 0.9205175600739373), ('val/ResNet50/unknown/f1-score', 0.6356932153392332)]
+Epoch: 3, batch loss: 0.05053 Loss Sum: 11.92580, accuracy : 0.97012, val loss: 15.57136, val accuracy: 0.63525
+Final : 0.8114464193097616 [('val/ResNet50/monotone/f1-score', 0.8835616438356165), ('val/ResNet50/screenshot/f1-score', 0.9225092250922509), ('val/ResNet50/unknown/f1-score', 0.6554989075018208)]
+---train finished---
+Trying to save to /tmp/tmpvfjgpb1c/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.02663 Loss Sum: 141.56108, accuracy : 0.57586, val loss: 14.25074, val accuracy: 0.25441
+Final : 0.4090074814047663 [('val/ResNet50/monotone/f1-score', 0.8387096774193548), ('val/ResNet50/screenshot/f1-score', 0.7526881720430109), ('val/ResNet50/unknown/f1-score', 0.10838445807770962)]
+Epoch: 1, batch loss: 0.80356 Loss Sum: 103.85834, accuracy : 0.79934, val loss: 12.49131, val accuracy: 0.38927
+Final : 0.6027931448109525 [('val/ResNet50/monotone/f1-score', 0.8561643835616438), ('val/ResNet50/screenshot/f1-score', 0.7976653696498054), ('val/ResNet50/unknown/f1-score', 0.3207207207207207)]
+Epoch: 2, batch loss: 0.27624 Loss Sum: 28.42266, accuracy : 0.92788, val loss: 13.09006, val accuracy: 0.64444
+Final : 0.8253065015208425 [('val/ResNet50/monotone/f1-score', 0.910394265232975), ('val/ResNet50/screenshot/f1-score', 0.9222222222222222), ('val/ResNet50/unknown/f1-score', 0.6695464362850972)]
+Epoch: 3, batch loss: 0.18920 Loss Sum: 16.21856, accuracy : 0.95837, val loss: 16.56762, val accuracy: 0.61226
+Final : 0.8086782879114137 [('val/ResNet50/monotone/f1-score', 0.924731182795699), ('val/ResNet50/screenshot/f1-score', 0.9111111111111111), ('val/ResNet50/unknown/f1-score', 0.6276831976313841)]
+---train finished---
+Trying to save to /tmp/tmpj1cl8z5m/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.04042 Loss Sum: 145.82775, accuracy : 0.52900, val loss: 13.70272, val accuracy: 0.26207
+Final : 0.462931919669683 [('val/ResNet50/monotone/f1-score', 0.7423580786026202), ('val/ResNet50/screenshot/f1-score', 0.7095343680709534), ('val/ResNet50/unknown/f1-score', 0.18834951456310678)]
+Epoch: 1, batch loss: 0.75507 Loss Sum: 108.82599, accuracy : 0.77865, val loss: 13.84719, val accuracy: 0.28966
+Final : 0.4507613422595198 [('val/ResNet50/monotone/f1-score', 0.8310810810810811), ('val/ResNet50/screenshot/f1-score', 0.7698744769874477), ('val/ResNet50/unknown/f1-score', 0.14314516129032256)]
+Epoch: 2, batch loss: 0.31799 Loss Sum: 28.81188, accuracy : 0.92630, val loss: 15.19381, val accuracy: 0.58467
+Final : 0.7844293130969676 [('val/ResNet50/monotone/f1-score', 0.8958333333333334), ('val/ResNet50/screenshot/f1-score', 0.9104477611940298), ('val/ResNet50/unknown/f1-score', 0.5918057663125948)]
+Epoch: 3, batch loss: 0.18123 Loss Sum: 15.92669, accuracy : 0.95886, val loss: 16.36899, val accuracy: 0.59770
+Final : 0.7987956771982732 [('val/ResNet50/monotone/f1-score', 0.9020979020979021), ('val/ResNet50/screenshot/f1-score', 0.9323308270676692), ('val/ResNet50/unknown/f1-score', 0.606015037593985)]
+---train finished---
+Trying to save to /tmp/tmp1bo899rs/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.92138 Loss Sum: 135.86845, accuracy : 0.62102, val loss: 13.08868, val accuracy: 0.29349
+Final : 0.46496304651060905 [('val/ResNet50/monotone/f1-score', 0.831615120274914), ('val/ResNet50/screenshot/f1-score', 0.7615062761506276), ('val/ResNet50/unknown/f1-score', 0.15873015873015872)]
+Epoch: 1, batch loss: 0.72111 Loss Sum: 98.89045, accuracy : 0.80166, val loss: 12.20016, val accuracy: 0.36705
+Final : 0.5609758868157038 [('val/ResNet50/monotone/f1-score', 0.7836990595611285), ('val/ResNet50/screenshot/f1-score', 0.8023952095808382), ('val/ResNet50/unknown/f1-score', 0.28073394495412846)]
+Epoch: 2, batch loss: 0.16206 Loss Sum: 35.27855, accuracy : 0.91979, val loss: 12.00234, val accuracy: 0.62452
+Final : 0.795874845903799 [('val/ResNet50/monotone/f1-score', 0.8657718120805369), ('val/ResNet50/screenshot/f1-score', 0.898876404494382), ('val/ResNet50/unknown/f1-score', 0.6477850399419027)]
+Epoch: 3, batch loss: 0.15398 Loss Sum: 19.72970, accuracy : 0.94912, val loss: 12.65072, val accuracy: 0.62759
+Final : 0.8100108980881046 [('val/ResNet50/monotone/f1-score', 0.8865979381443299), ('val/ResNet50/screenshot/f1-score', 0.924812030075188), ('val/ResNet50/unknown/f1-score', 0.6481751824817519)]
+---train finished---
+Trying to save to /tmp/tmp5n4v_iad/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.80125 Loss Sum: 140.09929, accuracy : 0.60313, val loss: 13.16357, val accuracy: 0.30958
+Final : 0.5087858591930654 [('val/ResNet50/monotone/f1-score', 0.8181818181818181), ('val/ResNet50/screenshot/f1-score', 0.7354838709677418), ('val/ResNet50/unknown/f1-score', 0.21886792452830187)]
+Epoch: 1, batch loss: 0.76791 Loss Sum: 99.37148, accuracy : 0.80184, val loss: 12.58927, val accuracy: 0.36092
+Final : 0.5495644966106783 [('val/ResNet50/monotone/f1-score', 0.7682926829268293), ('val/ResNet50/screenshot/f1-score', 0.7911646586345382), ('val/ResNet50/unknown/f1-score', 0.27306273062730624)]
+Epoch: 2, batch loss: 0.34238 Loss Sum: 34.74980, accuracy : 0.91972, val loss: 12.39242, val accuracy: 0.59847
+Final : 0.7786709535590138 [('val/ResNet50/monotone/f1-score', 0.8431372549019608), ('val/ResNet50/screenshot/f1-score', 0.9152542372881355), ('val/ResNet50/unknown/f1-score', 0.611817501869858)]
+Epoch: 3, batch loss: 0.19070 Loss Sum: 19.21788, accuracy : 0.95131, val loss: 13.00877, val accuracy: 0.61609
+Final : 0.8003228101877107 [('val/ResNet50/monotone/f1-score', 0.8775510204081634), ('val/ResNet50/screenshot/f1-score', 0.9210526315789473), ('val/ResNet50/unknown/f1-score', 0.6342182890855457)]
+---train finished---
+Trying to save to /tmp/tmpjx7ohnet/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.87863 Loss Sum: 138.20916, accuracy : 0.59844, val loss: 13.63376, val accuracy: 0.31034
+Final : 0.5014444177684036 [('val/ResNet50/monotone/f1-score', 0.8308823529411764), ('val/ResNet50/screenshot/f1-score', 0.7676767676767676), ('val/ResNet50/unknown/f1-score', 0.19767441860465115)]
+Epoch: 1, batch loss: 0.71024 Loss Sum: 101.56889, accuracy : 0.80099, val loss: 13.48041, val accuracy: 0.31418
+Final : 0.49783464922472853 [('val/ResNet50/monotone/f1-score', 0.852112676056338), ('val/ResNet50/screenshot/f1-score', 0.7594433399602385), ('val/ResNet50/unknown/f1-score', 0.19066147859922178)]
+Epoch: 2, batch loss: 0.20614 Loss Sum: 37.82777, accuracy : 0.91242, val loss: 13.43722, val accuracy: 0.58314
+Final : 0.7712010295100065 [('val/ResNet50/monotone/f1-score', 0.8543046357615894), ('val/ResNet50/screenshot/f1-score', 0.9107806691449813), ('val/ResNet50/unknown/f1-score', 0.5894897182025894)]
+Epoch: 3, batch loss: 0.18888 Loss Sum: 23.20425, accuracy : 0.94121, val loss: 13.06392, val accuracy: 0.59464
+Final : 0.7865809774157781 [('val/ResNet50/monotone/f1-score', 0.8775510204081634), ('val/ResNet50/screenshot/f1-score', 0.9135338345864662), ('val/ResNet50/unknown/f1-score', 0.6070623591284748)]
+---train finished---
+Trying to save to /tmp/tmpyci0aglq/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.99776 Loss Sum: 146.82694, accuracy : 0.51671, val loss: 13.80625, val accuracy: 0.27969
+Final : 0.49514578503571804 [('val/ResNet50/monotone/f1-score', 0.7881355932203389), ('val/ResNet50/screenshot/f1-score', 0.6917960088691797), ('val/ResNet50/unknown/f1-score', 0.22264875239923224)]
+Epoch: 1, batch loss: 0.79195 Loss Sum: 108.74127, accuracy : 0.77542, val loss: 12.57764, val accuracy: 0.37318
+Final : 0.5970003768737232 [('val/ResNet50/monotone/f1-score', 0.8661971830985916), ('val/ResNet50/screenshot/f1-score', 0.7695473251028807), ('val/ResNet50/unknown/f1-score', 0.31920649233543735)]
+Epoch: 2, batch loss: 0.14649 Loss Sum: 38.70949, accuracy : 0.91394, val loss: 12.52580, val accuracy: 0.61456
+Final : 0.7926852329539953 [('val/ResNet50/monotone/f1-score', 0.8686868686868687), ('val/ResNet50/screenshot/f1-score', 0.9013035381750465), ('val/ResNet50/unknown/f1-score', 0.6361623616236163)]
+Epoch: 3, batch loss: 0.18164 Loss Sum: 23.22225, accuracy : 0.94176, val loss: 14.78088, val accuracy: 0.59004
+Final : 0.7803272841415614 [('val/ResNet50/monotone/f1-score', 0.8657718120805369), ('val/ResNet50/screenshot/f1-score', 0.9108159392789373), ('val/ResNet50/unknown/f1-score', 0.6025544703230654)]
+---train finished---
+Trying to save to /tmp/tmpiw02tloi/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.74260 Loss Sum: 120.56507, accuracy : 0.69205, val loss: 11.85734, val accuracy: 0.40307
+Final : 0.6021018115984529 [('val/ResNet50/monotone/f1-score', 0.7530864197530865), ('val/ResNet50/screenshot/f1-score', 0.7926078028747434), ('val/ResNet50/unknown/f1-score', 0.36568457538994803)]
+Epoch: 1, batch loss: 0.50600 Loss Sum: 73.88083, accuracy : 0.85692, val loss: 11.44865, val accuracy: 0.46207
+Final : 0.6490054164852205 [('val/ResNet50/monotone/f1-score', 0.7575757575757576), ('val/ResNet50/screenshot/f1-score', 0.8452830188679246), ('val/ResNet50/unknown/f1-score', 0.42689075630252105)]
+Epoch: 2, batch loss: 0.21960 Loss Sum: 23.73045, accuracy : 0.93944, val loss: 13.62921, val accuracy: 0.63755
+Final : 0.8235919638639613 [('val/ResNet50/monotone/f1-score', 0.9078014184397163), ('val/ResNet50/screenshot/f1-score', 0.9277566539923955), ('val/ResNet50/unknown/f1-score', 0.6633020908435473)]
+Epoch: 3, batch loss: 0.06963 Loss Sum: 12.23849, accuracy : 0.96920, val loss: 16.86201, val accuracy: 0.65287
+Final : 0.8238012804571969 [('val/ResNet50/monotone/f1-score', 0.889655172413793), ('val/ResNet50/screenshot/f1-score', 0.9273743016759778), ('val/ResNet50/unknown/f1-score', 0.677626876340243)]
+---train finished---
+Trying to save to /tmp/tmpt01z04s_/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.66111 Loss Sum: 121.05009, accuracy : 0.68206, val loss: 12.21473, val accuracy: 0.39234
+Final : 0.5924507622681602 [('val/ResNet50/monotone/f1-score', 0.7546012269938651), ('val/ResNet50/screenshot/f1-score', 0.7917525773195876), ('val/ResNet50/unknown/f1-score', 0.34805653710247353)]
+Epoch: 1, batch loss: 0.56106 Loss Sum: 74.56305, accuracy : 0.85053, val loss: 11.29290, val accuracy: 0.48276
+Final : 0.6708484826662273 [('val/ResNet50/monotone/f1-score', 0.7750000000000001), ('val/ResNet50/screenshot/f1-score', 0.8454376163873369), ('val/ResNet50/unknown/f1-score', 0.4607762180016516)]
+Epoch: 2, batch loss: 0.08570 Loss Sum: 24.26810, accuracy : 0.93701, val loss: 13.26631, val accuracy: 0.63372
+Final : 0.8198904652989281 [('val/ResNet50/monotone/f1-score', 0.8958333333333334), ('val/ResNet50/screenshot/f1-score', 0.937142857142857), ('val/ResNet50/unknown/f1-score', 0.6564996368917938)]
+Epoch: 3, batch loss: 0.09356 Loss Sum: 12.76710, accuracy : 0.96805, val loss: 15.48581, val accuracy: 0.62835
+Final : 0.8202944969247329 [('val/ResNet50/monotone/f1-score', 0.9304029304029303), ('val/ResNet50/screenshot/f1-score', 0.9111111111111111), ('val/ResNet50/unknown/f1-score', 0.6511289147851421)]
+---train finished---
+Trying to save to /tmp/tmp4ih454cz/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.74667 Loss Sum: 126.77571, accuracy : 0.64938, val loss: 12.97379, val accuracy: 0.33716
+Final : 0.5458856955861888 [('val/ResNet50/monotone/f1-score', 0.8551236749116607), ('val/ResNet50/screenshot/f1-score', 0.7901234567901233), ('val/ResNet50/unknown/f1-score', 0.24075829383886257)]
+Epoch: 1, batch loss: 0.58682 Loss Sum: 79.38061, accuracy : 0.84687, val loss: 11.56457, val accuracy: 0.47893
+Final : 0.6853215663319794 [('val/ResNet50/monotone/f1-score', 0.8366013071895425), ('val/ResNet50/screenshot/f1-score', 0.8226120857699805), ('val/ResNet50/unknown/f1-score', 0.4677023712183156)]
+Epoch: 2, batch loss: 0.12357 Loss Sum: 26.72796, accuracy : 0.93013, val loss: 14.65891, val accuracy: 0.59157
+Final : 0.8074912838443655 [('val/ResNet50/monotone/f1-score', 0.924187725631769), ('val/ResNet50/screenshot/f1-score', 0.9459459459459459), ('val/ResNet50/unknown/f1-score', 0.6022641509433962)]
+Epoch: 3, batch loss: 0.05876 Loss Sum: 16.47517, accuracy : 0.95685, val loss: 17.56748, val accuracy: 0.61992
+Final : 0.8102634618178661 [('val/ResNet50/monotone/f1-score', 0.9020979020979021), ('val/ResNet50/screenshot/f1-score', 0.9245283018867925), ('val/ResNet50/unknown/f1-score', 0.6378299120234605)]
+---train finished---
+Trying to save to /tmp/tmp2npk_93z/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.73069 Loss Sum: 127.06465, accuracy : 0.64859, val loss: 11.97284, val accuracy: 0.44138
+Final : 0.6461258811271408 [('val/ResNet50/monotone/f1-score', 0.7999999999999999), ('val/ResNet50/screenshot/f1-score', 0.7905138339920948), ('val/ResNet50/unknown/f1-score', 0.4265323257766582)]
+Epoch: 1, batch loss: 0.57296 Loss Sum: 79.32564, accuracy : 0.84255, val loss: 11.95376, val accuracy: 0.46207
+Final : 0.666500847726578 [('val/ResNet50/monotone/f1-score', 0.8181818181818181), ('val/ResNet50/screenshot/f1-score', 0.816247582205029), ('val/ResNet50/unknown/f1-score', 0.44333333333333336)]
+Epoch: 2, batch loss: 0.12631 Loss Sum: 27.06617, accuracy : 0.92983, val loss: 14.13166, val accuracy: 0.63755
+Final : 0.8195906046555239 [('val/ResNet50/monotone/f1-score', 0.9163636363636364), ('val/ResNet50/screenshot/f1-score', 0.9090909090909091), ('val/ResNet50/unknown/f1-score', 0.6608695652173913)]
+Epoch: 3, batch loss: 0.11693 Loss Sum: 15.97545, accuracy : 0.95971, val loss: 14.41301, val accuracy: 0.64215
+Final : 0.8145357570570354 [('val/ResNet50/monotone/f1-score', 0.9084507042253521), ('val/ResNet50/screenshot/f1-score', 0.8872458410351202), ('val/ResNet50/unknown/f1-score', 0.6704789135096496)]
+---train finished---
+Trying to save to /tmp/tmp_kka7e86/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.67471 Loss Sum: 121.06096, accuracy : 0.68395, val loss: 11.70038, val accuracy: 0.43602
+Final : 0.6309170529944742 [('val/ResNet50/monotone/f1-score', 0.732919254658385), ('val/ResNet50/screenshot/f1-score', 0.8033126293995859), ('val/ResNet50/unknown/f1-score', 0.4265560165975104)]
+Epoch: 1, batch loss: 0.50609 Loss Sum: 74.74428, accuracy : 0.84511, val loss: 10.81533, val accuracy: 0.51724
+Final : 0.6912091022772638 [('val/ResNet50/monotone/f1-score', 0.7590361445783134), ('val/ResNet50/screenshot/f1-score', 0.819607843137255), ('val/ResNet50/unknown/f1-score', 0.5308352849336456)]
+Epoch: 2, batch loss: 0.23884 Loss Sum: 26.08828, accuracy : 0.93421, val loss: 12.57154, val accuracy: 0.62452
+Final : 0.8024801511016517 [('val/ResNet50/monotone/f1-score', 0.8716216216216216), ('val/ResNet50/screenshot/f1-score', 0.9239332096474954), ('val/ResNet50/unknown/f1-score', 0.6417033773861968)]
+Epoch: 3, batch loss: 0.11368 Loss Sum: 13.04240, accuracy : 0.96683, val loss: 12.94227, val accuracy: 0.65594
+Final : 0.8308109496230649 [('val/ResNet50/monotone/f1-score', 0.8865979381443299), ('val/ResNet50/screenshot/f1-score', 0.9485714285714285), ('val/ResNet50/unknown/f1-score', 0.68188302425107)]
+---train finished---
+Trying to save to /tmp/tmpdgmf1rzm/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.73546 Loss Sum: 123.15540, accuracy : 0.67208, val loss: 12.82949, val accuracy: 0.33716
+Final : 0.5276662378522314 [('val/ResNet50/monotone/f1-score', 0.8311688311688311), ('val/ResNet50/screenshot/f1-score', 0.8), ('val/ResNet50/unknown/f1-score', 0.22095238095238093)]
+Epoch: 1, batch loss: 0.49073 Loss Sum: 75.78531, accuracy : 0.84669, val loss: 12.28322, val accuracy: 0.42146
+Final : 0.6114549192580898 [('val/ResNet50/monotone/f1-score', 0.778816199376947), ('val/ResNet50/screenshot/f1-score', 0.8265682656826567), ('val/ResNet50/unknown/f1-score', 0.3551236749116608)]
+Epoch: 2, batch loss: 0.08694 Loss Sum: 26.24088, accuracy : 0.93597, val loss: 12.53256, val accuracy: 0.64598
+Final : 0.8228931331888619 [('val/ResNet50/monotone/f1-score', 0.9084507042253521), ('val/ResNet50/screenshot/f1-score', 0.9148148148148147), ('val/ResNet50/unknown/f1-score', 0.6704953338119167)]
+Epoch: 3, batch loss: 0.05454 Loss Sum: 12.35940, accuracy : 0.96890, val loss: 14.50688, val accuracy: 0.64368
+Final : 0.8182511694859194 [('val/ResNet50/monotone/f1-score', 0.8745762711864408), ('val/ResNet50/screenshot/f1-score', 0.939622641509434), ('val/ResNet50/unknown/f1-score', 0.6666666666666666)]
+---train finished---
+Trying to save to /tmp/tmpqf1_sk4k/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.76312 Loss Sum: 120.49728, accuracy : 0.68432, val loss: 12.92120, val accuracy: 0.36782
+Final : 0.5746055261836879 [('val/ResNet50/monotone/f1-score', 0.8571428571428572), ('val/ResNet50/screenshot/f1-score', 0.8038461538461539), ('val/ResNet50/unknown/f1-score', 0.2753488372093023)]
+Epoch: 1, batch loss: 0.47011 Loss Sum: 76.13009, accuracy : 0.85253, val loss: 11.71415, val accuracy: 0.44904
+Final : 0.6493258788563735 [('val/ResNet50/monotone/f1-score', 0.7961783439490446), ('val/ResNet50/screenshot/f1-score', 0.8123791102514506), ('val/ResNet50/unknown/f1-score', 0.42327150084317033)]
+Epoch: 2, batch loss: 0.31293 Loss Sum: 28.98551, accuracy : 0.92843, val loss: 12.62061, val accuracy: 0.62452
+Final : 0.8080834668806627 [('val/ResNet50/monotone/f1-score', 0.9014084507042254), ('val/ResNet50/screenshot/f1-score', 0.9100917431192661), ('val/ResNet50/unknown/f1-score', 0.6432234432234433)]
+Epoch: 3, batch loss: 0.15511 Loss Sum: 16.14812, accuracy : 0.95788, val loss: 13.50445, val accuracy: 0.65364
+Final : 0.8300498775076965 [('val/ResNet50/monotone/f1-score', 0.9136690647482014), ('val/ResNet50/screenshot/f1-score', 0.9211009174311927), ('val/ResNet50/unknown/f1-score', 0.6795422031473533)]
+---train finished---
+Trying to save to /tmp/tmpzkq30sd1/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.71908 Loss Sum: 124.54049, accuracy : 0.67573, val loss: 13.82684, val accuracy: 0.32261
+Final : 0.4918995603744348 [('val/ResNet50/monotone/f1-score', 0.8294314381270903), ('val/ResNet50/screenshot/f1-score', 0.7846153846153846), ('val/ResNet50/unknown/f1-score', 0.18289085545722714)]
+Epoch: 1, batch loss: 0.54949 Loss Sum: 78.22566, accuracy : 0.84359, val loss: 12.13941, val accuracy: 0.44291
+Final : 0.6485710382042251 [('val/ResNet50/monotone/f1-score', 0.8138801261829653), ('val/ResNet50/screenshot/f1-score', 0.8294573643410853), ('val/ResNet50/unknown/f1-score', 0.40412725709372316)]
+Epoch: 2, batch loss: 0.26382 Loss Sum: 29.34359, accuracy : 0.92691, val loss: 13.35920, val accuracy: 0.61916
+Final : 0.8045062973703234 [('val/ResNet50/monotone/f1-score', 0.889655172413793), ('val/ResNet50/screenshot/f1-score', 0.9199255121042831), ('val/ResNet50/unknown/f1-score', 0.6362297496318116)]
+Epoch: 3, batch loss: 0.11667 Loss Sum: 16.59184, accuracy : 0.95691, val loss: 14.90355, val accuracy: 0.61609
+Final : 0.8071359967790639 [('val/ResNet50/monotone/f1-score', 0.911660777385159), ('val/ResNet50/screenshot/f1-score', 0.911764705882353), ('val/ResNet50/unknown/f1-score', 0.6325925925925926)]
+---train finished---
+Trying to save to /tmp/tmpddkf83ha/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.91523 Loss Sum: 141.78553, accuracy : 0.58481, val loss: 13.95687, val accuracy: 0.26590
+Final : 0.43780913461092774 [('val/ResNet50/monotone/f1-score', 0.8365019011406843), ('val/ResNet50/screenshot/f1-score', 0.76), ('val/ResNet50/unknown/f1-score', 0.13199999999999998)]
+Epoch: 1, batch loss: 0.76306 Loss Sum: 102.85486, accuracy : 0.78863, val loss: 12.42626, val accuracy: 0.35172
+Final : 0.5536679689380265 [('val/ResNet50/monotone/f1-score', 0.8211920529801324), ('val/ResNet50/screenshot/f1-score', 0.7886178861788617), ('val/ResNet50/unknown/f1-score', 0.2620817843866171)]
+Epoch: 2, batch loss: 0.65254 Loss Sum: 76.72038, accuracy : 0.84444, val loss: 11.02882, val accuracy: 0.46820
+Final : 0.6725850270330072 [('val/ResNet50/monotone/f1-score', 0.8063492063492063), ('val/ResNet50/screenshot/f1-score', 0.8389662027833001), ('val/ResNet50/unknown/f1-score', 0.44975288303130145)]
+Epoch: 3, batch loss: 0.38362 Loss Sum: 56.92154, accuracy : 0.88576, val loss: 10.72025, val accuracy: 0.50651
+Final : 0.7095498237543012 [('val/ResNet50/monotone/f1-score', 0.8246753246753246), ('val/ResNet50/screenshot/f1-score', 0.8649706457925636), ('val/ResNet50/unknown/f1-score', 0.5008)]
+---train finished---
+Trying to save to /tmp/tmp8fjh_nk0/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.86518 Loss Sum: 144.33781, accuracy : 0.56935, val loss: 14.29837, val accuracy: 0.25211
+Final : 0.3662434592404303 [('val/ResNet50/monotone/f1-score', 0.8), ('val/ResNet50/screenshot/f1-score', 0.7675906183368869), ('val/ResNet50/unknown/f1-score', 0.08)]
+Epoch: 1, batch loss: 0.74929 Loss Sum: 103.82348, accuracy : 0.78376, val loss: 12.35707, val accuracy: 0.36169
+Final : 0.5548260995128089 [('val/ResNet50/monotone/f1-score', 0.7707006369426751), ('val/ResNet50/screenshot/f1-score', 0.7951807228915662), ('val/ResNet50/unknown/f1-score', 0.2786885245901639)]
+Epoch: 2, batch loss: 0.52215 Loss Sum: 76.91934, accuracy : 0.84718, val loss: 11.31606, val accuracy: 0.43525
+Final : 0.6391234427844809 [('val/ResNet50/monotone/f1-score', 0.8075709779179809), ('val/ResNet50/screenshot/f1-score', 0.8421052631578947), ('val/ResNet50/unknown/f1-score', 0.3838903170522708)]
+Epoch: 3, batch loss: 0.52559 Loss Sum: 57.46362, accuracy : 0.88035, val loss: 10.35540, val accuracy: 0.54330
+Final : 0.7309544908882869 [('val/ResNet50/monotone/f1-score', 0.8167202572347266), ('val/ResNet50/screenshot/f1-score', 0.8775894538606404), ('val/ResNet50/unknown/f1-score', 0.5448868071818891)]
+---train finished---
+Trying to save to /tmp/tmp09_g52xf/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.36257 Loss Sum: 173.28057, accuracy : 0.35427, val loss: 15.74253, val accuracy: 0.09885
+Final : 0.11651131900898545 [('val/ResNet50/monotone/f1-score', 0.045112781954887216), ('val/ResNet50/screenshot/f1-score', 0.20385674931129477), ('val/ResNet50/unknown/f1-score', 0.1719806763285024)]
+Epoch: 1, batch loss: 1.20213 Loss Sum: 162.17224, accuracy : 0.42578, val loss: 15.58703, val accuracy: 0.06437
+Final : 0.10990906736580115 [('val/ResNet50/monotone/f1-score', 0.07462686567164178), ('val/ResNet50/screenshot/f1-score', 0.16666666666666666), ('val/ResNet50/unknown/f1-score', 0.1067472306143001)]
+Epoch: 2, batch loss: 1.11658 Loss Sum: 153.85793, accuracy : 0.47581, val loss: 15.13926, val accuracy: 0.11034
+Final : 0.23412069052940054 [('val/ResNet50/monotone/f1-score', 0.3137254901960785), ('val/ResNet50/screenshot/f1-score', 0.37037037037037035), ('val/ResNet50/unknown/f1-score', 0.11044176706827309)]
+Epoch: 3, batch loss: 1.02602 Loss Sum: 144.10958, accuracy : 0.55706, val loss: 14.83014, val accuracy: 0.15709
+Final : 0.3012753162678204 [('val/ResNet50/monotone/f1-score', 0.5978260869565217), ('val/ResNet50/screenshot/f1-score', 0.545), ('val/ResNet50/unknown/f1-score', 0.08393039918116683)]
+---train finished---
+Trying to save to /tmp/tmpdlmgqm6i/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.16221 Loss Sum: 161.97192, accuracy : 0.38939, val loss: 15.56440, val accuracy: 0.03448
+Final : 0.08638415702659541 [('val/ResNet50/monotone/f1-score', 0.15714285714285714), ('val/ResNet50/screenshot/f1-score', 0.0982456140350877), ('val/ResNet50/unknown/f1-score', 0.04175365344467641)]
+Epoch: 1, batch loss: 1.17591 Loss Sum: 149.48653, accuracy : 0.49035, val loss: 15.03062, val accuracy: 0.10498
+Final : 0.20351057359184824 [('val/ResNet50/monotone/f1-score', 0.5333333333333333), ('val/ResNet50/screenshot/f1-score', 0.4201183431952663), ('val/ResNet50/unknown/f1-score', 0.03761755485893417)]
+Epoch: 2, batch loss: 1.01616 Loss Sum: 135.94395, accuracy : 0.63983, val loss: 14.37331, val accuracy: 0.20766
+Final : 0.31668751165789844 [('val/ResNet50/monotone/f1-score', 0.8185654008438819), ('val/ResNet50/screenshot/f1-score', 0.6869158878504673), ('val/ResNet50/unknown/f1-score', 0.056485355648535567)]
+Epoch: 3, batch loss: 0.88411 Loss Sum: 120.68813, accuracy : 0.73818, val loss: 13.63668, val accuracy: 0.26973
+Final : 0.4157740303885411 [('val/ResNet50/monotone/f1-score', 0.8823529411764707), ('val/ResNet50/screenshot/f1-score', 0.7584745762711864), ('val/ResNet50/unknown/f1-score', 0.10739614994934145)]
+---train finished---
+Trying to save to /tmp/tmpghxl8r19/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.82864 Loss Sum: 143.50798, accuracy : 0.56862, val loss: 14.25956, val accuracy: 0.24444
+Final : 0.32614431358028817 [('val/ResNet50/monotone/f1-score', 0.8052805280528053), ('val/ResNet50/screenshot/f1-score', 0.7316017316017316), ('val/ResNet50/unknown/f1-score', 0.058885383806519455)]
+Epoch: 1, batch loss: 0.77002 Loss Sum: 103.32385, accuracy : 0.78961, val loss: 12.46724, val accuracy: 0.37471
+Final : 0.5702970179556637 [('val/ResNet50/monotone/f1-score', 0.7584097859327218), ('val/ResNet50/screenshot/f1-score', 0.8235294117647058), ('val/ResNet50/unknown/f1-score', 0.29697525206232817)]
+Epoch: 2, batch loss: 0.54563 Loss Sum: 85.93417, accuracy : 0.82965, val loss: 11.81394, val accuracy: 0.40536
+Final : 0.6045252010905312 [('val/ResNet50/monotone/f1-score', 0.7777777777777778), ('val/ResNet50/screenshot/f1-score', 0.8408644400785854), ('val/ResNet50/unknown/f1-score', 0.3378016085790885)]
+Epoch: 3, batch loss: 0.58284 Loss Sum: 75.72239, accuracy : 0.84864, val loss: 11.27923, val accuracy: 0.43908
+Final : 0.6442924824944591 [('val/ResNet50/monotone/f1-score', 0.8012618296529967), ('val/ResNet50/screenshot/f1-score', 0.8323471400394477), ('val/ResNet50/unknown/f1-score', 0.401023890784983)]
+---train finished---
+Trying to save to /tmp/tmp7b8fzo5a/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.13938 Loss Sum: 165.62170, accuracy : 0.41063, val loss: 15.65832, val accuracy: 0.03985
+Final : 0.05172025038614816 [('val/ResNet50/monotone/f1-score', 0.015384615384615384), ('val/ResNet50/screenshot/f1-score', 0.14388489208633093), ('val/ResNet50/unknown/f1-score', 0.0625)]
+Epoch: 1, batch loss: 1.10849 Loss Sum: 150.24120, accuracy : 0.49486, val loss: 15.24251, val accuracy: 0.12797
+Final : 0.2344143364247616 [('val/ResNet50/monotone/f1-score', 0.3703703703703703), ('val/ResNet50/screenshot/f1-score', 0.5616797900262468), ('val/ResNet50/unknown/f1-score', 0.06191950464396285)]
+Epoch: 2, batch loss: 1.13007 Loss Sum: 140.82351, accuracy : 0.59497, val loss: 14.95773, val accuracy: 0.16552
+Final : 0.2893480584063219 [('val/ResNet50/monotone/f1-score', 0.6294416243654822), ('val/ResNet50/screenshot/f1-score', 0.6215538847117794), ('val/ResNet50/unknown/f1-score', 0.06191950464396285)]
+Epoch: 3, batch loss: 1.06935 Loss Sum: 134.51608, accuracy : 0.65894, val loss: 14.69664, val accuracy: 0.20920
+Final : 0.34634406247702876 [('val/ResNet50/monotone/f1-score', 0.7719298245614036), ('val/ResNet50/screenshot/f1-score', 0.6869158878504673), ('val/ResNet50/unknown/f1-score', 0.07835051546391751)]
+---train finished---
+Trying to save to /tmp/tmpc0ezubqo/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.49015 Loss Sum: 116.72907, accuracy : 0.65942, val loss: 11.38441, val accuracy: 0.48199
+Final : 0.684046106616081 [('val/ResNet50/monotone/f1-score', 0.8409893992932862), ('val/ResNet50/screenshot/f1-score', 0.8172043010752689), ('val/ResNet50/unknown/f1-score', 0.46573080099091657)]
+Epoch: 1, batch loss: 0.38352 Loss Sum: 54.25869, accuracy : 0.86239, val loss: 12.45579, val accuracy: 0.52414
+Final : 0.6981763823861669 [('val/ResNet50/monotone/f1-score', 0.7914110429447853), ('val/ResNet50/screenshot/f1-score', 0.8297101449275363), ('val/ResNet50/unknown/f1-score', 0.5182829888712241)]
+Epoch: 2, batch loss: 0.22567 Loss Sum: 43.86562, accuracy : 0.88832, val loss: 11.80038, val accuracy: 0.57471
+Final : 0.7582440330226898 [('val/ResNet50/monotone/f1-score', 0.8431372549019608), ('val/ResNet50/screenshot/f1-score', 0.8750000000000001), ('val/ResNet50/unknown/f1-score', 0.5909090909090909)]
+Epoch: 3, batch loss: 0.26662 Loss Sum: 34.24401, accuracy : 0.91218, val loss: 11.71407, val accuracy: 0.60766
+Final : 0.782984539180407 [('val/ResNet50/monotone/f1-score', 0.8504983388704319), ('val/ResNet50/screenshot/f1-score', 0.9013035381750465), ('val/ResNet50/unknown/f1-score', 0.6262028127313102)]
+---train finished---
+Trying to save to /tmp/tmp1rv7nsrx/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.96472 Loss Sum: 147.11977, accuracy : 0.53022, val loss: 14.05515, val accuracy: 0.25441
+Final : 0.4551892472198645 [('val/ResNet50/monotone/f1-score', 0.8101265822784809), ('val/ResNet50/screenshot/f1-score', 0.6898148148148148), ('val/ResNet50/unknown/f1-score', 0.1687681862269641)]
+Epoch: 1, batch loss: 0.77611 Loss Sum: 109.81682, accuracy : 0.77287, val loss: 13.41910, val accuracy: 0.34866
+Final : 0.5529531953641402 [('val/ResNet50/monotone/f1-score', 0.8472222222222222), ('val/ResNet50/screenshot/f1-score', 0.7952286282306162), ('val/ResNet50/unknown/f1-score', 0.2509433962264151)]
+Epoch: 2, batch loss: 0.67891 Loss Sum: 92.70021, accuracy : 0.82296, val loss: 12.66194, val accuracy: 0.38391
+Final : 0.5893998258760826 [('val/ResNet50/monotone/f1-score', 0.8494983277591973), ('val/ResNet50/screenshot/f1-score', 0.8269230769230769), ('val/ResNet50/unknown/f1-score', 0.2914757103574702)]
+Epoch: 3, batch loss: 0.60606 Loss Sum: 81.47518, accuracy : 0.84316, val loss: 12.00055, val accuracy: 0.41073
+Final : 0.6231891727264106 [('val/ResNet50/monotone/f1-score', 0.8421052631578948), ('val/ResNet50/screenshot/f1-score', 0.819607843137255), ('val/ResNet50/unknown/f1-score', 0.35066079295154184)]
+---train finished---
+Trying to save to /tmp/tmpfbxpo5w_/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.35044 Loss Sum: 179.49866, accuracy : 0.32457, val loss: 19.00673, val accuracy: 0.04981
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.16285714285714284), ('val/ResNet50/screenshot/f1-score', 0.049535603715170275), ('val/ResNet50/unknown/f1-score', 0.0)]
+Epoch: 1, batch loss: 1.40639 Loss Sum: 176.49873, accuracy : 0.37003, val loss: 18.86073, val accuracy: 0.03985
+Final : 0.027083212639860063 [('val/ResNet50/monotone/f1-score', 0.18181818181818182), ('val/ResNet50/screenshot/f1-score', 0.050314465408805034), ('val/ResNet50/unknown/f1-score', 0.002171552660152009)]
+Epoch: 2, batch loss: 1.04378 Loss Sum: 157.30612, accuracy : 0.59765, val loss: 17.18802, val accuracy: 0.20843
+Final : 0.14050304971352365 [('val/ResNet50/monotone/f1-score', 0.6377551020408163), ('val/ResNet50/screenshot/f1-score', 0.6697674418604651), ('val/ResNet50/unknown/f1-score', 0.006493506493506492)]
+Epoch: 3, batch loss: 0.90422 Loss Sum: 129.39377, accuracy : 0.74000, val loss: 16.24788, val accuracy: 0.24138
+Final : 0.130931634319208 [('val/ResNet50/monotone/f1-score', 0.6719160104986877), ('val/ResNet50/screenshot/f1-score', 0.7708333333333333), ('val/ResNet50/unknown/f1-score', 0.004333694474539546)]
+---train finished---
+Trying to save to /tmp/tmpi1o5ev4p/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.42653 Loss Sum: 179.36551, accuracy : 0.26986, val loss: 15.40421, val accuracy: 0.20996
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.1528239202657807), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.4091279543602282)]
+Epoch: 1, batch loss: 1.34033 Loss Sum: 176.71158, accuracy : 0.30935, val loss: 15.69074, val accuracy: 0.15939
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.17355371900826447), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.32578397212543553)]
+Epoch: 2, batch loss: 1.10186 Loss Sum: 157.53972, accuracy : 0.50088, val loss: 14.53257, val accuracy: 0.21916
+Final : 0.38285895189594243 [('val/ResNet50/monotone/f1-score', 0.6785714285714286), ('val/ResNet50/screenshot/f1-score', 0.3962848297213622), ('val/ResNet50/unknown/f1-score', 0.20869565217391303)]
+Epoch: 3, batch loss: 0.91647 Loss Sum: 129.57741, accuracy : 0.68559, val loss: 13.92977, val accuracy: 0.25211
+Final : 0.39032846238339625 [('val/ResNet50/monotone/f1-score', 0.7039106145251396), ('val/ResNet50/screenshot/f1-score', 0.6941747572815534), ('val/ResNet50/unknown/f1-score', 0.12170385395537525)]
+---train finished---
+Trying to save to /tmp/tmph9_9v97j/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.35020 Loss Sum: 174.38426, accuracy : 0.35208, val loss: 15.51482, val accuracy: 0.15019
+Final : 0.1651607208844306 [('val/ResNet50/monotone/f1-score', 0.2901554404145078), ('val/ResNet50/screenshot/f1-score', 0.05763688760806917), ('val/ResNet50/unknown/f1-score', 0.2693947144075021)]
+Epoch: 1, batch loss: 1.34264 Loss Sum: 172.05363, accuracy : 0.37813, val loss: 15.74290, val accuracy: 0.10728
+Final : 0.17582244578745396 [('val/ResNet50/monotone/f1-score', 0.27710843373493976), ('val/ResNet50/screenshot/f1-score', 0.10619469026548672), ('val/ResNet50/unknown/f1-score', 0.18470149253731344)]
+Epoch: 2, batch loss: 1.13274 Loss Sum: 157.54836, accuracy : 0.52918, val loss: 14.95466, val accuracy: 0.20690
+Final : 0.3536862698954531 [('val/ResNet50/monotone/f1-score', 0.823076923076923), ('val/ResNet50/screenshot/f1-score', 0.5749385749385749), ('val/ResNet50/unknown/f1-score', 0.0934959349593496)]
+Epoch: 3, batch loss: 0.91695 Loss Sum: 136.52977, accuracy : 0.70111, val loss: 14.47815, val accuracy: 0.24368
+Final : 0.3388201081838116 [('val/ResNet50/monotone/f1-score', 0.8109965635738832), ('val/ResNet50/screenshot/f1-score', 0.7164179104477613), ('val/ResNet50/unknown/f1-score', 0.06694560669456066)]
+---train finished---
+Trying to save to /tmp/tmpcfw2i7cn/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.34915 Loss Sum: 176.60174, accuracy : 0.33023, val loss: 16.49729, val accuracy: 0.09885
+Final : 0.13662529423159425 [('val/ResNet50/monotone/f1-score', 0.12041884816753927), ('val/ResNet50/screenshot/f1-score', 0.1589958158995816), ('val/ResNet50/unknown/f1-score', 0.13320274240940255)]
+Epoch: 1, batch loss: 1.37014 Loss Sum: 174.07490, accuracy : 0.37399, val loss: 16.62108, val accuracy: 0.08582
+Final : 0.12426698152809486 [('val/ResNet50/monotone/f1-score', 0.09266409266409267), ('val/ResNet50/screenshot/f1-score', 0.15639810426540282), ('val/ResNet50/unknown/f1-score', 0.1324110671936759)]
+Epoch: 2, batch loss: 1.10839 Loss Sum: 158.63922, accuracy : 0.57531, val loss: 15.58988, val accuracy: 0.22375
+Final : 0.31632495251009624 [('val/ResNet50/monotone/f1-score', 0.6267605633802817), ('val/ResNet50/screenshot/f1-score', 0.6747474747474747), ('val/ResNet50/unknown/f1-score', 0.07484407484407486)]
+Epoch: 3, batch loss: 0.93351 Loss Sum: 135.96661, accuracy : 0.73173, val loss: 14.72895, val accuracy: 0.26590
+Final : 0.3120784448531021 [('val/ResNet50/monotone/f1-score', 0.7731629392971247), ('val/ResNet50/screenshot/f1-score', 0.7739463601532567), ('val/ResNet50/unknown/f1-score', 0.050793650793650794)]
+---train finished---
+Trying to save to /tmp/tmp7q1ywm2r/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.34863 Loss Sum: 176.13290, accuracy : 0.37070, val loss: 15.55188, val accuracy: 0.15939
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.0), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.34266886326194396)]
+Epoch: 1, batch loss: 1.34897 Loss Sum: 174.56522, accuracy : 0.38677, val loss: 15.91456, val accuracy: 0.12414
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.0), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.2842105263157895)]
+Epoch: 2, batch loss: 1.15924 Loss Sum: 168.05133, accuracy : 0.40077, val loss: 15.51289, val accuracy: 0.11418
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.0), ('val/ResNet50/screenshot/f1-score', 0.015267175572519083), ('val/ResNet50/unknown/f1-score', 0.2615658362989324)]
+Epoch: 3, batch loss: 1.24536 Loss Sum: 158.88001, accuracy : 0.43089, val loss: 15.33179, val accuracy: 0.13027
+Final : 0.18795733810032766 [('val/ResNet50/monotone/f1-score', 0.13043478260869565), ('val/ResNet50/screenshot/f1-score', 0.21843003412969283), ('val/ResNet50/unknown/f1-score', 0.23306233062330622)]
+---train finished---
+Trying to save to /tmp/tmpmf5oa50_/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.29225 Loss Sum: 168.46986, accuracy : 0.43740, val loss: 17.55208, val accuracy: 0.01762
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.24358974358974358), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.008658008658008658)]
+Epoch: 1, batch loss: 1.40737 Loss Sum: 167.22701, accuracy : 0.43491, val loss: 17.53034, val accuracy: 0.01839
+Final : 0.025250418051686662 [('val/ResNet50/monotone/f1-score', 0.24358974358974358), ('val/ResNet50/screenshot/f1-score', 0.007633587786259542), ('val/ResNet50/unknown/f1-score', 0.008658008658008658)]
+Epoch: 2, batch loss: 1.25359 Loss Sum: 161.18421, accuracy : 0.45548, val loss: 16.98858, val accuracy: 0.03678
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.4831460674157303), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.010810810810810811)]
+Epoch: 3, batch loss: 1.09142 Loss Sum: 151.86794, accuracy : 0.49413, val loss: 16.61272, val accuracy: 0.06743
+Final : 0.07113253839373516 [('val/ResNet50/monotone/f1-score', 0.6820276497695853), ('val/ResNet50/screenshot/f1-score', 0.08118081180811808), ('val/ResNet50/unknown/f1-score', 0.006500541711809317)]
+---train finished---
+Trying to save to /tmp/tmp1r4a73df/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41129 Loss Sum: 186.93005, accuracy : 0.22311, val loss: 17.08582, val accuracy: 0.06284
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.14913448735019974), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.05427974947807934)]
+Epoch: 1, batch loss: 1.44920 Loss Sum: 183.97332, accuracy : 0.25488, val loss: 17.06051, val accuracy: 0.05287
+Final : 0.039614765378538676 [('val/ResNet50/monotone/f1-score', 0.16029143897996356), ('val/ResNet50/screenshot/f1-score', 0.007692307692307693), ('val/ResNet50/unknown/f1-score', 0.050420168067226885)]
+Epoch: 2, batch loss: 1.35071 Loss Sum: 177.23284, accuracy : 0.33455, val loss: 16.71510, val accuracy: 0.08046
+Final : 0.08037967982847559 [('val/ResNet50/monotone/f1-score', 0.27906976744186046), ('val/ResNet50/screenshot/f1-score', 0.03076923076923077), ('val/ResNet50/unknown/f1-score', 0.06047966631908237)]
+Epoch: 3, batch loss: 1.30259 Loss Sum: 168.62081, accuracy : 0.42420, val loss: 16.38158, val accuracy: 0.10345
+Final : 0.13410629738677374 [('val/ResNet50/monotone/f1-score', 0.38900634249471455), ('val/ResNet50/screenshot/f1-score', 0.10294117647058823), ('val/ResNet50/unknown/f1-score', 0.060228452751817235)]
+---train finished---
+Trying to save to /tmp/tmp2qg_kx9u/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.30187 Loss Sum: 179.06038, accuracy : 0.37654, val loss: 17.06457, val accuracy: 0.05134
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.043010752688172046), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.12426035502958578)]
+Epoch: 1, batch loss: 1.32930 Loss Sum: 177.12511, accuracy : 0.38805, val loss: 17.21283, val accuracy: 0.03831
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.025157232704402514), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.096579476861167)]
+Epoch: 2, batch loss: 1.34979 Loss Sum: 171.40827, accuracy : 0.40448, val loss: 16.83178, val accuracy: 0.04291
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.15853658536585366), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.08713272543059777)]
+Epoch: 3, batch loss: 1.30821 Loss Sum: 163.78657, accuracy : 0.42182, val loss: 16.61516, val accuracy: 0.04751
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.31213872832369943), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.07164790174002048)]
+---train finished---
+Trying to save to /tmp/tmpqam32usa/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41045 Loss Sum: 182.00390, accuracy : 0.19408, val loss: 13.57998, val accuracy: 0.52184
+Final : 0.24309661044306305 [('val/ResNet50/monotone/f1-score', 0.0903225806451613), ('val/ResNet50/screenshot/f1-score', 0.23076923076923078), ('val/ResNet50/unknown/f1-score', 0.6892272983643541)]
+Epoch: 1, batch loss: 1.35538 Loss Sum: 176.21331, accuracy : 0.23796, val loss: 14.10714, val accuracy: 0.40230
+Final : 0.17827230204006037 [('val/ResNet50/monotone/f1-score', 0.038461538461538464), ('val/ResNet50/screenshot/f1-score', 0.2518796992481203), ('val/ResNet50/unknown/f1-score', 0.5848329048843187)]
+Epoch: 2, batch loss: 0.89399 Loss Sum: 144.66509, accuracy : 0.62619, val loss: 12.68701, val accuracy: 0.39080
+Final : 0.5599186900860866 [('val/ResNet50/monotone/f1-score', 0.7937499999999998), ('val/ResNet50/screenshot/f1-score', 0.7580372250423012), ('val/ResNet50/unknown/f1-score', 0.29174311926605506)]
+Epoch: 3, batch loss: 0.75559 Loss Sum: 98.61933, accuracy : 0.80488, val loss: 11.97044, val accuracy: 0.32414
+Final : 0.4430656389050529 [('val/ResNet50/monotone/f1-score', 0.7573964497041419), ('val/ResNet50/screenshot/f1-score', 0.8263254113345522), ('val/ResNet50/unknown/f1-score', 0.13897280966767372)]
+---train finished---
+Trying to save to /tmp/tmp5l121yiy/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41839 Loss Sum: 187.40097, accuracy : 0.14813, val loss: 15.93034, val accuracy: 0.14176
+Final : 0.10949517927685308 [('val/ResNet50/monotone/f1-score', 0.04405286343612335), ('val/ResNet50/screenshot/f1-score', 0.11782477341389729), ('val/ResNet50/unknown/f1-score', 0.252914798206278)]
+Epoch: 1, batch loss: 1.37554 Loss Sum: 183.21466, accuracy : 0.21417, val loss: 16.26942, val accuracy: 0.06897
+Final : 0.04939298836947568 [('val/ResNet50/monotone/f1-score', 0.010928961748633878), ('val/ResNet50/screenshot/f1-score', 0.08213552361396304), ('val/ResNet50/unknown/f1-score', 0.13424124513618677)]
+Epoch: 2, batch loss: 1.00563 Loss Sum: 152.12997, accuracy : 0.57811, val loss: 14.40448, val accuracy: 0.26130
+Final : 0.35718860077159414 [('val/ResNet50/monotone/f1-score', 0.7492447129909366), ('val/ResNet50/screenshot/f1-score', 0.7344398340248963), ('val/ResNet50/unknown/f1-score', 0.08281573498964803)]
+Epoch: 3, batch loss: 0.71252 Loss Sum: 106.07244, accuracy : 0.77116, val loss: 13.40445, val accuracy: 0.29349
+Final : 0.402931427650543 [('val/ResNet50/monotone/f1-score', 0.7390029325513195), ('val/ResNet50/screenshot/f1-score', 0.8007889546351085), ('val/ResNet50/unknown/f1-score', 0.11054247697031729)]
+---train finished---
+Trying to save to /tmp/tmpmebkhb2h/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.48037 Loss Sum: 190.46115, accuracy : 0.19597, val loss: 14.43120, val accuracy: 0.40460
+Final : 0.3012118564600356 [('val/ResNet50/monotone/f1-score', 0.1561181434599156), ('val/ResNet50/screenshot/f1-score', 0.32224168126094566), ('val/ResNet50/unknown/f1-score', 0.5432266848196052)]
+Epoch: 1, batch loss: 1.41590 Loss Sum: 184.06319, accuracy : 0.21721, val loss: 14.83886, val accuracy: 0.34023
+Final : 0.26763937184456194 [('val/ResNet50/monotone/f1-score', 0.11764705882352941), ('val/ResNet50/screenshot/f1-score', 0.34615384615384615), ('val/ResNet50/unknown/f1-score', 0.47076023391812855)]
+Epoch: 2, batch loss: 1.05229 Loss Sum: 154.48803, accuracy : 0.58146, val loss: 13.35564, val accuracy: 0.39310
+Final : 0.5350659248072416 [('val/ResNet50/monotone/f1-score', 0.6598465473145779), ('val/ResNet50/screenshot/f1-score', 0.773851590106007), ('val/ResNet50/unknown/f1-score', 0.3)]
+Epoch: 3, batch loss: 0.77361 Loss Sum: 110.53149, accuracy : 0.79387, val loss: 12.52128, val accuracy: 0.35172
+Final : 0.4926175982867369 [('val/ResNet50/monotone/f1-score', 0.7371428571428571), ('val/ResNet50/screenshot/f1-score', 0.8303249097472923), ('val/ResNet50/unknown/f1-score', 0.1953125)]
+---train finished---
+Trying to save to /tmp/tmp7o6secgj/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.30730 Loss Sum: 172.58076, accuracy : 0.34544, val loss: 16.29674, val accuracy: 0.05057
+Final : 0.031209068699007074 [('val/ResNet50/monotone/f1-score', 0.04545454545454545), ('val/ResNet50/screenshot/f1-score', 0.005479452054794521), ('val/ResNet50/unknown/f1-score', 0.12204724409448818)]
+Epoch: 1, batch loss: 1.26234 Loss Sum: 170.01876, accuracy : 0.37569, val loss: 16.67487, val accuracy: 0.02146
+Final : 0.039309162605692324 [('val/ResNet50/monotone/f1-score', 0.059701492537313425), ('val/ResNet50/screenshot/f1-score', 0.0243161094224924), ('val/ResNet50/unknown/f1-score', 0.04184100418410042)]
+Epoch: 2, batch loss: 0.98008 Loss Sum: 144.87676, accuracy : 0.55931, val loss: 15.17601, val accuracy: 0.22069
+Final : 0.3281284851680598 [('val/ResNet50/monotone/f1-score', 0.8682170542635659), ('val/ResNet50/screenshot/f1-score', 0.6932084309133489), ('val/ResNet50/unknown/f1-score', 0.05870020964360587)]
+Epoch: 3, batch loss: 0.63598 Loss Sum: 105.04622, accuracy : 0.77409, val loss: 13.67457, val accuracy: 0.29962
+Final : 0.4216636424429079 [('val/ResNet50/monotone/f1-score', 0.8745762711864408), ('val/ResNet50/screenshot/f1-score', 0.8194174757281554), ('val/ResNet50/unknown/f1-score', 0.10461538461538462)]
+---train finished---
+Trying to save to /tmp/tmpa64a9936/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.27922 Loss Sum: 181.58035, accuracy : 0.39559, val loss: 20.78473, val accuracy: 0.03218
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.2366197183098592), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.0)]
+Epoch: 1, batch loss: 1.30444 Loss Sum: 177.23893, accuracy : 0.42748, val loss: 20.10010, val accuracy: 0.02222
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.24267782426778242), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.0)]
+Epoch: 2, batch loss: 1.26199 Loss Sum: 166.67443, accuracy : 0.49352, val loss: 19.07330, val accuracy: 0.06743
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.6263345195729538), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.0)]
+Epoch: 3, batch loss: 1.18653 Loss Sum: 149.53992, accuracy : 0.57361, val loss: 18.19648, val accuracy: 0.10345
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.7289719626168225), ('val/ResNet50/screenshot/f1-score', 0.13043478260869565), ('val/ResNet50/unknown/f1-score', 0.0)]
+---train finished---
+Trying to save to /tmp/tmp4ouk_1c_/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.43775 Loss Sum: 188.09076, accuracy : 0.24289, val loss: 15.75458, val accuracy: 0.15785
+Final : 0.16271675795793872 [('val/ResNet50/monotone/f1-score', 0.22104144527098835), ('val/ResNet50/screenshot/f1-score', 0.15031315240083507), ('val/ResNet50/unknown/f1-score', 0.12966601178781925)]
+Epoch: 1, batch loss: 1.35488 Loss Sum: 182.26360, accuracy : 0.27728, val loss: 16.01097, val accuracy: 0.16398
+Final : 0.19718427124171814 [('val/ResNet50/monotone/f1-score', 0.24930747922437674), ('val/ResNet50/screenshot/f1-score', 0.24081632653061222), ('val/ResNet50/unknown/f1-score', 0.12770137524557956)]
+Epoch: 2, batch loss: 1.22108 Loss Sum: 169.64232, accuracy : 0.43442, val loss: 15.29887, val accuracy: 0.26973
+Final : 0.32071250187717903 [('val/ResNet50/monotone/f1-score', 0.42808219178082196), ('val/ResNet50/screenshot/f1-score', 0.5688729874776387), ('val/ResNet50/unknown/f1-score', 0.13545816733067728)]
+Epoch: 3, batch loss: 1.08834 Loss Sum: 149.80024, accuracy : 0.62735, val loss: 14.64606, val accuracy: 0.28352
+Final : 0.3309896798264732 [('val/ResNet50/monotone/f1-score', 0.5009784735812134), ('val/ResNet50/screenshot/f1-score', 0.6785714285714286), ('val/ResNet50/unknown/f1-score', 0.10666666666666667)]
+---train finished---
+Trying to save to /tmp/tmp4w3hdk13/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.33036 Loss Sum: 168.06615, accuracy : 0.39803, val loss: 16.68601, val accuracy: 0.03678
+Final : 0.08038038116455025 [('val/ResNet50/monotone/f1-score', 0.178343949044586), ('val/ResNet50/screenshot/f1-score', 0.09828009828009829), ('val/ResNet50/unknown/f1-score', 0.029629629629629627)]
+Epoch: 1, batch loss: 1.29070 Loss Sum: 165.46566, accuracy : 0.41117, val loss: 16.89168, val accuracy: 0.02222
+Final : 0.05357842967929902 [('val/ResNet50/monotone/f1-score', 0.11188811188811189), ('val/ResNet50/screenshot/f1-score', 0.05917159763313609), ('val/ResNet50/unknown/f1-score', 0.023231256599788808)]
+Epoch: 2, batch loss: 1.18375 Loss Sum: 157.07891, accuracy : 0.48463, val loss: 16.29912, val accuracy: 0.11418
+Final : 0.1970265520424106 [('val/ResNet50/monotone/f1-score', 0.5714285714285713), ('val/ResNet50/screenshot/f1-score', 0.42162162162162165), ('val/ResNet50/unknown/f1-score', 0.031746031746031744)]
+Epoch: 3, batch loss: 1.08916 Loss Sum: 143.31305, accuracy : 0.64403, val loss: 15.82398, val accuracy: 0.19464
+Final : 0.23686344285450978 [('val/ResNet50/monotone/f1-score', 0.767932489451477), ('val/ResNet50/screenshot/f1-score', 0.6756152125279642), ('val/ResNet50/unknown/f1-score', 0.025613660618996798)]
+---train finished---
+Trying to save to /tmp/tmpqfqkh83d/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.58241 Loss Sum: 197.89710, accuracy : 0.21380, val loss: 18.16198, val accuracy: 0.19080
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.19999999999999998), ('val/ResNet50/screenshot/f1-score', 0.3492063492063492), ('val/ResNet50/unknown/f1-score', 0.0)]
+Epoch: 1, batch loss: 1.46315 Loss Sum: 189.89539, accuracy : 0.21301, val loss: 17.59919, val accuracy: 0.17625
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.15286624203821655), ('val/ResNet50/screenshot/f1-score', 0.35336976320582875), ('val/ResNet50/unknown/f1-score', 0.0)]
+Epoch: 2, batch loss: 1.25450 Loss Sum: 177.60062, accuracy : 0.31282, val loss: 16.80868, val accuracy: 0.24981
+Final : 0.09142053566097538 [('val/ResNet50/monotone/f1-score', 0.4059196617336152), ('val/ResNet50/screenshot/f1-score', 0.43387250237868696), ('val/ResNet50/unknown/f1-score', 0.0043383947939262466)]
+Epoch: 3, batch loss: 1.24756 Loss Sum: 160.46292, accuracy : 0.48725, val loss: 16.01377, val accuracy: 0.27969
+Final : 0.1314622834872348 [('val/ResNet50/monotone/f1-score', 0.505307855626327), ('val/ResNet50/screenshot/f1-score', 0.5193133047210301), ('val/ResNet50/unknown/f1-score', 0.008658008658008658)]
+---train finished---
+Trying to save to /tmp/tmpsf5nf__3/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.46746 Loss Sum: 189.66041, accuracy : 0.21046, val loss: 15.19299, val accuracy: 0.18467
+Final : 0.09762156940615986 [('val/ResNet50/monotone/f1-score', 0.18456642800318215), ('val/ResNet50/screenshot/f1-score', 0.021897810218978103), ('val/ResNet50/unknown/f1-score', 0.23018867924528302)]
+Epoch: 1, batch loss: 1.41397 Loss Sum: 188.85925, accuracy : 0.20960, val loss: 15.19019, val accuracy: 0.17778
+Final : 0.09526782545842932 [('val/ResNet50/monotone/f1-score', 0.17614091273018415), ('val/ResNet50/screenshot/f1-score', 0.021739130434782608), ('val/ResNet50/unknown/f1-score', 0.22580645161290322)]
+Epoch: 2, batch loss: 1.46974 Loss Sum: 188.06792, accuracy : 0.21222, val loss: 15.18134, val accuracy: 0.17625
+Final : 0.10376674539282225 [('val/ResNet50/monotone/f1-score', 0.16787732041969328), ('val/ResNet50/screenshot/f1-score', 0.02877697841726619), ('val/ResNet50/unknown/f1-score', 0.23127962085308057)]
+Epoch: 3, batch loss: 1.43408 Loss Sum: 187.23383, accuracy : 0.21240, val loss: 15.25572, val accuracy: 0.17854
+Final : 0.11218457581788997 [('val/ResNet50/monotone/f1-score', 0.16885245901639345), ('val/ResNet50/screenshot/f1-score', 0.03558718861209964), ('val/ResNet50/unknown/f1-score', 0.2349624060150376)]
+---train finished---
+Trying to save to /tmp/tmp22yaoquk/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.36953 Loss Sum: 193.93414, accuracy : 0.20638, val loss: 17.68040, val accuracy: 0.05824
+Final : 0.05410714129376696 [('val/ResNet50/monotone/f1-score', 0.10416666666666666), ('val/ResNet50/screenshot/f1-score', 0.17563739376770537), ('val/ResNet50/unknown/f1-score', 0.008658008658008658)]
+Epoch: 1, batch loss: 1.29014 Loss Sum: 171.13348, accuracy : 0.37490, val loss: 18.30309, val accuracy: 0.00000
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.0), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.0)]
+Epoch: 2, batch loss: 1.19257 Loss Sum: 161.77717, accuracy : 0.40022, val loss: 16.92145, val accuracy: 0.00153
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.015384615384615384), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.002171552660152009)]
+Epoch: 3, batch loss: 1.04973 Loss Sum: 149.17467, accuracy : 0.44684, val loss: 15.82180, val accuracy: 0.06743
+Final : 0.12378889756137328 [('val/ResNet50/monotone/f1-score', 0.4767441860465116), ('val/ResNet50/screenshot/f1-score', 0.26402640264026406), ('val/ResNet50/unknown/f1-score', 0.015069967707212056)]
+---train finished---
+Trying to save to /tmp/tmppcq2lep2/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.44811 Loss Sum: 183.64012, accuracy : 0.19445, val loss: 13.84103, val accuracy: 0.36705
+Final : 0.1281114013347215 [('val/ResNet50/monotone/f1-score', 0.014705882352941175), ('val/ResNet50/screenshot/f1-score', 0.3060498220640569), ('val/ResNet50/unknown/f1-score', 0.4671755725190839)]
+Epoch: 1, batch loss: 1.47381 Loss Sum: 183.11394, accuracy : 0.19256, val loss: 13.86064, val accuracy: 0.36322
+Final : 0.12837869600039015 [('val/ResNet50/monotone/f1-score', 0.014925373134328356), ('val/ResNet50/screenshot/f1-score', 0.30490018148820325), ('val/ResNet50/unknown/f1-score', 0.46493902439024387)]
+Epoch: 2, batch loss: 1.41543 Loss Sum: 182.63809, accuracy : 0.19384, val loss: 13.90205, val accuracy: 0.35785
+Final : 0.12626572843679887 [('val/ResNet50/monotone/f1-score', 0.014925373134328356), ('val/ResNet50/screenshot/f1-score', 0.2921550946798918), ('val/ResNet50/unknown/f1-score', 0.46165527714502663)]
+Epoch: 3, batch loss: 1.39017 Loss Sum: 181.96707, accuracy : 0.19993, val loss: 13.93154, val accuracy: 0.35939
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.0), ('val/ResNet50/screenshot/f1-score', 0.2952029520295203), ('val/ResNet50/unknown/f1-score', 0.46606334841628955)]
+---train finished---
+Trying to save to /tmp/tmppivejcvo/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.26698 Loss Sum: 180.24946, accuracy : 0.27393, val loss: 15.61011, val accuracy: 0.13563
+Final : 0.1866515909193203 [('val/ResNet50/monotone/f1-score', 0.22784810126582278), ('val/ResNet50/screenshot/f1-score', 0.11764705882352941), ('val/ResNet50/unknown/f1-score', 0.24258760107816715)]
+Epoch: 1, batch loss: 1.29097 Loss Sum: 163.84541, accuracy : 0.40685, val loss: 18.18492, val accuracy: 0.00383
+Final : 0.009122939135643684 [('val/ResNet50/monotone/f1-score', 0.04545454545454545), ('val/ResNet50/screenshot/f1-score', 0.007692307692307693), ('val/ResNet50/unknown/f1-score', 0.002171552660152009)]
+Epoch: 2, batch loss: 1.24273 Loss Sum: 157.19264, accuracy : 0.41239, val loss: 17.51959, val accuracy: 0.02605
+Final : 0.056449726400953124 [('val/ResNet50/monotone/f1-score', 0.25675675675675674), ('val/ResNet50/screenshot/f1-score', 0.08118081180811808), ('val/ResNet50/unknown/f1-score', 0.008629989212513485)]
+Epoch: 3, batch loss: 1.12352 Loss Sum: 147.30287, accuracy : 0.49480, val loss: 16.00006, val accuracy: 0.11188
+Final : 0.1985531163156295 [('val/ResNet50/monotone/f1-score', 0.49122807017543857), ('val/ResNet50/screenshot/f1-score', 0.4680851063829787), ('val/ResNet50/unknown/f1-score', 0.03404255319148936)]
+---train finished---
+Trying to save to /tmp/tmp1wlpkf21/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.36812 Loss Sum: 178.31018, accuracy : 0.20072, val loss: 14.19806, val accuracy: 0.38467
+Final : 0.15543207393992814 [('val/ResNet50/monotone/f1-score', 0.045112781954887216), ('val/ResNet50/screenshot/f1-score', 0.14626391096979335), ('val/ResNet50/unknown/f1-score', 0.5690954773869348)]
+Epoch: 1, batch loss: 1.40457 Loss Sum: 177.68477, accuracy : 0.20443, val loss: 14.28924, val accuracy: 0.36015
+Final : 0.1322135228517827 [('val/ResNet50/monotone/f1-score', 0.0303030303030303), ('val/ResNet50/screenshot/f1-score', 0.13782051282051283), ('val/ResNet50/unknown/f1-score', 0.5533854166666666)]
+Epoch: 2, batch loss: 1.39028 Loss Sum: 177.19695, accuracy : 0.21417, val loss: 14.36106, val accuracy: 0.35326
+Final : 0.1012140052563198 [('val/ResNet50/monotone/f1-score', 0.01515151515151515), ('val/ResNet50/screenshot/f1-score', 0.125), ('val/ResNet50/unknown/f1-score', 0.5474642392717816)]
+Epoch: 3, batch loss: 1.39395 Loss Sum: 176.89040, accuracy : 0.21745, val loss: 14.34197, val accuracy: 0.34559
+Final : 0.14738607411227797 [('val/ResNet50/monotone/f1-score', 0.045112781954887216), ('val/ResNet50/screenshot/f1-score', 0.13071895424836602), ('val/ResNet50/unknown/f1-score', 0.5429141716566867)]
+---train finished---
+Trying to save to /tmp/tmp55i3pmt3/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.32668 Loss Sum: 171.13380, accuracy : 0.40186, val loss: 17.95048, val accuracy: 0.00536
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.059701492537313425), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.006493506493506492)]
+Epoch: 1, batch loss: 1.36693 Loss Sum: 170.14159, accuracy : 0.40308, val loss: 17.78142, val accuracy: 0.00766
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.07352941176470588), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.010810810810810811)]
+Epoch: 2, batch loss: 1.33965 Loss Sum: 169.11472, accuracy : 0.40284, val loss: 17.76828, val accuracy: 0.00996
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.08633093525179857), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.015086206896551725)]
+Epoch: 3, batch loss: 1.24492 Loss Sum: 168.80437, accuracy : 0.40271, val loss: 17.71386, val accuracy: 0.00766
+Final : 0.016515347023908965 [('val/ResNet50/monotone/f1-score', 0.045112781954887216), ('val/ResNet50/screenshot/f1-score', 0.007722007722007722), ('val/ResNet50/unknown/f1-score', 0.01293103448275862)]
+---train finished---
+Trying to save to /tmp/tmpvouyelh_/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.40436 Loss Sum: 175.94144, accuracy : 0.32755, val loss: 14.46246, val accuracy: 0.38697
+Final : 0.3276106511373547 [('val/ResNet50/monotone/f1-score', 0.17891373801916935), ('val/ResNet50/screenshot/f1-score', 0.41815680880330125), ('val/ResNet50/unknown/f1-score', 0.46999276934201006)]
+Epoch: 1, batch loss: 1.35176 Loss Sum: 175.03351, accuracy : 0.33845, val loss: 14.48808, val accuracy: 0.39617
+Final : 0.3613067659785267 [('val/ResNet50/monotone/f1-score', 0.22456140350877193), ('val/ResNet50/screenshot/f1-score', 0.43661971830985913), ('val/ResNet50/unknown/f1-score', 0.48104956268221577)]
+Epoch: 2, batch loss: 1.35012 Loss Sum: 174.59926, accuracy : 0.34118, val loss: 14.52177, val accuracy: 0.38851
+Final : 0.34307831367638825 [('val/ResNet50/monotone/f1-score', 0.19463087248322147), ('val/ResNet50/screenshot/f1-score', 0.4269340974212034), ('val/ResNet50/unknown/f1-score', 0.4859675036927622)]
+Epoch: 3, batch loss: 1.31948 Loss Sum: 174.31098, accuracy : 0.34398, val loss: 14.54536, val accuracy: 0.38621
+Final : 0.34340062780792197 [('val/ResNet50/monotone/f1-score', 0.19672131147540983), ('val/ResNet50/screenshot/f1-score', 0.441340782122905), ('val/ResNet50/unknown/f1-score', 0.4664206642066421)]
+---train finished---
+Trying to save to /tmp/tmpshs087ip/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.55879 Loss Sum: 195.10122, accuracy : 0.19768, val loss: 15.52846, val accuracy: 0.21303
+Final : 0.06932513435876837 [('val/ResNet50/monotone/f1-score', 0.011976047904191616), ('val/ResNet50/screenshot/f1-score', 0.32258064516129026), ('val/ResNet50/unknown/f1-score', 0.08624229979466119)]
+Epoch: 1, batch loss: 1.47220 Loss Sum: 194.36096, accuracy : 0.19427, val loss: 15.67034, val accuracy: 0.21379
+Final : 0.10065339155071557 [('val/ResNet50/monotone/f1-score', 0.03488372093023256), ('val/ResNet50/screenshot/f1-score', 0.3192812715964063), ('val/ResNet50/unknown/f1-score', 0.09155645981688709)]
+Epoch: 2, batch loss: 1.45121 Loss Sum: 194.05205, accuracy : 0.19603, val loss: 15.57035, val accuracy: 0.21379
+Final : 0.07242775610376692 [('val/ResNet50/monotone/f1-score', 0.011627906976744186), ('val/ResNet50/screenshot/f1-score', 0.31681786461967903), ('val/ResNet50/unknown/f1-score', 0.10313447927199192)]
+Epoch: 3, batch loss: 1.46487 Loss Sum: 193.71258, accuracy : 0.19694, val loss: 15.61240, val accuracy: 0.21456
+Final : 0.11011332707800925 [('val/ResNet50/monotone/f1-score', 0.04444444444444444), ('val/ResNet50/screenshot/f1-score', 0.31966643502432246), ('val/ResNet50/unknown/f1-score', 0.09397344228804903)]
+---train finished---
+Trying to save to /tmp/tmpfo3b630d/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.30310 Loss Sum: 175.81083, accuracy : 0.36127, val loss: 15.61374, val accuracy: 0.14789
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.13626373626373628), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.27341772151898736)]
+Epoch: 1, batch loss: 1.30032 Loss Sum: 173.66368, accuracy : 0.39170, val loss: 15.81474, val accuracy: 0.13103
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.19469026548672566), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.24146981627296585)]
+Epoch: 2, batch loss: 1.10404 Loss Sum: 155.20047, accuracy : 0.55748, val loss: 14.60244, val accuracy: 0.22299
+Final : 0.36329915981210775 [('val/ResNet50/monotone/f1-score', 0.7096774193548387), ('val/ResNet50/screenshot/f1-score', 0.3032258064516129), ('val/ResNet50/unknown/f1-score', 0.22282608695652176)]
+Epoch: 3, batch loss: 0.93327 Loss Sum: 128.69796, accuracy : 0.72132, val loss: 13.75248, val accuracy: 0.27586
+Final : 0.4472198063281884 [('val/ResNet50/monotone/f1-score', 0.7298850574712643), ('val/ResNet50/screenshot/f1-score', 0.681265206812652), ('val/ResNet50/unknown/f1-score', 0.17988394584139264)]
+---train finished---
+Trying to save to /tmp/tmpzddplaw4/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.36372 Loss Sum: 175.38027, accuracy : 0.35153, val loss: 15.27011, val accuracy: 0.30575
+Final : 0.3325443304266076 [('val/ResNet50/monotone/f1-score', 0.20150375939849624), ('val/ResNet50/screenshot/f1-score', 0.5676691729323308), ('val/ResNet50/unknown/f1-score', 0.32149200710479575)]
+Epoch: 1, batch loss: 1.33815 Loss Sum: 172.34602, accuracy : 0.38446, val loss: 15.26196, val accuracy: 0.29272
+Final : 0.3256856209962469 [('val/ResNet50/monotone/f1-score', 0.19166666666666665), ('val/ResNet50/screenshot/f1-score', 0.48790322580645157), ('val/ResNet50/unknown/f1-score', 0.3694158075601375)]
+Epoch: 2, batch loss: 1.08920 Loss Sum: 155.14474, accuracy : 0.61122, val loss: 14.28313, val accuracy: 0.38467
+Final : 0.5201851205518343 [('val/ResNet50/monotone/f1-score', 0.5734597156398104), ('val/ResNet50/screenshot/f1-score', 0.7088122605363985), ('val/ResNet50/unknown/f1-score', 0.3462897526501767)]
+Epoch: 3, batch loss: 0.89817 Loss Sum: 129.03475, accuracy : 0.77208, val loss: 13.51517, val accuracy: 0.36398
+Final : 0.5149267204759316 [('val/ResNet50/monotone/f1-score', 0.6297229219143577), ('val/ResNet50/screenshot/f1-score', 0.7992202729044835), ('val/ResNet50/unknown/f1-score', 0.2712815715622077)]
+---train finished---
+Trying to save to /tmp/tmphbsuuczz/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.37734 Loss Sum: 178.57715, accuracy : 0.32274, val loss: 15.24689, val accuracy: 0.28429
+Final : 0.15391952494760722 [('val/ResNet50/monotone/f1-score', 0.2068062827225131), ('val/ResNet50/screenshot/f1-score', 0.03973509933774834), ('val/ResNet50/unknown/f1-score', 0.44375484871993787)]
+Epoch: 1, batch loss: 1.34142 Loss Sum: 175.40305, accuracy : 0.35987, val loss: 15.27953, val accuracy: 0.26437
+Final : 0.17192066280107876 [('val/ResNet50/monotone/f1-score', 0.17739130434782605), ('val/ResNet50/screenshot/f1-score', 0.06535947712418301), ('val/ResNet50/unknown/f1-score', 0.43827160493827155)]
+Epoch: 2, batch loss: 1.22342 Loss Sum: 160.33129, accuracy : 0.57002, val loss: 14.44086, val accuracy: 0.34789
+Final : 0.4861430159613187 [('val/ResNet50/monotone/f1-score', 0.6014669926650366), ('val/ResNet50/screenshot/f1-score', 0.4973821989528796), ('val/ResNet50/unknown/f1-score', 0.3840520748576078)]
+Epoch: 3, batch loss: 0.96463 Loss Sum: 137.41383, accuracy : 0.75163, val loss: 13.77689, val accuracy: 0.37471
+Final : 0.5526364502583695 [('val/ResNet50/monotone/f1-score', 0.6791443850267379), ('val/ResNet50/screenshot/f1-score', 0.7596566523605149), ('val/ResNet50/unknown/f1-score', 0.3271441202475685)]
+---train finished---
+Trying to save to /tmp/tmp8lir4gr3/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41608 Loss Sum: 179.98942, accuracy : 0.36827, val loss: 17.37481, val accuracy: 0.07510
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.2032258064516129), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.07306889352818371)]
+Epoch: 1, batch loss: 1.35075 Loss Sum: 177.32218, accuracy : 0.41172, val loss: 17.11519, val accuracy: 0.07356
+Final : 0.06454417197287972 [('val/ResNet50/monotone/f1-score', 0.29716981132075476), ('val/ResNet50/screenshot/f1-score', 0.013937282229965157), ('val/ResNet50/unknown/f1-score', 0.06492146596858639)]
+Epoch: 2, batch loss: 1.16720 Loss Sum: 161.88062, accuracy : 0.53776, val loss: 15.99425, val accuracy: 0.15785
+Final : 0.2598602624496465 [('val/ResNet50/monotone/f1-score', 0.6153846153846154), ('val/ResNet50/screenshot/f1-score', 0.3018867924528302), ('val/ResNet50/unknown/f1-score', 0.09445585215605751)]
+Epoch: 3, batch loss: 1.02636 Loss Sum: 140.04846, accuracy : 0.69679, val loss: 15.21846, val accuracy: 0.24598
+Final : 0.36508867565178016 [('val/ResNet50/monotone/f1-score', 0.7463556851311952), ('val/ResNet50/screenshot/f1-score', 0.6728110599078341), ('val/ResNet50/unknown/f1-score', 0.09690721649484536)]
+---train finished---
+Trying to save to /tmp/tmpofcogw1z/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.42858 Loss Sum: 184.52698, accuracy : 0.17577, val loss: 15.33725, val accuracy: 0.25594
+Final : 0.15570211679113657 [('val/ResNet50/monotone/f1-score', 0.0641711229946524), ('val/ResNet50/screenshot/f1-score', 0.1531791907514451), ('val/ResNet50/unknown/f1-score', 0.38401142041398995)]
+Epoch: 1, batch loss: 1.37979 Loss Sum: 181.56509, accuracy : 0.21514, val loss: 15.41958, val accuracy: 0.23372
+Final : 0.12725834138360767 [('val/ResNet50/monotone/f1-score', 0.04081632653061224), ('val/ResNet50/screenshot/f1-score', 0.13771517996870108), ('val/ResNet50/unknown/f1-score', 0.36664270309130126)]
+Epoch: 2, batch loss: 1.34775 Loss Sum: 174.82587, accuracy : 0.31629, val loss: 15.08733, val accuracy: 0.30421
+Final : 0.30765908143249815 [('val/ResNet50/monotone/f1-score', 0.2680412371134021), ('val/ResNet50/screenshot/f1-score', 0.2706270627062706), ('val/ResNet50/unknown/f1-score', 0.40145454545454545)]
+Epoch: 3, batch loss: 1.23506 Loss Sum: 165.66211, accuracy : 0.47946, val loss: 14.78539, val accuracy: 0.35785
+Final : 0.435527198387967 [('val/ResNet50/monotone/f1-score', 0.47923322683706066), ('val/ResNet50/screenshot/f1-score', 0.42996742671009774), ('val/ResNet50/unknown/f1-score', 0.40092521202775633)]
+---train finished---
+Trying to save to /tmp/tmpmz6ek_wo/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.43084 Loss Sum: 188.03750, accuracy : 0.29329, val loss: 19.07004, val accuracy: 0.00536
+Final : 0.009528816510223963 [('val/ResNet50/monotone/f1-score', 0.026086956521739132), ('val/ResNet50/screenshot/f1-score', 0.00510204081632653), ('val/ResNet50/unknown/f1-score', 0.006500541711809317)]
+Epoch: 1, batch loss: 1.39198 Loss Sum: 185.66946, accuracy : 0.33309, val loss: 18.73041, val accuracy: 0.00536
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.03191489361702128), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.008658008658008658)]
+Epoch: 2, batch loss: 1.28803 Loss Sum: 179.26467, accuracy : 0.36577, val loss: 18.21951, val accuracy: 0.01149
+Final : 0.01838606787678694 [('val/ResNet50/monotone/f1-score', 0.12571428571428572), ('val/ResNet50/screenshot/f1-score', 0.011396011396011397), ('val/ResNet50/unknown/f1-score', 0.0043383947939262466)]
+Epoch: 3, batch loss: 1.28973 Loss Sum: 169.84233, accuracy : 0.42061, val loss: 17.81382, val accuracy: 0.05134
+Final : 0.05331443527525012 [('val/ResNet50/monotone/f1-score', 0.5070422535211269), ('val/ResNet50/screenshot/f1-score', 0.06896551724137931), ('val/ResNet50/unknown/f1-score', 0.004333694474539546)]
+---train finished---
+Trying to save to /tmp/tmptrcm70a4/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.27066 Loss Sum: 170.88987, accuracy : 0.36529, val loss: 14.58926, val accuracy: 0.29425
+Final : 0.1378839665985893 [('val/ResNet50/monotone/f1-score', 0.015384615384615384), ('val/ResNet50/screenshot/f1-score', 0.4287901990811639), ('val/ResNet50/unknown/f1-score', 0.3973834832379395)]
+Epoch: 1, batch loss: 1.30460 Loss Sum: 168.96905, accuracy : 0.39072, val loss: 14.70295, val accuracy: 0.24674
+Final : 0.1611580319348706 [('val/ResNet50/monotone/f1-score', 0.03007518796992481), ('val/ResNet50/screenshot/f1-score', 0.39059674502712477), ('val/ResNet50/unknown/f1-score', 0.3563025210084034)]
+Epoch: 2, batch loss: 1.27011 Loss Sum: 164.11636, accuracy : 0.44629, val loss: 14.40287, val accuracy: 0.28123
+Final : 0.38985450040510716 [('val/ResNet50/monotone/f1-score', 0.3225806451612903), ('val/ResNet50/screenshot/f1-score', 0.5407407407407407), ('val/ResNet50/unknown/f1-score', 0.3396880415944541)]
+Epoch: 3, batch loss: 1.20485 Loss Sum: 157.60269, accuracy : 0.52620, val loss: 14.18105, val accuracy: 0.30498
+Final : 0.4614327481213003 [('val/ResNet50/monotone/f1-score', 0.456140350877193), ('val/ResNet50/screenshot/f1-score', 0.6450381679389312), ('val/ResNet50/unknown/f1-score', 0.3339191564147628)]
+---train finished---
+Trying to save to /tmp/tmp4ft9bn1i/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.47874 Loss Sum: 191.51506, accuracy : 0.13961, val loss: 15.91779, val accuracy: 0.16628
+Final : 0.04159455392015129 [('val/ResNet50/monotone/f1-score', 0.018315018315018312), ('val/ResNet50/screenshot/f1-score', 0.011834319526627219), ('val/ResNet50/unknown/f1-score', 0.3320158102766798)]
+Epoch: 1, batch loss: 1.48431 Loss Sum: 189.11588, accuracy : 0.18556, val loss: 15.96984, val accuracy: 0.15556
+Final : 0.05788648336747797 [('val/ResNet50/monotone/f1-score', 0.03508771929824562), ('val/ResNet50/screenshot/f1-score', 0.017543859649122806), ('val/ResNet50/unknown/f1-score', 0.31510204081632653)]
+Epoch: 2, batch loss: 1.38318 Loss Sum: 183.35255, accuracy : 0.25020, val loss: 15.63003, val accuracy: 0.16705
+Final : 0.08750774090786982 [('val/ResNet50/monotone/f1-score', 0.04938271604938272), ('val/ResNet50/screenshot/f1-score', 0.041176470588235294), ('val/ResNet50/unknown/f1-score', 0.3295454545454546)]
+Epoch: 3, batch loss: 1.34114 Loss Sum: 175.93320, accuracy : 0.32074, val loss: 15.43414, val accuracy: 0.18697
+Final : 0.21045106781982054 [('val/ResNet50/monotone/f1-score', 0.17956656346749228), ('val/ResNet50/screenshot/f1-score', 0.16918429003021146), ('val/ResNet50/unknown/f1-score', 0.30680885972108285)]
+---train finished---
+Trying to save to /tmp/tmpdyw5w_nv/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.37468 Loss Sum: 171.78726, accuracy : 0.35975, val loss: 15.88724, val accuracy: 0.16398
+Final : 0.2285589012214777 [('val/ResNet50/monotone/f1-score', 0.29577464788732394), ('val/ResNet50/screenshot/f1-score', 0.22619047619047622), ('val/ResNet50/unknown/f1-score', 0.1784675072744908)]
+Epoch: 1, batch loss: 1.28702 Loss Sum: 168.00972, accuracy : 0.42493, val loss: 15.73249, val accuracy: 0.12644
+Final : 0.2089682348331878 [('val/ResNet50/monotone/f1-score', 0.3853211009174312), ('val/ResNet50/screenshot/f1-score', 0.15333333333333332), ('val/ResNet50/unknown/f1-score', 0.1544477028347996)]
+Epoch: 2, batch loss: 0.84842 Loss Sum: 139.08638, accuracy : 0.69113, val loss: 13.69799, val accuracy: 0.29808
+Final : 0.44591906091935796 [('val/ResNet50/monotone/f1-score', 0.7231638418079095), ('val/ResNet50/screenshot/f1-score', 0.7436974789915966), ('val/ResNet50/unknown/f1-score', 0.16486751717369968)]
+Epoch: 3, batch loss: 0.88323 Loss Sum: 98.38080, accuracy : 0.80561, val loss: 12.63510, val accuracy: 0.33946
+Final : 0.5092424852048669 [('val/ResNet50/monotone/f1-score', 0.7551622418879056), ('val/ResNet50/screenshot/f1-score', 0.8282828282828283), ('val/ResNet50/unknown/f1-score', 0.21113243761996162)]
+---train finished---
+Trying to save to /tmp/tmpje1ss34_/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.34134 Loss Sum: 176.60696, accuracy : 0.28276, val loss: 14.58497, val accuracy: 0.39847
+Final : 0.10343312735300034 [('val/ResNet50/monotone/f1-score', 0.27067669172932335), ('val/ResNet50/screenshot/f1-score', 0.006872852233676977), ('val/ResNet50/unknown/f1-score', 0.5948275862068966)]
+Epoch: 1, batch loss: 1.28284 Loss Sum: 172.72884, accuracy : 0.33242, val loss: 14.94545, val accuracy: 0.25134
+Final : 0.12299371441438199 [('val/ResNet50/monotone/f1-score', 0.19900497512437812), ('val/ResNet50/screenshot/f1-score', 0.020905923344947733), ('val/ResNet50/unknown/f1-score', 0.44721407624633425)]
+Epoch: 2, batch loss: 0.91497 Loss Sum: 143.86029, accuracy : 0.63411, val loss: 13.51498, val accuracy: 0.33640
+Final : 0.5248909346055066 [('val/ResNet50/monotone/f1-score', 0.7331378299120235), ('val/ResNet50/screenshot/f1-score', 0.7417218543046359), ('val/ResNet50/unknown/f1-score', 0.2659380692167578)]
+Epoch: 3, batch loss: 0.67009 Loss Sum: 100.62885, accuracy : 0.80531, val loss: 12.72190, val accuracy: 0.36552
+Final : 0.5429433636592164 [('val/ResNet50/monotone/f1-score', 0.7341040462427746), ('val/ResNet50/screenshot/f1-score', 0.8326693227091633), ('val/ResNet50/unknown/f1-score', 0.26183844011142066)]
+---train finished---
+Trying to save to /tmp/tmp7vv8th9p/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.34716 Loss Sum: 172.14753, accuracy : 0.40192, val loss: 15.84646, val accuracy: 0.14943
+Final : 0.17897717885806563 [('val/ResNet50/monotone/f1-score', 0.08860759493670885), ('val/ResNet50/screenshot/f1-score', 0.32079207920792074), ('val/ResNet50/unknown/f1-score', 0.20169651272384545)]
+Epoch: 1, batch loss: 1.24146 Loss Sum: 169.08955, accuracy : 0.41580, val loss: 15.81036, val accuracy: 0.11494
+Final : 0.1480720922582542 [('val/ResNet50/monotone/f1-score', 0.08633093525179857), ('val/ResNet50/screenshot/f1-score', 0.1818181818181818), ('val/ResNet50/unknown/f1-score', 0.20683111954459202)]
+Epoch: 2, batch loss: 0.96599 Loss Sum: 145.80174, accuracy : 0.63173, val loss: 14.41346, val accuracy: 0.30881
+Final : 0.4984525979189182 [('val/ResNet50/monotone/f1-score', 0.8666666666666666), ('val/ResNet50/screenshot/f1-score', 0.7015503875968992), ('val/ResNet50/unknown/f1-score', 0.2036857419980601)]
+Epoch: 3, batch loss: 0.73632 Loss Sum: 107.69238, accuracy : 0.80074, val loss: 13.14936, val accuracy: 0.37471
+Final : 0.579685846392782 [('val/ResNet50/monotone/f1-score', 0.8716216216216216), ('val/ResNet50/screenshot/f1-score', 0.8030592734225621), ('val/ResNet50/unknown/f1-score', 0.27829313543599254)]
+---train finished---
+Trying to save to /tmp/tmpu8zgk00y/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41295 Loss Sum: 188.50240, accuracy : 0.20437, val loss: 13.31847, val accuracy: 0.61609
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.015037593984962405), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.7736030828516377)]
+Epoch: 1, batch loss: 1.38674 Loss Sum: 183.53667, accuracy : 0.22427, val loss: 13.83792, val accuracy: 0.49349
+Final : 0.0 [('val/ResNet50/monotone/f1-score', 0.05925925925925926), ('val/ResNet50/screenshot/f1-score', 0.0), ('val/ResNet50/unknown/f1-score', 0.6941431670281994)]
+Epoch: 2, batch loss: 1.03981 Loss Sum: 156.17006, accuracy : 0.44885, val loss: 12.71553, val accuracy: 0.45134
+Final : 0.6561363302787583 [('val/ResNet50/monotone/f1-score', 0.8682170542635659), ('val/ResNet50/screenshot/f1-score', 0.6269430051813472), ('val/ResNet50/unknown/f1-score', 0.5189504373177842)]
+Epoch: 3, batch loss: 0.72432 Loss Sum: 114.82542, accuracy : 0.77427, val loss: 12.05550, val accuracy: 0.43602
+Final : 0.6574631001631315 [('val/ResNet50/monotone/f1-score', 0.8590604026845637), ('val/ResNet50/screenshot/f1-score', 0.7840670859538783), ('val/ResNet50/unknown/f1-score', 0.42192691029900337)]
+---train finished---
+Trying to save to /tmp/tmpdqu5r63o/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.34129 Loss Sum: 174.76436, accuracy : 0.35969, val loss: 16.31646, val accuracy: 0.09425
+Final : 0.09367578806309929 [('val/ResNet50/monotone/f1-score', 0.0392156862745098), ('val/ResNet50/screenshot/f1-score', 0.11528822055137844), ('val/ResNet50/unknown/f1-score', 0.18181818181818182)]
+Epoch: 1, batch loss: 1.39127 Loss Sum: 171.66310, accuracy : 0.39085, val loss: 16.29975, val accuracy: 0.08123
+Final : 0.0926848775198733 [('val/ResNet50/monotone/f1-score', 0.044198895027624314), ('val/ResNet50/screenshot/f1-score', 0.11242603550295859), ('val/ResNet50/unknown/f1-score', 0.16023166023166024)]
+Epoch: 2, batch loss: 1.20846 Loss Sum: 161.73898, accuracy : 0.49747, val loss: 15.59459, val accuracy: 0.17088
+Final : 0.33646578459063003 [('val/ResNet50/monotone/f1-score', 0.6188340807174888), ('val/ResNet50/screenshot/f1-score', 0.4338624338624339), ('val/ResNet50/unknown/f1-score', 0.14187192118226602)]
+Epoch: 3, batch loss: 1.09826 Loss Sum: 145.71054, accuracy : 0.67811, val loss: 14.98568, val accuracy: 0.24828
+Final : 0.4038155754874686 [('val/ResNet50/monotone/f1-score', 0.8172043010752689), ('val/ResNet50/screenshot/f1-score', 0.6578366445916114), ('val/ResNet50/unknown/f1-score', 0.12248995983935744)]
+---train finished---
+Trying to save to /tmp/tmpyi7dlv08/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41745 Loss Sum: 180.75181, accuracy : 0.25738, val loss: 16.12931, val accuracy: 0.09962
+Final : 0.1281267185636485 [('val/ResNet50/monotone/f1-score', 0.1924398625429553), ('val/ResNet50/screenshot/f1-score', 0.0652591170825336), ('val/ResNet50/unknown/f1-score', 0.16748768472906403)]
+Epoch: 1, batch loss: 1.38312 Loss Sum: 177.15855, accuracy : 0.33845, val loss: 16.02352, val accuracy: 0.09808
+Final : 0.13505588435132865 [('val/ResNet50/monotone/f1-score', 0.2318840579710145), ('val/ResNet50/screenshot/f1-score', 0.058201058201058205), ('val/ResNet50/unknown/f1-score', 0.18253189401373895)]
+Epoch: 2, batch loss: 1.24527 Loss Sum: 166.74646, accuracy : 0.45883, val loss: 15.35867, val accuracy: 0.19310
+Final : 0.3627205044844285 [('val/ResNet50/monotone/f1-score', 0.7258064516129032), ('val/ResNet50/screenshot/f1-score', 0.42105263157894735), ('val/ResNet50/unknown/f1-score', 0.15615615615615616)]
+Epoch: 3, batch loss: 1.12512 Loss Sum: 149.75778, accuracy : 0.64902, val loss: 14.75554, val accuracy: 0.25517
+Final : 0.43619899935248746 [('val/ResNet50/monotone/f1-score', 0.8251748251748251), ('val/ResNet50/screenshot/f1-score', 0.6157407407407407), ('val/ResNet50/unknown/f1-score', 0.16334661354581675)]
+---train finished---
+Trying to save to /tmp/tmp1el222h0/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.38292 Loss Sum: 183.34851, accuracy : 0.22190, val loss: 14.34661, val accuracy: 0.39234
+Final : 0.28670247808453375 [('val/ResNet50/monotone/f1-score', 0.367601246105919), ('val/ResNet50/screenshot/f1-score', 0.1189710610932476), ('val/ResNet50/unknown/f1-score', 0.538860103626943)]
+Epoch: 1, batch loss: 1.36030 Loss Sum: 178.72112, accuracy : 0.25555, val loss: 14.61136, val accuracy: 0.35862
+Final : 0.2668666985169534 [('val/ResNet50/monotone/f1-score', 0.4097222222222222), ('val/ResNet50/screenshot/f1-score', 0.08778625954198473), ('val/ResNet50/unknown/f1-score', 0.5284052019164955)]
+Epoch: 2, batch loss: 1.25273 Loss Sum: 168.29727, accuracy : 0.38793, val loss: 14.15886, val accuracy: 0.40383
+Final : 0.47687309709868664 [('val/ResNet50/monotone/f1-score', 0.6309148264984228), ('val/ResNet50/screenshot/f1-score', 0.34782608695652173), ('val/ResNet50/unknown/f1-score', 0.49416909620991256)]
+Epoch: 3, batch loss: 1.17137 Loss Sum: 152.76615, accuracy : 0.59856, val loss: 13.72539, val accuracy: 0.45364
+Final : 0.5937455750667029 [('val/ResNet50/monotone/f1-score', 0.7277936962750716), ('val/ResNet50/screenshot/f1-score', 0.5942857142857142), ('val/ResNet50/unknown/f1-score', 0.4839467501957714)]
+---train finished---
+Trying to save to /tmp/tmp9h0eodgc/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.50269 Loss Sum: 192.16853, accuracy : 0.18453, val loss: 15.87495, val accuracy: 0.16705
+Final : 0.1695810727949833 [('val/ResNet50/monotone/f1-score', 0.14305364511691884), ('val/ResNet50/screenshot/f1-score', 0.21456953642384108), ('val/ResNet50/unknown/f1-score', 0.1588785046728972)]
+Epoch: 1, batch loss: 1.39826 Loss Sum: 186.24121, accuracy : 0.20942, val loss: 15.73298, val accuracy: 0.21149
+Final : 0.21930491290436663 [('val/ResNet50/monotone/f1-score', 0.19927536231884058), ('val/ResNet50/screenshot/f1-score', 0.21300138312586445), ('val/ResNet50/unknown/f1-score', 0.24849007765314932)]
+Epoch: 2, batch loss: 1.24626 Loss Sum: 174.94440, accuracy : 0.35269, val loss: 15.01897, val accuracy: 0.31648
+Final : 0.3647051434714727 [('val/ResNet50/monotone/f1-score', 0.39552238805970147), ('val/ResNet50/screenshot/f1-score', 0.43851851851851853), ('val/ResNet50/unknown/f1-score', 0.2796833773087071)]
+Epoch: 3, batch loss: 1.15566 Loss Sum: 157.98570, accuracy : 0.56679, val loss: 14.34532, val accuracy: 0.37318
+Final : 0.4492925543567863 [('val/ResNet50/monotone/f1-score', 0.507399577167019), ('val/ResNet50/screenshot/f1-score', 0.5778443113772455), ('val/ResNet50/unknown/f1-score', 0.3093333333333333)]
+---train finished---
+Trying to save to /tmp/tmpnsxi7rvc/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_100.0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.48732 Loss Sum: 186.27163, accuracy : 0.27716, val loss: 16.51474, val accuracy: 0.25670
+Final : 0.2398441864063032 [('val/ResNet50/monotone/f1-score', 0.22264150943396227), ('val/ResNet50/screenshot/f1-score', 0.37181996086105673), ('val/ResNet50/unknown/f1-score', 0.16666666666666669)]
+Epoch: 1, batch loss: 1.46565 Loss Sum: 185.78543, accuracy : 0.27576, val loss: 16.42346, val accuracy: 0.25287
+Final : 0.23627787898341643 [('val/ResNet50/monotone/f1-score', 0.20976491862567812), ('val/ResNet50/screenshot/f1-score', 0.3683683683683684), ('val/ResNet50/unknown/f1-score', 0.17070805043646944)]
+Epoch: 2, batch loss: 1.41779 Loss Sum: 185.29635, accuracy : 0.27917, val loss: 16.52559, val accuracy: 0.25977
+Final : 0.24155853023727877 [('val/ResNet50/monotone/f1-score', 0.20872865275142313), ('val/ResNet50/screenshot/f1-score', 0.38142292490118573), ('val/ResNet50/unknown/f1-score', 0.17704280155642024)]
+Epoch: 3, batch loss: 1.39990 Loss Sum: 184.67182, accuracy : 0.28349, val loss: 16.49189, val accuracy: 0.27126
+Final : 0.2605757516206739 [('val/ResNet50/monotone/f1-score', 0.24334600760456276), ('val/ResNet50/screenshot/f1-score', 0.37649402390438247), ('val/ResNet50/unknown/f1-score', 0.1931166347992352)]
+---train finished---
+Trying to save to /tmp/tmp8uab3wj0/model
+Too long checkpoint name: ResNet50_128_[0.4, 0.2, 0.2, 0.2]_[2, 2]_3.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_0 not saved
+Done
+ResNet50 Loaded!
+{'batch_size': 128,
+ 'class_ratio': [0.4, 0.2, 0.2, 0.2],
+ 'epoch': [2, 2],
+ 'gamma': 0.3,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.44373 Loss Sum: 184.59456, accuracy : 0.17333, val loss: 15.48229, val accuracy: 0.19080
+Final : 0.17479298706402177 [('val/ResNet50/monotone/f1-score', 0.1461794019933555), ('val/ResNet50/screenshot/f1-score', 0.14225053078556263), ('val/ResNet50/unknown/f1-score', 0.2568218298555377)]
+Epoch: 1, batch loss: 1.44951 Loss Sum: 184.30263, accuracy : 0.17631, val loss: 15.46698, val accuracy: 0.17854
+Final : 0.1629973313597789 [('val/ResNet50/monotone/f1-score', 0.14743589743589744), ('val/ResNet50/screenshot/f1-score', 0.11815252416756176), ('val/ResNet50/unknown/f1-score', 0.24859663191659986)]
+Epoch: 2, batch loss: 1.43899 Loss Sum: 184.04594, accuracy : 0.17522, val loss: 15.43388, val accuracy: 0.18697
+Final : 0.15180534090824305 [('val/ResNet50/monotone/f1-score', 0.11295681063122923), ('val/ResNet50/screenshot/f1-score', 0.11048478015783539), ('val/ResNet50/unknown/f1-score', 0.28031496062992123)]
+Epoch: 3, batch loss: 1.40373 Loss Sum: 183.49561, accuracy : 0.18709, val loss: 15.47100, val accuracy: 0.20153
+Final : 0.17954806800230516 [('val/ResNet50/monotone/f1-score', 0.15181518151815182), ('val/ResNet50/screenshot/f1-score', 0.13407821229050276), ('val/ResNet50/unknown/f1-score', 0.2843601895734597)]
+---train finished---

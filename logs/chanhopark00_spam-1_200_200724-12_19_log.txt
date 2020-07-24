@@ -1,0 +1,2858 @@
+Downloading: "https://download.pytorch.org/models/densenet121-a639ec97.pth" to /home/nsml/.cache/torch/checkpoints/densenet121-a639ec97.pth
+
+  0%|          | 0.00/30.8M [00:00<?, ?B/s]
+ 32%|███▏      | 9.75M/30.8M [00:00<00:00, 102MB/s]
+ 61%|██████    | 18.8M/30.8M [00:00<00:00, 90.0MB/s]
+ 91%|█████████ | 28.0M/30.8M [00:00<00:00, 92.0MB/s]
+100%|██████████| 30.8M/30.8M [00:00<00:00, 89.4MB/s]
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.10859 Loss Sum: 77.45601, accuracy : 0.89654, val loss: 16.45218, val accuracy: 0.70728
+Final : 0.8385042187517235 [('val/DenseNet121/monotone/f1-score', 0.862876254180602), ('val/DenseNet121/screenshot/f1-score', 0.9199255121042831), ('val/DenseNet121/unknown/f1-score', 0.7427019687712152)]
+Epoch: 1, batch loss: 0.14274 Loss Sum: 38.39311, accuracy : 0.94778, val loss: 16.68282, val accuracy: 0.71724
+Final : 0.8631363652014219 [('val/DenseNet121/monotone/f1-score', 0.924731182795699), ('val/DenseNet121/screenshot/f1-score', 0.9236499068901304), ('val/DenseNet121/unknown/f1-score', 0.7528619528619529)]
+Epoch: 2, batch loss: 0.08772 Loss Sum: 26.98258, accuracy : 0.96501, val loss: 17.50540, val accuracy: 0.73027
+Final : 0.8633476217951146 [('val/DenseNet121/monotone/f1-score', 0.8989547038327527), ('val/DenseNet121/screenshot/f1-score', 0.9343339587242028), ('val/DenseNet121/unknown/f1-score', 0.7661558960692872)]
+Epoch: 3, batch loss: 0.05232 Loss Sum: 20.03870, accuracy : 0.97523, val loss: 20.39138, val accuracy: 0.70268
+Final : 0.856044235993024 [('val/DenseNet121/monotone/f1-score', 0.910394265232975), ('val/DenseNet121/screenshot/f1-score', 0.9320754716981131), ('val/DenseNet121/unknown/f1-score', 0.7392784206943498)]
+---train finished---
+Trying to save to /tmp/tmptw0r8tfg/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.12964 Loss Sum: 75.60299, accuracy : 0.89946, val loss: 14.83156, val accuracy: 0.72720
+Final : 0.8443825810453164 [('val/DenseNet121/monotone/f1-score', 0.8686868686868687), ('val/DenseNet121/screenshot/f1-score', 0.9050279329608939), ('val/DenseNet121/unknown/f1-score', 0.7657597876575979)]
+Epoch: 1, batch loss: 0.07955 Loss Sum: 38.08071, accuracy : 0.94918, val loss: 16.30898, val accuracy: 0.72720
+Final : 0.8619646336254703 [('val/DenseNet121/monotone/f1-score', 0.910394265232975), ('val/DenseNet121/screenshot/f1-score', 0.919626168224299), ('val/DenseNet121/unknown/f1-score', 0.7649402390438247)]
+Epoch: 2, batch loss: 0.13247 Loss Sum: 27.04503, accuracy : 0.96336, val loss: 19.48651, val accuracy: 0.71571
+Final : 0.8572443610959293 [('val/DenseNet121/monotone/f1-score', 0.907142857142857), ('val/DenseNet121/screenshot/f1-score', 0.9236499068901304), ('val/DenseNet121/unknown/f1-score', 0.7518493611297915)]
+Epoch: 3, batch loss: 0.06533 Loss Sum: 19.50966, accuracy : 0.97566, val loss: 18.58696, val accuracy: 0.75402
+Final : 0.8748409597347182 [('val/DenseNet121/monotone/f1-score', 0.900709219858156), ('val/DenseNet121/screenshot/f1-score', 0.9380863039399625), ('val/DenseNet121/unknown/f1-score', 0.7924281984334205)]
+---train finished---
+Trying to save to /tmp/tmpc64oxjul/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.18304 Loss Sum: 86.01036, accuracy : 0.88054, val loss: 16.62037, val accuracy: 0.70038
+Final : 0.8499697205795296 [('val/DenseNet121/monotone/f1-score', 0.9148936170212766), ('val/DenseNet121/screenshot/f1-score', 0.9111531190926275), ('val/DenseNet121/unknown/f1-score', 0.7366283006093431)]
+Epoch: 1, batch loss: 0.16202 Loss Sum: 45.96697, accuracy : 0.93628, val loss: 17.25176, val accuracy: 0.71188
+Final : 0.8563934422506614 [('val/DenseNet121/monotone/f1-score', 0.9110320284697508), ('val/DenseNet121/screenshot/f1-score', 0.9219330855018587), ('val/DenseNet121/unknown/f1-score', 0.7478025693035835)]
+Epoch: 2, batch loss: 0.14664 Loss Sum: 34.77750, accuracy : 0.95168, val loss: 19.06275, val accuracy: 0.70958
+Final : 0.8557301376804125 [('val/DenseNet121/monotone/f1-score', 0.9148936170212766), ('val/DenseNet121/screenshot/f1-score', 0.9205175600739373), ('val/DenseNet121/unknown/f1-score', 0.7440597420230822)]
+Epoch: 3, batch loss: 0.09176 Loss Sum: 27.23008, accuracy : 0.96476, val loss: 19.97375, val accuracy: 0.71341
+Final : 0.8613428460775061 [('val/DenseNet121/monotone/f1-score', 0.9280575539568345), ('val/DenseNet121/screenshot/f1-score', 0.9185185185185184), ('val/DenseNet121/unknown/f1-score', 0.7496617050067658)]
+---train finished---
+Trying to save to /tmp/tmp2l6hlv70/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22802 Loss Sum: 81.19878, accuracy : 0.89058, val loss: 17.89261, val accuracy: 0.68582
+Final : 0.8330019108100862 [('val/DenseNet121/monotone/f1-score', 0.8745762711864408), ('val/DenseNet121/screenshot/f1-score', 0.9172932330827068), ('val/DenseNet121/unknown/f1-score', 0.7204968944099379)]
+Epoch: 1, batch loss: 0.12988 Loss Sum: 43.79960, accuracy : 0.93987, val loss: 18.59439, val accuracy: 0.70038
+Final : 0.8486246820822955 [('val/DenseNet121/monotone/f1-score', 0.911660777385159), ('val/DenseNet121/screenshot/f1-score', 0.909433962264151), ('val/DenseNet121/unknown/f1-score', 0.7371273712737129)]
+Epoch: 2, batch loss: 0.15533 Loss Sum: 33.96895, accuracy : 0.95521, val loss: 19.69458, val accuracy: 0.70575
+Final : 0.858713396819697 [('val/DenseNet121/monotone/f1-score', 0.9214285714285714), ('val/DenseNet121/screenshot/f1-score', 0.929368029739777), ('val/DenseNet121/unknown/f1-score', 0.7394270122783084)]
+Epoch: 3, batch loss: 0.04730 Loss Sum: 25.78389, accuracy : 0.96805, val loss: 20.99407, val accuracy: 0.71034
+Final : 0.8560375395959314 [('val/DenseNet121/monotone/f1-score', 0.9208633093525179), ('val/DenseNet121/screenshot/f1-score', 0.9128014842300556), ('val/DenseNet121/unknown/f1-score', 0.7462887989203779)]
+---train finished---
+Trying to save to /tmp/tmp6llt0nbr/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.18443 Loss Sum: 77.30426, accuracy : 0.90068, val loss: 16.56439, val accuracy: 0.72950
+Final : 0.856105230331344 [('val/DenseNet121/monotone/f1-score', 0.8927335640138409), ('val/DenseNet121/screenshot/f1-score', 0.9171270718232044), ('val/DenseNet121/unknown/f1-score', 0.7663551401869159)]
+Epoch: 1, batch loss: 0.09815 Loss Sum: 37.61615, accuracy : 0.95016, val loss: 16.40263, val accuracy: 0.73410
+Final : 0.8638045005242707 [('val/DenseNet121/monotone/f1-score', 0.8989547038327527), ('val/DenseNet121/screenshot/f1-score', 0.930841121495327), ('val/DenseNet121/unknown/f1-score', 0.7702523240371847)]
+Epoch: 2, batch loss: 0.06168 Loss Sum: 26.37219, accuracy : 0.96665, val loss: 18.24620, val accuracy: 0.72567
+Final : 0.8631390152025432 [('val/DenseNet121/monotone/f1-score', 0.911660777385159), ('val/DenseNet121/screenshot/f1-score', 0.9276437847866418), ('val/DenseNet121/unknown/f1-score', 0.7603748326639893)]
+Epoch: 3, batch loss: 0.06041 Loss Sum: 25.19107, accuracy : 0.96848, val loss: 19.27437, val accuracy: 0.71648
+Final : 0.8549546516973482 [('val/DenseNet121/monotone/f1-score', 0.89198606271777), ('val/DenseNet121/screenshot/f1-score', 0.9330855018587361), ('val/DenseNet121/unknown/f1-score', 0.7508440243079)]
+---train finished---
+Trying to save to /tmp/tmpbz96gw9q/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.15756 Loss Sum: 80.04354, accuracy : 0.89040, val loss: 15.98515, val accuracy: 0.71264
+Final : 0.8544462532576612 [('val/DenseNet121/monotone/f1-score', 0.8951048951048951), ('val/DenseNet121/screenshot/f1-score', 0.9300567107750473), ('val/DenseNet121/unknown/f1-score', 0.7493261455525605)]
+Epoch: 1, batch loss: 0.03268 Loss Sum: 39.60630, accuracy : 0.94547, val loss: 15.99062, val accuracy: 0.73333
+Final : 0.8659253104986637 [('val/DenseNet121/monotone/f1-score', 0.9148936170212766), ('val/DenseNet121/screenshot/f1-score', 0.9205175600739373), ('val/DenseNet121/unknown/f1-score', 0.7709720372836217)]
+Epoch: 2, batch loss: 0.07279 Loss Sum: 27.22489, accuracy : 0.96604, val loss: 16.79986, val accuracy: 0.73103
+Final : 0.8720179041821569 [('val/DenseNet121/monotone/f1-score', 0.9280575539568345), ('val/DenseNet121/screenshot/f1-score', 0.9305816135084428), ('val/DenseNet121/unknown/f1-score', 0.7677977378576181)]
+Epoch: 3, batch loss: 0.09525 Loss Sum: 26.84672, accuracy : 0.96592, val loss: 17.82289, val accuracy: 0.72261
+Final : 0.8652993701438496 [('val/DenseNet121/monotone/f1-score', 0.9280575539568345), ('val/DenseNet121/screenshot/f1-score', 0.9205175600739373), ('val/DenseNet121/unknown/f1-score', 0.7583892617449665)]
+---train finished---
+Trying to save to /tmp/tmpvbce7u41/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.16366 Loss Sum: 84.86405, accuracy : 0.88583, val loss: 17.20611, val accuracy: 0.70192
+Final : 0.8404510613132286 [('val/DenseNet121/monotone/f1-score', 0.8797250859106528), ('val/DenseNet121/screenshot/f1-score', 0.9144981412639406), ('val/DenseNet121/unknown/f1-score', 0.7379169503063309)]
+Epoch: 1, batch loss: 0.12665 Loss Sum: 46.42986, accuracy : 0.93634, val loss: 17.76749, val accuracy: 0.71034
+Final : 0.8539788437503768 [('val/DenseNet121/monotone/f1-score', 0.8989547038327527), ('val/DenseNet121/screenshot/f1-score', 0.931098696461825), ('val/DenseNet121/unknown/f1-score', 0.7440597420230822)]
+Epoch: 2, batch loss: 0.21485 Loss Sum: 35.84208, accuracy : 0.95131, val loss: 17.70506, val accuracy: 0.71341
+Final : 0.8519097875778365 [('val/DenseNet121/monotone/f1-score', 0.8927335640138409), ('val/DenseNet121/screenshot/f1-score', 0.925925925925926), ('val/DenseNet121/unknown/f1-score', 0.7479674796747967)]
+Epoch: 3, batch loss: 0.13188 Loss Sum: 33.26906, accuracy : 0.95509, val loss: 18.14788, val accuracy: 0.70728
+Final : 0.8509485733454063 [('val/DenseNet121/monotone/f1-score', 0.9020979020979021), ('val/DenseNet121/screenshot/f1-score', 0.9190207156308852), ('val/DenseNet121/unknown/f1-score', 0.7432432432432433)]
+---train finished---
+Trying to save to /tmp/tmpjdjerejx/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.31427 Loss Sum: 84.87130, accuracy : 0.88358, val loss: 15.42060, val accuracy: 0.71341
+Final : 0.8444148263272597 [('val/DenseNet121/monotone/f1-score', 0.8865979381443299), ('val/DenseNet121/screenshot/f1-score', 0.9040590405904059), ('val/DenseNet121/unknown/f1-score', 0.75118004045853)]
+Epoch: 1, batch loss: 0.12399 Loss Sum: 45.80177, accuracy : 0.93683, val loss: 17.68837, val accuracy: 0.71264
+Final : 0.8536293408289843 [('val/DenseNet121/monotone/f1-score', 0.9052631578947368), ('val/DenseNet121/screenshot/f1-score', 0.9176029962546817), ('val/DenseNet121/unknown/f1-score', 0.7488215488215488)]
+Epoch: 2, batch loss: 0.15178 Loss Sum: 36.12075, accuracy : 0.95058, val loss: 17.44045, val accuracy: 0.70345
+Final : 0.8482736118923546 [('val/DenseNet121/monotone/f1-score', 0.8958333333333334), ('val/DenseNet121/screenshot/f1-score', 0.9233644859813084), ('val/DenseNet121/unknown/f1-score', 0.7379169503063309)]
+Epoch: 3, batch loss: 0.18800 Loss Sum: 33.61995, accuracy : 0.95411, val loss: 17.25789, val accuracy: 0.72567
+Final : 0.8605338420940627 [('val/DenseNet121/monotone/f1-score', 0.8982456140350877), ('val/DenseNet121/screenshot/f1-score', 0.9305816135084428), ('val/DenseNet121/unknown/f1-score', 0.7623497997329773)]
+---train finished---
+Trying to save to /tmp/tmpvxey1ooo/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.03814 Loss Sum: 61.39102, accuracy : 0.91571, val loss: 17.28781, val accuracy: 0.72184
+Final : 0.8541455455532063 [('val/DenseNet121/monotone/f1-score', 0.8927335640138409), ('val/DenseNet121/screenshot/f1-score', 0.919626168224299), ('val/DenseNet121/unknown/f1-score', 0.7590361445783133)]
+Epoch: 1, batch loss: 0.07251 Loss Sum: 28.50556, accuracy : 0.96245, val loss: 20.33371, val accuracy: 0.70805
+Final : 0.8632533760172729 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9378531073446328), ('val/DenseNet121/unknown/f1-score', 0.7421981004070556)]
+Epoch: 2, batch loss: 0.03700 Loss Sum: 18.35123, accuracy : 0.97712, val loss: 20.93343, val accuracy: 0.74713
+Final : 0.8790112960244718 [('val/DenseNet121/monotone/f1-score', 0.9304029304029303), ('val/DenseNet121/screenshot/f1-score', 0.9285714285714285), ('val/DenseNet121/unknown/f1-score', 0.7861347285807717)]
+Epoch: 3, batch loss: 0.07669 Loss Sum: 13.35228, accuracy : 0.98247, val loss: 20.13057, val accuracy: 0.74330
+Final : 0.8703158090745113 [('val/DenseNet121/monotone/f1-score', 0.9148936170212766), ('val/DenseNet121/screenshot/f1-score', 0.9244935543278084), ('val/DenseNet121/unknown/f1-score', 0.7793923381770146)]
+---train finished---
+Trying to save to /tmp/tmp2dt4suit/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.09526 Loss Sum: 62.32489, accuracy : 0.91456, val loss: 16.35028, val accuracy: 0.74023
+Final : 0.8708483857869828 [('val/DenseNet121/monotone/f1-score', 0.900709219858156), ('val/DenseNet121/screenshot/f1-score', 0.941398865784499), ('val/DenseNet121/unknown/f1-score', 0.7788778877887789)]
+Epoch: 1, batch loss: 0.17989 Loss Sum: 29.16002, accuracy : 0.96093, val loss: 19.29647, val accuracy: 0.72950
+Final : 0.874645415224105 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9449715370018975), ('val/DenseNet121/unknown/f1-score', 0.7661558960692872)]
+Epoch: 2, batch loss: 0.05540 Loss Sum: 18.83817, accuracy : 0.97554, val loss: 22.60291, val accuracy: 0.70421
+Final : 0.8578010642497153 [('val/DenseNet121/monotone/f1-score', 0.900709219858156), ('val/DenseNet121/screenshot/f1-score', 0.946360153256705), ('val/DenseNet121/unknown/f1-score', 0.7404891304347826)]
+Epoch: 3, batch loss: 0.05519 Loss Sum: 12.87543, accuracy : 0.98351, val loss: 25.76658, val accuracy: 0.68276
+Final : 0.8502582072157002 [('val/DenseNet121/monotone/f1-score', 0.9343065693430657), ('val/DenseNet121/screenshot/f1-score', 0.9208103130755064), ('val/DenseNet121/unknown/f1-score', 0.7144846796657381)]
+---train finished---
+Trying to save to /tmp/tmp8tmoqq2y/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.29787 Loss Sum: 69.58417, accuracy : 0.90257, val loss: 16.27842, val accuracy: 0.71877
+Final : 0.8579544319993709 [('val/DenseNet121/monotone/f1-score', 0.9314079422382672), ('val/DenseNet121/screenshot/f1-score', 0.8974358974358974), ('val/DenseNet121/unknown/f1-score', 0.7555257870060281)]
+Epoch: 1, batch loss: 0.13983 Loss Sum: 37.51741, accuracy : 0.94657, val loss: 16.06367, val accuracy: 0.73257
+Final : 0.8704616523636601 [('val/DenseNet121/monotone/f1-score', 0.9343065693430657), ('val/DenseNet121/screenshot/f1-score', 0.9149338374291115), ('val/DenseNet121/unknown/f1-score', 0.7715602369980251)]
+Epoch: 2, batch loss: 0.07531 Loss Sum: 25.07675, accuracy : 0.96604, val loss: 20.66101, val accuracy: 0.70575
+Final : 0.8646297239212157 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9449715370018975), ('val/DenseNet121/unknown/f1-score', 0.7401360544217688)]
+Epoch: 3, batch loss: 0.06577 Loss Sum: 19.19150, accuracy : 0.97420, val loss: 22.95323, val accuracy: 0.72261
+Final : 0.8738421643463204 [('val/DenseNet121/monotone/f1-score', 0.9513108614232209), ('val/DenseNet121/screenshot/f1-score', 0.9201520912547527), ('val/DenseNet121/unknown/f1-score', 0.7622841965471447)]
+---train finished---
+Trying to save to /tmp/tmpbirw3bzh/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.18748 Loss Sum: 71.17728, accuracy : 0.89849, val loss: 16.06442, val accuracy: 0.72644
+Final : 0.8639961876102026 [('val/DenseNet121/monotone/f1-score', 0.9148936170212766), ('val/DenseNet121/screenshot/f1-score', 0.922201138519924), ('val/DenseNet121/unknown/f1-score', 0.7644326476443265)]
+Epoch: 1, batch loss: 0.05124 Loss Sum: 37.97207, accuracy : 0.94815, val loss: 21.17123, val accuracy: 0.67969
+Final : 0.8458719786031809 [('val/DenseNet121/monotone/f1-score', 0.9381818181818181), ('val/DenseNet121/screenshot/f1-score', 0.9064220183486239), ('val/DenseNet121/unknown/f1-score', 0.7116991643454038)]
+Epoch: 2, batch loss: 0.11366 Loss Sum: 27.53835, accuracy : 0.96239, val loss: 21.72628, val accuracy: 0.71418
+Final : 0.8667682397420117 [('val/DenseNet121/monotone/f1-score', 0.9363295880149812), ('val/DenseNet121/screenshot/f1-score', 0.9233644859813084), ('val/DenseNet121/unknown/f1-score', 0.7531943510423672)]
+Epoch: 3, batch loss: 0.08696 Loss Sum: 21.62584, accuracy : 0.97055, val loss: 20.72107, val accuracy: 0.72261
+Final : 0.8676355565463855 [('val/DenseNet121/monotone/f1-score', 0.9275362318840579), ('val/DenseNet121/screenshot/f1-score', 0.9271028037383177), ('val/DenseNet121/unknown/f1-score', 0.7595445411922305)]
+---train finished---
+Trying to save to /tmp/tmp0nukgm3i/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22170 Loss Sum: 61.33681, accuracy : 0.91517, val loss: 16.89894, val accuracy: 0.71571
+Final : 0.8392031795186385 [('val/DenseNet121/monotone/f1-score', 0.8686868686868687), ('val/DenseNet121/screenshot/f1-score', 0.9051094890510949), ('val/DenseNet121/unknown/f1-score', 0.7516869095816464)]
+Epoch: 1, batch loss: 0.10503 Loss Sum: 28.51562, accuracy : 0.96245, val loss: 16.99195, val accuracy: 0.75556
+Final : 0.8839959312766463 [('val/DenseNet121/monotone/f1-score', 0.937269372693727), ('val/DenseNet121/screenshot/f1-score', 0.9276437847866418), ('val/DenseNet121/unknown/f1-score', 0.7945205479452054)]
+Epoch: 2, batch loss: 0.02923 Loss Sum: 15.57346, accuracy : 0.98138, val loss: 18.87802, val accuracy: 0.72490
+Final : 0.8655803678664822 [('val/DenseNet121/monotone/f1-score', 0.9202898550724637), ('val/DenseNet121/screenshot/f1-score', 0.9233644859813084), ('val/DenseNet121/unknown/f1-score', 0.7631754503002002)]
+Epoch: 3, batch loss: 0.12077 Loss Sum: 11.50448, accuracy : 0.98771, val loss: 20.49249, val accuracy: 0.72797
+Final : 0.8696409687957976 [('val/DenseNet121/monotone/f1-score', 0.9275362318840579), ('val/DenseNet121/screenshot/f1-score', 0.9271028037383177), ('val/DenseNet121/unknown/f1-score', 0.7648234510326448)]
+---train finished---
+Trying to save to /tmp/tmp6879_mfj/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.23832 Loss Sum: 64.44536, accuracy : 0.90719, val loss: 16.10459, val accuracy: 0.71648
+Final : 0.863873278132309 [('val/DenseNet121/monotone/f1-score', 0.9214285714285714), ('val/DenseNet121/screenshot/f1-score', 0.9283018867924528), ('val/DenseNet121/unknown/f1-score', 0.7537012113055183)]
+Epoch: 1, batch loss: 0.04767 Loss Sum: 29.19541, accuracy : 0.95983, val loss: 13.86484, val accuracy: 0.77701
+Final : 0.8767947207411632 [('val/DenseNet121/monotone/f1-score', 0.9045936395759718), ('val/DenseNet121/screenshot/f1-score', 0.9128014842300556), ('val/DenseNet121/unknown/f1-score', 0.8163265306122449)]
+Epoch: 2, batch loss: 0.04427 Loss Sum: 15.92196, accuracy : 0.98126, val loss: 18.91566, val accuracy: 0.73333
+Final : 0.8712061961368444 [('val/DenseNet121/monotone/f1-score', 0.9202898550724637), ('val/DenseNet121/screenshot/f1-score', 0.9328358208955224), ('val/DenseNet121/unknown/f1-score', 0.7702523240371847)]
+Epoch: 3, batch loss: 0.03578 Loss Sum: 11.68163, accuracy : 0.98746, val loss: 20.13157, val accuracy: 0.73793
+Final : 0.8798404631906791 [('val/DenseNet121/monotone/f1-score', 0.9338235294117646), ('val/DenseNet121/screenshot/f1-score', 0.9400749063670412), ('val/DenseNet121/unknown/f1-score', 0.7758620689655172)]
+---train finished---
+Trying to save to /tmp/tmpecuci4n2/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22503 Loss Sum: 72.65356, accuracy : 0.89642, val loss: 15.14093, val accuracy: 0.72031
+Final : 0.853073108033412 [('val/DenseNet121/monotone/f1-score', 0.9052631578947368), ('val/DenseNet121/screenshot/f1-score', 0.9060773480662982), ('val/DenseNet121/unknown/f1-score', 0.7568653717347623)]
+Epoch: 1, batch loss: 0.15594 Loss Sum: 36.92294, accuracy : 0.94645, val loss: 16.69488, val accuracy: 0.72490
+Final : 0.8697960477075108 [('val/DenseNet121/monotone/f1-score', 0.9280575539568345), ('val/DenseNet121/screenshot/f1-score', 0.9315589353612167), ('val/DenseNet121/unknown/f1-score', 0.7611443779108449)]
+Epoch: 2, batch loss: 0.04931 Loss Sum: 22.64929, accuracy : 0.97194, val loss: 17.21854, val accuracy: 0.73180
+Final : 0.8648553249942323 [('val/DenseNet121/monotone/f1-score', 0.9214285714285714), ('val/DenseNet121/screenshot/f1-score', 0.9137614678899082), ('val/DenseNet121/unknown/f1-score', 0.7683089214380826)]
+Epoch: 3, batch loss: 0.09413 Loss Sum: 19.21283, accuracy : 0.97694, val loss: 20.36659, val accuracy: 0.72414
+Final : 0.8740417385915769 [('val/DenseNet121/monotone/f1-score', 0.945054945054945), ('val/DenseNet121/screenshot/f1-score', 0.929368029739777), ('val/DenseNet121/unknown/f1-score', 0.7602417730020148)]
+---train finished---
+Trying to save to /tmp/tmpvmldrvhl/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.31572 Loss Sum: 70.01701, accuracy : 0.90342, val loss: 18.86814, val accuracy: 0.69808
+Final : 0.8411738725143365 [('val/DenseNet121/monotone/f1-score', 0.8989547038327527), ('val/DenseNet121/screenshot/f1-score', 0.9051094890510949), ('val/DenseNet121/unknown/f1-score', 0.7315068493150686)]
+Epoch: 1, batch loss: 0.18759 Loss Sum: 36.90399, accuracy : 0.94724, val loss: 18.82238, val accuracy: 0.71111
+Final : 0.8590228885424648 [('val/DenseNet121/monotone/f1-score', 0.9236363636363636), ('val/DenseNet121/screenshot/f1-score', 0.9158878504672897), ('val/DenseNet121/unknown/f1-score', 0.7493261455525605)]
+Epoch: 2, batch loss: 0.19486 Loss Sum: 22.60004, accuracy : 0.96981, val loss: 19.63021, val accuracy: 0.71111
+Final : 0.8585723954970274 [('val/DenseNet121/monotone/f1-score', 0.9236363636363636), ('val/DenseNet121/screenshot/f1-score', 0.9165120593692022), ('val/DenseNet121/unknown/f1-score', 0.7476383265856951)]
+Epoch: 3, batch loss: 0.14123 Loss Sum: 17.77446, accuracy : 0.97827, val loss: 19.98522, val accuracy: 0.70651
+Final : 0.8544780790303786 [('val/DenseNet121/monotone/f1-score', 0.9343065693430657), ('val/DenseNet121/screenshot/f1-score', 0.9005424954792044), ('val/DenseNet121/unknown/f1-score', 0.7414965986394558)]
+---train finished---
+Trying to save to /tmp/tmpweblieko/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.17672 Loss Sum: 314.62615, accuracy : 0.42332, val loss: 24.46678, val accuracy: 0.46437
+Final : 0.5799626810227387 [('val/DenseNet121/monotone/f1-score', 0.5495495495495495), ('val/DenseNet121/screenshot/f1-score', 0.6146341463414634), ('val/DenseNet121/unknown/f1-score', 0.5775327360441076)]
+Epoch: 1, batch loss: 0.95863 Loss Sum: 268.64960, accuracy : 0.60979, val loss: 22.96721, val accuracy: 0.50728
+Final : 0.6725879582861941 [('val/DenseNet121/monotone/f1-score', 0.708955223880597), ('val/DenseNet121/screenshot/f1-score', 0.7526881720430109), ('val/DenseNet121/unknown/f1-score', 0.5701818181818182)]
+Epoch: 2, batch loss: 0.84929 Loss Sum: 234.95308, accuracy : 0.70503, val loss: 21.50400, val accuracy: 0.53103
+Final : 0.6988515923677454 [('val/DenseNet121/monotone/f1-score', 0.7628865979381443), ('val/DenseNet121/screenshot/f1-score', 0.7708333333333333), ('val/DenseNet121/unknown/f1-score', 0.5804093567251463)]
+Epoch: 3, batch loss: 0.84685 Loss Sum: 209.17630, accuracy : 0.74963, val loss: 20.12945, val accuracy: 0.54943
+Final : 0.7202248298372999 [('val/DenseNet121/monotone/f1-score', 0.7741935483870968), ('val/DenseNet121/screenshot/f1-score', 0.8237704918032787), ('val/DenseNet121/unknown/f1-score', 0.5857988165680473)]
+---train finished---
+Trying to save to /tmp/tmp7argny_e/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.22843 Loss Sum: 338.47921, accuracy : 0.33581, val loss: 25.87656, val accuracy: 0.37471
+Final : 0.440764662822046 [('val/DenseNet121/monotone/f1-score', 0.3675675675675676), ('val/DenseNet121/screenshot/f1-score', 0.4498777506112469), ('val/DenseNet121/unknown/f1-score', 0.5178316690442225)]
+Epoch: 1, batch loss: 1.04599 Loss Sum: 280.23811, accuracy : 0.55398, val loss: 23.22444, val accuracy: 0.49195
+Final : 0.6567005235177422 [('val/DenseNet121/monotone/f1-score', 0.7209302325581395), ('val/DenseNet121/screenshot/f1-score', 0.6842105263157895), ('val/DenseNet121/unknown/f1-score', 0.5741417092768444)]
+Epoch: 2, batch loss: 0.77026 Loss Sum: 242.21832, accuracy : 0.69152, val loss: 21.35390, val accuracy: 0.56169
+Final : 0.7186954762375453 [('val/DenseNet121/monotone/f1-score', 0.7864406779661018), ('val/DenseNet121/screenshot/f1-score', 0.7599999999999999), ('val/DenseNet121/unknown/f1-score', 0.6210909090909091)]
+Epoch: 3, batch loss: 0.70663 Loss Sum: 213.25083, accuracy : 0.75389, val loss: 20.01236, val accuracy: 0.57625
+Final : 0.7331958454923703 [('val/DenseNet121/monotone/f1-score', 0.7707006369426751), ('val/DenseNet121/screenshot/f1-score', 0.8221343873517787), ('val/DenseNet121/unknown/f1-score', 0.6220588235294118)]
+---train finished---
+Trying to save to /tmp/tmplm2j87lp/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.49855 Loss Sum: 212.04899, accuracy : 0.69943, val loss: 16.22695, val accuracy: 0.65747
+Final : 0.7968381781376617 [('val/DenseNet121/monotone/f1-score', 0.8466666666666667), ('val/DenseNet121/screenshot/f1-score', 0.8470588235294119), ('val/DenseNet121/unknown/f1-score', 0.7054794520547945)]
+Epoch: 1, batch loss: 0.33982 Loss Sum: 114.76506, accuracy : 0.85303, val loss: 15.35569, val accuracy: 0.67816
+Final : 0.8131479759522845 [('val/DenseNet121/monotone/f1-score', 0.8561872909698997), ('val/DenseNet121/screenshot/f1-score', 0.8723809523809524), ('val/DenseNet121/unknown/f1-score', 0.719836400817996)]
+Epoch: 2, batch loss: 0.35550 Loss Sum: 89.46977, accuracy : 0.88090, val loss: 15.75837, val accuracy: 0.67433
+Final : 0.8185603427588716 [('val/DenseNet121/monotone/f1-score', 0.8686868686868687), ('val/DenseNet121/screenshot/f1-score', 0.8841698841698841), ('val/DenseNet121/unknown/f1-score', 0.7140902872777019)]
+Epoch: 3, batch loss: 0.41460 Loss Sum: 78.24917, accuracy : 0.89259, val loss: 15.14358, val accuracy: 0.71648
+Final : 0.8465927910915716 [('val/DenseNet121/monotone/f1-score', 0.8775510204081634), ('val/DenseNet121/screenshot/f1-score', 0.9125475285171102), ('val/DenseNet121/unknown/f1-score', 0.7576974564926372)]
+---train finished---
+Trying to save to /tmp/tmp_3h6bhhh/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.03493 Loss Sum: 305.00540, accuracy : 0.47432, val loss: 23.67730, val accuracy: 0.47586
+Final : 0.647819998930648 [('val/DenseNet121/monotone/f1-score', 0.7633587786259542), ('val/DenseNet121/screenshot/f1-score', 0.6484018264840183), ('val/DenseNet121/unknown/f1-score', 0.5492753623188407)]
+Epoch: 1, batch loss: 0.78964 Loss Sum: 231.74208, accuracy : 0.70223, val loss: 20.61602, val accuracy: 0.54483
+Final : 0.713287896295059 [('val/DenseNet121/monotone/f1-score', 0.7755102040816326), ('val/DenseNet121/screenshot/f1-score', 0.8031496062992126), ('val/DenseNet121/unknown/f1-score', 0.5826538176426983)]
+Epoch: 2, batch loss: 0.77661 Loss Sum: 189.09229, accuracy : 0.77897, val loss: 18.85728, val accuracy: 0.57011
+Final : 0.7357278105379821 [('val/DenseNet121/monotone/f1-score', 0.7909967845659164), ('val/DenseNet121/screenshot/f1-score', 0.8356435643564357), ('val/DenseNet121/unknown/f1-score', 0.6024981631153563)]
+Epoch: 3, batch loss: 0.57352 Loss Sum: 161.63539, accuracy : 0.81031, val loss: 17.54213, val accuracy: 0.61992
+Final : 0.7708696431156187 [('val/DenseNet121/monotone/f1-score', 0.823529411764706), ('val/DenseNet121/screenshot/f1-score', 0.8427184466019418), ('val/DenseNet121/unknown/f1-score', 0.660056657223796)]
+---train finished---
+Trying to save to /tmp/tmpzk2wr55k/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.55056 Loss Sum: 212.58677, accuracy : 0.69255, val loss: 16.46706, val accuracy: 0.65211
+Final : 0.7865524299090224 [('val/DenseNet121/monotone/f1-score', 0.8220064724919094), ('val/DenseNet121/screenshot/f1-score', 0.8565965583173996), ('val/DenseNet121/unknown/f1-score', 0.691085003455425)]
+Epoch: 1, batch loss: 0.35532 Loss Sum: 112.52551, accuracy : 0.86246, val loss: 14.86101, val accuracy: 0.68352
+Final : 0.8135484409423958 [('val/DenseNet121/monotone/f1-score', 0.8476821192052979), ('val/DenseNet121/screenshot/f1-score', 0.879245283018868), ('val/DenseNet121/unknown/f1-score', 0.7224489795918368)]
+Epoch: 2, batch loss: 0.31405 Loss Sum: 94.17497, accuracy : 0.88078, val loss: 14.84300, val accuracy: 0.69732
+Final : 0.8194862028528964 [('val/DenseNet121/monotone/f1-score', 0.8311688311688311), ('val/DenseNet121/screenshot/f1-score', 0.8969465648854962), ('val/DenseNet121/unknown/f1-score', 0.738191632928475)]
+Epoch: 3, batch loss: 0.35355 Loss Sum: 92.57493, accuracy : 0.88176, val loss: 14.96937, val accuracy: 0.68659
+Final : 0.8162727254207996 [('val/DenseNet121/monotone/f1-score', 0.8344370860927153), ('val/DenseNet121/screenshot/f1-score', 0.8994307400379508), ('val/DenseNet121/unknown/f1-score', 0.724677090414684)]
+---train finished---
+Trying to save to /tmp/tmpojzuzje1/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.31446 Loss Sum: 128.67864, accuracy : 0.79917, val loss: 17.25992, val accuracy: 0.71877
+Final : 0.8452186219742351 [('val/DenseNet121/monotone/f1-score', 0.8775510204081634), ('val/DenseNet121/screenshot/f1-score', 0.9027237354085603), ('val/DenseNet121/unknown/f1-score', 0.76221928665786)]
+Epoch: 1, batch loss: 0.21704 Loss Sum: 50.89230, accuracy : 0.92673, val loss: 11.65430, val accuracy: 0.79540
+Final : 0.8917062310703767 [('val/DenseNet121/monotone/f1-score', 0.9148936170212766), ('val/DenseNet121/screenshot/f1-score', 0.928709055876686), ('val/DenseNet121/unknown/f1-score', 0.8344784509681448)]
+Epoch: 2, batch loss: 0.19111 Loss Sum: 39.30511, accuracy : 0.94620, val loss: 12.89761, val accuracy: 0.76475
+Final : 0.8824581621615271 [('val/DenseNet121/monotone/f1-score', 0.9214285714285714), ('val/DenseNet121/screenshot/f1-score', 0.9274809160305343), ('val/DenseNet121/unknown/f1-score', 0.8041104688503532)]
+Epoch: 3, batch loss: 0.14686 Loss Sum: 36.02470, accuracy : 0.94998, val loss: 13.42150, val accuracy: 0.76245
+Final : 0.8716240486597482 [('val/DenseNet121/monotone/f1-score', 0.9052631578947368), ('val/DenseNet121/screenshot/f1-score', 0.9111531190926275), ('val/DenseNet121/unknown/f1-score', 0.8028259473346179)]
+---train finished---
+Trying to save to /tmp/tmpi85abq5e/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.24530 Loss Sum: 349.13272, accuracy : 0.32315, val loss: 26.22092, val accuracy: 0.37854
+Final : 0.4213101845756865 [('val/DenseNet121/monotone/f1-score', 0.2754491017964072), ('val/DenseNet121/screenshot/f1-score', 0.54337899543379), ('val/DenseNet121/unknown/f1-score', 0.4996451383960255)]
+Epoch: 1, batch loss: 1.06998 Loss Sum: 293.27354, accuracy : 0.48856, val loss: 24.74225, val accuracy: 0.41533
+Final : 0.5791797221202681 [('val/DenseNet121/monotone/f1-score', 0.5784313725490197), ('val/DenseNet121/screenshot/f1-score', 0.6917960088691797), ('val/DenseNet121/unknown/f1-score', 0.48552338530066813)]
+Epoch: 2, batch loss: 1.03123 Loss Sum: 271.77796, accuracy : 0.56646, val loss: 24.36544, val accuracy: 0.43142
+Final : 0.5931558956286317 [('val/DenseNet121/monotone/f1-score', 0.594059405940594), ('val/DenseNet121/screenshot/f1-score', 0.6935123042505593), ('val/DenseNet121/unknown/f1-score', 0.5065502183406113)]
+Epoch: 3, batch loss: 1.09247 Loss Sum: 269.87504, accuracy : 0.57814, val loss: 24.16696, val accuracy: 0.44598
+Final : 0.6186024090770524 [('val/DenseNet121/monotone/f1-score', 0.663594470046083), ('val/DenseNet121/screenshot/f1-score', 0.7036247334754798), ('val/DenseNet121/unknown/f1-score', 0.5069801616458487)]
+---train finished---
+Trying to save to /tmp/tmp0056f5uv/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.56188 Loss Sum: 209.51631, accuracy : 0.70442, val loss: 17.22974, val accuracy: 0.61839
+Final : 0.7822026048434102 [('val/DenseNet121/monotone/f1-score', 0.8504983388704319), ('val/DenseNet121/screenshot/f1-score', 0.8652751423149905), ('val/DenseNet121/unknown/f1-score', 0.6503244412400866)]
+Epoch: 1, batch loss: 0.43416 Loss Sum: 111.62134, accuracy : 0.85924, val loss: 15.52050, val accuracy: 0.67510
+Final : 0.8112362971694352 [('val/DenseNet121/monotone/f1-score', 0.8504983388704319), ('val/DenseNet121/screenshot/f1-score', 0.877126654064272), ('val/DenseNet121/unknown/f1-score', 0.7156593406593406)]
+Epoch: 2, batch loss: 0.33798 Loss Sum: 96.19227, accuracy : 0.87427, val loss: 15.69958, val accuracy: 0.67739
+Final : 0.8128225010769368 [('val/DenseNet121/monotone/f1-score', 0.8476821192052979), ('val/DenseNet121/screenshot/f1-score', 0.8842504743833016), ('val/DenseNet121/unknown/f1-score', 0.7164383561643836)]
+Epoch: 3, batch loss: 0.34485 Loss Sum: 94.17601, accuracy : 0.87750, val loss: 15.51404, val accuracy: 0.68046
+Final : 0.8145794989387799 [('val/DenseNet121/monotone/f1-score', 0.8504983388704319), ('val/DenseNet121/screenshot/f1-score', 0.8804554079696395), ('val/DenseNet121/unknown/f1-score', 0.7218045112781954)]
+---train finished---
+Trying to save to /tmp/tmp250jcng4/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.39404 Loss Sum: 83.78412, accuracy : 0.88662, val loss: 14.05578, val accuracy: 0.75632
+Final : 0.8732200616966004 [('val/DenseNet121/monotone/f1-score', 0.9052631578947368), ('val/DenseNet121/screenshot/f1-score', 0.924812030075188), ('val/DenseNet121/unknown/f1-score', 0.7953216374269007)]
+Epoch: 1, batch loss: 0.07475 Loss Sum: 40.54839, accuracy : 0.94419, val loss: 15.11636, val accuracy: 0.74943
+Final : 0.8677656049986394 [('val/DenseNet121/monotone/f1-score', 0.888888888888889), ('val/DenseNet121/screenshot/f1-score', 0.9338374291115312), ('val/DenseNet121/unknown/f1-score', 0.787206266318538)]
+Epoch: 2, batch loss: 0.05106 Loss Sum: 28.02920, accuracy : 0.96403, val loss: 17.41192, val accuracy: 0.74713
+Final : 0.8759629099891474 [('val/DenseNet121/monotone/f1-score', 0.9314079422382672), ('val/DenseNet121/screenshot/f1-score', 0.9208103130755064), ('val/DenseNet121/unknown/f1-score', 0.7836949375410914)]
+Epoch: 3, batch loss: 0.10595 Loss Sum: 19.25249, accuracy : 0.97706, val loss: 20.36210, val accuracy: 0.71418
+Final : 0.8602369993929377 [('val/DenseNet121/monotone/f1-score', 0.9169675090252708), ('val/DenseNet121/screenshot/f1-score', 0.9264705882352942), ('val/DenseNet121/unknown/f1-score', 0.7493224932249324)]
+---train finished---
+Trying to save to /tmp/tmpjrbingpn/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.24068 Loss Sum: 78.25014, accuracy : 0.89740, val loss: 14.04363, val accuracy: 0.74330
+Final : 0.8636098320186033 [('val/DenseNet121/monotone/f1-score', 0.8958333333333334), ('val/DenseNet121/screenshot/f1-score', 0.9199255121042831), ('val/DenseNet121/unknown/f1-score', 0.7815789473684212)]
+Epoch: 1, batch loss: 0.12057 Loss Sum: 37.82858, accuracy : 0.95174, val loss: 15.54514, val accuracy: 0.75402
+Final : 0.880178298881282 [('val/DenseNet121/monotone/f1-score', 0.911660777385159), ('val/DenseNet121/screenshot/f1-score', 0.9423076923076923), ('val/DenseNet121/unknown/f1-score', 0.7937540663630449)]
+Epoch: 2, batch loss: 0.07254 Loss Sum: 26.83822, accuracy : 0.96659, val loss: 17.01374, val accuracy: 0.74713
+Final : 0.8765232599013877 [('val/DenseNet121/monotone/f1-score', 0.9275362318840579), ('val/DenseNet121/screenshot/f1-score', 0.9250936329588015), ('val/DenseNet121/unknown/f1-score', 0.7848266841072596)]
+Epoch: 3, batch loss: 0.05160 Loss Sum: 18.93527, accuracy : 0.97833, val loss: 20.72591, val accuracy: 0.73870
+Final : 0.8749199725873562 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9338374291115312), ('val/DenseNet121/unknown/f1-score', 0.7760210803689065)]
+---train finished---
+Trying to save to /tmp/tmprtf0wzpr/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22805 Loss Sum: 86.38374, accuracy : 0.88437, val loss: 14.75050, val accuracy: 0.73793
+Final : 0.8618935287813853 [('val/DenseNet121/monotone/f1-score', 0.9052631578947368), ('val/DenseNet121/screenshot/f1-score', 0.909433962264151), ('val/DenseNet121/unknown/f1-score', 0.777704918032787)]
+Epoch: 1, batch loss: 0.08906 Loss Sum: 47.39324, accuracy : 0.93543, val loss: 17.34180, val accuracy: 0.70192
+Final : 0.8519451744087126 [('val/DenseNet121/monotone/f1-score', 0.9181494661921707), ('val/DenseNet121/screenshot/f1-score', 0.9132075471698112), ('val/DenseNet121/unknown/f1-score', 0.7374830852503382)]
+Epoch: 2, batch loss: 0.08381 Loss Sum: 35.87170, accuracy : 0.95016, val loss: 21.44416, val accuracy: 0.70192
+Final : 0.8515628080325374 [('val/DenseNet121/monotone/f1-score', 0.911660777385159), ('val/DenseNet121/screenshot/f1-score', 0.919626168224299), ('val/DenseNet121/unknown/f1-score', 0.7365554799183117)]
+Epoch: 3, batch loss: 0.03961 Loss Sum: 28.02520, accuracy : 0.96257, val loss: 19.61296, val accuracy: 0.72644
+Final : 0.8647408419106692 [('val/DenseNet121/monotone/f1-score', 0.9163636363636364), ('val/DenseNet121/screenshot/f1-score', 0.9216417910447761), ('val/DenseNet121/unknown/f1-score', 0.7656458055925432)]
+---train finished---
+Trying to save to /tmp/tmpqqizrv8v/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.12314 Loss Sum: 87.42405, accuracy : 0.88650, val loss: 15.38828, val accuracy: 0.73103
+Final : 0.8557008005545476 [('val/DenseNet121/monotone/f1-score', 0.8958333333333334), ('val/DenseNet121/screenshot/f1-score', 0.9056603773584906), ('val/DenseNet121/unknown/f1-score', 0.7722772277227724)]
+Epoch: 1, batch loss: 0.09284 Loss Sum: 47.82798, accuracy : 0.93507, val loss: 16.83412, val accuracy: 0.72797
+Final : 0.8660964276865307 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9185185185185184), ('val/DenseNet121/unknown/f1-score', 0.7653333333333333)]
+Epoch: 2, batch loss: 0.05515 Loss Sum: 34.52193, accuracy : 0.95399, val loss: 17.72986, val accuracy: 0.72414
+Final : 0.8625909896140554 [('val/DenseNet121/monotone/f1-score', 0.927007299270073), ('val/DenseNet121/screenshot/f1-score', 0.9070631970260223), ('val/DenseNet121/unknown/f1-score', 0.7632978723404256)]
+Epoch: 3, batch loss: 0.18732 Loss Sum: 28.26916, accuracy : 0.96428, val loss: 20.91846, val accuracy: 0.71571
+Final : 0.8659415940807353 [('val/DenseNet121/monotone/f1-score', 0.937269372693727), ('val/DenseNet121/screenshot/f1-score', 0.9184060721062619), ('val/DenseNet121/unknown/f1-score', 0.7543391188251001)]
+---train finished---
+Trying to save to /tmp/tmpn127rtez/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.15459 Loss Sum: 81.74488, accuracy : 0.89417, val loss: 14.87634, val accuracy: 0.74330
+Final : 0.8541517771307293 [('val/DenseNet121/monotone/f1-score', 0.8657718120805369), ('val/DenseNet121/screenshot/f1-score', 0.9222222222222222), ('val/DenseNet121/unknown/f1-score', 0.7804878048780487)]
+Epoch: 1, batch loss: 0.25670 Loss Sum: 41.45913, accuracy : 0.94730, val loss: 15.69938, val accuracy: 0.74023
+Final : 0.868895456268238 [('val/DenseNet121/monotone/f1-score', 0.9078014184397163), ('val/DenseNet121/screenshot/f1-score', 0.9283018867924528), ('val/DenseNet121/unknown/f1-score', 0.7784352399737016)]
+Epoch: 2, batch loss: 0.14997 Loss Sum: 30.55512, accuracy : 0.96166, val loss: 16.45374, val accuracy: 0.73793
+Final : 0.8616088274929218 [('val/DenseNet121/monotone/f1-score', 0.89198606271777), ('val/DenseNet121/screenshot/f1-score', 0.9253731343283582), ('val/DenseNet121/unknown/f1-score', 0.7749174917491749)]
+Epoch: 3, batch loss: 0.23400 Loss Sum: 28.40164, accuracy : 0.96318, val loss: 16.70509, val accuracy: 0.73333
+Final : 0.8601597434520191 [('val/DenseNet121/monotone/f1-score', 0.8982456140350877), ('val/DenseNet121/screenshot/f1-score', 0.9208103130755064), ('val/DenseNet121/unknown/f1-score', 0.7694352159468438)]
+---train finished---
+Trying to save to /tmp/tmpnygmpfud/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.27614 Loss Sum: 78.67875, accuracy : 0.89904, val loss: 14.82679, val accuracy: 0.74943
+Final : 0.866296366651563 [('val/DenseNet121/monotone/f1-score', 0.89198606271777), ('val/DenseNet121/screenshot/f1-score', 0.9224952741020795), ('val/DenseNet121/unknown/f1-score', 0.7900912646675359)]
+Epoch: 1, batch loss: 0.19025 Loss Sum: 39.09393, accuracy : 0.94955, val loss: 15.49029, val accuracy: 0.74713
+Final : 0.8714937297725057 [('val/DenseNet121/monotone/f1-score', 0.9084507042253521), ('val/DenseNet121/screenshot/f1-score', 0.928030303030303), ('val/DenseNet121/unknown/f1-score', 0.7851077726975833)]
+Epoch: 2, batch loss: 0.05621 Loss Sum: 28.54300, accuracy : 0.96671, val loss: 15.36345, val accuracy: 0.74100
+Final : 0.8646277724946254 [('val/DenseNet121/monotone/f1-score', 0.9084507042253521), ('val/DenseNet121/screenshot/f1-score', 0.9118198874296435), ('val/DenseNet121/unknown/f1-score', 0.780327868852459)]
+Epoch: 3, batch loss: 0.12536 Loss Sum: 26.63935, accuracy : 0.96744, val loss: 15.51511, val accuracy: 0.76169
+Final : 0.8751406602858156 [('val/DenseNet121/monotone/f1-score', 0.9110320284697508), ('val/DenseNet121/screenshot/f1-score', 0.9205175600739373), ('val/DenseNet121/unknown/f1-score', 0.7992227979274612)]
+---train finished---
+Trying to save to /tmp/tmpct1o3lhx/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.12731 Loss Sum: 86.94149, accuracy : 0.88346, val loss: 15.73518, val accuracy: 0.71877
+Final : 0.8490772255829945 [('val/DenseNet121/monotone/f1-score', 0.8951048951048951), ('val/DenseNet121/screenshot/f1-score', 0.9029850746268657), ('val/DenseNet121/unknown/f1-score', 0.7573333333333333)]
+Epoch: 1, batch loss: 0.18752 Loss Sum: 45.67864, accuracy : 0.93823, val loss: 16.90676, val accuracy: 0.72414
+Final : 0.8619409453070102 [('val/DenseNet121/monotone/f1-score', 0.9142857142857144), ('val/DenseNet121/screenshot/f1-score', 0.9205175600739373), ('val/DenseNet121/unknown/f1-score', 0.7608841259209645)]
+Epoch: 2, batch loss: 0.08892 Loss Sum: 35.53085, accuracy : 0.95308, val loss: 16.42172, val accuracy: 0.72337
+Final : 0.8571800472562842 [('val/DenseNet121/monotone/f1-score', 0.9014084507042254), ('val/DenseNet121/screenshot/f1-score', 0.9205175600739373), ('val/DenseNet121/unknown/f1-score', 0.7590361445783133)]
+Epoch: 3, batch loss: 0.11179 Loss Sum: 33.32197, accuracy : 0.95813, val loss: 16.78333, val accuracy: 0.72644
+Final : 0.8615746314816204 [('val/DenseNet121/monotone/f1-score', 0.9078014184397163), ('val/DenseNet121/screenshot/f1-score', 0.9233644859813084), ('val/DenseNet121/unknown/f1-score', 0.762982689747004)]
+---train finished---
+Trying to save to /tmp/tmpq_9ilmbt/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22034 Loss Sum: 87.40815, accuracy : 0.88705, val loss: 16.62581, val accuracy: 0.71571
+Final : 0.8528022453030978 [('val/DenseNet121/monotone/f1-score', 0.8927335640138409), ('val/DenseNet121/screenshot/f1-score', 0.922201138519924), ('val/DenseNet121/unknown/f1-score', 0.7533512064343164)]
+Epoch: 1, batch loss: 0.19630 Loss Sum: 47.75713, accuracy : 0.93525, val loss: 16.52588, val accuracy: 0.72031
+Final : 0.8566520671140366 [('val/DenseNet121/monotone/f1-score', 0.9078014184397163), ('val/DenseNet121/screenshot/f1-score', 0.914179104477612), ('val/DenseNet121/unknown/f1-score', 0.7575150300601202)]
+Epoch: 2, batch loss: 0.14543 Loss Sum: 36.86248, accuracy : 0.95302, val loss: 17.14524, val accuracy: 0.72414
+Final : 0.8566377205121412 [('val/DenseNet121/monotone/f1-score', 0.911660777385159), ('val/DenseNet121/screenshot/f1-score', 0.9060773480662982), ('val/DenseNet121/unknown/f1-score', 0.761014686248331)]
+Epoch: 3, batch loss: 0.04515 Loss Sum: 35.07266, accuracy : 0.95357, val loss: 17.05494, val accuracy: 0.73870
+Final : 0.8649937523162212 [('val/DenseNet121/monotone/f1-score', 0.9181494661921707), ('val/DenseNet121/screenshot/f1-score', 0.9077490774907749), ('val/DenseNet121/unknown/f1-score', 0.7765326301911667)]
+---train finished---
+Trying to save to /tmp/tmpnwsb___m/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.04423 Loss Sum: 65.48476, accuracy : 0.90878, val loss: 17.94780, val accuracy: 0.72184
+Final : 0.8627127022791503 [('val/DenseNet121/monotone/f1-score', 0.9045936395759718), ('val/DenseNet121/screenshot/f1-score', 0.932562620423892), ('val/DenseNet121/unknown/f1-score', 0.7611443779108449)]
+Epoch: 1, batch loss: 0.06460 Loss Sum: 30.58831, accuracy : 0.95904, val loss: 18.42256, val accuracy: 0.73716
+Final : 0.8756640298626513 [('val/DenseNet121/monotone/f1-score', 0.927007299270073), ('val/DenseNet121/screenshot/f1-score', 0.9340866290018832), ('val/DenseNet121/unknown/f1-score', 0.7754293262879789)]
+Epoch: 2, batch loss: 0.02234 Loss Sum: 18.79681, accuracy : 0.97590, val loss: 22.18969, val accuracy: 0.73563
+Final : 0.8681464633160052 [('val/DenseNet121/monotone/f1-score', 0.9181494661921707), ('val/DenseNet121/screenshot/f1-score', 0.9242144177449167), ('val/DenseNet121/unknown/f1-score', 0.7710683477106836)]
+Epoch: 3, batch loss: 0.03424 Loss Sum: 14.37018, accuracy : 0.98132, val loss: 19.56328, val accuracy: 0.77011
+Final : 0.8828884014234768 [('val/DenseNet121/monotone/f1-score', 0.9175627240143369), ('val/DenseNet121/screenshot/f1-score', 0.926829268292683), ('val/DenseNet121/unknown/f1-score', 0.8092485549132948)]
+---train finished---
+Trying to save to /tmp/tmp5qarh5jf/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.10986 Loss Sum: 63.98369, accuracy : 0.91231, val loss: 15.80122, val accuracy: 0.73946
+Final : 0.8704169795166565 [('val/DenseNet121/monotone/f1-score', 0.9142857142857144), ('val/DenseNet121/screenshot/f1-score', 0.9288389513108614), ('val/DenseNet121/unknown/f1-score', 0.7765326301911667)]
+Epoch: 1, batch loss: 0.12585 Loss Sum: 30.40201, accuracy : 0.96044, val loss: 16.14925, val accuracy: 0.76552
+Final : 0.8785722952029739 [('val/DenseNet121/monotone/f1-score', 0.9039145907473309), ('val/DenseNet121/screenshot/f1-score', 0.9318181818181819), ('val/DenseNet121/unknown/f1-score', 0.8051446945337621)]
+Epoch: 2, batch loss: 0.03306 Loss Sum: 19.22164, accuracy : 0.97481, val loss: 20.68080, val accuracy: 0.75939
+Final : 0.8846445920873971 [('val/DenseNet121/monotone/f1-score', 0.9333333333333332), ('val/DenseNet121/screenshot/f1-score', 0.9296296296296297), ('val/DenseNet121/unknown/f1-score', 0.7979207277452892)]
+Epoch: 3, batch loss: 0.02268 Loss Sum: 15.51757, accuracy : 0.97967, val loss: 27.20641, val accuracy: 0.72031
+Final : 0.8681835851133595 [('val/DenseNet121/monotone/f1-score', 0.9338235294117646), ('val/DenseNet121/screenshot/f1-score', 0.9256505576208179), ('val/DenseNet121/unknown/f1-score', 0.7570469798657717)]
+---train finished---
+Trying to save to /tmp/tmp2evo7you/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22915 Loss Sum: 71.03151, accuracy : 0.89977, val loss: 18.08165, val accuracy: 0.73640
+Final : 0.8707211954753521 [('val/DenseNet121/monotone/f1-score', 0.9214285714285714), ('val/DenseNet121/screenshot/f1-score', 0.9245283018867925), ('val/DenseNet121/unknown/f1-score', 0.7749174917491749)]
+Epoch: 1, batch loss: 0.12020 Loss Sum: 37.97019, accuracy : 0.94602, val loss: 19.96657, val accuracy: 0.71954
+Final : 0.8717791725958882 [('val/DenseNet121/monotone/f1-score', 0.9309090909090909), ('val/DenseNet121/screenshot/f1-score', 0.9386973180076629), ('val/DenseNet121/unknown/f1-score', 0.7582049564634963)]
+Epoch: 2, batch loss: 0.08130 Loss Sum: 25.60921, accuracy : 0.96543, val loss: 22.60132, val accuracy: 0.74176
+Final : 0.8773481722249347 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9348659003831417), ('val/DenseNet121/unknown/f1-score', 0.7816393442622952)]
+Epoch: 3, batch loss: 0.05960 Loss Sum: 19.40289, accuracy : 0.97383, val loss: 23.19279, val accuracy: 0.75326
+Final : 0.8896228105527357 [('val/DenseNet121/monotone/f1-score', 0.9481481481481482), ('val/DenseNet121/screenshot/f1-score', 0.937381404174573), ('val/DenseNet121/unknown/f1-score', 0.7921824104234528)]
+---train finished---
+Trying to save to /tmp/tmpqxavkn7c/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.19842 Loss Sum: 74.86828, accuracy : 0.89581, val loss: 16.71607, val accuracy: 0.75632
+Final : 0.8792442691490541 [('val/DenseNet121/monotone/f1-score', 0.9169675090252708), ('val/DenseNet121/screenshot/f1-score', 0.9289827255278311), ('val/DenseNet121/unknown/f1-score', 0.7979341510652033)]
+Epoch: 1, batch loss: 0.11455 Loss Sum: 39.80799, accuracy : 0.94553, val loss: 18.69789, val accuracy: 0.73180
+Final : 0.8720062438384237 [('val/DenseNet121/monotone/f1-score', 0.9442379182156134), ('val/DenseNet121/screenshot/f1-score', 0.9124087591240876), ('val/DenseNet121/unknown/f1-score', 0.7696404793608522)]
+Epoch: 2, batch loss: 0.26229 Loss Sum: 28.66813, accuracy : 0.96196, val loss: 20.86115, val accuracy: 0.72490
+Final : 0.8623656384096653 [('val/DenseNet121/monotone/f1-score', 0.9020979020979021), ('val/DenseNet121/screenshot/f1-score', 0.9343339587242028), ('val/DenseNet121/unknown/f1-score', 0.7608841259209645)]
+Epoch: 3, batch loss: 0.01989 Loss Sum: 22.02984, accuracy : 0.97055, val loss: 22.55312, val accuracy: 0.73103
+Final : 0.869661546410978 [('val/DenseNet121/monotone/f1-score', 0.9293680297397771), ('val/DenseNet121/screenshot/f1-score', 0.9188191881918819), ('val/DenseNet121/unknown/f1-score', 0.7702523240371847)]
+---train finished---
+Trying to save to /tmp/tmpi1h2hheg/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.17810 Loss Sum: 63.36567, accuracy : 0.91626, val loss: 17.08545, val accuracy: 0.72261
+Final : 0.8603594777323725 [('val/DenseNet121/monotone/f1-score', 0.8958333333333334), ('val/DenseNet121/screenshot/f1-score', 0.9376181474480152), ('val/DenseNet121/unknown/f1-score', 0.7582049564634963)]
+Epoch: 1, batch loss: 0.11902 Loss Sum: 29.01135, accuracy : 0.96178, val loss: 17.88409, val accuracy: 0.73563
+Final : 0.8745251775836189 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9363295880149812), ('val/DenseNet121/unknown/f1-score', 0.7729083665338646)]
+Epoch: 2, batch loss: 0.05391 Loss Sum: 15.48566, accuracy : 0.98375, val loss: 19.28596, val accuracy: 0.74100
+Final : 0.8785239438032348 [('val/DenseNet121/monotone/f1-score', 0.9446494464944649), ('val/DenseNet121/screenshot/f1-score', 0.9225092250922509), ('val/DenseNet121/unknown/f1-score', 0.7780713342140027)]
+Epoch: 3, batch loss: 0.02879 Loss Sum: 11.92859, accuracy : 0.98752, val loss: 19.90409, val accuracy: 0.74023
+Final : 0.8775517861498154 [('val/DenseNet121/monotone/f1-score', 0.927007299270073), ('val/DenseNet121/screenshot/f1-score', 0.9363295880149812), ('val/DenseNet121/unknown/f1-score', 0.7785855915399867)]
+---train finished---
+Trying to save to /tmp/tmput42bzto/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.13863 Loss Sum: 66.84791, accuracy : 0.90981, val loss: 14.59331, val accuracy: 0.77318
+Final : 0.8724774639513659 [('val/DenseNet121/monotone/f1-score', 0.8835616438356165), ('val/DenseNet121/screenshot/f1-score', 0.9273743016759778), ('val/DenseNet121/unknown/f1-score', 0.8105330764290302)]
+Epoch: 1, batch loss: 0.20525 Loss Sum: 29.56520, accuracy : 0.96148, val loss: 17.18445, val accuracy: 0.74789
+Final : 0.8756044387892638 [('val/DenseNet121/monotone/f1-score', 0.9142857142857144), ('val/DenseNet121/screenshot/f1-score', 0.9333333333333332), ('val/DenseNet121/unknown/f1-score', 0.7866927592954991)]
+Epoch: 2, batch loss: 0.04428 Loss Sum: 15.19759, accuracy : 0.98259, val loss: 19.03706, val accuracy: 0.74713
+Final : 0.8767335648246 [('val/DenseNet121/monotone/f1-score', 0.924187725631769), ('val/DenseNet121/screenshot/f1-score', 0.9288389513108614), ('val/DenseNet121/unknown/f1-score', 0.7850589777195283)]
+Epoch: 3, batch loss: 0.01478 Loss Sum: 11.76450, accuracy : 0.98759, val loss: 21.05049, val accuracy: 0.72644
+Final : 0.8715633274793373 [('val/DenseNet121/monotone/f1-score', 0.9338235294117646), ('val/DenseNet121/screenshot/f1-score', 0.929368029739777), ('val/DenseNet121/unknown/f1-score', 0.7628590514362058)]
+---train finished---
+Trying to save to /tmp/tmpnmxx911k/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.21054 Loss Sum: 71.94163, accuracy : 0.90093, val loss: 14.73276, val accuracy: 0.75632
+Final : 0.8857317977279159 [('val/DenseNet121/monotone/f1-score', 0.9214285714285714), ('val/DenseNet121/screenshot/f1-score', 0.9475728155339807), ('val/DenseNet121/unknown/f1-score', 0.795852235904083)]
+Epoch: 1, batch loss: 0.08510 Loss Sum: 39.88496, accuracy : 0.94462, val loss: 18.67537, val accuracy: 0.73487
+Final : 0.8696259991344796 [('val/DenseNet121/monotone/f1-score', 0.9052631578947368), ('val/DenseNet121/screenshot/f1-score', 0.9411764705882353), ('val/DenseNet121/unknown/f1-score', 0.7718832891246683)]
+Epoch: 2, batch loss: 0.03423 Loss Sum: 23.25350, accuracy : 0.97213, val loss: 18.45628, val accuracy: 0.74713
+Final : 0.8838081247395194 [('val/DenseNet121/monotone/f1-score', 0.9347826086956522), ('val/DenseNet121/screenshot/f1-score', 0.941398865784499), ('val/DenseNet121/unknown/f1-score', 0.7844940867279895)]
+Epoch: 3, batch loss: 0.09142 Loss Sum: 20.32432, accuracy : 0.97560, val loss: 19.26550, val accuracy: 0.74253
+Final : 0.8713861704642838 [('val/DenseNet121/monotone/f1-score', 0.910394265232975), ('val/DenseNet121/screenshot/f1-score', 0.930841121495327), ('val/DenseNet121/unknown/f1-score', 0.7807768268597762)]
+---train finished---
+Trying to save to /tmp/tmp4scbv_ju/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.21386 Loss Sum: 72.02585, accuracy : 0.90153, val loss: 14.26398, val accuracy: 0.75556
+Final : 0.8801175844235427 [('val/DenseNet121/monotone/f1-score', 0.9347826086956522), ('val/DenseNet121/screenshot/f1-score', 0.9169811320754717), ('val/DenseNet121/unknown/f1-score', 0.795336787564767)]
+Epoch: 1, batch loss: 0.05968 Loss Sum: 38.09863, accuracy : 0.94803, val loss: 18.11113, val accuracy: 0.72950
+Final : 0.8709368490712329 [('val/DenseNet121/monotone/f1-score', 0.9442379182156134), ('val/DenseNet121/screenshot/f1-score', 0.9111111111111111), ('val/DenseNet121/unknown/f1-score', 0.7679045092838196)]
+Epoch: 2, batch loss: 0.02873 Loss Sum: 24.17556, accuracy : 0.96908, val loss: 18.57790, val accuracy: 0.74176
+Final : 0.874269436759072 [('val/DenseNet121/monotone/f1-score', 0.924731182795699), ('val/DenseNet121/screenshot/f1-score', 0.929368029739777), ('val/DenseNet121/unknown/f1-score', 0.7775577557755776)]
+Epoch: 3, batch loss: 0.04070 Loss Sum: 19.52418, accuracy : 0.97663, val loss: 20.13942, val accuracy: 0.71341
+Final : 0.8648658906173279 [('val/DenseNet121/monotone/f1-score', 0.952029520295203), ('val/DenseNet121/screenshot/f1-score', 0.9090909090909091), ('val/DenseNet121/unknown/f1-score', 0.7474610697359512)]
+---train finished---
+Trying to save to /tmp/tmpxm0ytyah/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.05706 Loss Sum: 315.87538, accuracy : 0.40178, val loss: 21.52988, val accuracy: 0.63908
+Final : 0.7165994096744017 [('val/DenseNet121/monotone/f1-score', 0.7079646017699114), ('val/DenseNet121/screenshot/f1-score', 0.7072599531615925), ('val/DenseNet121/unknown/f1-score', 0.7349177330895794)]
+Epoch: 1, batch loss: 0.78089 Loss Sum: 233.87890, accuracy : 0.69578, val loss: 18.73097, val accuracy: 0.69655
+Final : 0.798666319635709 [('val/DenseNet121/monotone/f1-score', 0.8458781362007168), ('val/DenseNet121/screenshot/f1-score', 0.7905982905982906), ('val/DenseNet121/unknown/f1-score', 0.7617850408548082)]
+Epoch: 2, batch loss: 0.65004 Loss Sum: 190.07801, accuracy : 0.78238, val loss: 17.38687, val accuracy: 0.67816
+Final : 0.7943239507629469 [('val/DenseNet121/monotone/f1-score', 0.8399999999999999), ('val/DenseNet121/screenshot/f1-score', 0.8114754098360656), ('val/DenseNet121/unknown/f1-score', 0.7352555701179554)]
+Epoch: 3, batch loss: 0.48569 Loss Sum: 160.76250, accuracy : 0.82449, val loss: 16.08119, val accuracy: 0.68889
+Final : 0.7993139660797446 [('val/DenseNet121/monotone/f1-score', 0.8344370860927153), ('val/DenseNet121/screenshot/f1-score', 0.8235294117647058), ('val/DenseNet121/unknown/f1-score', 0.7431551499348109)]
+---train finished---
+Trying to save to /tmp/tmpqmh8hpaq/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.97292 Loss Sum: 303.29530, accuracy : 0.44340, val loss: 21.10902, val accuracy: 0.62912
+Final : 0.6962658470973034 [('val/DenseNet121/monotone/f1-score', 0.7669172932330827), ('val/DenseNet121/screenshot/f1-score', 0.6059113300492611), ('val/DenseNet121/unknown/f1-score', 0.7263863497867153)]
+Epoch: 1, batch loss: 0.74180 Loss Sum: 228.59195, accuracy : 0.71123, val loss: 19.07531, val accuracy: 0.64904
+Final : 0.7667418243294529 [('val/DenseNet121/monotone/f1-score', 0.8445945945945945), ('val/DenseNet121/screenshot/f1-score', 0.7468879668049793), ('val/DenseNet121/unknown/f1-score', 0.7145682267633489)]
+Epoch: 2, batch loss: 0.65185 Loss Sum: 186.03325, accuracy : 0.78694, val loss: 16.84666, val accuracy: 0.69962
+Final : 0.8021773287576278 [('val/DenseNet121/monotone/f1-score', 0.825082508250825), ('val/DenseNet121/screenshot/f1-score', 0.8254620123203285), ('val/DenseNet121/unknown/f1-score', 0.7579083279535184)]
+Epoch: 3, batch loss: 0.60440 Loss Sum: 158.45654, accuracy : 0.81743, val loss: 16.67325, val accuracy: 0.66130
+Final : 0.7852762166702392 [('val/DenseNet121/monotone/f1-score', 0.8246753246753246), ('val/DenseNet121/screenshot/f1-score', 0.823293172690763), ('val/DenseNet121/unknown/f1-score', 0.7132303559435864)]
+---train finished---
+Trying to save to /tmp/tmp0v67w3ok/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.29978 Loss Sum: 140.52344, accuracy : 0.78231, val loss: 11.15893, val accuracy: 0.80307
+Final : 0.8854947782538651 [('val/DenseNet121/monotone/f1-score', 0.9142857142857144), ('val/DenseNet121/screenshot/f1-score', 0.9), ('val/DenseNet121/unknown/f1-score', 0.843788437884379)]
+Epoch: 1, batch loss: 0.44183 Loss Sum: 62.36224, accuracy : 0.90847, val loss: 11.98077, val accuracy: 0.79157
+Final : 0.8926223148445124 [('val/DenseNet121/monotone/f1-score', 0.911660777385159), ('val/DenseNet121/screenshot/f1-score', 0.9393346379647749), ('val/DenseNet121/unknown/f1-score', 0.8305190744215135)]
+Epoch: 2, batch loss: 0.20070 Loss Sum: 47.69021, accuracy : 0.93208, val loss: 16.97181, val accuracy: 0.73027
+Final : 0.8607245213848586 [('val/DenseNet121/monotone/f1-score', 0.9084507042253521), ('val/DenseNet121/screenshot/f1-score', 0.9148148148148147), ('val/DenseNet121/unknown/f1-score', 0.7672872340425532)]
+Epoch: 3, batch loss: 0.11140 Loss Sum: 37.33996, accuracy : 0.94839, val loss: 15.72434, val accuracy: 0.75326
+Final : 0.8782959315226212 [('val/DenseNet121/monotone/f1-score', 0.924731182795699), ('val/DenseNet121/screenshot/f1-score', 0.9242424242424244), ('val/DenseNet121/unknown/f1-score', 0.792722547108512)]
+---train finished---
+Trying to save to /tmp/tmpzceysztd/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.02188 Loss Sum: 304.42594, accuracy : 0.48692, val loss: 21.87847, val accuracy: 0.57395
+Final : 0.6796658870973142 [('val/DenseNet121/monotone/f1-score', 0.7642276422764228), ('val/DenseNet121/screenshot/f1-score', 0.6089108910891089), ('val/DenseNet121/unknown/f1-score', 0.6746987951807228)]
+Epoch: 1, batch loss: 0.78256 Loss Sum: 231.55205, accuracy : 0.69060, val loss: 19.51842, val accuracy: 0.63448
+Final : 0.768907281478001 [('val/DenseNet121/monotone/f1-score', 0.8297872340425532), ('val/DenseNet121/screenshot/f1-score', 0.7796610169491525), ('val/DenseNet121/unknown/f1-score', 0.7026666666666667)]
+Epoch: 2, batch loss: 0.73444 Loss Sum: 189.58533, accuracy : 0.76619, val loss: 17.81967, val accuracy: 0.64751
+Final : 0.7737156935985678 [('val/DenseNet121/monotone/f1-score', 0.8287671232876713), ('val/DenseNet121/screenshot/f1-score', 0.7893660531697341), ('val/DenseNet121/unknown/f1-score', 0.7080000000000001)]
+Epoch: 3, batch loss: 0.64514 Loss Sum: 163.68728, accuracy : 0.80112, val loss: 16.33174, val accuracy: 0.67510
+Final : 0.8044773679213212 [('val/DenseNet121/monotone/f1-score', 0.8581081081081082), ('val/DenseNet121/screenshot/f1-score', 0.8346774193548387), ('val/DenseNet121/unknown/f1-score', 0.7269102990033223)]
+---train finished---
+Trying to save to /tmp/tmpm_mhgl96/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.14421 Loss Sum: 319.98861, accuracy : 0.43208, val loss: 23.24953, val accuracy: 0.56322
+Final : 0.604855020369598 [('val/DenseNet121/monotone/f1-score', 0.6996197718631179), ('val/DenseNet121/screenshot/f1-score', 0.46560846560846564), ('val/DenseNet121/unknown/f1-score', 0.6793145654834761)]
+Epoch: 1, batch loss: 0.96961 Loss Sum: 270.64346, accuracy : 0.58806, val loss: 20.85408, val accuracy: 0.64828
+Final : 0.729924572776046 [('val/DenseNet121/monotone/f1-score', 0.7854545454545455), ('val/DenseNet121/screenshot/f1-score', 0.6712962962962963), ('val/DenseNet121/unknown/f1-score', 0.7375621890547263)]
+Epoch: 2, batch loss: 1.00266 Loss Sum: 249.30935, accuracy : 0.64143, val loss: 20.89118, val accuracy: 0.63908
+Final : 0.7287078165099351 [('val/DenseNet121/monotone/f1-score', 0.7971014492753623), ('val/DenseNet121/screenshot/f1-score', 0.6713615023474179), ('val/DenseNet121/unknown/f1-score', 0.7230864965774736)]
+Epoch: 3, batch loss: 0.94589 Loss Sum: 246.40673, accuracy : 0.64831, val loss: 20.76466, val accuracy: 0.63372
+Final : 0.726086383607735 [('val/DenseNet121/monotone/f1-score', 0.797153024911032), ('val/DenseNet121/screenshot/f1-score', 0.6666666666666666), ('val/DenseNet121/unknown/f1-score', 0.7203016970458831)]
+---train finished---
+Trying to save to /tmp/tmph6adz3kc/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.22995 Loss Sum: 130.03152, accuracy : 0.79613, val loss: 17.72734, val accuracy: 0.69349
+Final : 0.8344811400042557 [('val/DenseNet121/monotone/f1-score', 0.8775510204081634), ('val/DenseNet121/screenshot/f1-score', 0.9034749034749036), ('val/DenseNet121/unknown/f1-score', 0.7329276538201488)]
+Epoch: 1, batch loss: 0.14601 Loss Sum: 50.67272, accuracy : 0.93001, val loss: 10.31639, val accuracy: 0.82682
+Final : 0.9049666878631581 [('val/DenseNet121/monotone/f1-score', 0.9084507042253521), ('val/DenseNet121/screenshot/f1-score', 0.9465648854961832), ('val/DenseNet121/unknown/f1-score', 0.861878453038674)]
+Epoch: 2, batch loss: 0.29472 Loss Sum: 40.63203, accuracy : 0.94468, val loss: 12.95227, val accuracy: 0.78084
+Final : 0.8858521449690678 [('val/DenseNet121/monotone/f1-score', 0.911660777385159), ('val/DenseNet121/screenshot/f1-score', 0.9303201506591336), ('val/DenseNet121/unknown/f1-score', 0.8196303377947737)]
+Epoch: 3, batch loss: 0.24550 Loss Sum: 37.02962, accuracy : 0.94955, val loss: 12.36397, val accuracy: 0.78391
+Final : 0.8846260539342545 [('val/DenseNet121/monotone/f1-score', 0.9078014184397163), ('val/DenseNet121/screenshot/f1-score', 0.9259962049335863), ('val/DenseNet121/unknown/f1-score', 0.8235294117647057)]
+---train finished---
+Trying to save to /tmp/tmpu7jyioz_/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.04006 Loss Sum: 286.82014, accuracy : 0.50176, val loss: 21.34597, val accuracy: 0.60843
+Final : 0.7215258348233391 [('val/DenseNet121/monotone/f1-score', 0.8122605363984674), ('val/DenseNet121/screenshot/f1-score', 0.6651376146788991), ('val/DenseNet121/unknown/f1-score', 0.6952624839948784)]
+Epoch: 1, batch loss: 0.83037 Loss Sum: 223.64666, accuracy : 0.71282, val loss: 19.12656, val accuracy: 0.65824
+Final : 0.7809616259435141 [('val/DenseNet121/monotone/f1-score', 0.8421052631578948), ('val/DenseNet121/screenshot/f1-score', 0.782608695652174), ('val/DenseNet121/unknown/f1-score', 0.7227332457293036)]
+Epoch: 2, batch loss: 0.70947 Loss Sum: 201.07446, accuracy : 0.76126, val loss: 18.58162, val accuracy: 0.66284
+Final : 0.7860973147339145 [('val/DenseNet121/monotone/f1-score', 0.8671328671328671), ('val/DenseNet121/screenshot/f1-score', 0.7705263157894737), ('val/DenseNet121/unknown/f1-score', 0.7270358306188925)]
+Epoch: 3, batch loss: 0.75127 Loss Sum: 197.59034, accuracy : 0.76229, val loss: 18.38949, val accuracy: 0.66054
+Final : 0.7836605483536394 [('val/DenseNet121/monotone/f1-score', 0.8503401360544217), ('val/DenseNet121/screenshot/f1-score', 0.7875), ('val/DenseNet121/unknown/f1-score', 0.7186885245901639)]
+---train finished---
+Trying to save to /tmp/tmpsb40la3d/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 0.0001,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.37507 Loss Sum: 145.88955, accuracy : 0.75310, val loss: 17.52056, val accuracy: 0.71111
+Final : 0.8467266766525818 [('val/DenseNet121/monotone/f1-score', 0.8951048951048951), ('val/DenseNet121/screenshot/f1-score', 0.9028571428571428), ('val/DenseNet121/unknown/f1-score', 0.7511674449633089)]
+Epoch: 1, batch loss: 0.18327 Loss Sum: 61.14006, accuracy : 0.91346, val loss: 13.99680, val accuracy: 0.76015
+Final : 0.8822865485043295 [('val/DenseNet121/monotone/f1-score', 0.9169675090252708), ('val/DenseNet121/screenshot/f1-score', 0.937142857142857), ('val/DenseNet121/unknown/f1-score', 0.7992253066494511)]
+Epoch: 2, batch loss: 0.20744 Loss Sum: 46.48538, accuracy : 0.93373, val loss: 13.40410, val accuracy: 0.76398
+Final : 0.8740851422175875 [('val/DenseNet121/monotone/f1-score', 0.9045936395759718), ('val/DenseNet121/screenshot/f1-score', 0.9184060721062619), ('val/DenseNet121/unknown/f1-score', 0.8038461538461538)]
+Epoch: 3, batch loss: 0.18942 Loss Sum: 44.15440, accuracy : 0.93780, val loss: 14.22961, val accuracy: 0.75939
+Final : 0.8673445174411077 [('val/DenseNet121/monotone/f1-score', 0.8951048951048951), ('val/DenseNet121/screenshot/f1-score', 0.9114877589453861), ('val/DenseNet121/unknown/f1-score', 0.7997424339987123)]
+---train finished---
+Trying to save to /tmp/tmp48vrz984/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_0.01_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.34606 Loss Sum: 344.57998, accuracy : 0.33070, val loss: 25.09536, val accuracy: 0.52107
+Final : 0.5070830807356069 [('val/DenseNet121/monotone/f1-score', 0.5201465201465202), ('val/DenseNet121/screenshot/f1-score', 0.3844492440604752), ('val/DenseNet121/unknown/f1-score', 0.6520376175548588)]
+Epoch: 1, batch loss: 1.03641 Loss Sum: 300.14284, accuracy : 0.51369, val loss: 23.40808, val accuracy: 0.57625
+Final : 0.6611055710146365 [('val/DenseNet121/monotone/f1-score', 0.7224080267558528), ('val/DenseNet121/screenshot/f1-score', 0.6073500967117988), ('val/DenseNet121/unknown/f1-score', 0.658553076402975)]
+Epoch: 2, batch loss: 0.94449 Loss Sum: 264.97608, accuracy : 0.63827, val loss: 22.22671, val accuracy: 0.58697
+Final : 0.6862635877053899 [('val/DenseNet121/monotone/f1-score', 0.7117647058823529), ('val/DenseNet121/screenshot/f1-score', 0.7027027027027029), ('val/DenseNet121/unknown/f1-score', 0.6461967899511515)]
+Epoch: 3, batch loss: 0.81940 Loss Sum: 235.77668, accuracy : 0.70965, val loss: 21.16547, val accuracy: 0.58391
+Final : 0.7038575871243856 [('val/DenseNet121/monotone/f1-score', 0.7304347826086957), ('val/DenseNet121/screenshot/f1-score', 0.7645951035781543), ('val/DenseNet121/unknown/f1-score', 0.6243691420331651)]
+---train finished---
+Trying to save to /tmp/tmp3dlg7mn9/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.34893 Loss Sum: 368.64830, accuracy : 0.25901, val loss: 34.37281, val accuracy: 0.16782
+Final : 0.14425611041760625 [('val/DenseNet121/monotone/f1-score', 0.36842105263157887), ('val/DenseNet121/screenshot/f1-score', 0.3167587476979743), ('val/DenseNet121/unknown/f1-score', 0.025723472668810286)]
+Epoch: 1, batch loss: 1.22640 Loss Sum: 319.70114, accuracy : 0.45186, val loss: 31.71882, val accuracy: 0.25287
+Final : 0.2513681621910647 [('val/DenseNet121/monotone/f1-score', 0.7272727272727273), ('val/DenseNet121/screenshot/f1-score', 0.46854663774403477), ('val/DenseNet121/unknown/f1-score', 0.046610169491525424)]
+Epoch: 2, batch loss: 1.00798 Loss Sum: 279.63969, accuracy : 0.58788, val loss: 29.27925, val accuracy: 0.29272
+Final : 0.3340914393994572 [('val/DenseNet121/monotone/f1-score', 0.8095238095238095), ('val/DenseNet121/screenshot/f1-score', 0.5533498759305211), ('val/DenseNet121/unknown/f1-score', 0.08324661810613944)]
+Epoch: 3, batch loss: 0.86027 Loss Sum: 247.86463, accuracy : 0.65817, val loss: 27.27748, val accuracy: 0.32261
+Final : 0.40879540689300936 [('val/DenseNet121/monotone/f1-score', 0.7987220447284344), ('val/DenseNet121/screenshot/f1-score', 0.638888888888889), ('val/DenseNet121/unknown/f1-score', 0.1338742393509128)]
+---train finished---
+Trying to save to /tmp/tmp4ljqe580/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.18066 Loss Sum: 337.91818, accuracy : 0.29436, val loss: 22.34576, val accuracy: 0.56782
+Final : 0.4243293410259629 [('val/DenseNet121/monotone/f1-score', 0.4023668639053254), ('val/DenseNet121/screenshot/f1-score', 0.26902654867256637), ('val/DenseNet121/unknown/f1-score', 0.7058165548098434)]
+Epoch: 1, batch loss: 1.10119 Loss Sum: 297.50208, accuracy : 0.44991, val loss: 21.13709, val accuracy: 0.64904
+Final : 0.631898438287469 [('val/DenseNet121/monotone/f1-score', 0.6576576576576577), ('val/DenseNet121/screenshot/f1-score', 0.5160142348754447), ('val/DenseNet121/unknown/f1-score', 0.743498817966903)]
+Epoch: 2, batch loss: 0.89107 Loss Sum: 264.47363, accuracy : 0.58879, val loss: 20.17698, val accuracy: 0.67586
+Final : 0.7135466159276244 [('val/DenseNet121/monotone/f1-score', 0.7674418604651162), ('val/DenseNet121/screenshot/f1-score', 0.631578947368421), ('val/DenseNet121/unknown/f1-score', 0.7495384615384616)]
+Epoch: 3, batch loss: 0.85477 Loss Sum: 236.18080, accuracy : 0.68044, val loss: 19.45823, val accuracy: 0.68582
+Final : 0.759428434670875 [('val/DenseNet121/monotone/f1-score', 0.8285714285714285), ('val/DenseNet121/screenshot/f1-score', 0.7093235831809872), ('val/DenseNet121/unknown/f1-score', 0.7452229299363058)]
+---train finished---
+Trying to save to /tmp/tmpwrgmmenj/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.24004 Loss Sum: 345.11488, accuracy : 0.36964, val loss: 28.86809, val accuracy: 0.29808
+Final : 0.2753116177932617 [('val/DenseNet121/monotone/f1-score', 0.35502958579881655), ('val/DenseNet121/screenshot/f1-score', 0.15533980582524273), ('val/DenseNet121/unknown/f1-score', 0.3783783783783784)]
+Epoch: 1, batch loss: 1.09423 Loss Sum: 301.04053, accuracy : 0.52757, val loss: 26.80871, val accuracy: 0.39157
+Final : 0.4622520340469384 [('val/DenseNet121/monotone/f1-score', 0.4618181818181819), ('val/DenseNet121/screenshot/f1-score', 0.46866485013623976), ('val/DenseNet121/unknown/f1-score', 0.4563552833078102)]
+Epoch: 2, batch loss: 0.98653 Loss Sum: 264.31205, accuracy : 0.64788, val loss: 25.08433, val accuracy: 0.45441
+Final : 0.5591940645550507 [('val/DenseNet121/monotone/f1-score', 0.5333333333333334), ('val/DenseNet121/screenshot/f1-score', 0.669683257918552), ('val/DenseNet121/unknown/f1-score', 0.4895752895752895)]
+Epoch: 3, batch loss: 0.95340 Loss Sum: 234.07831, accuracy : 0.72334, val loss: 23.58812, val accuracy: 0.49655
+Final : 0.6231064384261713 [('val/DenseNet121/monotone/f1-score', 0.6157517899761337), ('val/DenseNet121/screenshot/f1-score', 0.7446808510638298), ('val/DenseNet121/unknown/f1-score', 0.5276073619631901)]
+---train finished---
+Trying to save to /tmp/tmpx9k85xqu/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.20691 Loss Sum: 343.30362, accuracy : 0.35796, val loss: 27.15180, val accuracy: 0.38161
+Final : 0.4200382006762288 [('val/DenseNet121/monotone/f1-score', 0.46330275229357787), ('val/DenseNet121/screenshot/f1-score', 0.4027586206896552), ('val/DenseNet121/unknown/f1-score', 0.39715189873417717)]
+Epoch: 1, batch loss: 1.08570 Loss Sum: 299.57454, accuracy : 0.53919, val loss: 25.31061, val accuracy: 0.44828
+Final : 0.5214393891488048 [('val/DenseNet121/monotone/f1-score', 0.5686746987951807), ('val/DenseNet121/screenshot/f1-score', 0.5659259259259259), ('val/DenseNet121/unknown/f1-score', 0.4405426975259377)]
+Epoch: 2, batch loss: 1.03336 Loss Sum: 277.35281, accuracy : 0.60869, val loss: 25.01487, val accuracy: 0.46667
+Final : 0.5372759267705582 [('val/DenseNet121/monotone/f1-score', 0.5620608899297423), ('val/DenseNet121/screenshot/f1-score', 0.5984962406015037), ('val/DenseNet121/unknown/f1-score', 0.4610492845786964)]
+Epoch: 3, batch loss: 1.23556 Loss Sum: 274.56106, accuracy : 0.61398, val loss: 25.00144, val accuracy: 0.47280
+Final : 0.5466916623745035 [('val/DenseNet121/monotone/f1-score', 0.57985257985258), ('val/DenseNet121/screenshot/f1-score', 0.5970149253731344), ('val/DenseNet121/unknown/f1-score', 0.47198105761641673)]
+---train finished---
+Trying to save to /tmp/tmpq1knapi2/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.27350 Loss Sum: 351.52081, accuracy : 0.34049, val loss: 24.83464, val accuracy: 0.51648
+Final : 0.40920731106823766 [('val/DenseNet121/monotone/f1-score', 0.43223443223443225), ('val/DenseNet121/screenshot/f1-score', 0.2493638676844784), ('val/DenseNet121/unknown/f1-score', 0.6357366771159874)]
+Epoch: 1, batch loss: 1.16918 Loss Sum: 305.30830, accuracy : 0.51175, val loss: 23.47039, val accuracy: 0.59234
+Final : 0.5948828102816704 [('val/DenseNet121/monotone/f1-score', 0.5321888412017167), ('val/DenseNet121/screenshot/f1-score', 0.5941422594142259), ('val/DenseNet121/unknown/f1-score', 0.665791201575837)]
+Epoch: 2, batch loss: 1.06489 Loss Sum: 282.87858, accuracy : 0.59183, val loss: 23.14743, val accuracy: 0.59923
+Final : 0.6033638360882202 [('val/DenseNet121/monotone/f1-score', 0.5396145610278373), ('val/DenseNet121/screenshot/f1-score', 0.6061855670103093), ('val/DenseNet121/unknown/f1-score', 0.6715039577836412)]
+Epoch: 3, batch loss: 1.03984 Loss Sum: 279.36117, accuracy : 0.60693, val loss: 23.14236, val accuracy: 0.58851
+Final : 0.6077229690495812 [('val/DenseNet121/monotone/f1-score', 0.546236559139785), ('val/DenseNet121/screenshot/f1-score', 0.6269841269841269), ('val/DenseNet121/unknown/f1-score', 0.6553595658073271)]
+---train finished---
+Trying to save to /tmp/tmpwhwzcf1u/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.30680 Loss Sum: 371.97787, accuracy : 0.25736, val loss: 27.99646, val accuracy: 0.28812
+Final : 0.08954960089977011 [('val/DenseNet121/monotone/f1-score', 0.2226487523992323), ('val/DenseNet121/screenshot/f1-score', 0.007751937984496124), ('val/DenseNet121/unknown/f1-score', 0.4160642570281125)]
+Epoch: 1, batch loss: 1.15244 Loss Sum: 323.34245, accuracy : 0.37816, val loss: 25.72358, val accuracy: 0.37625
+Final : 0.3561112702241257 [('val/DenseNet121/monotone/f1-score', 0.273542600896861), ('val/DenseNet121/screenshot/f1-score', 0.33962264150943394), ('val/DenseNet121/unknown/f1-score', 0.4861111111111112)]
+Epoch: 2, batch loss: 1.06110 Loss Sum: 301.43510, accuracy : 0.46330, val loss: 25.63606, val accuracy: 0.39540
+Final : 0.3883932656171811 [('val/DenseNet121/monotone/f1-score', 0.2890173410404624), ('val/DenseNet121/screenshot/f1-score', 0.4060606060606061), ('val/DenseNet121/unknown/f1-score', 0.4992295839753467)]
+Epoch: 3, batch loss: 1.17951 Loss Sum: 297.20928, accuracy : 0.47328, val loss: 25.60678, val accuracy: 0.39080
+Final : 0.37549509962246175 [('val/DenseNet121/monotone/f1-score', 0.2934272300469483), ('val/DenseNet121/screenshot/f1-score', 0.3630769230769231), ('val/DenseNet121/unknown/f1-score', 0.4969512195121951)]
+---train finished---
+Trying to save to /tmp/tmp_91y2g2n/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.36790 Loss Sum: 361.34998, accuracy : 0.30970, val loss: 30.88143, val accuracy: 0.27433
+Final : 0.30896151882610245 [('val/DenseNet121/monotone/f1-score', 0.3095238095238095), ('val/DenseNet121/screenshot/f1-score', 0.4506666666666667), ('val/DenseNet121/unknown/f1-score', 0.2114285714285714)]
+Epoch: 1, batch loss: 1.18360 Loss Sum: 320.06132, accuracy : 0.50596, val loss: 28.90304, val accuracy: 0.34713
+Final : 0.4131696683978885 [('val/DenseNet121/monotone/f1-score', 0.5031982942430703), ('val/DenseNet121/screenshot/f1-score', 0.5798319327731092), ('val/DenseNet121/unknown/f1-score', 0.24173748819641167)]
+Epoch: 2, batch loss: 1.19512 Loss Sum: 299.17018, accuracy : 0.57601, val loss: 28.80491, val accuracy: 0.35172
+Final : 0.4126752551059149 [('val/DenseNet121/monotone/f1-score', 0.4989339019189765), ('val/DenseNet121/screenshot/f1-score', 0.598079561042524), ('val/DenseNet121/unknown/f1-score', 0.23551756885090214)]
+Epoch: 3, batch loss: 1.16072 Loss Sum: 296.62535, accuracy : 0.58197, val loss: 28.43628, val accuracy: 0.37318
+Final : 0.4419273983365988 [('val/DenseNet121/monotone/f1-score', 0.5157232704402516), ('val/DenseNet121/screenshot/f1-score', 0.6169014084507043), ('val/DenseNet121/unknown/f1-score', 0.2712815715622077)]
+---train finished---
+Trying to save to /tmp/tmpq86jh5oh/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adamax_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.04953 Loss Sum: 310.10113, accuracy : 0.46446, val loss: 25.79258, val accuracy: 0.41609
+Final : 0.6010364319292159 [('val/DenseNet121/monotone/f1-score', 0.7435897435897436), ('val/DenseNet121/screenshot/f1-score', 0.6652078774617067), ('val/DenseNet121/unknown/f1-score', 0.4389465283320032)]
+Epoch: 1, batch loss: 0.74580 Loss Sum: 233.81933, accuracy : 0.72371, val loss: 22.50967, val accuracy: 0.47280
+Final : 0.6459764472416163 [('val/DenseNet121/monotone/f1-score', 0.7241379310344828), ('val/DenseNet121/screenshot/f1-score', 0.8085106382978723), ('val/DenseNet121/unknown/f1-score', 0.46040816326530615)]
+Epoch: 2, batch loss: 0.73716 Loss Sum: 187.36664, accuracy : 0.79382, val loss: 20.45591, val accuracy: 0.53640
+Final : 0.7079055751103586 [('val/DenseNet121/monotone/f1-score', 0.7678571428571428), ('val/DenseNet121/screenshot/f1-score', 0.8630393996247655), ('val/DenseNet121/unknown/f1-score', 0.5353218210361067)]
+Epoch: 3, batch loss: 0.72191 Loss Sum: 159.01951, accuracy : 0.82473, val loss: 19.06811, val accuracy: 0.58084
+Final : 0.740738545289231 [('val/DenseNet121/monotone/f1-score', 0.7743902439024389), ('val/DenseNet121/screenshot/f1-score', 0.8789571694599627), ('val/DenseNet121/unknown/f1-score', 0.5971277399848828)]
+---train finished---
+Trying to save to /tmp/tmp3jzfr7ji/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.08545 Loss Sum: 327.84959, accuracy : 0.42819, val loss: 25.01014, val accuracy: 0.47433
+Final : 0.5275060650753671 [('val/DenseNet121/monotone/f1-score', 0.43418803418803414), ('val/DenseNet121/screenshot/f1-score', 0.665314401622718), ('val/DenseNet121/unknown/f1-score', 0.5081332300542215)]
+Epoch: 1, batch loss: 0.74203 Loss Sum: 241.89726, accuracy : 0.67265, val loss: 22.01866, val accuracy: 0.54943
+Final : 0.6458477791599446 [('val/DenseNet121/monotone/f1-score', 0.5995316159250585), ('val/DenseNet121/screenshot/f1-score', 0.7722007722007723), ('val/DenseNet121/unknown/f1-score', 0.5818997756170531)]
+Epoch: 2, batch loss: 0.71880 Loss Sum: 193.36360, accuracy : 0.77185, val loss: 20.28538, val accuracy: 0.57395
+Final : 0.6915376805212042 [('val/DenseNet121/monotone/f1-score', 0.6666666666666666), ('val/DenseNet121/screenshot/f1-score', 0.8324125230202578), ('val/DenseNet121/unknown/f1-score', 0.5959367945823928)]
+Epoch: 3, batch loss: 0.53551 Loss Sum: 162.91251, accuracy : 0.81098, val loss: 18.84658, val accuracy: 0.59847
+Final : 0.7283157711723466 [('val/DenseNet121/monotone/f1-score', 0.7195467422096318), ('val/DenseNet121/screenshot/f1-score', 0.8598130841121495), ('val/DenseNet121/unknown/f1-score', 0.6244477172312224)]
+---train finished---
+Trying to save to /tmp/tmpnyo_f5hk/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.11893 Loss Sum: 320.53591, accuracy : 0.48911, val loss: 29.69787, val accuracy: 0.30575
+Final : 0.3700159214544811 [('val/DenseNet121/monotone/f1-score', 0.49612403100775193), ('val/DenseNet121/screenshot/f1-score', 0.6793760831889081), ('val/DenseNet121/unknown/f1-score', 0.15030060120240482)]
+Epoch: 1, batch loss: 0.95915 Loss Sum: 242.92439, accuracy : 0.68123, val loss: 25.83563, val accuracy: 0.37701
+Final : 0.49605422203698774 [('val/DenseNet121/monotone/f1-score', 0.6183574879227053), ('val/DenseNet121/screenshot/f1-score', 0.7529411764705881), ('val/DenseNet121/unknown/f1-score', 0.2621722846441948)]
+Epoch: 2, batch loss: 0.78626 Loss Sum: 195.50577, accuracy : 0.75469, val loss: 23.25507, val accuracy: 0.45670
+Final : 0.6217225431165927 [('val/DenseNet121/monotone/f1-score', 0.7036011080332409), ('val/DenseNet121/screenshot/f1-score', 0.829090909090909), ('val/DenseNet121/unknown/f1-score', 0.41196581196581195)]
+Epoch: 3, batch loss: 0.69953 Loss Sum: 163.43797, accuracy : 0.80319, val loss: 21.75708, val accuracy: 0.49579
+Final : 0.6608684520957959 [('val/DenseNet121/monotone/f1-score', 0.7377521613832854), ('val/DenseNet121/screenshot/f1-score', 0.822262118491921), ('val/DenseNet121/unknown/f1-score', 0.47579983593109104)]
+---train finished---
+Trying to save to /tmp/tmp8f3q_4c6/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.24470 Loss Sum: 365.16548, accuracy : 0.30927, val loss: 27.19944, val accuracy: 0.35479
+Final : 0.38098043172426627 [('val/DenseNet121/monotone/f1-score', 0.279826464208243), ('val/DenseNet121/screenshot/f1-score', 0.6351084812623274), ('val/DenseNet121/unknown/f1-score', 0.31115107913669066)]
+Epoch: 1, batch loss: 0.91112 Loss Sum: 273.64642, accuracy : 0.57199, val loss: 23.69490, val accuracy: 0.50498
+Final : 0.5467028035745276 [('val/DenseNet121/monotone/f1-score', 0.40887480190174325), ('val/DenseNet121/screenshot/f1-score', 0.7992700729927007), ('val/DenseNet121/unknown/f1-score', 0.5)]
+Epoch: 2, batch loss: 0.65288 Loss Sum: 215.75935, accuracy : 0.72943, val loss: 21.33465, val accuracy: 0.55939
+Final : 0.6374128044758581 [('val/DenseNet121/monotone/f1-score', 0.5397489539748954), ('val/DenseNet121/screenshot/f1-score', 0.8461538461538461), ('val/DenseNet121/unknown/f1-score', 0.5670498084291189)]
+Epoch: 3, batch loss: 0.59896 Loss Sum: 178.47741, accuracy : 0.79144, val loss: 19.65442, val accuracy: 0.59540
+Final : 0.6997891450290595 [('val/DenseNet121/monotone/f1-score', 0.6466165413533834), ('val/DenseNet121/screenshot/f1-score', 0.8613678373382626), ('val/DenseNet121/unknown/f1-score', 0.61527057079318)]
+---train finished---
+Trying to save to /tmp/tmp_3qdwq9x/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.24884 Loss Sum: 344.77238, accuracy : 0.40585, val loss: 22.10215, val accuracy: 0.54866
+Final : 0.532201414850947 [('val/DenseNet121/monotone/f1-score', 0.38650306748466257), ('val/DenseNet121/screenshot/f1-score', 0.6817447495961227), ('val/DenseNet121/unknown/f1-score', 0.5720754716981131)]
+Epoch: 1, batch loss: 0.94226 Loss Sum: 249.27079, accuracy : 0.62689, val loss: 19.80992, val accuracy: 0.65594
+Final : 0.6616241333879215 [('val/DenseNet121/monotone/f1-score', 0.5278350515463918), ('val/DenseNet121/screenshot/f1-score', 0.7946127946127947), ('val/DenseNet121/unknown/f1-score', 0.6905263157894737)]
+Epoch: 2, batch loss: 0.76806 Loss Sum: 212.99520, accuracy : 0.71988, val loss: 19.38527, val accuracy: 0.66360
+Final : 0.673739363557635 [('val/DenseNet121/monotone/f1-score', 0.5512820512820513), ('val/DenseNet121/screenshot/f1-score', 0.7918781725888326), ('val/DenseNet121/unknown/f1-score', 0.7005571030640668)]
+Epoch: 3, batch loss: 0.73342 Loss Sum: 208.42926, accuracy : 0.73016, val loss: 19.10571, val accuracy: 0.67126
+Final : 0.6874681061604565 [('val/DenseNet121/monotone/f1-score', 0.57847533632287), ('val/DenseNet121/screenshot/f1-score', 0.7932203389830508), ('val/DenseNet121/unknown/f1-score', 0.7080745341614907)]
+---train finished---
+Trying to save to /tmp/tmpydvmi644/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.09514 Loss Sum: 311.48580, accuracy : 0.48369, val loss: 25.21228, val accuracy: 0.47739
+Final : 0.5864997179547549 [('val/DenseNet121/monotone/f1-score', 0.5495495495495495), ('val/DenseNet121/screenshot/f1-score', 0.696969696969697), ('val/DenseNet121/unknown/f1-score', 0.5267234701781565)]
+Epoch: 1, batch loss: 0.77803 Loss Sum: 237.33608, accuracy : 0.72493, val loss: 22.66040, val accuracy: 0.51418
+Final : 0.6453591030866066 [('val/DenseNet121/monotone/f1-score', 0.6089108910891089), ('val/DenseNet121/screenshot/f1-score', 0.8154158215010142), ('val/DenseNet121/unknown/f1-score', 0.5413416536661466)]
+Epoch: 2, batch loss: 0.84952 Loss Sum: 208.87906, accuracy : 0.77100, val loss: 22.51525, val accuracy: 0.51418
+Final : 0.6514885990413875 [('val/DenseNet121/monotone/f1-score', 0.6463104325699746), ('val/DenseNet121/screenshot/f1-score', 0.8070866141732284), ('val/DenseNet121/unknown/f1-score', 0.5301016419077405)]
+Epoch: 3, batch loss: 0.78099 Loss Sum: 204.73237, accuracy : 0.77319, val loss: 22.26411, val accuracy: 0.52261
+Final : 0.6552573547116509 [('val/DenseNet121/monotone/f1-score', 0.6511627906976744), ('val/DenseNet121/screenshot/f1-score', 0.7890625), ('val/DenseNet121/unknown/f1-score', 0.5475638051044083)]
+---train finished---
+Trying to save to /tmp/tmph1k7xk7y/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.17856 Loss Sum: 335.72160, accuracy : 0.38839, val loss: 28.50625, val accuracy: 0.32644
+Final : 0.3315866484393847 [('val/DenseNet121/monotone/f1-score', 0.5115303983228512), ('val/DenseNet121/screenshot/f1-score', 0.5254988913525499), ('val/DenseNet121/unknown/f1-score', 0.13562753036437247)]
+Epoch: 1, batch loss: 0.89420 Loss Sum: 252.99599, accuracy : 0.63437, val loss: 25.02970, val accuracy: 0.39617
+Final : 0.4820022984311418 [('val/DenseNet121/monotone/f1-score', 0.5733634311512416), ('val/DenseNet121/screenshot/f1-score', 0.6899563318777292), ('val/DenseNet121/unknown/f1-score', 0.2830712303422757)]
+Epoch: 2, batch loss: 0.82813 Loss Sum: 222.76301, accuracy : 0.71069, val loss: 24.87709, val accuracy: 0.41149
+Final : 0.49585689363800706 [('val/DenseNet121/monotone/f1-score', 0.5682819383259912), ('val/DenseNet121/screenshot/f1-score', 0.6937590711175616), ('val/DenseNet121/unknown/f1-score', 0.3092406221408966)]
+Epoch: 3, batch loss: 0.94338 Loss Sum: 218.54612, accuracy : 0.71902, val loss: 24.60166, val accuracy: 0.41916
+Final : 0.517671507169439 [('val/DenseNet121/monotone/f1-score', 0.5871559633027523), ('val/DenseNet121/screenshot/f1-score', 0.7212121212121211), ('val/DenseNet121/unknown/f1-score', 0.32760180995475113)]
+---train finished---
+Trying to save to /tmp/tmp_d4s87at/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.27511 Loss Sum: 363.18556, accuracy : 0.27994, val loss: 25.82200, val accuracy: 0.34483
+Final : 0.36019834968596015 [('val/DenseNet121/monotone/f1-score', 0.24615384615384617), ('val/DenseNet121/screenshot/f1-score', 0.47382920110192844), ('val/DenseNet121/unknown/f1-score', 0.40067911714770804)]
+Epoch: 1, batch loss: 0.93765 Loss Sum: 271.91588, accuracy : 0.54424, val loss: 22.42511, val accuracy: 0.52031
+Final : 0.5471206735443883 [('val/DenseNet121/monotone/f1-score', 0.38109305760709006), ('val/DenseNet121/screenshot/f1-score', 0.7820773930753565), ('val/DenseNet121/unknown/f1-score', 0.5495011511895624)]
+Epoch: 2, batch loss: 0.85976 Loss Sum: 235.24139, accuracy : 0.65890, val loss: 21.98501, val accuracy: 0.53946
+Final : 0.5727635893900686 [('val/DenseNet121/monotone/f1-score', 0.4075829383886256), ('val/DenseNet121/screenshot/f1-score', 0.8073770491803279), ('val/DenseNet121/unknown/f1-score', 0.5709969788519638)]
+Epoch: 3, batch loss: 0.99128 Loss Sum: 229.64722, accuracy : 0.67569, val loss: 21.85010, val accuracy: 0.54713
+Final : 0.579240799942991 [('val/DenseNet121/monotone/f1-score', 0.42384105960264895), ('val/DenseNet121/screenshot/f1-score', 0.788), ('val/DenseNet121/unknown/f1-score', 0.5818997756170531)]
+---train finished---
+Trying to save to /tmp/tmppkoz232i/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_Adam_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.39577 Loss Sum: 389.52415, accuracy : 0.24215, val loss: 33.89648, val accuracy: 0.17701
+Final : 0.15045350977560776 [('val/DenseNet121/monotone/f1-score', 0.17857142857142858), ('val/DenseNet121/screenshot/f1-score', 0.3754789272030651), ('val/DenseNet121/unknown/f1-score', 0.050793650793650794)]
+Epoch: 1, batch loss: 1.35052 Loss Sum: 364.66290, accuracy : 0.30538, val loss: 31.72104, val accuracy: 0.22146
+Final : 0.2321885576627476 [('val/DenseNet121/monotone/f1-score', 0.21242484969939882), ('val/DenseNet121/screenshot/f1-score', 0.4523809523809524), ('val/DenseNet121/unknown/f1-score', 0.13026052104208416)]
+Epoch: 2, batch loss: 1.35244 Loss Sum: 348.01404, accuracy : 0.36490, val loss: 30.14238, val accuracy: 0.24751
+Final : 0.28522629181180076 [('val/DenseNet121/monotone/f1-score', 0.2362204724409449), ('val/DenseNet121/screenshot/f1-score', 0.47538677918424754), ('val/DenseNet121/unknown/f1-score', 0.2066350710900474)]
+Epoch: 3, batch loss: 1.24281 Loss Sum: 334.91207, accuracy : 0.41279, val loss: 28.80811, val accuracy: 0.29579
+Final : 0.34562997531920314 [('val/DenseNet121/monotone/f1-score', 0.25082508250825086), ('val/DenseNet121/screenshot/f1-score', 0.556923076923077), ('val/DenseNet121/unknown/f1-score', 0.29557522123893804)]
+---train finished---
+Trying to save to /tmp/tmpio_9brww/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.49673 Loss Sum: 387.58334, accuracy : 0.23460, val loss: 31.90569, val accuracy: 0.19310
+Final : 0.06975114815717606 [('val/DenseNet121/monotone/f1-score', 0.15348837209302324), ('val/DenseNet121/screenshot/f1-score', 0.007326007326007326), ('val/DenseNet121/unknown/f1-score', 0.30179445350734097)]
+Epoch: 1, batch loss: 1.40722 Loss Sum: 383.16221, accuracy : 0.24251, val loss: 31.62362, val accuracy: 0.19464
+Final : 0.0679222636731439 [('val/DenseNet121/monotone/f1-score', 0.13398294762484775), ('val/DenseNet121/screenshot/f1-score', 0.007352941176470588), ('val/DenseNet121/unknown/f1-score', 0.3180722891566265)]
+Epoch: 2, batch loss: 1.50528 Loss Sum: 380.16758, accuracy : 0.24550, val loss: 31.44214, val accuracy: 0.22452
+Final : 0.09244618083346405 [('val/DenseNet121/monotone/f1-score', 0.15344603381014305), ('val/DenseNet121/screenshot/f1-score', 0.014336917562724014), ('val/DenseNet121/unknown/f1-score', 0.3591331269349845)]
+Epoch: 3, batch loss: 1.41503 Loss Sum: 376.30721, accuracy : 0.26083, val loss: 31.05670, val accuracy: 0.22146
+Final : 0.09154995254839003 [('val/DenseNet121/monotone/f1-score', 0.14825581395348836), ('val/DenseNet121/screenshot/f1-score', 0.014134275618374558), ('val/DenseNet121/unknown/f1-score', 0.3661753297129558)]
+---train finished---
+Trying to save to /tmp/tmpmafj3ozp/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.44741 Loss Sum: 361.47304, accuracy : 0.31895, val loss: 34.58995, val accuracy: 0.17088
+Final : 0.051135299988271314 [('val/DenseNet121/monotone/f1-score', 0.014285714285714285), ('val/DenseNet121/screenshot/f1-score', 0.43756449948400405), ('val/DenseNet121/unknown/f1-score', 0.0213903743315508)]
+Epoch: 1, batch loss: 1.35407 Loss Sum: 357.94916, accuracy : 0.32838, val loss: 34.05507, val accuracy: 0.17011
+Final : 0.0 [('val/DenseNet121/monotone/f1-score', 0.0), ('val/DenseNet121/screenshot/f1-score', 0.437636761487965), ('val/DenseNet121/unknown/f1-score', 0.046511627906976744)]
+Epoch: 2, batch loss: 1.48544 Loss Sum: 354.92761, accuracy : 0.33313, val loss: 33.56150, val accuracy: 0.15862
+Final : 0.06410871374484702 [('val/DenseNet121/monotone/f1-score', 0.014814814814814815), ('val/DenseNet121/screenshot/f1-score', 0.4241733181299886), ('val/DenseNet121/unknown/f1-score', 0.041928721174004195)]
+Epoch: 3, batch loss: 1.47250 Loss Sum: 351.61937, accuracy : 0.33934, val loss: 33.29569, val accuracy: 0.16398
+Final : 0.07057194465519273 [('val/DenseNet121/monotone/f1-score', 0.014388489208633093), ('val/DenseNet121/screenshot/f1-score', 0.4315545243619489), ('val/DenseNet121/unknown/f1-score', 0.05660377358490566)]
+---train finished---
+Trying to save to /tmp/tmpix6zgvc_/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.41745 Loss Sum: 361.30086, accuracy : 0.28055, val loss: 24.83765, val accuracy: 0.53410
+Final : 0.23176999510429075 [('val/DenseNet121/monotone/f1-score', 0.09937888198757763), ('val/DenseNet121/screenshot/f1-score', 0.17391304347826086), ('val/DenseNet121/unknown/f1-score', 0.7203530060672918)]
+Epoch: 1, batch loss: 1.25062 Loss Sum: 352.28226, accuracy : 0.28323, val loss: 25.18538, val accuracy: 0.49349
+Final : 0.22658135501789015 [('val/DenseNet121/monotone/f1-score', 0.07643312101910828), ('val/DenseNet121/screenshot/f1-score', 0.22276029055690072), ('val/DenseNet121/unknown/f1-score', 0.6832083092902481)]
+Epoch: 2, batch loss: 1.30029 Loss Sum: 344.72708, accuracy : 0.29996, val loss: 25.48118, val accuracy: 0.47203
+Final : 0.2568171645671601 [('val/DenseNet121/monotone/f1-score', 0.10191082802547771), ('val/DenseNet121/screenshot/f1-score', 0.24752475247524752), ('val/DenseNet121/unknown/f1-score', 0.6714801444043322)]
+Epoch: 3, batch loss: 1.23888 Loss Sum: 337.24736, accuracy : 0.31609, val loss: 25.52734, val accuracy: 0.43448
+Final : 0.2715423301462885 [('val/DenseNet121/monotone/f1-score', 0.11688311688311688), ('val/DenseNet121/screenshot/f1-score', 0.2722772277227723), ('val/DenseNet121/unknown/f1-score', 0.6291432145090682)]
+---train finished---
+Trying to save to /tmp/tmp9ok32oim/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.43395 Loss Sum: 374.83058, accuracy : 0.20545, val loss: 29.42837, val accuracy: 0.25900
+Final : 0.1886888621382081 [('val/DenseNet121/monotone/f1-score', 0.0796812749003984), ('val/DenseNet121/screenshot/f1-score', 0.1971830985915493), ('val/DenseNet121/unknown/f1-score', 0.4275755228505035)]
+Epoch: 1, batch loss: 1.51537 Loss Sum: 373.38734, accuracy : 0.21111, val loss: 29.32248, val accuracy: 0.27203
+Final : 0.17606580459393717 [('val/DenseNet121/monotone/f1-score', 0.061855670103092786), ('val/DenseNet121/screenshot/f1-score', 0.1932367149758454), ('val/DenseNet121/unknown/f1-score', 0.45662100456621)]
+Epoch: 2, batch loss: 1.40802 Loss Sum: 371.97604, accuracy : 0.21209, val loss: 29.48574, val accuracy: 0.27510
+Final : 0.17409811328346253 [('val/DenseNet121/monotone/f1-score', 0.05405405405405406), ('val/DenseNet121/screenshot/f1-score', 0.21670428893905191), ('val/DenseNet121/unknown/f1-score', 0.45049130763416484)]
+Epoch: 3, batch loss: 1.40619 Loss Sum: 371.65374, accuracy : 0.21349, val loss: 29.44629, val accuracy: 0.27510
+Final : 0.1803669381599816 [('val/DenseNet121/monotone/f1-score', 0.0737527114967462), ('val/DenseNet121/screenshot/f1-score', 0.173120728929385), ('val/DenseNet121/unknown/f1-score', 0.4595616024187453)]
+---train finished---
+Trying to save to /tmp/tmp5a_npfb5/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.23994 Loss Sum: 342.82161, accuracy : 0.36952, val loss: 26.26975, val accuracy: 0.34713
+Final : 0.3028516919646171 [('val/DenseNet121/monotone/f1-score', 0.12413793103448276), ('val/DenseNet121/screenshot/f1-score', 0.4676616915422886), ('val/DenseNet121/unknown/f1-score', 0.47846889952153115)]
+Epoch: 1, batch loss: 1.06073 Loss Sum: 283.90239, accuracy : 0.50383, val loss: 23.30690, val accuracy: 0.45824
+Final : 0.5878258378038218 [('val/DenseNet121/monotone/f1-score', 0.5625000000000001), ('val/DenseNet121/screenshot/f1-score', 0.65625), ('val/DenseNet121/unknown/f1-score', 0.5502425502425503)]
+Epoch: 2, batch loss: 0.97683 Loss Sum: 259.89009, accuracy : 0.59774, val loss: 23.34653, val accuracy: 0.47433
+Final : 0.622997864399515 [('val/DenseNet121/monotone/f1-score', 0.6268656716417911), ('val/DenseNet121/screenshot/f1-score', 0.6931567328918322), ('val/DenseNet121/unknown/f1-score', 0.5564853556485355)]
+Epoch: 3, batch loss: 0.98121 Loss Sum: 256.53795, accuracy : 0.61137, val loss: 23.06375, val accuracy: 0.44828
+Final : 0.594335589894135 [('val/DenseNet121/monotone/f1-score', 0.61), ('val/DenseNet121/screenshot/f1-score', 0.6504424778761062), ('val/DenseNet121/unknown/f1-score', 0.5291228070175439)]
+---train finished---
+Trying to save to /tmp/tmpbtnyjw25/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.38487 Loss Sum: 343.76657, accuracy : 0.36824, val loss: 25.37879, val accuracy: 0.55019
+Final : 0.21378505609171986 [('val/DenseNet121/monotone/f1-score', 0.4061302681992337), ('val/DenseNet121/screenshot/f1-score', 0.03344481605351171), ('val/DenseNet121/unknown/f1-score', 0.7193460490463216)]
+Epoch: 1, batch loss: 1.29180 Loss Sum: 342.10820, accuracy : 0.36861, val loss: 25.25261, val accuracy: 0.53870
+Final : 0.26274980156766176 [('val/DenseNet121/monotone/f1-score', 0.4883720930232558), ('val/DenseNet121/screenshot/f1-score', 0.052805280528052806), ('val/DenseNet121/unknown/f1-score', 0.7033945464663328)]
+Epoch: 2, batch loss: 1.28116 Loss Sum: 340.69889, accuracy : 0.37482, val loss: 25.36781, val accuracy: 0.54483
+Final : 0.18807447941432545 [('val/DenseNet121/monotone/f1-score', 0.46093749999999994), ('val/DenseNet121/screenshot/f1-score', 0.020270270270270268), ('val/DenseNet121/unknown/f1-score', 0.712013165112452)]
+Epoch: 3, batch loss: 1.28940 Loss Sum: 341.27147, accuracy : 0.37031, val loss: 25.44660, val accuracy: 0.52874
+Final : 0.1267391442354636 [('val/DenseNet121/monotone/f1-score', 0.41984732824427473), ('val/DenseNet121/screenshot/f1-score', 0.006944444444444444), ('val/DenseNet121/unknown/f1-score', 0.698237885462555)]
+---train finished---
+Trying to save to /tmp/tmpc9_yykal/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1., 1., 1., 1.]),
+ 'optimizer': 'SGD',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.35938 Loss Sum: 353.39179, accuracy : 0.27611, val loss: 30.03827, val accuracy: 0.15556
+Final : 0.1263170762238414 [('val/DenseNet121/monotone/f1-score', 0.05925925925925926), ('val/DenseNet121/screenshot/f1-score', 0.11267605633802819), ('val/DenseNet121/unknown/f1-score', 0.3018549747048904)]
+Epoch: 1, batch loss: 1.32631 Loss Sum: 345.78829, accuracy : 0.28098, val loss: 28.83475, val accuracy: 0.18008
+Final : 0.14540984323276152 [('val/DenseNet121/monotone/f1-score', 0.07352941176470588), ('val/DenseNet121/screenshot/f1-score', 0.12534059945504086), ('val/DenseNet121/unknown/f1-score', 0.33360193392425463)]
+Epoch: 2, batch loss: 1.40402 Loss Sum: 342.51204, accuracy : 0.28578, val loss: 28.89732, val accuracy: 0.19387
+Final : 0.21468412987255522 [('val/DenseNet121/monotone/f1-score', 0.18181818181818182), ('val/DenseNet121/screenshot/f1-score', 0.15977961432506887), ('val/DenseNet121/unknown/f1-score', 0.34059725585149314)]
+Epoch: 3, batch loss: 1.34043 Loss Sum: 341.12323, accuracy : 0.28670, val loss: 28.89890, val accuracy: 0.19617
+Final : 0.1642975899792641 [('val/DenseNet121/monotone/f1-score', 0.07299270072992702), ('val/DenseNet121/screenshot/f1-score', 0.17534246575342466), ('val/DenseNet121/unknown/f1-score', 0.34651898734177217)]
+---train finished---
+Trying to save to /tmp/tmpe0p2o11d/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.0, 1.0, 1.0, 1.0]_SGD_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.27292 Loss Sum: 335.18437, accuracy : 0.35735, val loss: 22.47721, val accuracy: 0.64521
+Final : 0.3944363401737369 [('val/DenseNet121/monotone/f1-score', 0.5434782608695652), ('val/DenseNet121/screenshot/f1-score', 0.14765100671140938), ('val/DenseNet121/unknown/f1-score', 0.7647371216144451)]
+Epoch: 1, batch loss: 1.15200 Loss Sum: 294.38435, accuracy : 0.48387, val loss: 21.02022, val accuracy: 0.69808
+Final : 0.5923208809124615 [('val/DenseNet121/monotone/f1-score', 0.6441558441558441), ('val/DenseNet121/screenshot/f1-score', 0.4069767441860465), ('val/DenseNet121/unknown/f1-score', 0.7927031509121061)]
+Epoch: 2, batch loss: 0.92509 Loss Sum: 260.80364, accuracy : 0.58520, val loss: 19.80121, val accuracy: 0.73640
+Final : 0.715964915264764 [('val/DenseNet121/monotone/f1-score', 0.7150837988826816), ('val/DenseNet121/screenshot/f1-score', 0.632603406326034), ('val/DenseNet121/unknown/f1-score', 0.8113098672821696)]
+Epoch: 3, batch loss: 0.82875 Loss Sum: 234.26132, accuracy : 0.65713, val loss: 19.01743, val accuracy: 0.73180
+Final : 0.7461564408367628 [('val/DenseNet121/monotone/f1-score', 0.7150837988826816), ('val/DenseNet121/screenshot/f1-score', 0.7272727272727272), ('val/DenseNet121/unknown/f1-score', 0.7987951807228915)]
+---train finished---
+Trying to save to /tmp/tmpji6m8j_v/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.22650 Loss Sum: 338.51451, accuracy : 0.42235, val loss: 22.78933, val accuracy: 0.66054
+Final : 0.5972279571048339 [('val/DenseNet121/monotone/f1-score', 0.5091743119266054), ('val/DenseNet121/screenshot/f1-score', 0.5528846153846154), ('val/DenseNet121/unknown/f1-score', 0.7566924449732302)]
+Epoch: 1, batch loss: 1.13134 Loss Sum: 294.74585, accuracy : 0.53402, val loss: 21.15196, val accuracy: 0.72184
+Final : 0.695170918967422 [('val/DenseNet121/monotone/f1-score', 0.6119402985074627), ('val/DenseNet121/screenshot/f1-score', 0.6916299559471366), ('val/DenseNet121/unknown/f1-score', 0.7937649880095923)]
+Epoch: 2, batch loss: 0.92882 Loss Sum: 260.88060, accuracy : 0.60072, val loss: 19.85657, val accuracy: 0.72874
+Final : 0.7293074322104202 [('val/DenseNet121/monotone/f1-score', 0.65625), ('val/DenseNet121/screenshot/f1-score', 0.7452631578947367), ('val/DenseNet121/unknown/f1-score', 0.7931456548347613)]
+Epoch: 3, batch loss: 0.79934 Loss Sum: 232.57855, accuracy : 0.65780, val loss: 18.95068, val accuracy: 0.73027
+Final : 0.7591409456399341 [('val/DenseNet121/monotone/f1-score', 0.6844919786096256), ('val/DenseNet121/screenshot/f1-score', 0.8149606299212598), ('val/DenseNet121/unknown/f1-score', 0.784263959390863)]
+---train finished---
+Trying to save to /tmp/tmpuwx95lpg/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.21544 Loss Sum: 344.74199, accuracy : 0.38924, val loss: 27.15028, val accuracy: 0.46054
+Final : 0.511850750787075 [('val/DenseNet121/monotone/f1-score', 0.5386416861826698), ('val/DenseNet121/screenshot/f1-score', 0.5491251682368775), ('val/DenseNet121/unknown/f1-score', 0.4533762057877814)]
+Epoch: 1, batch loss: 1.20518 Loss Sum: 307.38628, accuracy : 0.53944, val loss: 25.49658, val accuracy: 0.51034
+Final : 0.5834592262011855 [('val/DenseNet121/monotone/f1-score', 0.6051282051282051), ('val/DenseNet121/screenshot/f1-score', 0.6388489208633094), ('val/DenseNet121/unknown/f1-score', 0.5137903861308116)]
+Epoch: 2, batch loss: 0.97303 Loss Sum: 275.44605, accuracy : 0.63382, val loss: 24.00848, val accuracy: 0.54866
+Final : 0.6452349629617723 [('val/DenseNet121/monotone/f1-score', 0.6649350649350649), ('val/DenseNet121/screenshot/f1-score', 0.7214170692431562), ('val/DenseNet121/unknown/f1-score', 0.5599999999999999)]
+Epoch: 3, batch loss: 0.91775 Loss Sum: 250.18226, accuracy : 0.68707, val loss: 22.64193, val accuracy: 0.57625
+Final : 0.6857895877488706 [('val/DenseNet121/monotone/f1-score', 0.6972972972972973), ('val/DenseNet121/screenshot/f1-score', 0.7817258883248731), ('val/DenseNet121/unknown/f1-score', 0.5916981132075472)]
+---train finished---
+Trying to save to /tmp/tmpj8wgdrc8/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.29113 Loss Sum: 354.76296, accuracy : 0.31445, val loss: 28.49054, val accuracy: 0.32414
+Final : 0.336971348173434 [('val/DenseNet121/monotone/f1-score', 0.2740841248303935), ('val/DenseNet121/screenshot/f1-score', 0.32707774798927614), ('val/DenseNet121/unknown/f1-score', 0.42681929681112024)]
+Epoch: 1, batch loss: 1.12803 Loss Sum: 314.96958, accuracy : 0.49069, val loss: 26.56549, val accuracy: 0.41992
+Final : 0.47500360076058223 [('val/DenseNet121/monotone/f1-score', 0.3853820598006645), ('val/DenseNet121/screenshot/f1-score', 0.5707865168539326), ('val/DenseNet121/unknown/f1-score', 0.487220447284345)]
+Epoch: 2, batch loss: 1.06913 Loss Sum: 283.24269, accuracy : 0.61161, val loss: 24.85387, val accuracy: 0.49425
+Final : 0.5732521752179813 [('val/DenseNet121/monotone/f1-score', 0.4884615384615385), ('val/DenseNet121/screenshot/f1-score', 0.720164609053498), ('val/DenseNet121/unknown/f1-score', 0.53551912568306)]
+Epoch: 3, batch loss: 0.93575 Loss Sum: 255.17285, accuracy : 0.68908, val loss: 23.23201, val accuracy: 0.54176
+Final : 0.6346296054966128 [('val/DenseNet121/monotone/f1-score', 0.5746606334841629), ('val/DenseNet121/screenshot/f1-score', 0.7635658914728682), ('val/DenseNet121/unknown/f1-score', 0.5825095057034221)]
+---train finished---
+Trying to save to /tmp/tmp3vwqxrt6/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.16571 Loss Sum: 337.46452, accuracy : 0.37518, val loss: 22.08686, val accuracy: 0.65977
+Final : 0.5238317354991139 [('val/DenseNet121/monotone/f1-score', 0.43923240938166314), ('val/DenseNet121/screenshot/f1-score', 0.41860465116279066), ('val/DenseNet121/unknown/f1-score', 0.7817663817663818)]
+Epoch: 1, batch loss: 1.08254 Loss Sum: 294.35198, accuracy : 0.52739, val loss: 20.47596, val accuracy: 0.72490
+Final : 0.6830700477870402 [('val/DenseNet121/monotone/f1-score', 0.5914786967418547), ('val/DenseNet121/screenshot/f1-score', 0.6745283018867924), ('val/DenseNet121/unknown/f1-score', 0.7988338192419826)]
+Epoch: 2, batch loss: 1.07522 Loss Sum: 273.62607, accuracy : 0.58642, val loss: 20.57694, val accuracy: 0.72567
+Final : 0.6895437526831251 [('val/DenseNet121/monotone/f1-score', 0.6120481927710842), ('val/DenseNet121/screenshot/f1-score', 0.6697892271662763), ('val/DenseNet121/unknown/f1-score', 0.7997637330183107)]
+Epoch: 3, batch loss: 1.02764 Loss Sum: 270.22544, accuracy : 0.59707, val loss: 20.21971, val accuracy: 0.74330
+Final : 0.7130440308870268 [('val/DenseNet121/monotone/f1-score', 0.6291560102301791), ('val/DenseNet121/screenshot/f1-score', 0.7096774193548386), ('val/DenseNet121/unknown/f1-score', 0.81195079086116)]
+---train finished---
+Trying to save to /tmp/tmpqfy3_4ab/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.45526 Loss Sum: 386.88242, accuracy : 0.29339, val loss: 37.58210, val accuracy: 0.16935
+Final : 0.0972381979183466 [('val/DenseNet121/monotone/f1-score', 0.2733612273361227), ('val/DenseNet121/screenshot/f1-score', 0.3888888888888889), ('val/DenseNet121/unknown/f1-score', 0.008648648648648649)]
+Epoch: 1, batch loss: 1.14947 Loss Sum: 334.29145, accuracy : 0.49471, val loss: 34.67475, val accuracy: 0.23908
+Final : 0.18234817634974212 [('val/DenseNet121/monotone/f1-score', 0.40614334470989766), ('val/DenseNet121/screenshot/f1-score', 0.5357142857142857), ('val/DenseNet121/unknown/f1-score', 0.027867095391211145)]
+Epoch: 2, batch loss: 1.28827 Loss Sum: 310.16904, accuracy : 0.56049, val loss: 34.28107, val accuracy: 0.24674
+Final : 0.19098816443618516 [('val/DenseNet121/monotone/f1-score', 0.41594454072790293), ('val/DenseNet121/screenshot/f1-score', 0.5586924219910847), ('val/DenseNet121/unknown/f1-score', 0.029978586723768737)]
+Epoch: 3, batch loss: 1.21053 Loss Sum: 305.89279, accuracy : 0.57303, val loss: 33.88658, val accuracy: 0.25364
+Final : 0.21618019495644733 [('val/DenseNet121/monotone/f1-score', 0.43525179856115104), ('val/DenseNet121/screenshot/f1-score', 0.5735735735735736), ('val/DenseNet121/unknown/f1-score', 0.04046858359957402)]
+---train finished---
+Trying to save to /tmp/tmpd82jwaq4/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.20491 Loss Sum: 333.15913, accuracy : 0.37366, val loss: 28.60202, val accuracy: 0.22682
+Final : 0.35364444278578316 [('val/DenseNet121/monotone/f1-score', 0.40476190476190477), ('val/DenseNet121/screenshot/f1-score', 0.3373493975903615), ('val/DenseNet121/unknown/f1-score', 0.3239074550128535)]
+Epoch: 1, batch loss: 1.06694 Loss Sum: 296.31210, accuracy : 0.53104, val loss: 26.63942, val accuracy: 0.35096
+Final : 0.5342483484185007 [('val/DenseNet121/monotone/f1-score', 0.6241134751773049), ('val/DenseNet121/screenshot/f1-score', 0.5829145728643216), ('val/DenseNet121/unknown/f1-score', 0.41914191419141916)]
+Epoch: 2, batch loss: 1.02215 Loss Sum: 277.52944, accuracy : 0.60814, val loss: 26.25973, val accuracy: 0.37701
+Final : 0.5829565336370043 [('val/DenseNet121/monotone/f1-score', 0.7028985507246376), ('val/DenseNet121/screenshot/f1-score', 0.6714628297362111), ('val/DenseNet121/unknown/f1-score', 0.41975308641975306)]
+Epoch: 3, batch loss: 1.03304 Loss Sum: 274.42141, accuracy : 0.61654, val loss: 26.14516, val accuracy: 0.37931
+Final : 0.5738660682734004 [('val/DenseNet121/monotone/f1-score', 0.7123287671232876), ('val/DenseNet121/screenshot/f1-score', 0.6168674698795181), ('val/DenseNet121/unknown/f1-score', 0.4300899427636959)]
+---train finished---
+Trying to save to /tmp/tmplf74hiir/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adamax',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.26522 Loss Sum: 332.91745, accuracy : 0.40762, val loss: 23.95491, val accuracy: 0.59387
+Final : 0.5361565237051227 [('val/DenseNet121/monotone/f1-score', 0.45012787723785164), ('val/DenseNet121/screenshot/f1-score', 0.4801864801864802), ('val/DenseNet121/unknown/f1-score', 0.7130647130647131)]
+Epoch: 1, batch loss: 1.09959 Loss Sum: 296.22753, accuracy : 0.54248, val loss: 22.56353, val accuracy: 0.66054
+Final : 0.6646003294872997 [('val/DenseNet121/monotone/f1-score', 0.6464088397790055), ('val/DenseNet121/screenshot/f1-score', 0.6090909090909091), ('val/DenseNet121/unknown/f1-score', 0.7455765710799267)]
+Epoch: 2, batch loss: 1.04004 Loss Sum: 278.78650, accuracy : 0.59597, val loss: 22.36793, val accuracy: 0.65517
+Final : 0.6661890548996756 [('val/DenseNet121/monotone/f1-score', 0.6481994459833795), ('val/DenseNet121/screenshot/f1-score', 0.616822429906542), ('val/DenseNet121/unknown/f1-score', 0.7394752898108603)]
+Epoch: 3, batch loss: 1.01352 Loss Sum: 275.87394, accuracy : 0.60504, val loss: 22.21216, val accuracy: 0.66590
+Final : 0.6889269093650865 [('val/DenseNet121/monotone/f1-score', 0.6723646723646723), ('val/DenseNet121/screenshot/f1-score', 0.6548672566371682), ('val/DenseNet121/unknown/f1-score', 0.7426108374384237)]
+---train finished---
+Trying to save to /tmp/tmpvbfg5qzx/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adamax_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.03311 Loss Sum: 361.51409, accuracy : 0.43811, val loss: 35.43612, val accuracy: 0.23602
+Final : 0.18719808871492316 [('val/DenseNet121/monotone/f1-score', 0.5155925155925156), ('val/DenseNet121/screenshot/f1-score', 0.6566604127579736), ('val/DenseNet121/unknown/f1-score', 0.0193756727664155)]
+Epoch: 1, batch loss: 1.06942 Loss Sum: 270.36506, accuracy : 0.65366, val loss: 30.08730, val accuracy: 0.31494
+Final : 0.38715512348071063 [('val/DenseNet121/monotone/f1-score', 0.5990566037735848), ('val/DenseNet121/screenshot/f1-score', 0.7797202797202798), ('val/DenseNet121/unknown/f1-score', 0.12423625254582486)]
+Epoch: 2, batch loss: 0.74854 Loss Sum: 213.63085, accuracy : 0.73594, val loss: 26.70934, val accuracy: 0.41379
+Final : 0.5650053454580247 [('val/DenseNet121/monotone/f1-score', 0.6666666666666666), ('val/DenseNet121/screenshot/f1-score', 0.8258527827648116), ('val/DenseNet121/unknown/f1-score', 0.32760180995475113)]
+Epoch: 3, batch loss: 0.63723 Loss Sum: 177.17479, accuracy : 0.79783, val loss: 23.18580, val accuracy: 0.50805
+Final : 0.6675005354262444 [('val/DenseNet121/monotone/f1-score', 0.7130919220055711), ('val/DenseNet121/screenshot/f1-score', 0.8653500897666069), ('val/DenseNet121/unknown/f1-score', 0.48196721311475405)]
+---train finished---
+Trying to save to /tmp/tmp6awpsb0v/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.04943 Loss Sum: 301.14862, accuracy : 0.56256, val loss: 25.36576, val accuracy: 0.47433
+Final : 0.604199483984004 [('val/DenseNet121/monotone/f1-score', 0.6224489795918368), ('val/DenseNet121/screenshot/f1-score', 0.7421150278293135), ('val/DenseNet121/unknown/f1-score', 0.477491961414791)]
+Epoch: 1, batch loss: 0.85148 Loss Sum: 227.42215, accuracy : 0.74446, val loss: 22.30574, val accuracy: 0.55096
+Final : 0.6928784189214229 [('val/DenseNet121/monotone/f1-score', 0.7191011235955057), ('val/DenseNet121/screenshot/f1-score', 0.8170055452865064), ('val/DenseNet121/unknown/f1-score', 0.5661820964039787)]
+Epoch: 2, batch loss: 0.54202 Loss Sum: 182.67691, accuracy : 0.80428, val loss: 19.99212, val accuracy: 0.59923
+Final : 0.7342491292959996 [('val/DenseNet121/monotone/f1-score', 0.7492625368731562), ('val/DenseNet121/screenshot/f1-score', 0.8444444444444446), ('val/DenseNet121/unknown/f1-score', 0.6256410256410256)]
+Epoch: 3, batch loss: 0.52908 Loss Sum: 153.70308, accuracy : 0.83751, val loss: 18.54387, val accuracy: 0.64215
+Final : 0.7699637850204653 [('val/DenseNet121/monotone/f1-score', 0.7757575757575756), ('val/DenseNet121/screenshot/f1-score', 0.8745387453874538), ('val/DenseNet121/unknown/f1-score', 0.6728307254623045)]
+---train finished---
+Trying to save to /tmp/tmpz0a9_7ig/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.17329 Loss Sum: 337.98065, accuracy : 0.41912, val loss: 32.12136, val accuracy: 0.26513
+Final : 0.2950869819286117 [('val/DenseNet121/monotone/f1-score', 0.3441734417344173), ('val/DenseNet121/screenshot/f1-score', 0.6902286902286903), ('val/DenseNet121/unknown/f1-score', 0.10816326530612244)]
+Epoch: 1, batch loss: 0.94290 Loss Sum: 260.09784, accuracy : 0.66596, val loss: 27.58403, val accuracy: 0.36628
+Final : 0.46262458483768687 [('val/DenseNet121/monotone/f1-score', 0.4756554307116106), ('val/DenseNet121/screenshot/f1-score', 0.7917448405253283), ('val/DenseNet121/unknown/f1-score', 0.26291079812206575)]
+Epoch: 2, batch loss: 0.89229 Loss Sum: 211.29363, accuracy : 0.76102, val loss: 24.17392, val accuracy: 0.48812
+Final : 0.6255846087562033 [('val/DenseNet121/monotone/f1-score', 0.6216867469879518), ('val/DenseNet121/screenshot/f1-score', 0.8415094339622642), ('val/DenseNet121/unknown/f1-score', 0.4679802955665025)]
+Epoch: 3, batch loss: 0.58828 Loss Sum: 177.96637, accuracy : 0.81487, val loss: 22.18386, val accuracy: 0.54789
+Final : 0.6857284941095069 [('val/DenseNet121/monotone/f1-score', 0.6790450928381963), ('val/DenseNet121/screenshot/f1-score', 0.8603351955307263), ('val/DenseNet121/unknown/f1-score', 0.551937984496124)]
+---train finished---
+Trying to save to /tmp/tmpiq8f_z4i/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.22192 Loss Sum: 340.03987, accuracy : 0.33100, val loss: 19.71394, val accuracy: 0.65134
+Final : 0.4319046215465703 [('val/DenseNet121/monotone/f1-score', 0.19444444444444445), ('val/DenseNet121/screenshot/f1-score', 0.5563549160671463), ('val/DenseNet121/unknown/f1-score', 0.7447595561035758)]
+Epoch: 1, batch loss: 0.83176 Loss Sum: 262.14756, accuracy : 0.54230, val loss: 17.65419, val accuracy: 0.78391
+Final : 0.8044012640182605 [('val/DenseNet121/monotone/f1-score', 0.873015873015873), ('val/DenseNet121/screenshot/f1-score', 0.7175572519083969), ('val/DenseNet121/unknown/f1-score', 0.8308823529411765)]
+Epoch: 2, batch loss: 0.81457 Loss Sum: 209.27274, accuracy : 0.72809, val loss: 16.41747, val accuracy: 0.77241
+Final : 0.843803562931158 [('val/DenseNet121/monotone/f1-score', 0.9020979020979021), ('val/DenseNet121/screenshot/f1-score', 0.8175438596491228), ('val/DenseNet121/unknown/f1-score', 0.8146279949558639)]
+Epoch: 3, batch loss: 0.62225 Loss Sum: 173.09862, accuracy : 0.80568, val loss: 16.02210, val accuracy: 0.73793
+Final : 0.8372449333920599 [('val/DenseNet121/monotone/f1-score', 0.889655172413793), ('val/DenseNet121/screenshot/f1-score', 0.8464285714285714), ('val/DenseNet121/unknown/f1-score', 0.7793733681462139)]
+---train finished---
+Trying to save to /tmp/tmpf18bfrjw/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_10_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.99594 Loss Sum: 308.01827, accuracy : 0.46075, val loss: 20.95818, val accuracy: 0.72950
+Final : 0.7289620940422354 [('val/DenseNet121/monotone/f1-score', 0.6984126984126984), ('val/DenseNet121/screenshot/f1-score', 0.6964618249534451), ('val/DenseNet121/unknown/f1-score', 0.7963525835866262)]
+Epoch: 1, batch loss: 0.80924 Loss Sum: 229.43003, accuracy : 0.72627, val loss: 18.67044, val accuracy: 0.72337
+Final : 0.7803663088442058 [('val/DenseNet121/monotone/f1-score', 0.7573964497041419), ('val/DenseNet121/screenshot/f1-score', 0.8097014925373135), ('val/DenseNet121/unknown/f1-score', 0.7749029754204398)]
+Epoch: 2, batch loss: 0.73809 Loss Sum: 200.30452, accuracy : 0.78451, val loss: 18.63798, val accuracy: 0.70881
+Final : 0.7710622591427096 [('val/DenseNet121/monotone/f1-score', 0.7470588235294118), ('val/DenseNet121/screenshot/f1-score', 0.8081180811808117), ('val/DenseNet121/unknown/f1-score', 0.7593442622950819)]
+Epoch: 3, batch loss: 0.68729 Loss Sum: 195.89324, accuracy : 0.78572, val loss: 18.30272, val accuracy: 0.71034
+Final : 0.7807856329724867 [('val/DenseNet121/monotone/f1-score', 0.7590361445783134), ('val/DenseNet121/screenshot/f1-score', 0.8199233716475097), ('val/DenseNet121/unknown/f1-score', 0.7648208469055375)]
+---train finished---
+Trying to save to /tmp/tmpylmhycg6/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 0.98902 Loss Sum: 313.29082, accuracy : 0.47888, val loss: 23.44546, val accuracy: 0.59234
+Final : 0.6152852953279244 [('val/DenseNet121/monotone/f1-score', 0.5212121212121212), ('val/DenseNet121/screenshot/f1-score', 0.7152542372881356), ('val/DenseNet121/unknown/f1-score', 0.6248196248196248)]
+Epoch: 1, batch loss: 0.93883 Loss Sum: 237.74012, accuracy : 0.70381, val loss: 20.77943, val accuracy: 0.64828
+Final : 0.7106407239362478 [('val/DenseNet121/monotone/f1-score', 0.6305418719211824), ('val/DenseNet121/screenshot/f1-score', 0.8333333333333333), ('val/DenseNet121/unknown/f1-score', 0.6829951014695592)]
+Epoch: 2, batch loss: 0.88297 Loss Sum: 208.22485, accuracy : 0.75797, val loss: 20.63594, val accuracy: 0.65287
+Final : 0.717242353767798 [('val/DenseNet121/monotone/f1-score', 0.6433915211970075), ('val/DenseNet121/screenshot/f1-score', 0.8345323741007193), ('val/DenseNet121/unknown/f1-score', 0.6871938418474458)]
+Epoch: 3, batch loss: 0.99499 Loss Sum: 203.44780, accuracy : 0.76637, val loss: 20.28528, val accuracy: 0.64674
+Final : 0.7191661990391971 [('val/DenseNet121/monotone/f1-score', 0.653061224489796), ('val/DenseNet121/screenshot/f1-score', 0.8384754990925591), ('val/DenseNet121/unknown/f1-score', 0.6792717086834734)]
+---train finished---
+Trying to save to /tmp/tmp6ntw5uoz/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.12818 Loss Sum: 344.26868, accuracy : 0.41699, val loss: 31.09187, val accuracy: 0.24215
+Final : 0.31122554069914 [('val/DenseNet121/monotone/f1-score', 0.43432574430823123), ('val/DenseNet121/screenshot/f1-score', 0.6330275229357799), ('val/DenseNet121/unknown/f1-score', 0.10964467005076142)]
+Epoch: 1, batch loss: 0.93535 Loss Sum: 269.60116, accuracy : 0.63115, val loss: 26.95560, val accuracy: 0.33946
+Final : 0.4492082974949563 [('val/DenseNet121/monotone/f1-score', 0.5404255319148936), ('val/DenseNet121/screenshot/f1-score', 0.7733333333333333), ('val/DenseNet121/unknown/f1-score', 0.21689059500959695)]
+Epoch: 2, batch loss: 0.89735 Loss Sum: 238.49596, accuracy : 0.68677, val loss: 26.52445, val accuracy: 0.34100
+Final : 0.45854379020770064 [('val/DenseNet121/monotone/f1-score', 0.5443037974683544), ('val/DenseNet121/screenshot/f1-score', 0.7707509881422925), ('val/DenseNet121/unknown/f1-score', 0.22981956315289645)]
+Epoch: 3, batch loss: 0.97121 Loss Sum: 233.05190, accuracy : 0.69492, val loss: 26.25207, val accuracy: 0.36322
+Final : 0.4874799958132084 [('val/DenseNet121/monotone/f1-score', 0.5614035087719299), ('val/DenseNet121/screenshot/f1-score', 0.7892720306513409), ('val/DenseNet121/unknown/f1-score', 0.261437908496732)]
+---train finished---
+Trying to save to /tmp/tmpd8_t120j/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'Adam',
+ 'step_size': 2,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.10370 Loss Sum: 315.80589, accuracy : 0.47858, val loss: 25.63929, val accuracy: 0.44674
+Final : 0.5891734400665859 [('val/DenseNet121/monotone/f1-score', 0.6351706036745407), ('val/DenseNet121/screenshot/f1-score', 0.6579520697167757), ('val/DenseNet121/unknown/f1-score', 0.48937844217151844)]
+Epoch: 1, batch loss: 0.82140 Loss Sum: 244.12414, accuracy : 0.69961, val loss: 22.62369, val accuracy: 0.51418
+Final : 0.6600308142993081 [('val/DenseNet121/monotone/f1-score', 0.6937669376693767), ('val/DenseNet121/screenshot/f1-score', 0.781925343811395), ('val/DenseNet121/unknown/f1-score', 0.5300462249614792)]
+Epoch: 2, batch loss: 0.88572 Loss Sum: 214.82458, accuracy : 0.75006, val loss: 22.45771, val accuracy: 0.52644
+Final : 0.666032651237791 [('val/DenseNet121/monotone/f1-score', 0.6864864864864865), ('val/DenseNet121/screenshot/f1-score', 0.7882352941176471), ('val/DenseNet121/unknown/f1-score', 0.5460076045627377)]
+Epoch: 3, batch loss: 0.84596 Loss Sum: 210.37653, accuracy : 0.75584, val loss: 22.29103, val accuracy: 0.52261
+Final : 0.6679045049887187 [('val/DenseNet121/monotone/f1-score', 0.6908077994428969), ('val/DenseNet121/screenshot/f1-score', 0.7937743190661478), ('val/DenseNet121/unknown/f1-score', 0.5433614735226401)]
+---train finished---
+Trying to save to /tmp/tmpxg39k05s/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_Adam_2_2_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.21128 Loss Sum: 342.65082, accuracy : 0.28797, val loss: 24.23827, val accuracy: 0.49732
+Final : 0.24215610488947814 [('val/DenseNet121/monotone/f1-score', 0.19310344827586207), ('val/DenseNet121/screenshot/f1-score', 0.10561056105610561), ('val/DenseNet121/unknown/f1-score', 0.6962879640044995)]
+Epoch: 1, batch loss: 1.02042 Loss Sum: 293.64210, accuracy : 0.44639, val loss: 22.29179, val accuracy: 0.56628
+Final : 0.6138077662185767 [('val/DenseNet121/monotone/f1-score', 0.6666666666666667), ('val/DenseNet121/screenshot/f1-score', 0.49732620320855614), ('val/DenseNet121/unknown/f1-score', 0.6975045648204504)]
+Epoch: 2, batch loss: 0.91799 Loss Sum: 254.80006, accuracy : 0.62378, val loss: 20.64833, val accuracy: 0.63448
+Final : 0.7344565922916075 [('val/DenseNet121/monotone/f1-score', 0.8088235294117646), ('val/DenseNet121/screenshot/f1-score', 0.6789838337182448), ('val/DenseNet121/unknown/f1-score', 0.7214150347441566)]
+Epoch: 3, batch loss: 0.93503 Loss Sum: 225.35909, accuracy : 0.70241, val loss: 19.59685, val accuracy: 0.63602
+Final : 0.7392580605565391 [('val/DenseNet121/monotone/f1-score', 0.7882736156351792), ('val/DenseNet121/screenshot/f1-score', 0.7248908296943232), ('val/DenseNet121/unknown/f1-score', 0.70703125)]
+---train finished---
+Trying to save to /tmp/tmp7dc1lvsp/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [1,
+                Compose(
+    ColorJitter(brightness=None, contrast=None, saturation=[0.95, 1.05], hue=[-0.05, 0.05])
+    RandomHorizontalFlip(p=0.5)
+    RandomRotation(degrees=(-20, 20), resample=2, expand=False)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.42857 Loss Sum: 388.60239, accuracy : 0.19693, val loss: 30.39115, val accuracy: 0.24444
+Final : 0.21548646988580453 [('val/DenseNet121/monotone/f1-score', 0.11851851851851852), ('val/DenseNet121/screenshot/f1-score', 0.2770949720670391), ('val/DenseNet121/unknown/f1-score', 0.30468085106382975)]
+Epoch: 1, batch loss: 1.37706 Loss Sum: 371.22524, accuracy : 0.22815, val loss: 28.84390, val accuracy: 0.28123
+Final : 0.1880142707850169 [('val/DenseNet121/monotone/f1-score', 0.06278026905829598), ('val/DenseNet121/screenshot/f1-score', 0.2609819121447029), ('val/DenseNet121/unknown/f1-score', 0.40563821456538757)]
+Epoch: 2, batch loss: 1.36312 Loss Sum: 357.06581, accuracy : 0.26418, val loss: 27.46416, val accuracy: 0.34866
+Final : 0.23835250278735737 [('val/DenseNet121/monotone/f1-score', 0.10628019323671499), ('val/DenseNet121/screenshot/f1-score', 0.24549918166939444), ('val/DenseNet121/unknown/f1-score', 0.5189873417721519)]
+Epoch: 3, batch loss: 1.33187 Loss Sum: 347.49394, accuracy : 0.29327, val loss: 26.61073, val accuracy: 0.39387
+Final : 0.3000108556024049 [('val/DenseNet121/monotone/f1-score', 0.18749999999999997), ('val/DenseNet121/screenshot/f1-score', 0.250936329588015), ('val/DenseNet121/unknown/f1-score', 0.5739130434782609)]
+---train finished---
+Trying to save to /tmp/tmp4crgbc_e/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_1_100.0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.26047 Loss Sum: 340.82867, accuracy : 0.28852, val loss: 24.79764, val accuracy: 0.42069
+Final : 0.18720829048972085 [('val/DenseNet121/monotone/f1-score', 0.11347517730496454), ('val/DenseNet121/screenshot/f1-score', 0.09589041095890412), ('val/DenseNet121/unknown/f1-score', 0.602974828375286)]
+Epoch: 1, batch loss: 0.99541 Loss Sum: 292.10938, accuracy : 0.43774, val loss: 22.90639, val accuracy: 0.48276
+Final : 0.5135136907254886 [('val/DenseNet121/monotone/f1-score', 0.5759162303664921), ('val/DenseNet121/screenshot/f1-score', 0.38011695906432746), ('val/DenseNet121/unknown/f1-score', 0.6185567010309279)]
+Epoch: 2, batch loss: 1.00832 Loss Sum: 254.95253, accuracy : 0.61423, val loss: 21.05250, val accuracy: 0.60613
+Final : 0.7269737460251781 [('val/DenseNet121/monotone/f1-score', 0.8174603174603174), ('val/DenseNet121/screenshot/f1-score', 0.6807511737089201), ('val/DenseNet121/unknown/f1-score', 0.6904005085823268)]
+Epoch: 3, batch loss: 0.82863 Loss Sum: 225.97532, accuracy : 0.71458, val loss: 19.78894, val accuracy: 0.64061
+Final : 0.7662068421635486 [('val/DenseNet121/monotone/f1-score', 0.8303249097472923), ('val/DenseNet121/screenshot/f1-score', 0.7672955974842767), ('val/DenseNet121/unknown/f1-score', 0.7060367454068242)]
+---train finished---
+Trying to save to /tmp/tmpkzcd74tz/model
+Too long checkpoint name: DenseNet121_64_[0.3, 0.2, 0.2, 0.3]_[3, 1]_1.0_9.999999999999999e-05_[1.00600004196167, 1.079699993133545, 1.0401999950408936, 1.2753000259399414]_SGD_10_2_0 not saved
+Done
+DenseNet121 Loaded!
+{'batch_size': 64,
+ 'class_ratio': [0.3, 0.2, 0.2, 0.3],
+ 'epoch': [3, 1],
+ 'gamma': 0.1,
+ 'learning_rate': 1e-06,
+ 'loss_cls_weight': tensor([1.0060, 1.0797, 1.0402, 1.2753]),
+ 'optimizer': 'SGD',
+ 'step_size': 10,
+ 'transforms': [2,
+                Compose(
+    RandomAffine(degrees=(0, 0), scale=(0.75, 1.25))
+    RandomPerspective(p=0.4)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)],
+ 'weight_decay': 0.001}
+Dataloader constructed!
+Epoch: 0, batch loss: 1.48823 Loss Sum: 375.61533, accuracy : 0.31986, val loss: 22.46339, val accuracy: 0.57778
+Final : 0.2327928975121561 [('val/DenseNet121/monotone/f1-score', 0.03947368421052631), ('val/DenseNet121/screenshot/f1-score', 0.46894803548795944), ('val/DenseNet121/unknown/f1-score', 0.6815171583383505)]
+Epoch: 1, batch loss: 1.38923 Loss Sum: 371.27161, accuracy : 0.32388, val loss: 22.51513, val accuracy: 0.57931
+Final : 0.20067727691743364 [('val/DenseNet121/monotone/f1-score', 0.025477707006369428), ('val/DenseNet121/screenshot/f1-score', 0.46133333333333326), ('val/DenseNet121/unknown/f1-score', 0.6875739644970413)]
+Epoch: 2, batch loss: 1.46421 Loss Sum: 369.13429, accuracy : 0.32552, val loss: 22.36059, val accuracy: 0.59847
+Final : 0.16302779893621425 [('val/DenseNet121/monotone/f1-score', 0.012903225806451615), ('val/DenseNet121/screenshot/f1-score', 0.4728789986091794), ('val/DenseNet121/unknown/f1-score', 0.710128055878929)]
+Epoch: 3, batch loss: 1.46811 Loss Sum: 366.48947, accuracy : 0.32577, val loss: 22.39240, val accuracy: 0.60153
+Final : 0.16450315536392898 [('val/DenseNet121/monotone/f1-score', 0.012987012987012988), ('val/DenseNet121/screenshot/f1-score', 0.4803370786516854), ('val/DenseNet121/unknown/f1-score', 0.7136204889406287)]
+---train finished---

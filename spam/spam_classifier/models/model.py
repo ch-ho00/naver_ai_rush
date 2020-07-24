@@ -9,17 +9,23 @@ from sklearn.metrics import classification_report
 import pandas as pd
 import nsml
 import numpy as np
-
+import itertools 
 # from spam.spam_classifier.models.utils import Metrics, NSMLReportCallback, evaluate
 from spam.spam_classifier.datasets.dataset import Spam_img_dataset
+from spam.spam_classifier.models.utils import get_optimizer
+import pprint
 
+PRINTER = pprint.PrettyPrinter()
 
 class Classification_experiment:
     
     def __init__(self, network_fn: Callable, dataset_cls: Spam_img_dataset, dataset_kwargs, network_kwargs, name="ResNet50",to_log=None, prefix=None):
+        self.network_fn = network_fn
+        self.network_kwargs = network_kwargs
+
         self.data = dataset_cls(**kwargs_or_empty_dict(dataset_kwargs))
-        self.model = network_fn(**kwargs_or_empty_dict(network_kwargs))
-        self.debug = False
+        # self.model = network_fn(**kwargs_or_empty_dict(network_kwargs))
+        
         self.name = name
 
         if to_log is None:
@@ -28,28 +34,62 @@ class Classification_experiment:
         self.prefix = prefix
 
 
-    def fit(self, epochs_finetune, epochs_full, batch_size, lr=1e-4, weight_decay=0, gamma=0.3, step_size=10, debug=False):
-        self.debug = debug
+    def fit(self, hyper_param_dict, best_param):
+
+        sorted_keys = sorted(hyper_param_dict[best_param])
+        combinations = list(itertools.product(*(hyper_param_dict[key] for key in sorted_keys)))        
         self.data.prepare()
-        self.model = self.model.cuda()
 
-        steps_per_epoch_train = int(self.data.len('train') / batch_size) if not self.debug else 2
-        trainloader, validationloader = self.data.train_val_gen(batch_size)
+        for batch_size, class_ratio, epoch, gamma, lr, cls_w, optim, step, [i, transforms], w_decay in combinations[len(combinations)//2:]:
+            checkpoint = self.name +"_" + str(batch_size) + "_" + str(class_ratio) + "_" + str(epoch) + "_" + str(gamma * 10) + "_" + str(lr * 100) + "_" + str(cls_w.tolist()) +"_" + optim + "_" + str(step) + "_" + str(i) + "_" + str(w_decay * 10**5) 
+            self.model = self.network_fn(**kwargs_or_empty_dict(self.network_kwargs))
+            PRINTER.pprint({key :val for key,val in zip(sorted_keys, [batch_size, class_ratio, epoch, gamma, lr, cls_w, optim, step, [i, transforms], w_decay])})
+            # initialize 
+            self.data.set_transforms(transforms)
+            self.data.set_class_ratio(class_ratio)            
+            self.model = self.model.cuda()
 
-        criterion = torch.nn.CrossEntropyLoss()  
-        optimizer = torch.optim.Adamax(self.model.parameters(), lr=lr, weight_decay=weight_decay)
-        scheduler = StepLR(optimizer, step_size=step_size, gamma=gamma)
+            criterion = torch.nn.CrossEntropyLoss(weight= cls_w.cuda())
+            optimizer = get_optimizer(optim,self.model.parameters(), lr=lr, weight_decay=w_decay)
+            scheduler = StepLR(optimizer, step_size=step, gamma=gamma)
 
-        # train the model by epochs
-        self.train(epochs_finetune,trainloader, validationloader, scheduler, optimizer, criterion)
-        self.unfreeze()
-        self.train(epochs_full,trainloader, validationloader, scheduler, optimizer, criterion, epochs_finetune)
-        print("---train finished---")
-        nsml.save(checkpoint='best')
-        print('Done')
-        # self.metrics(gen=validationloader)
+            # dataloader
+            trainloader, validationloader = self.data.train_val_gen(batch_size)
 
-    def train(self,epochs, trainloader, validationloader,scheduler, optimizer, criterion,prev_epoch=None):
+
+            # std_mean , std_std = self.gray_scale_std(trainloader)
+            # print(std_mean, std_std)
+
+            # train the model by epochs
+            self.train(epoch[0], trainloader, validationloader, scheduler, optimizer, criterion)
+            self.unfreeze()
+            self.train(epoch[1], trainloader, validationloader, scheduler, optimizer, criterion, epoch[0])
+            print("---train finished---")
+            nsml.save(checkpoint=checkpoint)
+            print('Done')
+            # self.metrics(gen=validationloader)
+
+    def gray_scale_std(self, trainloader):
+        std_list = [] 
+        for iter_, (xx, yy) in enumerate(trainloader):
+            xx = xx.permute(0,2,3,1).numpy() * 256
+            xx = xx.astype(np.int)
+
+
+            for i in range(xx.shape[0]):
+                gray_img = np.dot(xx[i][...,:3], [0.2989, 0.5870, 0.1140])
+                # np.histogram(img,bin , range) 
+                hist,bins = np.histogram(gray_img.ravel(), 256, [0,256])
+                mids = 0.5*(bins[1:] + bins[:-1])
+                mean = np.average(mids, weights=hist)
+                std = np.average((mids - mean)**2, weights=hist)**0.5
+
+                std_list.append(std)
+
+        std_list = np.array(std_list)
+        return np.mean(std_list), np.std(std_list)
+
+    def train(self,epochs, trainloader, validationloader,scheduler, optimizer, criterion, prev_epoch=None):
 
         batch_size = trainloader.batch_size
         for epoch in range(epochs):
@@ -59,10 +99,10 @@ class Classification_experiment:
             for iter_, (xx, yy) in enumerate(trainloader):
                 xx = xx.cuda()
                 yy = yy.squeeze(1).long().cuda()
-                
+
                 if "Dense" in self.name or "VGG" in self.name:
                     xx = F.interpolate(xx,(224,224))
-
+                
                 optimizer.zero_grad()
                 outputs = self.model(xx)
                 batch_correct = self.count_correct(outputs, yy) 
@@ -73,7 +113,7 @@ class Classification_experiment:
                 loss.backward()
                 optimizer.step()
 
-                print("Iteration %d : batch_loss = %2.5f, accuracy = %1.5f"%(iter_+1, loss, (batch_correct/batch_size)))
+                # print("Iteration %d : batch_loss = %2.5f, accuracy = %1.5f"%(iter_+1, loss, (batch_correct/batch_size)))
 
             val_outputs = []
             val_ytrue = []
@@ -82,12 +122,11 @@ class Classification_experiment:
                 for valX, valY in validationloader:
                     valX = valX.cuda()
                     valY = valY.squeeze(1).long().cuda()
-
+                    
                     if "Dense" in self.name or "VGG" in self.name:
                         valX = F.interpolate(valX,(224,224))
 
                     outputs = self.model(valX)
-
                     val_correct += self.count_correct(outputs, valY) 
                     val_loss = criterion(outputs, valY)
                     val_loss_sum += val_loss
@@ -98,8 +137,10 @@ class Classification_experiment:
             scheduler.step()
             acc = correct / len(trainloader.dataset)
             val_acc = val_correct / len(validationloader.dataset)
+
             if prev_epoch:
                 epoch += prev_epoch
+
             print("Epoch: %d, batch loss: %1.5f Loss Sum: %1.5f, accuracy : %1.5f, val loss: %1.5f, val accuracy: %1.5f"% (epoch, loss.item(), loss_sum, acc, val_loss_sum, val_acc))
             
             logs = {
@@ -108,9 +149,9 @@ class Classification_experiment:
                 'loss': loss_sum,
                 'accuracy': acc
             }
-                # 'lr': optimizer.default['lr']
+
             val_outputs = torch.cat(val_outputs, axis=0)
-            _, val_outputs = torch.max(val_outputs,axis=1)
+            _ , val_outputs = torch.max(val_outputs,axis=1)
             val_outputs = val_outputs.long()
 
             val_ytrue = torch.cat(val_ytrue, axis=0)
@@ -164,6 +205,7 @@ class Classification_experiment:
         nsml.report(step=epoch,
             **{'Score': score}
         )
+
     def format_test(self, test_dir: str) -> pd.DataFrame:
         """
 
