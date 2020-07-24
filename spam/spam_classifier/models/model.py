@@ -14,6 +14,7 @@ import itertools
 from spam.spam_classifier.datasets.dataset import Spam_img_dataset
 from spam.spam_classifier.models.utils import get_optimizer
 import pprint
+import time
 
 PRINTER = pprint.PrettyPrinter()
 
@@ -35,15 +36,15 @@ class Classification_experiment:
 
 
     def fit(self, hyper_param_dict, best_param):
-
-        sorted_keys = sorted(hyper_param_dict[best_param])
+        hyper_param_dict = hyper_param_dict[best_param]   
+        sorted_keys = sorted(hyper_param_dict)
         combinations = list(itertools.product(*(hyper_param_dict[key] for key in sorted_keys)))        
         self.data.prepare()
 
-        for batch_size, class_ratio, epoch, gamma, lr, cls_w, optim, step, [i, transforms], w_decay in combinations[len(combinations)//2:]:
-            checkpoint = self.name +"_" + str(batch_size) + "_" + str(class_ratio) + "_" + str(epoch) + "_" + str(gamma * 10) + "_" + str(lr * 100) + "_" + str(cls_w.tolist()) +"_" + optim + "_" + str(step) + "_" + str(i) + "_" + str(w_decay * 10**5) 
+        for batch_size, class_ratio, epoch, gamma, lr, cls_w, optim, step, [i, transforms], w_decay in combinations: 
             self.model = self.network_fn(**kwargs_or_empty_dict(self.network_kwargs))
             PRINTER.pprint({key :val for key,val in zip(sorted_keys, [batch_size, class_ratio, epoch, gamma, lr, cls_w, optim, step, [i, transforms], w_decay])})
+            
             # initialize 
             self.data.set_transforms(transforms)
             self.data.set_class_ratio(class_ratio)            
@@ -61,46 +62,28 @@ class Classification_experiment:
             # print(std_mean, std_std)
 
             # train the model by epochs
-            self.train(epoch[0], trainloader, validationloader, scheduler, optimizer, criterion)
+            best_score = self.train(epoch[0], trainloader, validationloader, scheduler, optimizer, criterion)
             self.unfreeze()
-            self.train(epoch[1], trainloader, validationloader, scheduler, optimizer, criterion, epoch[0])
+            self.train(epoch[1], trainloader, validationloader, scheduler, optimizer, criterion, epoch[0], best_score)
             print("---train finished---")
-            nsml.save(checkpoint=checkpoint)
             print('Done')
             # self.metrics(gen=validationloader)
 
-    def gray_scale_std(self, trainloader):
-        std_list = [] 
-        for iter_, (xx, yy) in enumerate(trainloader):
-            xx = xx.permute(0,2,3,1).numpy() * 256
-            xx = xx.astype(np.int)
+    def train(self,epochs, trainloader, validationloader,scheduler, optimizer, criterion, prev_epoch=None, best_score= 0):
 
-
-            for i in range(xx.shape[0]):
-                gray_img = np.dot(xx[i][...,:3], [0.2989, 0.5870, 0.1140])
-                # np.histogram(img,bin , range) 
-                hist,bins = np.histogram(gray_img.ravel(), 256, [0,256])
-                mids = 0.5*(bins[1:] + bins[:-1])
-                mean = np.average(mids, weights=hist)
-                std = np.average((mids - mean)**2, weights=hist)**0.5
-
-                std_list.append(std)
-
-        std_list = np.array(std_list)
-        return np.mean(std_list), np.std(std_list)
-
-    def train(self,epochs, trainloader, validationloader,scheduler, optimizer, criterion, prev_epoch=None):
-
+        start = time.time() 
         batch_size = trainloader.batch_size
+
         for epoch in range(epochs):
             loss_sum = 0
             val_loss_sum = 0
             correct  = 0
+
             for iter_, (xx, yy) in enumerate(trainloader):
                 xx = xx.cuda()
                 yy = yy.squeeze(1).long().cuda()
 
-                if "Dense" in self.name or "VGG" in self.name:
+                if "Dense" in self.name or "VGG" in self.name or "Efficient" in self.name:
                     xx = F.interpolate(xx,(224,224))
                 
                 optimizer.zero_grad()
@@ -129,7 +112,7 @@ class Classification_experiment:
                     outputs = self.model(valX)
                     val_correct += self.count_correct(outputs, valY) 
                     val_loss = criterion(outputs, valY)
-                    val_loss_sum += val_loss
+                    val_loss_sum += val_loss.item()
 
                     val_outputs.append(outputs)
                     val_ytrue.append(valY)
@@ -140,11 +123,12 @@ class Classification_experiment:
 
             if prev_epoch:
                 epoch += prev_epoch
-
             print("Epoch: %d, batch loss: %1.5f Loss Sum: %1.5f, accuracy : %1.5f, val loss: %1.5f, val accuracy: %1.5f"% (epoch, loss.item(), loss_sum, acc, val_loss_sum, val_acc))
             
             logs = {
-                'val_loss' : val_loss_sum.item(),
+                'train_loss': loss_sum,
+                'train_accuracy': acc,   
+                'val_loss' : val_loss_sum,
                 'val_accuracy': val_acc,
                 'loss': loss_sum,
                 'accuracy': acc
@@ -153,11 +137,18 @@ class Classification_experiment:
             val_outputs = torch.cat(val_outputs, axis=0)
             _ , val_outputs = torch.max(val_outputs,axis=1)
             val_outputs = val_outputs.long()
-
             val_ytrue = torch.cat(val_ytrue, axis=0)
-            self.log(epoch, val_outputs, val_ytrue, logs)
+            
+            end = time.time()
+            epoch_score = self.log(epoch, val_outputs, val_ytrue, logs, end-start)
+            if epoch_score > best_score:
+                best_score = epoch_score
+                checkpoint = "best_"+ str(epoch)            
+                nsml.save(checkpoint=checkpoint)
+        
+        return best_score 
 
-    def log(self, epoch, val_pred_class, val_true_class, logs=None):
+    def log(self, epoch, val_pred_class, val_true_class, logs=None, elapsed=0):
 
         cls_report = classification_report(
             y_true=val_true_class.detach().cpu().numpy(),
@@ -200,11 +191,34 @@ class Classification_experiment:
         # log final score 
         f1_keys = ['val/'+ self.name + '/' +class_+ '/f1-score' for class_ in self.data.classes][1:]
         score = np.prod([logs[key] for key in f1_keys]) ** (1/3)
-        
-        print("Final :", score, [(key_, val_) for key_, val_ in zip(f1_keys,[logs[key] for key in f1_keys])])
         nsml.report(step=epoch,
             **{'Score': score}
         )
+
+        print("\t Final score:", score, [(key_, val_) for key_, val_ in zip(f1_keys,[logs[key] for key in f1_keys])])
+        print("\t Time elapsed :", elapsed)
+        return score
+
+    def gray_scale_std(self, trainloader):
+        std_list = []
+        for iter_, (xx, yy) in enumerate(trainloader):
+            xx = xx.permute(0,2,3,1).numpy() * 256
+            xx = xx.astype(np.int)
+
+
+            for i in range(xx.shape[0]):
+                gray_img = np.dot(xx[i][...,:3], [0.2989, 0.5870, 0.1140])
+                # np.histogram(img,bin , range) 
+                hist,bins = np.histogram(gray_img.ravel(), 256, [0,256])
+                mids = 0.5*(bins[1:] + bins[:-1])
+                mean = np.average(mids, weights=hist)
+                std = np.average((mids - mean)**2, weights=hist)**0.5
+
+                std_list.append(std)
+
+        std_list = np.array(std_list)
+        return np.mean(std_list), np.std(std_list)
+
 
     def format_test(self, test_dir: str) -> pd.DataFrame:
         """
@@ -299,13 +313,13 @@ def bind_model(experiment: Classification_experiment):
     """
 
     def load(dirname, **kwargs):
-        experiment.model.load_state_dict(torch.load(f'{dirname}/model'))
-        experiment.model.eval()
+        experiment.network_fn.load_state_dict(torch.load(f'{dirname}/model'))
+        experiment.network_fn.eval()
 
     def save(dirname, **kwargs):
         filename = f'{dirname}/model'
         print(f'Trying to save to {filename}')
-        torch.save(experiment.model.state_dict(), f'{dirname}/model')
+        torch.save(experiment.network_fn.state_dict(), f'{dirname}/model')
 
     def infer(test_dir, **kwargs):
         return experiment.format_test(test_dir)

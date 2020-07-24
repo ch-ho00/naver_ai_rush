@@ -43,9 +43,11 @@ class Spam_img_dataset(data.Dataset):
             file_dir = dir_ / os.listdir(dir_)[idx2[0]]
                 
             img = PIL.Image.open(open(file_dir, 'rb'))
-            if self.transforms and self.mode == 'val':
+            if self.transforms and self.mode == 'train':
                 img = self.transforms(img)
-
+            else:
+               img = TF.to_tensor(img)
+            
             return img, torch.Tensor([CLASS2LABEL[idx2[1]]])
         
         elif self.mode == 'test':
@@ -149,7 +151,7 @@ class Spam_img_dataset(data.Dataset):
             val_generator: Pytorch dataloader.
         '''        
         num_total = self.len('train') + self.len('val') 
-        num_total = num_total // 4
+        num_total = num_total // 2
         split_num = self.len('train')
 
         # plain partition
@@ -176,21 +178,21 @@ class Spam_img_dataset(data.Dataset):
             elif i == 3:
                 add = np.random.choice(range(prev, sum_- int((sum_ - prev) * 0.2)), int(num_total * unknown_ratio), replace=True)
                 train_idx = np.concatenate([train_idx, add], axis=0)
-            if i > 0 and i < 4:
+            if class_ is not 'normal':
                 val_idx = val_idx + list(range(sum_ - int((sum_ - prev) * 0.2), sum_))
 
-
+        train_idx = list(train_idx)
         # for test
         # train_idx = np.random.choice(range(num_total), 1000, replace=False)
         # val_idx = np.random.choice(range(num_total), 1000, replace=False)
 
+        assert len(set(val_idx + train_idx)) == len(set(val_idx)) + len(set(train_idx))
         train_sampler = data.SubsetRandomSampler(train_idx)
         val_sampler = data.SubsetRandomSampler(val_idx)
 
         partition = {}
         partition['train'] = train_idx
         partition['validation'] = val_idx
-
         params = {'batch_size': batch_size,
                 'shuffle': False,
                 'num_workers': 2}
@@ -200,7 +202,8 @@ class Spam_img_dataset(data.Dataset):
 
         validation_set = Spam_img_dataset(partition=partition['validation'],classes=self.classes, input_size=self.input_size,mode='val', transforms=self.transforms, num_imgs_per_class=self.num_imgs_per_class,base_dir=self.base_dir)
         val_loader = data.DataLoader(validation_set, sampler=val_sampler, **params)
-        print("Dataloader constructed!")
+        print("Dataloader constructed! \n\t Train size = %d \tValidation size = %d"%(len(train_idx), len(val_idx)))
+
         return train_loader, val_loader
 
     def test_gen(self, test_dir: str, batch_size: int):

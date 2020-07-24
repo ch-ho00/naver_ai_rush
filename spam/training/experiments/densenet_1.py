@@ -8,7 +8,7 @@ input_size = (256, 256, 3)
 classes = ['normal', 'monotone', 'screenshot', 'unknown']
 config = {
     'model': Classification_experiment,
-    'fit_kwargs': [grid,best_param],
+    'fit_kwargs': [grid, best_param],
     'experiment_kwargs': {
         'network_fn': DenseNet121,
         'network_kwargs': {},

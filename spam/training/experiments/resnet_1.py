@@ -3,11 +3,12 @@ from spam.spam_classifier.models.model import Classification_experiment
 from spam.spam_classifier.networks.resnet50 import ResNet50
 from spam.training.experiments.grid_params import grid
 from spam.training.experiments.best_params import best_param
+
 input_size = (256, 256, 3)
 classes = ['normal', 'monotone', 'screenshot', 'unknown']
 config = {
     'model': Classification_experiment,
-    'fit_kwargs': [grid,best_param],
+    'fit_kwargs': [grid, best_param],
     'experiment_kwargs': {
         'network_fn': ResNet50,
         'network_kwargs': {},

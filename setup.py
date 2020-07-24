@@ -6,5 +6,7 @@ os.system('apt-get install libglib2.0-0')
 setup(
     name="Spam classification - AI Rush baseline",
     version="1",
-    install_requires=[]
+    install_requires=['efficientnet_pytorch',
+        'xgboost'
+    ]
 )
