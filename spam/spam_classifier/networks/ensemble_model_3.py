@@ -9,7 +9,7 @@ from torch.nn import functional as F
 import xgboost as xgb
 import nsml
 import pickle
-import random 
+import random
 
 class Ensemble_model(nn.Module):
     def __init__(self, mode='soft', weight=None, pretrained=None,std=[0,0,0]):
@@ -18,57 +18,57 @@ class Ensemble_model(nn.Module):
         self.vgg = VGG16(pretrained=False, add_std=std[0])
         self.resnet = ResNet50(pretrained=False, add_std=std[1])
         self.efficientnet = EfficientNet_B3(pretrained=False)
-        self.densenet = DenseNet121(pretrained=False, add_std=std[2])
+        # self.densenet = DenseNet121(pretrained=False, add_std=std[2])
 
         self.mode = mode
-        self.weight = weight
-        if weight is not None:
-            # self.weight = [ random.random() for _ in range(4)]
-            print("Weight :" ,self.weight)
-            print([int(w/ sum(self.weight) * 100) for w in self.weight])
-                
-        self.w = nn.Parameter(torch.tensor([0.25]*4).cuda(), requires_grad=True)
+        self.weight= weight
+        # if weight is not None:
+        #     self.weight = [ random.random() for _ in range(4)]
+        #     print("Random weight :" ,self.weight)
+        # self.w = nn.Parameter(torch.tensor([1/3] * 3).cuda(), requires_grad=True)
 
         if mode == 'stacked':
-            self.stacked_fc = nn.Linear(4 * 4, 4)
+            self.stacked_fc = nn.Linear(4 * 3, 4)
         elif mode == 'xgb':
             self.xgb_classifier = xgb.XGBClassifier(objective="multi:softprob", random_state=42)
         
         if pretrained:
+            print(pretrained)
             self.load_finetuned(pretrained)
 
     def __repr__(self):
         return "Ensemble model with " + self.densenet.name + ", " + self.resnet.name + ", " + self.vgg.name        
 
     def forward(self, x):
+        # y4= self.densenet(x.clone())
         y1= self.vgg(x.clone())
         
         x_re = F.interpolate(x.clone(),(224,224))
-        y3 = self.efficientnet(x_re)
-        y4= self.densenet(x.clone())
-
         y2= self.resnet(x)
+        y3 = self.efficientnet(x_re)
         if self.mode == 'soft':
             # _, y1 = torch.max(y1,axis=1)
             # _, y2 = torch.max(y3,axis=1)
             # _, y3 = torch.max(y3,axis=1)
             # print(torch.cat([y1.unsqueeze(1),y2.unsqueeze(1),y3.unsqueeze(1)], axis=1))
             if self.weight == None:
-                y = (y1 + y2 + y3 + y4) / 4
+                y = ( y1 + y2+ y3 ) / 3
             else:
-                # w1, w2, w3, w4 = self.w
-                w1, w2, w3, w4 = self.weight
-                y = (y1 * w1 + y2* w2 + y3* w3 + y4 * w4)/ sum(self.weight)
+                # self.weight = [ random.random() for _ in range(4)]
+                w1, w2, w3 = self.w
+
+                # w1, w2, w3, w4 = self.weight
+                y = y1* w1 + y2* w2 + y3 * w3 
 
             return y
 
         elif self.mode == 'stacked':
-            ypred = torch.cat([y1, y2, y3, y4], axis=1)
+            ypred = torch.cat([y1, y2, y3], axis=1)
             ypred = self.stacked_fc(ypred)            
             return ypred 
 
         elif self.mode == "xgb":
-            ypred = torch.cat([y1, y2, y3,y4], axis=1)
+            ypred = torch.cat([y2, y3, y1], axis=1)
 
             return ypred
 
@@ -97,7 +97,6 @@ class Ensemble_model(nn.Module):
         self.resnet.load_state_dict(torch.load(f'{dirname}/model_{self.resnet.name}'))
 
     def load_finetuned(self, pretrained):
-        print(pretrained)
         bind_model(self.vgg)
         nsml.load(checkpoint=pretrained[0][1], session=pretrained[0][0])
 
@@ -107,41 +106,73 @@ class Ensemble_model(nn.Module):
         bind_model(self.efficientnet)
         nsml.load(checkpoint=pretrained[2][1], session=pretrained[2][0])
 
-        bind_model(self.densenet)
-        nsml.load(checkpoint=pretrained[3][1], session=pretrained[3][0])
+        # bind_model(self.densenet)
+        # nsml.load(checkpoint=pretrained[3][1], session=pretrained[3][0])
 
         if self.mode == 'xgb':
-            for name, param in self.densenet.named_parameters():
-                param.requires_grad = False
+            # for name, param in self.densenet.named_parameters():
+            #     param.requires_grad = False
             for name, param in self.resnet.named_parameters():
                 param.requires_grad = False
             for name, param in self.vgg.named_parameters():
                 param.requires_grad = False
         else:
-            for name, param in self.densenet.named_parameters():
-                if 'classifier' in name : # and self.weight is None
-                    param.requires_grad = True
-                else:
-                    param.requires_grad = False
+            # for name, param in self.densenet.named_parameters():
+            #     if 'classifier' in name:
+            #         param.requires_grad = True
+            #     else:
+            #         param.requires_grad = False
             for name, param in self.resnet.named_parameters():
-                if 'fc' in name :
+                if 'fc' in name and self.weight is None: # and self.weight is None
                     param.requires_grad = True
                 else:
                     param.requires_grad = False
             for name, param in self.vgg.named_parameters():
-                if 'classifier' in name:
+                if 'classifier' in name and self.weight is None:
                     param.requires_grad = True
                 else:
                     param.requires_grad = False
             for name, param in self.efficientnet.named_parameters():
-                if 'fc' in name:
+                if 'fc' in name and self.weight is None:
                     param.requires_grad = True
                 else:
                     param.requires_grad = False
 
         print("Pretrained weight loaded! ")
+        # print(self)
         bind_model(self)
-        
+        # for dir_ in pretrained:
+        #     if self.mode == 'xgb' and 'xgboost' in dir_:
+        #         loaded_model = pickle.load(open(f"{dir_}/model_xgboost.dat", "rb"))
+        #     elif 'Dense' in dir_:
+        #         self.densenet.load_state_dict(torch.load(f'{dir_}/model_{self.densenet.name}'))
+        #     elif 'VGG' in dir_:
+        #         self.vgg.load_state_dict(torch.load(f'{dir_}/model_{self.vgg.name}'))
+        #     elif 'ResNet' in dir_:
+        #         self.resnet.load_state_dict(torch.load(f'{dir_}/model_{self.resnet.name}'))
+        # self.densenet.eval()
+        # self.vgg.eval()
+        # self.resnet.eval()
+
+        # if self.mode == 'xgb':
+        #     for name, param in self.densenet.named_parameters():
+        #         param.requires_grad = False
+        #     for name, param in self.resnet.named_parameters():
+        #         param.requires_grad = False
+        #     for name, param in self.vgg.named_parameters():
+        #         param.requires_grad = False
+        # else:
+        #     for name, param in self.densenet.named_parameters():
+        #         if 'classifier' not in name:
+        #             param.requires_grad = False
+        #     for name, param in self.resnet.named_parameters():
+        #         if 'fc' not in name:
+        #             param.requires_grad = False
+        #     for name, param in self.vgg.named_parameters():
+        #         if 'classifier' not in name:
+        #             param.requires_grad = False
+
+
 def bind_model(model):
     def load(dirname, **kwargs):
         try:

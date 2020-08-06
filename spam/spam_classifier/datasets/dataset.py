@@ -17,9 +17,11 @@ import PIL
 
 UNLABELED = -1 
 CLASS2LABEL = {class_ : label for class_, label in zip(['normal', 'monotone', 'screenshot', 'unknown'],[0,1,2,3,-1])}
+RGB_MEAN = [0.485, 0.456, 0.406] 
+RGB_STD = [0.229, 0.224, 0.225]
 
 class Spam_img_dataset(data.Dataset):
-    def __init__(self, classes=['normal', 'monotone', 'screenshot', 'unknown'], input_size=[256,256,3], partition=None, transforms=None, mode='train', base_dir=None, num_imgs_per_class={}, class_ratio=[0.25,0.25,0.25,0.25]):
+    def __init__(self, classes=['normal', 'monotone', 'screenshot', 'unknown'], input_size=[256,256,3], partition=None, transforms=None, mode='train', base_dir=None, num_imgs_per_class={}, class_ratio=[0.25,0.25,0.25,0.25], val_split=0.2):
 
         self.classes = classes
         self.input_size = input_size
@@ -31,9 +33,13 @@ class Spam_img_dataset(data.Dataset):
         self.transforms = transforms
         self.mode = mode
 
+        self.val_transform = torchvision.transforms.Compose([
+                                torchvision.transforms.ToTensor(),
+                                torchvision.transforms.Normalize(RGB_MEAN, RGB_STD)
+                            ])
         
         self.class_ratio = class_ratio
-        self.val_split = 0.2
+        self.val_split = val_split
         self._len = None
 
     def __getitem__(self,idx):
@@ -46,13 +52,13 @@ class Spam_img_dataset(data.Dataset):
             if self.transforms and self.mode == 'train':
                 img = self.transforms(img)
             else:
-               img = TF.to_tensor(img)
+               img = self.val_transform(img)
             
             return img, torch.Tensor([CLASS2LABEL[idx2[1]]])
         
         elif self.mode == 'test':
-            dir_ = os.listdir(self.base_dir)[idx]
-            img = TF.to_tensor(PIL.Image.open(open(dir_, 'rb')))
+            dir_ =  str(self.base_dir)+ "/" + os.listdir(self.base_dir)[idx]
+            img = self.val_transform(PIL.Image.open(open(dir_, 'rb')))
             return img
 
     def convert_idx(self, idx):
@@ -139,7 +145,7 @@ class Spam_img_dataset(data.Dataset):
             else:
                 shutil.copy(src=src, dst=dst)
 
-    def train_val_gen(self,batch_size: int):
+    def train_val_gen(self,batch_size: int, val_ratio : list):
         '''
         Splits the train_data folder into train/val generators. Applies some image augmentation for the train dataset.
 
@@ -151,42 +157,63 @@ class Spam_img_dataset(data.Dataset):
             val_generator: Pytorch dataloader.
         '''        
         num_total = self.len('train') + self.len('val') 
-        num_total = num_total // 2
         split_num = self.len('train')
-
+        np.random.seed(42)
         # plain partition
         # train_idx = np.random.choice(range(num_total), split_num, replace=False)
         # val_idx = list(set(range(num_total)) - set(list(train_idx)))
 
         # oversampling
-        normal_ratio, monotone_ratio, screenshot_ratio, unknown_ratio  = self.class_ratio
-        assert unknown_ratio + screenshot_ratio + normal_ratio + monotone_ratio == 1
+        # normal_ratio, monotone_ratio, screenshot_ratio, unknown_ratio  = self.class_ratio
+        # assert sum(self.class_ratio) == 1
 
         sum_ = 0
         val_idx = []
+        train_idx = []
+
         for i,class_ in enumerate(self.num_imgs_per_class):
+
             prev = sum_
             sum_ += self.num_imgs_per_class[class_]
-            if i == 0:
-                train_idx = np.random.choice(range(prev, sum_), int(num_total * normal_ratio), replace=False)
-            elif i == 1:
-                add = np.random.choice(range(prev, sum_ - int((sum_ - prev) * 0.2)), int(num_total * monotone_ratio), replace=True)
-                train_idx = np.concatenate([train_idx, add], axis=0)
-            elif i == 2:
-                add = np.random.choice(range(prev, sum_- int((sum_ - prev) * 0.2)), int(num_total * screenshot_ratio), replace=True)
-                train_idx = np.concatenate([train_idx, add], axis=0)
-            elif i == 3:
-                add = np.random.choice(range(prev, sum_- int((sum_ - prev) * 0.2)), int(num_total * unknown_ratio), replace=True)
-                train_idx = np.concatenate([train_idx, add], axis=0)
-            if class_ is not 'normal':
-                val_idx = val_idx + list(range(sum_ - int((sum_ - prev) * 0.2), sum_))
+            class_val_size = int(self.num_imgs_per_class[class_] * val_ratio[i])
+            class_train_size = int(num_total * self.class_ratio[i])
 
-        train_idx = list(train_idx)
+            add_val_idx = np.random.choice(list(range(prev, sum_)), class_val_size, replace=False)
+            add_train_idx = list(set(range(prev, sum_)) - set(add_val_idx))
+
+            if self.num_imgs_per_class[class_] - class_val_size > class_train_size:
+                train_idx = train_idx + list(np.random.choice(add_train_idx, class_train_size, replace=False))
+            else:
+                repeat = class_train_size // (self.num_imgs_per_class[class_] - class_val_size)
+                train_idx = train_idx + add_train_idx * repeat 
+                train_idx = train_idx + list(np.random.choice(train_idx, class_train_size - (self.num_imgs_per_class[class_] - class_val_size) * repeat, replace=False))
+            
+            val_idx = val_idx + list(add_val_idx)
+
+        # for i,class_ in enumerate(self.num_imgs_per_class):
+        #     prev = sum_
+        #     sum_ += self.num_imgs_per_class[class_]
+        #     class_val_size = int(self.num_imgs_per_class[class_] * val_ratio[i])
+        #     if i == 0:
+        #         train_idx = np.random.choice(range(prev, sum_ - class_val_size), int(num_total * normal_ratio), replace=False) 
+        #     elif i == 1:
+        #         add = np.random.choice(range(prev, sum_ - class_val_size), int(num_total * monotone_ratio), replace=True)
+        #         train_idx = np.concatenate([train_idx, add], axis=0)
+        #     elif i == 2:
+        #         add = np.random.choice(range(prev, sum_- class_val_size), int(num_total * screenshot_ratio), replace=True)
+        #         train_idx = np.concatenate([train_idx, add], axis=0)
+        #     elif i == 3:
+        #         add = np.random.choice(range(prev, sum_- class_val_size), int(num_total * unknown_ratio), replace=True)
+        #         train_idx = np.concatenate([train_idx, add], axis=0)
+
+        #     val_idx = val_idx + list(range(sum_ - class_val_size, sum_))
+        # train_idx = list(train_idx)
+
         # for test
         # train_idx = np.random.choice(range(num_total), 1000, replace=False)
         # val_idx = np.random.choice(range(num_total), 1000, replace=False)
 
-        assert len(set(val_idx + train_idx)) == len(set(val_idx)) + len(set(train_idx))
+        # assert len(set(val_idx + train_idx)) == len(set(val_idx)) + len(set(train_idx))
         train_sampler = data.SubsetRandomSampler(train_idx)
         val_sampler = data.SubsetRandomSampler(val_idx)
 
@@ -203,6 +230,11 @@ class Spam_img_dataset(data.Dataset):
         validation_set = Spam_img_dataset(partition=partition['validation'],classes=self.classes, input_size=self.input_size,mode='val', transforms=self.transforms, num_imgs_per_class=self.num_imgs_per_class,base_dir=self.base_dir)
         val_loader = data.DataLoader(validation_set, sampler=val_sampler, **params)
         print("Dataloader constructed! \n\t Train size = %d \tValidation size = %d"%(len(train_idx), len(val_idx)))
+        val_composition = [ int(self.num_imgs_per_class[a] * b) for a,b in zip(self.num_imgs_per_class, val_ratio)]
+        print("\t Validation dataset composition ", [int(cls_ / sum(val_composition) * 100) for cls_ in val_composition])
+        train_composition = [ int(num_total * r) for r in self.class_ratio]
+        print("\t Training dataset composition ", [cls_ for cls_ in train_composition])
+        print("\t Training dataset proportion ", [int(cls_ / sum(train_composition) * 100) for cls_ in train_composition])
 
         return train_loader, val_loader
 
@@ -212,7 +244,7 @@ class Spam_img_dataset(data.Dataset):
         test_data = Spam_img_dataset(partition=list(range(len(files))), base_dir=Path(test_dir) / 'test_data', mode='test')
         test_data_loader = data.DataLoader(test_data, batch_size=batch_size, shuffle=False,  num_workers=2)
 
-        return gen, files
+        return test_data_loader, files
 
     def __len__(self):
         return len(self.partition)

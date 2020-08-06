@@ -11,7 +11,10 @@ config = {
     'fit_kwargs': [grid, best_param],
     'experiment_kwargs': {
         'network_fn': VGG16,
-        'network_kwargs': {},
+        'network_kwargs': {
+            'xgb': False,
+            'add_std' : 0
+        },
         'dataset_cls': Spam_img_dataset,
         'name': "VGG16",
         'dataset_kwargs': {

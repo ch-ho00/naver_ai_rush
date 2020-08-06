@@ -11,7 +11,10 @@ config = {
     'fit_kwargs': [grid, best_param],
     'experiment_kwargs': {
         'network_fn': ResNet50,
-        'network_kwargs': {},
+        'network_kwargs': {
+            'xgb': False,
+            'add_std' : 0   
+        },
         'dataset_cls': Spam_img_dataset,
         'name': "ResNet50",
         'dataset_kwargs': {

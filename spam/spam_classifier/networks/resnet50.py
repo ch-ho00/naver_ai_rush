@@ -113,14 +113,18 @@ class ResNet(nn.Module):
 
     def __init__(self, block, layers, num_classes=4, zero_init_residual=False,
                  groups=1, width_per_group=64, replace_stride_with_dilation=None,
-                 norm_layer=None):
+                 norm_layer=None, name="ResNet50", add_std=0):
         super(ResNet, self).__init__()
         if norm_layer is None:
             norm_layer = nn.BatchNorm2d
         self._norm_layer = norm_layer
-
+        self.name = name
         self.inplanes = 64
         self.dilation = 1
+        self.add_std = add_std
+        if add_std:
+            print("with extra feature std")
+
         if replace_stride_with_dilation is None:
             # each element in the tuple indicates if we should replace
             # the 2x2 stride with a dilated convolution instead
@@ -143,7 +147,7 @@ class ResNet(nn.Module):
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2,
                                        dilate=replace_stride_with_dilation[2])
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Linear(512 * block.expansion, num_classes)
+        self.fc = nn.Linear(512 * block.expansion + self.add_std, num_classes)
 
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
@@ -188,7 +192,13 @@ class ResNet(nn.Module):
 
     def _forward_impl(self, x):
         # See note [TorchScript super()]
+        if self.add_std:
+            std = x.clone()
+            std = std.reshape(x.shape[0],-1)
+            std = torch.std(std, axis=1).unsqueeze(1)
+
         x = self.conv1(x)
+
         x = self.bn1(x)
         x = self.relu(x)
         x = self.maxpool(x)
@@ -200,6 +210,8 @@ class ResNet(nn.Module):
 
         x = self.avgpool(x)
         x = torch.flatten(x, 1)
+        if self.add_std:
+            x = torch.cat([x, std], axis=1)
         x = self.fc(x)
 
         return x
@@ -218,8 +230,9 @@ def _resnet(arch, block, layers, pretrained, progress, **kwargs):
         model.load_state_dict(state_dict, strict=False)
 
     for name, param in model.named_parameters():
-        if 'fc' not in name:
+        if 'fc' not in name and 'layer4' not in name:
             param.requires_grad = False
+    
     print("ResNet50 Loaded!")
 
     return model

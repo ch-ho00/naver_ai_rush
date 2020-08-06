@@ -10,6 +10,8 @@ def train(experiment_name: str = 'resnet_1', best_param : int = 0, pause: bool =
     model = config['model'](**config['experiment_kwargs'])
     bind_model(model)
     if pause:
+        print("before pause")
         nsml.paused(scope=locals())
     if mode == 'train':
+        print("before fit")
         model.fit(config['fit_kwargs'], best_param)

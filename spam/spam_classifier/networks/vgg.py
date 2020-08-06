@@ -1,6 +1,8 @@
 import torch.nn as nn
 import torch.utils.model_zoo as model_zoo
 from collections import OrderedDict
+from torch.nn import functional as F
+import torch
 
 
 __all__ = [
@@ -23,11 +25,15 @@ model_urls = {
 
 class VGG(nn.Module):
 
-    def __init__(self, features, num_classes=4, init_weights=True):
+    def __init__(self, features, num_classes=4, init_weights=True, name="VGG16", add_std=0):
         super(VGG, self).__init__()
+        self.name= name
         self.features = features
+        self.add_std = add_std
+        if add_std:
+            print("with extra feature std")
         self.classifier = nn.Sequential(
-            nn.Linear(512 * 7 * 7, 4096),
+            nn.Linear(512 * 7 * 7 + self.add_std, 4096),
             nn.ReLU(True),
             nn.Dropout(),
             nn.Linear(4096, 4096),
@@ -39,8 +45,17 @@ class VGG(nn.Module):
             self._initialize_weights()
 
     def forward(self, x):
+        x = F.interpolate(x,(224,224))
+        if self.add_std:
+            std = x.clone()
+            std = std.reshape(x.shape[0],-1)
+            std = torch.std(std, axis=1).unsqueeze(1)
+
         x = self.features(x)
         x = x.view(x.size(0), -1)
+        if self.add_std:
+            x = torch.cat([x,std], axis=1)
+    
         x = self.classifier(x)
         return x
 
@@ -139,13 +154,17 @@ def VGG16(pretrained=True, **kwargs):
     Args:
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
-    if pretrained:
+    if pretrained :
         kwargs['init_weights'] = False
     model = VGG(make_layers(cfg['D']), **kwargs)
     if pretrained:
         state_dict = model_zoo.load_url(model_urls['vgg16'])
         state_dict = OrderedDict([(param, state_dict[param]) for param in state_dict if 'classifier' not in param])
         model.load_state_dict(state_dict, strict=False)
+    for name, param in model.named_parameters():
+        if 'classifier' not in name and 'features.28' not in name and 'features.26' not in name:
+            param.requires_grad = False
+
     print("VGG16 Loaded!")
 
     return model

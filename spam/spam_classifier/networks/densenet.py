@@ -68,9 +68,13 @@ class DenseNet(nn.Module):
     """
 
     def __init__(self, growth_rate=32, block_config=(6, 12, 24, 16),
-                 num_init_features=64, bn_size=4, drop_rate=0, num_classes=4):
+                 num_init_features=64, bn_size=4, drop_rate=0, num_classes=4, name="DenseNet121", add_std=0):
 
         super(DenseNet, self).__init__()
+        self.name = name
+        self.add_std = add_std
+        if add_std:
+            print("with extra feature std")
 
         # First convolution
         self.features = nn.Sequential(OrderedDict([
@@ -96,7 +100,7 @@ class DenseNet(nn.Module):
         self.features.add_module('norm5', nn.BatchNorm2d(num_features))
 
         # Linear layer
-        self.classifier = nn.Linear(num_features, num_classes)
+        self.classifier = nn.Linear(num_features + self.add_std, num_classes)
 
         # Official init from torch repo.
         for m in self.modules():
@@ -109,9 +113,17 @@ class DenseNet(nn.Module):
                 nn.init.constant_(m.bias, 0)
 
     def forward(self, x):
+        x = F.interpolate(x,(224,224))
+        if self.add_std:
+            std = x.clone()
+            std = std.reshape(x.shape[0],-1)
+            std = torch.std(std, axis=1).unsqueeze(1)
+
         features = self.features(x)
         out = F.relu(features, inplace=True)
         out = F.avg_pool2d(out, kernel_size=7, stride=1).view(features.size(0), -1)
+        if self.add_std:
+            out = torch.cat([out, std], axis=1)
         out = self.classifier(out)
         return out
 
@@ -140,6 +152,10 @@ def DenseNet121(pretrained=True, **kwargs):
                 del state_dict[key]
         state_dict = OrderedDict([(param, state_dict[param]) for param in state_dict if 'classifier' not in param])
         model.load_state_dict(state_dict,strict=False)
+
+    for i,(name, param) in enumerate(model.named_parameters()):
+        if 'classifier' not in name and 'denseblock4.denselayer16' not in name and 'denseblock4.denselayer15' not in name:
+            param.requires_grad = False
     print("DenseNet121 Loaded!")
 
     return model
